@@ -1,20 +1,23 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="home">
-
-  <h1>Wow</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<h1 class="cover-heading"><a href="http://twitter.com/javanut13" target="_blank">Will Richardson</a></h1>
+<p class="lead">Independent app &amp; web developer. Student. Tech enthusiast.</p>
+<p class="more-text">Ruby | Java | Python | Android</p>
+<p class="lead hide-section">
+  <a href="#" class="contact-button btn btn-sm btn-default">Blog &#10093;</a>
+</p>
+<div id="more-info">
+  <h2>Want to..</h2>
+  <h3>Give me a Job?</h3>
+  <p><a href="http://twitter.com/javanut13" target="_blank">Twitter</a>
+     or <a href="http://careers.stackoverflow.com/javanut13" target="_blank">Stack Overflow Careers</a></p>
+  <h3>Download my apps?</h3>
+  <p>Why not <a href="https://play.google.com/store/apps/developer?id=JavaNut13" target="_blank">Google Play</a>?</p>
+  <h3>Disregard my work?</h3>
+  <p>Probably best use <a href="http://twitter.com/javanut13" target="_blank">Twitter</a></p>
+  <h3>Pretend to be my friend?</h3>
+  <p>Where else than <a href="http://plus.google.com/+WillRichardson13" target="_blank">Google+</a>?</p>
+  <a href="#" class="contact-button btn btn-sm btn-default">&#10092; Close</a>
 </div>
