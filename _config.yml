@@ -1,0 +1,13 @@
+# Site settings
+title: Will Richardson
+email: william.hamish+spam@gmail.com
+description: "Will's blog thing"
+baseurl: ""
+url: "http://javanut13.github.io"
+twitter_username: javanut13
+github_username:  javanut13
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
