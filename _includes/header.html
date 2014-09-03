@@ -1,17 +1,6 @@
-<header class="site-header">
-
-  <div class="wrap">
-
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <div class="trigger">
-        <!-- {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %} -->
-      </div>
-    </nav>
-
-  </div>
-
+<header class="col-md-8 col-xs-12 center-block">
+  <a class="title" href="/">{{ site.title }}</a>
+  <br>
+  <span class="desc">{{ site.description }}</span>
+  <a class="url" href="/blog">{{ site.human_url }}/blog</a>
 </header>

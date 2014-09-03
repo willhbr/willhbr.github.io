@@ -1,0 +1,24 @@
+---
+layout: blog
+---
+
+{% for post in paginator.posts %}
+    <h1>
+      <a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
+      </a>
+    </h1>
+    
+    <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+    
+    <div class="post-body">
+      {{ post.content }}
+    </div>
+    
+{% endfor %}
+
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+<!-- Pagination links -->
+
+{% include pagination.html %}

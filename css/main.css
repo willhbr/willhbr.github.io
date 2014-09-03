@@ -1,0 +1,51 @@
+body {
+  background-color: #ddd;
+  font-family: "Raleway", sans;
+}
+
+.center-block {
+  float: none;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.07em;
+}
+
+a {
+  color: #666;
+}
+
+a:hover {
+  color: #444;
+  text-decoration: none;
+}
+
+.post-date {
+  padding-bottom: 5px;
+  color: #aaa;
+}
+
+.title {
+  font-size: 3em;
+  color: black;
+}
+
+.desc {
+  color: #333;
+}
+
+.url {
+  color: #aaa;
+}
+
+header {
+  text-align: center;
+}
+
+/*Paginaiton*/
+.pagination {
+  font-size: 1.2em;
+  float: center;
+  text-align: center;
+}
