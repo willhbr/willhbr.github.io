@@ -10,9 +10,6 @@ Independent app &amp; web developer. Student. Tech enthusiast.
   [Github][github]
 </span>
 <span class="btn btn-sm btn-default">
-  [Projects](projects)
-</span>
-<span class="btn btn-sm btn-default">
   [Blog &#10093;](blog)
 </span>
 
