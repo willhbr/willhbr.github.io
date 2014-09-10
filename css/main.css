@@ -22,12 +22,16 @@ a:hover {
 }
 
 .post-date {
+  
+}
+
+.metadata {
   padding-bottom: 5px;
   color: #aaa;
 }
 
 .title {
-  font-size: 3em;
+  font-size: 2.5em;
   color: black;
 }
 

@@ -8,10 +8,13 @@ layout: blog
   </a>
 </h1>
 
-<span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span>
+<div class="metadata">
+  <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span> &bull; 
+  <a href="{{  page.url }}" class="permalink" title="Permalink">&infin;</a>
+</div>
 
 <div class="post-body">
-  {{ page.content }}
+  {{ page.content | markdownify }}
 </div>
 
 <br>
