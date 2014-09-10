@@ -3,6 +3,10 @@ body {
   font-family: "Raleway", sans;
 }
 
+strong {
+  font-weight: bold;
+}
+
 .center-block {
   float: none;
   margin: 0 auto;
