@@ -1,6 +1,6 @@
 body {
-  background-color: #ddd;
-  font-family: "Raleway", sans;
+  background-color: #f0f0f0;
+  font-family: "Roboto", sans;
 }
 
 strong {
@@ -13,7 +13,7 @@ strong {
 }
 
 p {
-  font-size: 1.07em;
+  font-size: 1.1em;
 }
 
 a {

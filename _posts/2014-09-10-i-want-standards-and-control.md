@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2014-09-10
+date: 2014-09-19
 title: "I Want Standards and Control"
 ---
 
