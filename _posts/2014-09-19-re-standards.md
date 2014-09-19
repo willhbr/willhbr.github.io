@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RE: standards"
-date: 2014-09-10
+date: 2014-09-19
 ---
 
 So I got a bit off-topic in my last post about standards, and how I think we need more of them to make all the cool new gadgets _function_ together - maybe not work nicely, but at least function.
