@@ -8,8 +8,11 @@ layout: blog
         {{ post.title }}
       </a>
     </h1>
-    
-    <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+
+    <div class="metadata">
+      <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span> &bull; 
+      <a href="{{  post.url }}" class="permalink" title="Permalink">&infin;</a>
+    </div>
     
     <div class="post-body">
       {{ post.content }}
