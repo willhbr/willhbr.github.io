@@ -29,8 +29,12 @@ a:hover {
   text-decoration: none;
 }
 
-.post-date {
-  
+img {
+  border-radius: 8px;
+  border: 1px solid #888;
+  width: 76%;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 
 .metadata {
