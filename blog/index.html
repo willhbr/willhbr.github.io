@@ -3,6 +3,7 @@ layout: blog
 ---
 
 {% for post in paginator.posts %}
+  <div class="post-container">
     <h1>
       <a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">
         {{ post.title }}
@@ -17,7 +18,7 @@ layout: blog
     <div class="post-body">
       {{ post.content }}
     </div>
-    
+  </div>
 {% endfor %}
 
 <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
