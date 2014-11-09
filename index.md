@@ -2,6 +2,8 @@
 layout: home
 ---
 
+![That's me](/images/me.jpg)
+
 #[Will Richardson][twitter]
 
 Independent app &amp; web developer. Student. Tech enthusiast.

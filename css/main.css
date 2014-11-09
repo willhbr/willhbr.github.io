@@ -29,10 +29,13 @@ a:hover {
   text-decoration: none;
 }
 
+.post-body img {
+  width: 76%;
+}
 img {
+  margin-top: 10px;
   border-radius: 8px;
   border: 1px solid #888;
-  width: 76%;
   margin-left: 12%;
   margin-right: 12%;
 }
