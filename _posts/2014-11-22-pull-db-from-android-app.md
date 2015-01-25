@@ -12,12 +12,12 @@ I thought debugging the database would be impossible without writing a part of t
 
 Basically to set it up you should run this (Assuming you have [brew](http://brew.sh) installed and `adb` correctly in your path)
 
-{% highlight bash %}
-# The bundled version doesn't have zlib
-brew reinstall openssl
-# So we can use the openssl commands anywhere
-echo "export PATH=/usr/local/opt/openssl/bin:\$PATH" >> ~/.bash_profile
-{% endhighlight %}
+    {% highlight bash %}
+    # The bundled version doesn't have zlib
+    brew reinstall openssl
+    # So we can use the openssl commands anywhere
+    echo "export PATH=/usr/local/opt/openssl/bin:\$PATH" >> ~/.bash_profile
+    {% endhighlight %}
 
 Save this as `db_pull` in your `$PATH` or working directory.
 
