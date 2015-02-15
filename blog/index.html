@@ -5,8 +5,8 @@ layout: blog
 {% for post in paginator.posts %}
   <div class="post-container">
     <h1>
-      <a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">
-        &#10093; {{ post.title }}
+      <span class="arrow">&#10093; </span><a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">
+        {{ post.title }}
       </a>
     </h1>
 
