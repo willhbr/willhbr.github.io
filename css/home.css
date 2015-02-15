@@ -1,20 +1,3 @@
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #333;
-}
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
 /*
  * Base structure
  */
@@ -22,12 +5,10 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #ddd;
-  background: -webkit-radial-gradient(#fff, #A5A5A5); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#fff, #A5A5A5); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#fff, #A5A5A5); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(#fff, #A5A5A5); /* Standard syntax */
-
+  background: -webkit-radial-gradient(#fff, #E8E8E8); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#fff, #E8E8E8); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#fff, #E8E8E8); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#fff, #E8E8E8); /* Standard syntax */
 }
 body {
   color: #444;
@@ -49,12 +30,10 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-
 /* Padding for spacing */
 .inner {
   padding: 30px;
 }
-
 
 /*
  * Header
@@ -63,33 +42,6 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #444;
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #444;
-  border-bottom-color: #444;
-}
-
 @media (min-width: 768px) {
   .masthead-brand {
     float: left;
@@ -98,30 +50,6 @@ body {
     float: right;
   }
 }
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-}
-
 
 /*
  * Affix and center

@@ -1,5 +1,5 @@
 body {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   font-family: "Roboto", sans;
 }
 
@@ -17,15 +17,15 @@ p {
 }
 
 a {
-  color: #666;
+  color: #4A7DF5;
 }
 
-p a {
-  color: #333D7D;
+h1, h2, h3, h4, h5, h6 {
+  color: #696969;
 }
 
 a:hover {
-  color: #444;
+  color: #3559B1;
   text-decoration: none;
 }
 
@@ -42,6 +42,9 @@ img {
 
 .metadata {
   padding-bottom: 10px;
+  color: #aaa;
+}
+.metadata a {
   color: #aaa;
 }
 

@@ -4,16 +4,13 @@ layout: home
 
 ![That's me](/images/me.jpg)
 
-#[Will Richardson][twitter]
+#[{ Will Richardson }][twitter]
 
 Independent app &amp; web developer. Student. Tech enthusiast.
 
-<span class="btn btn-sm btn-default">
-  [Github][github]
-</span>
-<span class="btn btn-sm btn-default">
-  [Blog &#10093;](blog)
-</span>
+<a class="btn btn-primary btn-sm" href="/me">Me</a>
+<a class="btn btn-primary btn-sm" href="http://github.com/javanut13">GitHub</a>
+<a class="btn btn-primary btn-sm" href="http://twitter.com/javanut13">Twitter</a>
+<a class="btn btn-primary btn-sm" href="/blog">Blog &#10093;</a>
 
 [twitter]: http://twitter.com/javanut13
-[github]: http://github.com/javanut13
