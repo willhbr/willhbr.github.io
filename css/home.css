@@ -1,7 +1,6 @@
-/*
- * Base structure
- */
-
+h1 a {
+  color: black;
+}
 html,
 body {
   height: 100%;

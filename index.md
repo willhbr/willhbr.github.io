@@ -4,7 +4,11 @@ layout: home
 
 ![That's me](/images/me.jpg)
 
-#[{ Will Richardson }][twitter]
+<h1>
+  <a href="http://twitter.com/javanut13">
+    <span class="arrow">{</span> Will Richardson <span class="arrow">}</span>
+  </a>
+</h1>
 
 Independent app &amp; web developer. Student. Tech enthusiast.
 
@@ -12,5 +16,3 @@ Independent app &amp; web developer. Student. Tech enthusiast.
 <a class="btn btn-primary btn-sm" href="http://github.com/javanut13">GitHub</a>
 <a class="btn btn-primary btn-sm" href="http://twitter.com/javanut13">Twitter</a>
 <a class="btn btn-primary btn-sm" href="/blog">Blog &#10093;</a>
-
-[twitter]: http://twitter.com/javanut13
