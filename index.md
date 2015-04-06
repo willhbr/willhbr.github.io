@@ -6,7 +6,7 @@ layout: home
 
 <h1>
   <a href="http://twitter.com/javanut13">
-    <span class="arrow">{</span> Will Richardson <span class="arrow">}</span>
+    <span class="arrow">{</span>&nbsp;Will Richardson&nbsp;<span class="arrow">}</span>
   </a>
 </h1>
 
