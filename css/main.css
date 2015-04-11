@@ -5,6 +5,10 @@ body {
   font-family: "Roboto", sans;
 }
 
+#me-description {
+  text-align: center;
+}
+
 .arrow {
   color: #C1C1C1;
 }

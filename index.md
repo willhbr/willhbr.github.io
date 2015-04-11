@@ -10,7 +10,9 @@ layout: home
   </a>
 </h1>
 
-Independent app &amp; web developer. Student. Tech enthusiast.
+<p id="me-description">
+  Independent app &amp; web developer. Student. Tech enthusiast.
+</p>
 
 <a class="btn btn-primary btn-sm" href="/me">Me</a>
 <a class="btn btn-primary btn-sm" href="http://github.com/javanut13">GitHub</a>
