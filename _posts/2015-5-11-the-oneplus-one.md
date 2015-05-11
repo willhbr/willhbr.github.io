@@ -23,4 +23,4 @@ So because I mainly bought this phone to jump onto the material design/ lollipop
 
 After finding the [Google Play Services Wakelock Fix](https://plus.google.com/112425488314892935797/posts/VqubRkcTpEE) and setting the screen's DPI from 480 (the default, stupidly huge) to 400 (normal size), I think I can fairly safely say that so far the One is a solid piece of hardware that is held back from the mass market by the whim of Cyanogen. I imagine that the Oneplus Two will be better, more expensive and hopefully see a solid release of Oxygen OS.
 
-And hopefully they continue to support the One.
+And hopefully they continue to support the One.g
