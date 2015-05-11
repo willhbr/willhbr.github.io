@@ -39,10 +39,8 @@ a:hover {
   text-decoration: none;
 }
 
-.post-body img {
+.post-body img, .img-round {
   width: 76%;
-}
-img {
   margin-top: 10px;
   border-radius: 8px;
   border: 1px solid #888;

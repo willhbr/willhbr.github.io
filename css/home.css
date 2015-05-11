@@ -13,6 +13,10 @@ body {
   color: #444;
   text-align: center;
 }
+img.me-image {
+  border-radius: 8px;
+  border: 1px solid #888;
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {

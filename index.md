@@ -2,7 +2,7 @@
 layout: home
 ---
 
-![That's me](/images/me.jpg)
+<img src="/images/me.jpg" class="me-image"/>
 
 <h1>
   <a href="http://twitter.com/javanut13">
