@@ -2,7 +2,7 @@
 title: The OnePlus One
 layout: parallax
 date: 2015-5-11
-header: /images/oneplus-one.jpg
+header: http://i.imgur.com/EGAUTMC.jpg
 ---
 
 The [One](http://oneplus.net/one) is truly a bargain. At USD 350 it is less than half the price of comparable phones such as the HTC One (2014), the Samsung Galaxy S5 and the Nexus 6. Most phones that hit a price point this low have noticeable compromises: the Motorola cut down the specs and build of the Moto G and E, Google's Nexus 5 is lacking in storage and you can feel the plastic when you hold it.
