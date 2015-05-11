@@ -16,6 +16,9 @@ layout: blog
     </div>
     
     <div class="post-body">
+      {% if post.header != null %}
+        <img src="{{ post.header }}" class="header-image"/>
+      {% endif %}
       {{ post.content }}
     </div>
   </div>
