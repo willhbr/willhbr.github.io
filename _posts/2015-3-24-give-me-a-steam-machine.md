@@ -1,5 +1,5 @@
 ---
-title: Valve: Give me a Steam Machine
+title: "Valve: Give me a Steam Machine"
 layout: post
 date: 2015-3-24
 ---
