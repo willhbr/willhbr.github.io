@@ -52,6 +52,10 @@ img.header-image {
   margin: 0px;
   margin-bottom: 10px;
 }
+img.me-image {
+  border-radius: 8px;
+  border: 1px solid #888;
+}
 
 .metadata {
   padding-bottom: 10px;

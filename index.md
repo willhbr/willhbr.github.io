@@ -5,9 +5,7 @@ layout: home
 <img src="/images/me.jpg" class="me-image"/>
 
 <h1>
-  <a href="http://twitter.com/javanut13">
-    <span class="arrow">{</span>&nbsp;Will Richardson&nbsp;<span class="arrow">}</span>
-  </a>
+  <span class="arrow">{</span>&nbsp;Will Richardson&nbsp;<span class="arrow">}</span>
 </h1>
 
 <p id="me-description">
@@ -15,6 +13,4 @@ layout: home
 </p>
 
 <a class="btn btn-primary btn-sm" href="/me">Me</a>
-<a class="btn btn-primary btn-sm" href="http://github.com/javanut13">GitHub</a>
-<a class="btn btn-primary btn-sm" href="http://twitter.com/javanut13">Twitter</a>
 <a class="btn btn-primary btn-sm" href="/blog">Blog &#10093;</a>

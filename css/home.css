@@ -4,18 +4,14 @@ h1 a {
 html,
 body {
   height: 100%;
-  background: -webkit-radial-gradient(#fff, #E8E8E8); /* Safari 5.1 to 6.0 */
-  background: -o-radial-gradient(#fff, #E8E8E8); /* For Opera 11.6 to 12.0 */
-  background: -moz-radial-gradient(#fff, #E8E8E8); /* For Firefox 3.6 to 15 */
-  background: radial-gradient(#fff, #E8E8E8); /* Standard syntax */
+  background: -webkit-radial-gradient(#fff, #E8E8E8);
+  background: -o-radial-gradient(#fff, #E8E8E8);
+  background: -moz-radial-gradient(#fff, #E8E8E8);
+  background: radial-gradient(#fff, #E8E8E8);
 }
 body {
   color: #444;
   text-align: center;
-}
-img.me-image {
-  border-radius: 8px;
-  border: 1px solid #888;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
