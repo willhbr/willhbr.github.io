@@ -1,7 +1,7 @@
 /* Blue: #4A7DF5 */
 
 body {
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   font-family: "Roboto", sans;
 }
 
@@ -27,7 +27,7 @@ p {
 }
 
 a {
-  color: #B3601D;
+  color: #C8742E;
 }
 
 h1, h2, h3, h4, h5, h6 {

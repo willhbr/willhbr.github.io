@@ -5,9 +5,17 @@ layout: blog
 {% for post in paginator.posts %}
   <div class="post-container">
     <h1>
-      <span class="arrow">&#10093; </span><a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">
-        {{ post.title }}
-      </a>
+      {% if post.link == null %}
+        <span class="arrow">&#10093; </span>
+        <a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      {% else %}
+        <a class="post-link post-title" href="{{ post.link }}">
+          {{ post.title }}
+          <span class="arrow">&#8594; </span>
+        </a>
+      {% endif %}
     </h1>
 
     <div class="metadata">
