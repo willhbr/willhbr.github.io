@@ -35,7 +35,8 @@ if(me != null) {
   me.innerHTML = out;
 }
 
-if(true) {
+var onHomepage = document.getElementById("on-homepage");
+if(onHomepage != null) {
   var index = Math.floor(Math.random() * images.length);
   document.documentElement.style.backgroundImage = "url(" + images[index] + ")";
 }
