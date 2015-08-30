@@ -37,5 +37,5 @@ if(me != null) {
 
 if(true) {
   var index = Math.floor(Math.random() * images.length);
-  document.documentElement.style.background = "url(" + images[index] + ") no-repeat center center fixed";
+  document.documentElement.style.backgroundImage = "url(" + images[index] + ")";
 }
