@@ -1,6 +1,6 @@
 ---
 title: "OS X El Capitan"
-date: 2015-9-13
+date: 2015-10-2
 layout: parallax
 header: http://images.apple.com/v/osx/d/images/overview/hero_large.jpg
 ---
