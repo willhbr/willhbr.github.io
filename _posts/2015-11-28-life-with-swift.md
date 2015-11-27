@@ -1,7 +1,7 @@
 ---
 title: Life with Swift
 layout: post
-date: 2015-11-09
+date: 2015-11-28
 ---
 
 Since Apple introduced Swift at WWDC last year, I've been interested in it as a compiled language that seems as easy and quick to develop as a dynamic scripting language like Python. Especially that Swift will (hopefully) be open sourced late this year, meaning that it could be used to develop applications that could be deployed easily onto a webserver as a simple binary (no [Capistrano](http://capistranorb.com) necessary).
