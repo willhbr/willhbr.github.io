@@ -14,12 +14,6 @@ var options = [
   "Stock Android evangelist"
 ];
 
-var images = [
-  "http://i.imgur.com/V32r4Wa.jpg",
-  "http://i.imgur.com/EGAUTMC.jpg",
-  "http://i.imgur.com/qBTY8ze.jpg"
-]
-
 var me = document.getElementById("me-description");
 if(me != null) {
   var out = "";
@@ -33,10 +27,4 @@ if(me != null) {
     }
   }
   me.innerHTML = out;
-}
-
-var onHomepage = document.getElementById("on-homepage");
-if(onHomepage != null) {
-  var index = Math.floor(Math.random() * images.length);
-  document.documentElement.style.backgroundImage = "url(" + images[index] + ")";
 }
