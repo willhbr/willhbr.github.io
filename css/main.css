@@ -82,6 +82,10 @@ header {
   margin-bottom: 25px !important;
 }
 
+blockquote {
+  font-size: 1em;
+}
+
 hr {
   border-color: #888;
 }
