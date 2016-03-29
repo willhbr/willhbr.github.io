@@ -1,5 +1,5 @@
 ---
-title: Why I dislike ATDD
+title: Why I Dislike ATDD
 layout: post
 date: 2016-3-29
 ---
