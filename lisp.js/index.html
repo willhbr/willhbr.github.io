@@ -1,0 +1,35 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ "/lisp.js/lisp.css" | prepend: site.baseurl }}">
+  </head>
+  <body>
+    
+    {% include header.html %}
+
+  <div class="container">
+    <div class="col-md-8 col-xs-12 center-block">
+      <div class="highlight">
+        <pre><code contenteditable="true" id="repl">(println "Hello world")</code></pre>
+      </div>
+      <div id="run-container">
+        <button id="run" class="btn btn-default">Run</button>
+      </div>
+      <div class="highlight">
+        <pre><code id="result"></code></pre>
+      </div>
+      <hr>
+      <div class="highlight">
+        <pre><code id="code-res"></code></pre>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+  <script src="{{ "/lisp.js/lisp.js" | prepend: site.baseurl }}"></script>
+  <script src="{{ "/lisp.js/main.js" | prepend: site.baseurl }}"></script>
+  </body>
+</html>
