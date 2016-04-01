@@ -11,20 +11,13 @@ function println() {
 }
 
 var doRun = function() {
-  var text = document.getElementById('repl').innerHTML;
+  var text = document.getElementById('repl').innerText;
   document.getElementById('result').innerHTML = '';
   try {
     var atoms = parseProgram(text.trim());
-    var code = '';
-    for(var i = 0; i < atoms.length; i++) {
-      code += generate(atoms[i]) + '\n';
-    }
+    var code = generate(atoms);
     document.getElementById('code-res').innerHTML = code;
-    var result = eval(code);
-    if(result !== undefined) {
-      println('--');
-      println(result);
-    }
+    eval(code);
   } catch (err) {
     println(err);
   }
