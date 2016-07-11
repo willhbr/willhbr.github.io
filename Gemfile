@@ -1,2 +1,5 @@
 source 'https://rubygems.org'
-gem 'github-pages'
+
+gem 'jekyll', '~> 3.1.6'
+gem 'jekyll-paginate', '~> 1.1.0'
+gem 'pygments.rb'
