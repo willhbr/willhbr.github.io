@@ -7,15 +7,14 @@ var options = [
   '\'Software engineer\'',
   'Student',
   '<i>Shodan</i>',
-  'Can use Vim',
   'Has a website',
   'App developer',
   'Tech enthusiast',
   'Stock Android evangelist',
   'Swift enthusiast',
-  'Doesn\'t really like Java',
+  "Doesn't really like Java",
   'Beard owner',
-  '🤖'
+  'Programming language connoisseur'
 ];
 
 var me = document.getElementById('me-description');
