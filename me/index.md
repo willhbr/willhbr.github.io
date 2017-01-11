@@ -2,36 +2,15 @@
 layout: page
 ---
 
-<style>
-  .languages {
-    clear: both;
-  }
-  .languages img {
-    width: 220px;
-    padding: 10px;
-    text-align: center;
-  }
-  h1 {
-    text-align: center;
-  }
-</style>
+I make stuff and have opinions about things. Currently a student. Often too busy learning new languages to ever use any of them. What's cool now:
 
-# tl; dr:
++ Swift
++ Elixir
++ Crystal
++ Clojure
 
-<div class="languages">
-  <img class="lang-image" src="/images/languages/Swift.png" title="Swift"/>
-  <img class="lang-image" src="/images/languages/Android.png" title="Android"/>
-  <img class="lang-image" src="/images/languages/RubyOnRails.png" title="Ruby On Rails"/>
-  <img class="lang-image" src="/images/languages/Golang.png" title="Golang"/>
-  <img class="lang-image" src="/images/languages/Java.png" title="Java"/>
-  <img class="lang-image" src="/images/languages/Postgres.png" title="Postgres"/>
-  <img class="lang-image" src="/images/languages/Python.png" title="Python"/>
-  <img class="lang-image" src="/images/languages/Ruby.png" title="Ruby"/>
-  <img class="lang-image" src="/images/languages/SQLite.png" title="SQLite"/>
-</div>
+What's always cool? Ruby. You can't beat some good-ol' Ruby.
 
-<small>
-  I'm Will Richardson, a software engineering student that occasionally makes apps
-  and websites. Currently my development is usually with Ruby on Rails, Android
-  or Swift with Cocoa (And Java at University).
-</small>
+Some of my code ends up on [GitHub](https://github.com/javanut13) if I finish anything.
+
+If you're curious about the tools I use, check out my [dotfiles](https://github.com/javanut13/dotfiles) they are a good indicator for what I'm using (most likely Vim) and what languages I'm using (the most recently added syntax files/ plugins).
