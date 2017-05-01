@@ -12,7 +12,7 @@ Most \*nix users have probably had a moment were they were writing a shell scrip
 
 Let's take a simple conditional that checks that two numbers are equal:
 
-    if [ $num1 -eq num2 ]; then
+    if [ $num1 -eq $num2 ]; then
       echo "Equal!"
     fi
 
