@@ -1,6 +1,6 @@
 ---
 title: The OnePlus One
-layout: parallax
+layout: post
 date: 2015-5-11
 header: http://i.imgur.com/EGAUTMC.jpg
 ---
