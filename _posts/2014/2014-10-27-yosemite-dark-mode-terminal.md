@@ -23,9 +23,9 @@ Previously my terminal was set up like this:
 
 This is the _Pro_ theme with a slight transparency and a custom `PS1` variable - just add this to your `.bash_profile`:
 
-{% highlight bash %}
-  export PS1="\[\033[0;36m\]\h \[\033[0;37m\](\W) "
-{% endhighlight %}
+```shell
+export PS1="\[\033[0;36m\]\h \[\033[0;37m\](\W) "
+```
 
 ## Yosemite Style
 

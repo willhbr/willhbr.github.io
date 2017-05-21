@@ -12,29 +12,37 @@ Most \*nix users have probably had a moment were they were writing a shell scrip
 
 Let's take a simple conditional that checks that two numbers are equal:
 
-    if [ $num1 -eq $num2 ]; then
-      echo "Equal!"
-    fi
+```shell
+if [ $num1 -eq $num2 ]; then
+  echo "Equal!"
+fi
+```
 
 If `num1` is `4` and `num2` is `5`, the `[` command will receive `"4"`, `"-eq"`, `"5"`, and `"]"` (remember everything is a string in the shell). The command takes the arguments up to the closing square bracket and does the comparison, in this case `-eq` means integer comparison. As far as I can tell the closing bracket is just for readability - if you have a condition with with logical operators (`||` or `&&`) then each part of the expression can be in separate brackets (or you can use the `-o` and `-a` options to keep them in the same set of brackets).
 
 So this means that we can do things like this:
 
-    [ -f some/file/path ] && cool_function_on_file some/file/path
+```shell
+[ -f some/file/path ] && cool_function_on_file some/file/path
+```
 
 Making use of the `&&` builtin, rather than writing a whole `if;then;fi` block. Or when we remember that the condition can be any command, we can be a [bit smarter in scripts](https://github.com/JavaNut13/dotfiles/blob/master/zsh/gcd.sh#L109):
 
-    if git clone "$full_remote$user/$project.git" "$_path"; then
-      echo_cd $_path
-    fi
+```shell
+if git clone "$full_remote$user/$project.git" "$_path"; then
+  echo_cd $_path
+fi
+```
 
 This will only change to the cloned repos directory if it cloned successfully (indicated by the result of the `git` command).
 
 `for` loops work in a similar way, except instead of the condition we have a command that produces an output with each element separated by the `$IFS` variable. The `$IFS` is basically just whitespace/ newlines so we can capture the output of `ls` and iterate through each filename:
 
-    for filename in $(ls); do
-      echo "It's a thing: $filename"
-    done
+```shell
+for filename in $(ls); do
+  echo "It's a thing: $filename"
+done
+```
 
 So in short, I have learnt a bit about shell scripting and now think it's kind of neat rather than getting frustrated at the seemingly nonsensicle syntax.
 
