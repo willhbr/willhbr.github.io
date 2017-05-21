@@ -1,17 +1,17 @@
 ---
-layout: blog
+layout: page
 ---
 
 {% for post in paginator.posts %}
   <div class="post-container">
-    <h1>
+    <h1 class="post-title">
       {% if post.link == null %}
         <span class="arrow">&#10093; </span>
-        <a class="post-link post-title" href="{{ post.url | prepend: site.baseurl }}">
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
           {{ post.title }}
         </a>
       {% else %}
-        <a class="post-link post-title" href="{{ post.link }}">
+        <a class="post-link" href="{{ post.link }}">
           {{ post.title }}
           <span class="arrow">&#8594; </span>
         </a>
@@ -20,7 +20,7 @@ layout: blog
 
     <div class="metadata">
       <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span> &bull; 
-      <a href="{{  post.url }}" class="permalink" title="Permalink">&infin;</a>
+      <a href="{{ post.url | absolute_url }}" class="permalink" title="Permalink">&infin;</a>
     </div>
     
     <div class="post-body">
@@ -31,9 +31,5 @@ layout: blog
     </div>
   </div>
 {% endfor %}
-
-<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
-<!-- Pagination links -->
 
 {% include pagination.html %}

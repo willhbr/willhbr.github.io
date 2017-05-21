@@ -1,6 +1,6 @@
 ---
 title: "Pebble Time"
-layout: parallax
+layout: post
 date: 2015-3-6
 header: https://d15chbti7ht62o.cloudfront.net/assets/003/333/724/a361fd85680fccb17de65c13aa3e73bd_large.png?1424787068
 ---

@@ -3,6 +3,7 @@ title: Will Richardson
 author: Will Richardson
 email: william.hamish+spam@gmail.com
 description: "Independent app & web developer. Student. Tech enthusiast."
+baseurl: ""
 url: "http://javanut.net"
 human_url: "javanut.net"
 twitter_username: javanut13
@@ -14,4 +15,4 @@ gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge

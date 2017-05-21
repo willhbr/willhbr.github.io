@@ -14,12 +14,14 @@ Once it has been set up, every commit to the repo will trigger a build on your s
 
 Full installation instructions for CI Runner are on [GitLab's website]. However it's as simple installing a package and running the setup (Instructions for Ubuntu, other distros on [GitLab's website])
 
-    # Add the source to apt-get:
-    curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
-    # Install the runner package
-    sudo apt-get install gitlab-ci-multi-runner
-    # Run the setup
-    gitlab-ci-multi-runner register
+```shell
+# Add the source to apt-get:
+curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-ci-multi-runner/script.deb.sh | sudo bash
+# Install the runner package
+sudo apt-get install gitlab-ci-multi-runner
+# Run the setup
+gitlab-ci-multi-runner register
+```
 
 > The instructions say to run the last command with sudo, but when I did this my config file was set to be in `/etc/gitlab-runner/config.toml` rather than the expected `~/.gitlab-runner/config.toml`.
 
@@ -32,8 +34,10 @@ The register command sets up a runner to point to a certain GitLab url (either G
 
 I made a quick branch on [one of my projects](https://github.com/JavaNut13/WORM) that has fair number of unit tests that are easily run. All I had to do was add a `.gitlab-ci.yml` file:
 
-    maven-package:
-      script: "mvn package -B"
+```yaml
+maven-package:
+  script: "mvn package -B"
+```
 
 `maven-package` is the name of the build process, and the `script` key denotes either a single bash command or a list of commands. Once this was pushed to GitLab a build immediately started.
 

@@ -10,16 +10,16 @@ The action can be an `insert`, `update` or `delete` and the trigger can be run `
 
 For example the following statement is triggered when there is a new row inserted into the `testtable` table and it will duplicate two attributes (`attr` and `attr1`) into a second table called `result`, once for each row that has been inserted.
 
-{% highlight sql %}
+```
 create trigger testtrigger
   before insert on testtable
   for each row
     insert into result values(new.attr, new.attr1);
-{% endhighlight %}
+```
 
 This is all very nice for one statement, but what if you need a couple, or some conditions? You can turn the single statement into a `begin ... end` block to run multiple sql statements:
 
-{% highlight sql %}
+```sql
 create trigger testtrigger
   before update on testtable
   for each row
@@ -30,7 +30,7 @@ create trigger testtrigger
         insert into result values('constant', 'mismatching data types');
       end if;
     end;
-{% endhighlight %}
+```
 
 This snippet will run before an update on `testtable` and will execute one of two different statements depending on the new value of `attr`.
 
@@ -40,14 +40,14 @@ When the trigger started on insert or update, a tuple `new` is set to be the new
 
 When you're running this in some clients or interactive prompts, the interpreter will mistake the first semicolon as the end of the statement and fail. To fix this you just need to add:
 
-{% highlight sql %}
+```sql
 delimiter //
 
 create trigger mytrigger ...
 
 //
 delimiter ;
-{% endhighlight %}
+```
 
 around your statement.
 
