@@ -74,17 +74,19 @@ img.me-image {
 }
 
 code.highlighter-rouge, .highlighter-rouge > pre {
-  border: 1px solid #bebebe;
-  border-radius: 2px;
   background: #e2e2e2;
 }
 
 code.highlighter-rouge {
-  padding: 0px;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .highlighter-rouge > pre {
+  border: 1px solid #bebebe;
+  border-radius: 2px;
   padding: 2px 10px 5px 10px;
+  overflow: scroll;
 }
 
 .desc {
