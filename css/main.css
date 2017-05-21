@@ -1,6 +1,8 @@
 body {
   background-color: #f0f0f0;
+  color: #333;
   font-family: "Roboto", "Helvetica", sans-serif;
+  font-size: 14px;
 }
 
 #me-description {
@@ -27,10 +29,13 @@ p {
 a {
   color: #2941C8;
   text-decoration: none;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #696969;
+  font-weight: 300;
+  margin-bottom: 0px;
 }
 
 a:hover {
@@ -57,7 +62,6 @@ img.me-image {
 }
 
 .metadata {
-  padding-bottom: 10px;
   color: #aaa;
 }
 .metadata a {
@@ -65,13 +69,23 @@ img.me-image {
 }
 
 .title {
+  font-weight: 300;
   font-size: 3em;
   color: black;
 }
 
-pre {
-  border: 1px solid grey;
+code.highlighter-rouge, .highlighter-rouge > pre {
+  border: 1px solid #bebebe;
+  border-radius: 2px;
+  background: #e2e2e2;
+}
 
+code.highlighter-rouge {
+  padding: 2px;
+}
+
+.highlighter-rouge > pre {
+  padding: 5px;
 }
 
 .desc {
@@ -124,11 +138,12 @@ hr {
 }
 
 .button {
-  padding: 5px 6px;
+  padding: 6px 8px;
   font-size: 12px;
   line-height: 1.5;
   border: 1px solid #2941C8;
   border-radius: 3px;
   background: transparent;
   color #2941C8;
+  font-weight: lighter;
 }
