@@ -1,6 +1,6 @@
 body {
   background-color: #f0f0f0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
 }
 
 #me-description {
@@ -26,6 +26,7 @@ p {
 
 a {
   color: #2941C8;
+  text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,6 +69,11 @@ img.me-image {
   color: black;
 }
 
+pre {
+  border: 1px solid grey;
+
+}
+
 .desc {
   color: #333;
 }
@@ -92,6 +98,11 @@ hr {
   border-color: #888;
 }
 
+.container {
+  margin: auto;
+  max-width: 800px;
+}
+
 .post-container {
   margin-bottom: 60px;
 }
@@ -110,4 +121,14 @@ hr {
   font-size: 1.2em;
   float: center;
   text-align: center;
+}
+
+.button {
+  padding: 5px 6px;
+  font-size: 12px;
+  line-height: 1.5;
+  border: 1px solid #2941C8;
+  border-radius: 3px;
+  background: transparent;
+  color #2941C8;
 }

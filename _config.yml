@@ -15,4 +15,4 @@ gems: [jekyll-paginate]
 # Build settings
 markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge

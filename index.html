@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: page
 ---
 
 {% for post in paginator.posts %}
@@ -20,7 +20,7 @@ layout: blog
 
     <div class="metadata">
       <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span> &bull; 
-      <a href="{{  post.url }}" class="permalink" title="Permalink">&infin;</a>
+      <a href="{{ post.url | absolute_url }}" class="permalink" title="Permalink">&infin;</a>
     </div>
     
     <div class="post-body">
@@ -31,9 +31,5 @@ layout: blog
     </div>
   </div>
 {% endfor %}
-
-<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
-<!-- Pagination links -->
 
 {% include pagination.html %}
