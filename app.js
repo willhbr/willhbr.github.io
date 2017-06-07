@@ -4,7 +4,7 @@ var options = [
   'Rails developer',
   'Allergic to Javascript',
   'Ex-Pebble wearer',
-  '\'Software engineer\'',
+  "'Software engineer'",
   'Student',
   '<i>Shodan</i>',
   'Has a website',
@@ -21,11 +21,7 @@ if (me != null) {
   for (var i = 0; i < 3; i++) {
     var index = Math.floor(Math.random() * options.length);
     var str = options.splice(index, 1)[0];
-    if (i < 2) {
-      out += str + '. ';
-    } else {
-      out += str + '.';
-    }
+    out += str + '. ';
   }
   me.innerHTML = out;
 }

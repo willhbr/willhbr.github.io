@@ -86,16 +86,16 @@ operator fun <R: Unit> times(quantity: Quantity<R>): Quantity<ProductUnit<T, R>>
 So now when we divide a distance in kilometers by a time in hours, we get a `QuotientUnit<Distance, Time>` with a suffix of "km/h":
 
 ```kotlin
-let distance = 21.kilometers
-let time = 1.5.hours
+val distance = 21.kilometers
+val time = 1.5.hours
 println("Speed is: ${distance / time}") // Speed is: 14 km/h
 ```
 
 And we should be able to do conversions between composite units as well, because the ratio of a composite unit is calculated based on the original units.
 
 ```kotlin
-let speed = 21.kilometers / 1.5.hours
-let milesPerHour = speed.to(QuotientUnit(Mile, Hour))
+val speed = 21.kilometers / 1.5.hours
+val milesPerHour = speed.to(QuotientUnit(Mile, Hour))
 println("Speed is $milesPerHour") // Speed is 8.7 mi/h
 ```
 
