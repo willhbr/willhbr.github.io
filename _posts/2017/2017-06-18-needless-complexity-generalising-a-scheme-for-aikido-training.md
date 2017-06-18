@@ -1,5 +1,5 @@
 ---
-title: Needless complexity: Generalising a Scheme for Aikido Training
+title: "Needless complexity: Generalising a Scheme for Aikido Training"
 date: 2017-06-18
 layout: post
 ---
