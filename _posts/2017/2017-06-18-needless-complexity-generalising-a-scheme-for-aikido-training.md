@@ -53,3 +53,4 @@ func train(members: [Person]) {
 Basically I think too much about the efficiency of how I am training, rather than focussing on the training itself. I guess that's what happens when you spend all day learning about Software Engineering and stuff.
 
 
+[aikido-wiki]: https://en.wikipedia.org/wiki/Aikido
