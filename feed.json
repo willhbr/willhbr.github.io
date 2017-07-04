@@ -32,8 +32,7 @@ layout: null
             "date_published": "{{ post.date | date_to_xmlschema }}",
             "date_modified": "{{ post.date | date_to_xmlschema }}",
             "author": {
-              {% if post.author %}"name": "{{ post.author }}"{% endif %}
-              {% if post.author %}"name": "{{ site.author }}"{% endif %}
+              "name": {% if post.author %}"{{ post.author }}"{% else %}"{{ site.author }}"{% endif %}
             }
         }{% if forloop.last == false %},{% endif %}
     {% endfor %}
