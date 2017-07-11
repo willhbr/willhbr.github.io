@@ -1,6 +1,6 @@
 ---
 title: Using tmux in the Real World
-date: 2017-07-10
+date: 2017-07-11
 layout: post
 ---
 
