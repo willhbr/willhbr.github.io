@@ -8,8 +8,8 @@ I make stuff and have opinions about things. Just finishing a degree in Software
 
 The subjects of my interest at the moment are Swift, Elixir, Crystal, Clojure, Kotlin, and Ruby. Eventually I will get around to writing a post on my language opinions. Even though I am overly picky about languages, I seem to spend a not insignificant amount of time writing shell code (be it BASH or ZSH). The things I make sometimes find themselves on [GitHub](https://github.com/javanut13), and if I am particularly happy with them they get a mention here.
 
-Most of my work is done on a 12.9" iPad Pro - you _can_ do real work on tablets, it turns out. 
+Most of my work is done on a 12.9" iPad Pro - you _can_ do real work on tablets, it turns out. This is done with an intricate system of pulleys and levers that ends up pointing to a little Ubuntu box under my couch, home to my [tmux, zsh, and vim config](https://github.com/javanut13/dotfiles).
 
-If you're curious about the tools I use, check out my [dotfiles](https://github.com/javanut13/dotfiles) they are a good indicator for what I'm using (most likely Vim) and what languages I'm using (the most recently added syntax files/ plugins).
+On the occasion that I venture outside, I do so to run, orienteer, or practice Aikido.
 
 My profile picture was illustrated by my wonderful girlfriend, [Sarang](https://twitter.com/sarangleehan).
