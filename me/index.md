@@ -2,18 +2,13 @@
 layout: page
 ---
 
-<img align="left" src="/images/me.png">
+<img align="left" src="/images/vector-me-smaller.png" height="400" id="me-image">
 
-I make stuff and have opinions about things. Currently a student. Often too busy learning new languages to ever use any of them. What's cool now:
+I make stuff and have opinions about things. Just finishing a degree in Software Engineering. Often I spend too much time learning new languages to use them for any real purpose. My main interests are language, parser, and API design.
 
-+ Swift
-+ Elixir
-+ Crystal
-+ Clojure
+The subjects of my interest at the moment are Swift, Elixir, Crystal, Clojure, Kotlin, and Ruby. Eventually I will get around to writing a post on my language opinions. Even though I am overly picky about languages, I seem to spend a not insignificant amount of time writing shell code (be it BASH or ZSH). The things I make sometimes find themselves on [GitHub](https://github.com/javanut13), and if I am particularly happy with them they get a mention here.
 
-What's always cool? Ruby. You can't beat some good-ol' Ruby.
-
-Some of my code ends up on [GitHub](https://github.com/javanut13) if I finish anything.
+Most of my work is done on a 12.9" iPad Pro - you _can_ do real work on tablets, it turns out. 
 
 If you're curious about the tools I use, check out my [dotfiles](https://github.com/javanut13/dotfiles) they are a good indicator for what I'm using (most likely Vim) and what languages I'm using (the most recently added syntax files/ plugins).
 

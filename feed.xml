@@ -18,7 +18,7 @@
         <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
         <description>
           {% if post.header != null %}
-            <img src="{{ post.header }}" class="header-image"/>
+            <img src="{{ post.header }}"/>
           {% endif %}
           {{ post.content | xml_escape }}
         </description>
