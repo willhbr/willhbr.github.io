@@ -3,27 +3,27 @@ layout: page
 ---
 
 <h1 class="post-title">
-  {% if page.link == null %}
-    <span class="arrow">&#10093; </span>
-    <a class="post-link" href="{{ page.url | absolute_url }}">
-      {{ page.title }}
-    </a>
-  {% else %}
-    <a class="post-link" href="{{ page.link | absolute_url}}">
-      {{ page.title }}
-      <span class="arrow">&#8594; </span>
-    </a>
-  {% endif %}
+  <a class="post-link" href="{{ page.url | absolute_url }}">
+    {{ page.title }}
+  </a>
 </h1>
 
 <div class="metadata">
-  <span class="post-date">{{ page.date | date: "%B %-d, %Y" }}</span> &bull; 
-  <a href="{{ page.url | absolute_url }}" class="permalink" title="Permalink">&infin;</a>
+  {{ page.date | date: "%B %-d, %Y" }} &bull;
+  {% if page.author != null %}
+    {% if page.author_url != null %}
+      <a href="{{ page.author_url }}">{{ page.author }}</a>
+    {% else %}
+      {{ page.author }}
+    {% endif %}
+  {% else %}
+    <a href="{{ site.author_url }}">{{ site.author }}</a>
+  {% endif %}
 </div>
 
 <div class="post-body">
   {% if page.header %}
-    <img src="{{ page.header  }}">
+    <img src="{{ page.header }}">
   {% endif %}
   {{ content }}
 </div>

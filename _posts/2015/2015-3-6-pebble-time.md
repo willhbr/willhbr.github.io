@@ -2,8 +2,9 @@
 title: "Pebble Time"
 layout: post
 date: 2015-3-6
-header: https://d15chbti7ht62o.cloudfront.net/assets/003/333/724/a361fd85680fccb17de65c13aa3e73bd_large.png?1424787068
 ---
+
+![The new pebbles](https://d15chbti7ht62o.cloudfront.net/assets/003/333/724/a361fd85680fccb17de65c13aa3e73bd_large.png?1424787068)
 
 A wee while ago I wrote a [semi-review of the original Pebble Smartwatch](/2015/01/25/smartwatch/) after I splashed out and bought one (because why not?). I made some predictions of what I thought Pebble would and wouldn't do with the next major iteration of the watch:
 

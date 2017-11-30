@@ -2,32 +2,32 @@
 layout: page
 ---
 
-{% for post in paginator.posts %}
+{% for page in paginator.posts %}
   <div class="post-container">
     <h1 class="post-title">
-      {% if post.link == null %}
-        <span class="arrow">&#10093; </span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-          {{ post.title }}
-        </a>
-      {% else %}
-        <a class="post-link" href="{{ post.link }}">
-          {{ post.title }}
-          <span class="arrow">&#8594; </span>
-        </a>
-      {% endif %}
+      <a class="post-link" href="{{ post.url | absolute_url }}">
+        {{ page.title }}
+      </a>
     </h1>
 
     <div class="metadata">
-      <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span> &bull; 
-      <a href="{{ post.url | absolute_url }}" class="permalink" title="Permalink">&infin;</a>
+      {{ page.date | date: "%B %-d, %Y" }} &bull;
+      {% if page.author != null %}
+        {% if page.author_url != null %}
+          <a href="{{ page.author_url }}">{{ page.author }}</a>
+        {% else %}
+          {{ page.author }}
+        {% endif %}
+      {% else %}
+        <a href="{{ site.author_url }}">{{ site.author }}</a>
+      {% endif %}
     </div>
     
     <div class="post-body">
-      {% if post.header != null %}
-        <img src="{{ post.header }}"/>
+      {% if page.header != null %}
+        <img src="{{ page.header }}"/>
       {% endif %}
-      {{ post.content }}
+      {{ page.content }}
     </div>
   </div>
 {% endfor %}

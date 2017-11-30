@@ -1,15 +1,16 @@
 # Site settings
 title: Will Richardson
 author: Will Richardson
+author_url: https://twitter.com/javanut13
 email: william.hamish+spam@gmail.com
-description: "Independent app & web developer. Student. Tech enthusiast."
+description: "Programming language connoisseur. Beard owner. Software engineer."
 baseurl: ""
 url: "http://javanut.net"
 human_url: "javanut.net"
 twitter_username: javanut13
 github_username:  javanut13
 paginate: 10
-paginate_path: "/blog/page-:num"
+paginate_path: "/page/:num"
 gems: [jekyll-paginate]
 
 # Build settings

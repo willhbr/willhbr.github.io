@@ -2,8 +2,9 @@
 title: "OS X El Capitan"
 date: 2015-10-2
 layout: post
-header: http://images.apple.com/v/osx/d/images/overview/hero_large.jpg
 ---
+
+![El Capitan default wallpaper](http://images.apple.com/v/osx/d/images/overview/hero_large.jpg)
 
 On Thursday I bit the bullet and trashed my home data cap by upgrading to El Capitan. The 6 GB download crawled down at a snails pace overnight, but when I got up in the morning my MacBook was waiting for me with a new version of OS X.
 

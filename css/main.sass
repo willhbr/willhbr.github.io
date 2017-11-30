@@ -1,0 +1,133 @@
+---
+---
+
+$background-color: #fbfbfb
+$highlight-color: #2941C8
+$text-color: #333
+$heading-color: darken($text-color, 10%)
+
+body
+  background-color: $background-color
+  color: $text-color
+  font-family: "Roboto", "Helvetica", sans-serif
+  font-size: 16px
+  font-weight: 300
+
+#me-image
+  margin: 20px
+  margin-right: 40px
+
+#me-description
+  text-align: center
+
+strong
+  font-weight: bold
+
+a
+  color: $highlight-color
+  text-decoration: none
+  cursor: pointer
+
+hr
+  border: none
+  height: 1px
+  color: $text-color
+  background-color: $text-color
+  width: 70%
+
+h1.post-title
+  font-size: 2.2em
+
+h1, h2, h3, h4, h5, h6
+  color: $heading-color
+  font-weight: 300
+  margin-bottom: 5px
+
+a:hover
+  color: darken($highlight-color, 20%)
+  text-decoration: none
+
+.post-body img, .img-round
+  width: 100%
+  margin-top: 10px
+  border-radius: 4px
+
+.post-body p
+  line-height: 1.4
+
+.metadata
+  color: lighten($text-color, 40%)
+  font-size: 1.25em
+  a
+    color: lighten($text-color, 40%)
+
+.title
+  font-weight: 300
+  font-size: 2.5em
+  color: black
+
+code.highlighter-rouge, .highlighter-rouge > pre
+  background: #e2e2e2
+
+code.highlighter-rouge
+  padding-left: 2px
+  padding-right: 2px
+
+.highlighter-rouge > pre
+  border: 1px solid #bebebe
+  border-radius: 2px
+  padding: 2px 10px 5px 10px
+  overflow: scroll
+
+.desc
+  color: #333
+
+.url
+  color: #aaa
+
+header
+  text-align: center
+  margin-top: 25px
+  margin-bottom: 50px
+
+blockquote
+  margin: 0px
+  color: lighten($text-color, 20%)
+  border-left: 3px solid $highlight-color
+  margin-left: -10px
+  padding-left: 10px
+
+.container
+  margin: auto
+  max-width: 650px
+
+.post-container
+  margin-bottom: 60px
+
+footer
+  font-size: 0.8em
+  padding: 8px
+  text-align: center
+footer, footer a
+  color: lighten($text-color, 30%)
+
+a.footnote:before
+  content: "["
+
+a.footnote:after
+  content: "]"
+
+.pagination
+  font-size: 1.2em
+  float: center
+  text-align: center
+
+.button
+  padding: 6px 8px
+  font-size: 12px
+  line-height: 1.5
+  border: 1px solid $highlight-color
+  border-radius: 3px
+  background: transparent
+  color: $highlight-color
+  font-weight: lighter

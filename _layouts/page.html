@@ -2,17 +2,13 @@
 <html>
   <head>
     {% include head.html %}
-    
   </head>
   <body>
-    
-  {% include header.html %}
-
-  <div class="container">
-    {{ content }}
-  </div>
-
-  {% include footer.html %}
-
+    {% include header.html %}
+    <div class="container">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+    <script src="{{ "/app.js" | prepend: site.baseurl }}"></script>
   </body>
 </html>
