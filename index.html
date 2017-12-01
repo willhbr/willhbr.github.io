@@ -11,7 +11,7 @@ layout: page
     </h1>
 
     <div class="metadata">
-      {{ page.date | date: "%B %-d, %Y" }} &bull;
+      <a href="/archive#{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a> &bull;
       {% if page.author != null %}
         {% if page.author_url != null %}
           <a href="{{ page.author_url }}">{{ page.author }}</a>
