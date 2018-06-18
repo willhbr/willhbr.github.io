@@ -12,4 +12,4 @@ Most of my work is done on a 12.9" iPad Pro - you _can_ do real work on tablets,
 
 On the occasion that I venture outside, I do so to run, orienteer, or practice Aikido.
 
-My profile picture was illustrated by my wonderful girlfriend, [Sarang](https://twitter.com/sarangleehan).
+My profile picture was illustrated by [Sarang](https://twitter.com/sarangleehan).
