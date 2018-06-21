@@ -1,5 +1,5 @@
 ---
-title: "Crystal Macros"
+title: "Writing Macros in Crystal"
 date: 2018-06-18
 layout: post
 ---
@@ -14,7 +14,7 @@ When writing a macro it is super useful to be able to see the generated code - t
 
 `@type` is definitely not given the attention it needs. It is essential for writing macros that change aspects of the current class or struct. For example:
 
-```crystal
+```ruby
 macro auto_to_string
   def to_s(io)
     io << {% raw %}{{ @type.stringify }}{% endraw %}
@@ -26,11 +26,11 @@ end
 
 When we call this method in some class, a new method will be generated:
 
-```crystal
+```ruby
 class SomeNeatClass
-	auto_to_string # Calling the macro will expand the code here
+  auto_to_string # Calling the macro will expand the code here
 
-	# This is what will be generated:
+  # This is what will be generated:
   def to_s(io)
     io << "SomeNeatClass"
   end
@@ -39,7 +39,7 @@ end
 
 The class name is turned into a string at compile time. `@type` will be some kind of `TypeNode` - checking what kind it is using `.is_a?` and the methods in the imaginary [macros module](http://crystal-lang.org/api/Crystal/Macros.html) lets you do different things based on what it is - like if it has generic types, what its superclasses are, etc. Although do remember that this information is limited to what is known by the compiler when the macro is invoked - so if you use `@type.methods` in a macro that is expanded before any methods are defined, there won't be any there:
 
-```crystal
+```
 macro print_instance_methods
   {% raw %}{% puts @type.methods.map &.name %}{% endraw %}
 end
@@ -51,7 +51,7 @@ class Foo
     4
   end
 
-	print_instance_methods
+  print_instance_methods
 end
 # This will print:
 # []
