@@ -4,7 +4,7 @@ layout: post
 date: 2015-11-28
 ---
 
-Since Apple introduced Swift at WWDC last year, I've been interested in it as a compiled language that seems as easy and quick to develop as a dynamic scripting language like Python. Especially that Swift will (hopefully) be open sourced late this year, meaning that it could be used to develop applications that could be deployed easily onto a webserver as a simple binary (no [Capistrano](http://capistranorb.com) necessary).
+Since Apple introduced Swift at WWDC last year, I've been interested in it as a compiled language that seems as easy and quick to develop as a dynamic scripting language like Python. Especially that Swift will (hopefully) be open sourced late this year, meaning that it could be used to develop applications that could be deployed easily onto a webserver as a simple binary (no [Capistrano](https://capistranorb.com) necessary).
 
 Swift's basic syntax is incredibly clean and easy to get your head around. Keywords take second place to syntactic symbols - extending a class is done with a colon: `class Subclass: Superclass, Protocols {}` rather than the more verbose Java syntax `class Subclass extends Superclass implements Interfaces {}`. I like this both because of the reduced typing but also how the colon is reused to set the type in all instances where a type is needed.
 
@@ -61,7 +61,7 @@ To sum these you can use the name-less closure syntax:
 nums.reduce(0, { $0 + $1 })
 ```
     
-None of this would be possible without Swift's type system. When first looking at Swift I thought that it was simply statically typed like Java, except you didn't have to explicitly declare the type of variables - they would be set for you if the compiler could work it out. However Swift can behave somewhat like [Haskell's types](http://www.learnyouahaskell.com/types-and-typeclasses) to create functions that don't just work on on a string or a number, but any type that implements a certain protocol.
+None of this would be possible without Swift's type system. When first looking at Swift I thought that it was simply statically typed like Java, except you didn't have to explicitly declare the type of variables - they would be set for you if the compiler could work it out. However Swift can behave somewhat like [Haskell's types](https://www.learnyouahaskell.com/types-and-typeclasses) to create functions that don't just work on on a string or a number, but any type that implements a certain protocol.
 
 In Haskell you might come across something like:
 

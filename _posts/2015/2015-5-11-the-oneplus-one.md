@@ -4,9 +4,9 @@ layout: post
 date: 2015-5-11
 ---
 
-![The OnePlus One](http://i.imgur.com/EGAUTMC.jpg)
+![The OnePlus One](https://i.imgur.com/EGAUTMC.jpg)
 
-The [One](http://oneplus.net/one) is truly a bargain. At USD 350 it is less than half the price of comparable phones such as the HTC One (2014), the Samsung Galaxy S5 and the Nexus 6. Most phones that hit a price point this low have noticeable compromises: the Motorola cut down the specs and build of the Moto G and E, Google's Nexus 5 is lacking in storage and you can feel the plastic when you hold it.
+The [One](https://oneplus.net/one) is truly a bargain. At USD 350 it is less than half the price of comparable phones such as the HTC One (2014), the Samsung Galaxy S5 and the Nexus 6. Most phones that hit a price point this low have noticeable compromises: the Motorola cut down the specs and build of the Moto G and E, Google's Nexus 5 is lacking in storage and you can feel the plastic when you hold it.
 
 Sporting all the same numbers as competing phones frmo 2014, the One could match any phone in an arms race; a 5.5" 1080p screen, Snapdragon 801 processor, 3GB of RAM and 16 or 64GB of internal storage. Nothing here will make or break the One - if you're buying a high-end phone these are the numbers that you should be expecting.
 
@@ -14,7 +14,7 @@ What makes the One a cut above any other budget phone is that it feels incredibl
 
 The design decision that irks me the most is the two-stepped forehead and chin. The edge of the screen stops 1 mm short from the top and bottom of the phone, leaving the faux-metal band that wraps around the edge in between the screen and back cover visible. It doesn't look terrible but after a few hours of sitting in a lint-y pocket it gathers specs of dust that doesn't easily wipe off because of the sharp corner. By no means a dealbreaker but irritating none the less.
 
-The reason that I wouldn't recommend the One to anyone is the software experience. Almost all Android phones have a serious case of [Worse Products Through Software](http://hypercritical.co/2013/01/07/ces-worse-products-through-software). Right now it comes with Cyanogenmod 11S, which is based on Android 4.4 Kitkat. Which was released in late 2013. There is apparently an OTA update that will bring Android 5.0 Lollipop to the One, but this didn't appear on my device - another irritation.
+The reason that I wouldn't recommend the One to anyone is the software experience. Almost all Android phones have a serious case of [Worse Products Through Software](https://hypercritical.co/2013/01/07/ces-worse-products-through-software). Right now it comes with Cyanogenmod 11S, which is based on Android 4.4 Kitkat. Which was released in late 2013. There is apparently an OTA update that will bring Android 5.0 Lollipop to the One, but this didn't appear on my device - another irritation.
 
 The poor software situation is almost entirely down to the abysmal wreck that is Cyanogen Inc. They had originally agreed to update the One for at least a year, but one thing led to another and Cyanogen is partnering with Microsoft and OnePlus is building their own ROM.
 

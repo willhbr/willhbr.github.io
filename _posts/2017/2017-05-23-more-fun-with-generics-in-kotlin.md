@@ -4,7 +4,7 @@ layout: post
 date: 2017-05-23
 ---
 
-Android now supporting Kotlin means more people playing around with it. [Ben Trengrove](http://bentrengrove.com) is one of them - [he has made](http://bentrengrove.com/blog/2017/5/21/fun-with-types-extensions-and-generics-in-kotlin) a quite neat way of representing units in a type-safe wrapper. This disallows doing operations on two units of different measurements - for example speed cannot be added to a distance. Adding helper extensions to numeric types allows you to use it like this:
+Android now supporting Kotlin means more people playing around with it. [Ben Trengrove](https://bentrengrove.com) is one of them - [he has made](https://bentrengrove.com/blog/2017/5/21/fun-with-types-extensions-and-generics-in-kotlin) a quite neat way of representing units in a type-safe wrapper. This disallows doing operations on two units of different measurements - for example speed cannot be added to a distance. Adding helper extensions to numeric types allows you to use it like this:
 
 ```kotlin
 val distance = 21.kilometers

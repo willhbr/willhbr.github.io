@@ -37,6 +37,6 @@ Set the background to black, the transparency to 70% and the blur to 100% for 'd
 
 ![Blurred, transparent terminal](/images/dark-mode-terminal-2.png)
 
-And that's that. I think the blur on other parts of Yosemite's UI may be a wee bit more complicated, or at least 'stronger'. The guys on [ATP](http://atp.fm/episodes/88) think it's more complicated.
+And that's that. I think the blur on other parts of Yosemite's UI may be a wee bit more complicated, or at least 'stronger'. The guys on [ATP](https://atp.fm/episodes/88) think it's more complicated.
 
 (Note: _Mike the MacBook_)

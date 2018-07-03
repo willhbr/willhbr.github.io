@@ -10,7 +10,7 @@ The increased screen size is definitely a big improvement. Games can worry less 
 
 This led me to wonder how the iPhone stacked up against the other flagships of the last few years, in terms of the ratio of screen area to the area of the device. After some trips to [GSM Arena](gsmarena.com) and some spreadsheet-foo, I'd come up with an answer:
 
-![Graph of phones](http://i.imgur.com/BlX2Vk6.png)
+![Graph of phones](https://i.imgur.com/BlX2Vk6.png)
 
 Calculating the screen area was a bit tricky, in the end I calculated the number of pixels along the diagonal length of the screen and used this and the screen size to calculate the pixel density of the screen. Knowing the pixel density I could easily convert the horizontal and vertical resolutions to lengths and then calculate the area.
 

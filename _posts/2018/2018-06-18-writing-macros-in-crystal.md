@@ -37,7 +37,7 @@ class SomeNeatClass
 end
 ```
 
-The class name is turned into a string at compile time. `@type` will be some kind of `TypeNode` - checking what kind it is using `.is_a?` and the methods in the imaginary [macros module](http://crystal-lang.org/api/Crystal/Macros.html) lets you do different things based on what it is - like if it has generic types, what its superclasses are, etc. Although do remember that this information is limited to what is known by the compiler when the macro is invoked - so if you use `@type.methods` in a macro that is expanded before any methods are defined, there won't be any there:
+The class name is turned into a string at compile time. `@type` will be some kind of `TypeNode` - checking what kind it is using `.is_a?` and the methods in the imaginary [macros module](https://crystal-lang.org/api/Crystal/Macros.html) lets you do different things based on what it is - like if it has generic types, what its superclasses are, etc. Although do remember that this information is limited to what is known by the compiler when the macro is invoked - so if you use `@type.methods` in a macro that is expanded before any methods are defined, there won't be any there:
 
 ```
 macro print_instance_methods

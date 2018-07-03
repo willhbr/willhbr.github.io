@@ -8,9 +8,9 @@ Writing an app on android that uses a database is a bit of a pain - I spent a fa
 
 I thought debugging the database would be impossible without writing a part of the app that dumps the data onto the screen, _but it turns out.._
 
-[This answer](http://stackoverflow.com/a/14686392/692410) on StackOverflow basically tells you how to pull the database using the adb command into a SQLite `.db` file that can be read with an app like [this](http://sqlitebrowser.org) (Or some better alternative, please?)
+[This answer](https://stackoverflow.com/a/14686392/692410) on StackOverflow basically tells you how to pull the database using the adb command into a SQLite `.db` file that can be read with an app like [this](https://sqlitebrowser.org) (Or some better alternative, please?)
 
-Basically to set it up you should run this (Assuming you have [brew](http://brew.sh) installed and `adb` correctly in your path)
+Basically to set it up you should run this (Assuming you have [brew](https://brew.sh) installed and `adb` correctly in your path)
 
 ```shell
 # The bundled version doesn't have zlib

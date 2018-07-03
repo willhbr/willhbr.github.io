@@ -2,7 +2,7 @@
 title: Welcome to Swift.org
 layout: post
 date: 2015-12-4
-link: http://swift.org/
+link: https://swift.org/
 ---
 
 > Swift is now open source!

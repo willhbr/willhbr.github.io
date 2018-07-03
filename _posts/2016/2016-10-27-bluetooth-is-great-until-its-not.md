@@ -6,9 +6,9 @@ layout: post
 
 Did you hear that Apple removed the headphone jack from the latest iPhone? Oh you did, well that's a relief. What do you think? Have you sworn to never use an Apple device ever again? Well I thought I would care - but I don't any more.
 
-Let's rewind a bit. Most of my time listening to audio on my phone since 2013 has been podcasts. [All the great shows](http://relay.fm). I had been using a beat-up pair of Apple Earpods, as they fit my ears better than any other in-ear headphones. However having to wiggle the cable every few minutes gets old fast, and I was on the lookout for a replacement.
+Let's rewind a bit. Most of my time listening to audio on my phone since 2013 has been podcasts. [All the great shows](https://relay.fm). I had been using a beat-up pair of Apple Earpods, as they fit my ears better than any other in-ear headphones. However having to wiggle the cable every few minutes gets old fast, and I was on the lookout for a replacement.
 
-I ended up looking at the [Urbanears Plattan ADV](https://www.urbanears.com/ue_us_en/headphones/adv-plattan), and the [Marley Positive Vibration](http://www.thehouseofmarley.com/headphones/positive-vibration-headphones.html) headphones. Both are fairly reasonably priced and look good. When I went to buy them, I found that because of a sale the [Marley Rebel BT](http://www.thehouseofmarley.com/headphones/rebel-bt-on-ear-headphones.html) headphones were the price that I was expecting to pay for the OTHER MARLEY phones.
+I ended up looking at the [Urbanears Plattan ADV](https://www.urbanears.com/ue_us_en/headphones/adv-plattan), and the [Marley Positive Vibration](https://www.thehouseofmarley.com/headphones/positive-vibration-headphones.html) headphones. Both are fairly reasonably priced and look good. When I went to buy them, I found that because of a sale the [Marley Rebel BT](https://www.thehouseofmarley.com/headphones/rebel-bt-on-ear-headphones.html) headphones were the price that I was expecting to pay for the OTHER MARLEY phones.
 
 So I am now the proud owner of some bluetooth headphones, and the lack of a cable is liberating. I am no longer concerned about how my phone sits in my pocket, or if I leave it on my desk when I jump up to get something, or how the cable will tangle with the strap on my bag. I am a satisfied customer.
 

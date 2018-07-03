@@ -30,7 +30,7 @@ The include mime types line will make nginx serve static files with the correct 
       }
     }
 
-This section defines a default server - anything that doesn't match will just be sent to this, for example [foobar.javanut.net](http://foobar.javanut.net) will just go to the main blog. I could add more things in here if I wanted a subsection to go to somewhere else - maybe I wanted to serve some other content at javanut.net/my_stuff. I could just make a new location block and set the root to be a different location on my server.
+This section defines a default server - anything that doesn't match will just be sent to this, for example [foobar.javanut.net](https://foobar.javanut.net) will just go to the main blog. I could add more things in here if I wanted a subsection to go to somewhere else - maybe I wanted to serve some other content at javanut.net/my_stuff. I could just make a new location block and set the root to be a different location on my server.
 
     server {
       listen 80;

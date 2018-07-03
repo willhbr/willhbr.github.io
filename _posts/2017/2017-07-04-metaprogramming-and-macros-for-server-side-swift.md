@@ -4,9 +4,9 @@ date: 2017-07-04
 layout: post
 ---
 
-I have been a fan of the Swift programming language since it was first announced, and [especially after](http://javanut.net/2015/12/04/welcome-to-swift-org/) it was open sourced. The place that I thought Swift could be the most interesting for me was for server applications - I'm not much of an iOS/ macOS developer. The progress of Swift-on-Linux is slow for someone that doesn't like digging around Makefiles and linking to C libraries.
+I have been a fan of the Swift programming language since it was first announced, and [especially after](https://javanut.net/2015/12/04/welcome-to-swift-org/) it was open sourced. The place that I thought Swift could be the most interesting for me was for server applications - I'm not much of an iOS/ macOS developer. The progress of Swift-on-Linux is slow for someone that doesn't like digging around Makefiles and linking to C libraries.
 
-However, there are some things about web applications that aren't currently served by the design of Swift. This can basically be boiled down to one thing - [compile-time macros](http://javanut.net/2017/03/27/templates-code-generation-and-macros/). Having a macro system allows for a lot of really cool syntactic sugar, as well as removing work that would otherwise need to be done on the first request, or at startup. Many of these are taken from my brief time learning [Phoenix](http://phoenixframework.org), a web framework written in [Elixir](http://elixir-lang.org) - if I've misinterpreted something or ruled out some approach that is actually possible, [let me know](https://twitter.com/javanut13).
+However, there are some things about web applications that aren't currently served by the design of Swift. This can basically be boiled down to one thing - [compile-time macros](https://javanut.net/2017/03/27/templates-code-generation-and-macros/). Having a macro system allows for a lot of really cool syntactic sugar, as well as removing work that would otherwise need to be done on the first request, or at startup. Many of these are taken from my brief time learning [Phoenix](https://phoenixframework.org), a web framework written in [Elixir](https://elixir-lang.org) - if I've misinterpreted something or ruled out some approach that is actually possible, [let me know](https://twitter.com/javanut13).
 
 The main use of macros in your typical web framework is the routing configuration. Phoenix and Rails both support a DSL (implemented using the syntax of the language, Elixir or Ruby). Both of these look quite similar, basically allowing you to do this:
 
@@ -17,7 +17,7 @@ get "/", MyController, :index
 get "/", to: 'my_controller#index'
 ```
 
-The DSL gets more complicated when you include [resourceful routes](http://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default) and other goodies. But at its core the purpose of the DSL is to allow the developer to use the same tools (i.e: the same editor and highlighting) to define their routes in a succinct manner. Phoenix can go one step further, because Elixir supports macros. The routes are checked when the project is compiled, and can be turned into arbitrary code that responds to web requests following the rules defined.
+The DSL gets more complicated when you include [resourceful routes](https://guides.rubyonrails.org/routing.html#resource-routing-the-rails-default) and other goodies. But at its core the purpose of the DSL is to allow the developer to use the same tools (i.e: the same editor and highlighting) to define their routes in a succinct manner. Phoenix can go one step further, because Elixir supports macros. The routes are checked when the project is compiled, and can be turned into arbitrary code that responds to web requests following the rules defined.
 
 For example, the `get` macro can check that the path is valid, that it doesn't clash with any other routes, and make helper functions for linking to that page (e.g. a `my_controller_index_path()` function). This is done at compile time, so when the code is run it is no different to running the "hand written" equivalent.
 

@@ -6,7 +6,7 @@ date: 2015-10-22
 
 There were some [minor murmurings](https://www.reddit.com/r/CrappyDesign/comments/3oqtg1/the_charge_port_location_for_the_new_apple_magic/) this week after Apple released their new peripherals - The new (Magic) Trackpad, Mouse and Keyboard. (This was mostly drowned out by the far more significant news that the new iMac has a platter HDD). A very vocal portion of the internet were outraged that the Magic Mouse has a charging port on the bottom:
 
-![Magic Mouse with port on bottom](http://i.imgur.com/bKbWxQy.jpg)
+![Magic Mouse with port on bottom](https://i.imgur.com/bKbWxQy.jpg)
 
 It's easy to quickly dismiss this as a stupid decision and go about your day. But the mouse is supposed to charge enough for 8 hours of use in one minute or overnight for three months of use. This means that you will only ever see it awkwardly upside down charging less than 2% of the time - and when you're using it the other 98% of the time you will be magical mouse that has no visible charging port. Had Apple opted to place the port on the front, the upper glass surface wouldn't be able to dip down nearly as far as it does on the current and previous models. It also saves the mouse from having a little pointy nose/ mouth at the front - which would have made the previous model look far better in comparison.
 

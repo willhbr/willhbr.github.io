@@ -74,7 +74,7 @@ Reduce is hard to explain - mainly because I don't end up using it very often. M
 
 So with all this knowledge, how do you go about using it? Well...
 
-In Ruby any method that accepts a block (Ruby has [lots of names](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) for it's anonymous functions) can be followed by a code block, either with `do ... end` or `{ ... }`
+In Ruby any method that accepts a block (Ruby has [lots of names](https://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/) for it's anonymous functions) can be followed by a code block, either with `do ... end` or `{ ... }`
 
 In Swift closures are a type (defined by their arguments and the type they return) and like ruby can either by inside the argument list, or after the function call if the argument is at the end.
 
@@ -108,4 +108,4 @@ Item::method
 &:method
 ```
 
-If you want to learn more functional programming, [Haskell](http://learnyouahaskell.com/chapters), [Clojure](https://clojure.org/) (Or [Common LISP](http://www.gigamonkeys.com/book/)), and [Elixir](https://www.manning.com/books/elixir-in-action) are all interesting.
+If you want to learn more functional programming, [Haskell](https://learnyouahaskell.com/chapters), [Clojure](https://clojure.org/) (Or [Common LISP](https://www.gigamonkeys.com/book/)), and [Elixir](https://www.manning.com/books/elixir-in-action) are all interesting.
