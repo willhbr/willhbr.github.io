@@ -4,7 +4,7 @@ layout: post
 date: 2015-1-25
 ---
 
-First to enter the foray of consumer-friendly wearable computing, the [Pebble](http://getpebble.com) is the product of a highly successful Kickstarter project, raising over 100 times its goal. You know that though. What you don't know, is how it works in the real world and whether it can replace your (probably empty) wrist.
+First to enter the foray of consumer-friendly wearable computing, the [Pebble](https://getpebble.com) is the product of a highly successful Kickstarter project, raising over 100 times its goal. You know that though. What you don't know, is how it works in the real world and whether it can replace your (probably empty) wrist.
 
 ## What it does
 
@@ -16,7 +16,7 @@ The apps it comes with out of the box are fairly sparse: Alarms, Music, Notifica
 
 The music app is almost worth buying the Pebble for. Yup, I did just say that: Neither of my headphones have play/ pause buttons on the cord, and so it is really neat to listen to a podcast and quickly pause it to talk to someone. Or change the volume. Or skip a section. I can even just plug my headphones in to my phone, press play on the Pebble and be listening to a podcast without even getting my phone out of my pocket.
 
-This does come with a drawback of the _native_ music app; it ties the controls to a single app (In my case I have it linked to [Pocketcasts](http://www.shiftyjelly.com/pocketcasts)) which allows it to open the app if it is not already, and then start playing music. If you have Pocketcasts set as the app to control, and you're listening to music on Spotify and you try to skip a track, the Pebble will send the command to Pocketcasts not Spotify. There are apps ([MusicBoss](https://play.google.com/store/apps/details?id=ca.rebootsramblings.musicboss)) that you can use to improve the behaviour and make the pebble. I listen to podcasts most of the time so I just leave it on Pocketcasts and I'm happy.
+This does come with a drawback of the _native_ music app; it ties the controls to a single app (In my case I have it linked to [Pocketcasts](https://www.shiftyjelly.com/pocketcasts)) which allows it to open the app if it is not already, and then start playing music. If you have Pocketcasts set as the app to control, and you're listening to music on Spotify and you try to skip a track, the Pebble will send the command to Pocketcasts not Spotify. There are apps ([MusicBoss](https://play.google.com/store/apps/details?id=ca.rebootsramblings.musicboss)) that you can use to improve the behaviour and make the pebble. I listen to podcasts most of the time so I just leave it on Pocketcasts and I'm happy.
 
 ## Pebble 2.0: What I'd like to see
 
@@ -32,7 +32,7 @@ What I don't think Pebble will do:
 
 Each one of these would bring the Pebble to a playing field where it is directly comparable to other smartwatches, which isn't where Pebble will want to be: they need to separate themselves, and the easiest way to do this is to tout their far superior battery life (**10 days** guys! _10 days!_) and "no-fuss" attitude.
 
-However no voice input will be a dealbreaker for the massive smartwatch market (Still not convinced on this wearable business) as many people will just see that one can and the other can't and put their money where the features are. What Pebble could do is build in a bluetooth headset into the watch (Think [Motorola Hint](http://www.motorola.com/us/accessories-bluetooth-headsets/Moto-Hint/moto-hint-pdp.html)) so that the heavy lifting of voice recognition is done by the phone, not the watch. If they pulled it back even further and made it push-to-talk the battery life could possibly still stay at a 'Pebble acceptable' time.
+However no voice input will be a dealbreaker for the massive smartwatch market (Still not convinced on this wearable business) as many people will just see that one can and the other can't and put their money where the features are. What Pebble could do is build in a bluetooth headset into the watch (Think [Motorola Hint](https://www.motorola.com/us/accessories-bluetooth-headsets/Moto-Hint/moto-hint-pdp.html)) so that the heavy lifting of voice recognition is done by the phone, not the watch. If they pulled it back even further and made it push-to-talk the battery life could possibly still stay at a 'Pebble acceptable' time.
 
 'Always on' voice recognition driven by the phone could be a marketing nightmare because it would depend fully on the chipset in the phone that it is paired with - ie no iPhones and only a couple of Android phones (Motorola is the only company that seems to be doing this well as far as I can remember) - meaning that the general public won't be seeing the features they'd hoped for.
 

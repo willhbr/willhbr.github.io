@@ -12,7 +12,7 @@ So naturally, I've been thinking about what I'd like to see standardised.
 
 Airdrop is pretty cool, so is Samsung's S beam. Both are limited to a handful of devices (S beam is actually based on the standard android beam, but is extended to tranfer faster over an ad-hoc wifi network)
 
-Sending a file to someone shouldn't be difficult, but at the moment you're stuck with email, a physical drive or a cloud storage ([relevant xkcd](http://xkcd.com/949/)). Being able to share a file to any device without cables or 3rd party apps would be excellent.
+Sending a file to someone shouldn't be difficult, but at the moment you're stuck with email, a physical drive or a cloud storage ([relevant xkcd](https://xkcd.com/949/)). Being able to share a file to any device without cables or 3rd party apps would be excellent.
 
 At the moment the easiest way to transfer a file to my phone from my laptop is either Dropbox or a home server. Neither are particularly convenient - I think most android phones should have a 'USB mode' and can act like a pen drive, hovever my last two phones and tablet couldn't do this (all Samsung - correlation?)
 
