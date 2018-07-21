@@ -10,12 +10,12 @@ However each of these only work for the one tool. What if (for some reason) I wa
 
 Pug can be used to manage packages for any utility - out of the box it has installers for Vim and ZSH, but other installers can be added by writing a simple shell script. I'll probably write some more builtin ones myself.
 
-To [get started with Pug](https://github.com/javanut13/pug/blob/master/README.md), head over to the [Pug repo](https://github.com/javanut13/pug). My favourite ZSH plugins - syntax highlighting and auto suggestions - can be installed with Pug:
+To [get started with Pug](https://github.com/willhbr/pug/blob/master/README.md), head over to the [Pug repo](https://github.com/willhbr/pug). My favourite ZSH plugins - syntax highlighting and auto suggestions - can be installed with Pug:
 
 Install Pug:
 
 ```shell
-curl https://raw.githubusercontent.com/javanut13/pug/master/install.sh | bash
+curl https://raw.githubusercontent.com/willhbr/pug/master/install.sh | bash
 ```
 
 Create a `deps.pug` file somewhere:
@@ -45,4 +45,4 @@ You'll be prompted to add this to your `.zshrc` file:
 source "$HOME/.pug/source/zsh/pug"
 ```
 
-Done. [No more submodules.](https://github.com/javanut13/dotfiles/commit/32117b215bde38ea70c4818a2ab3764c67a5fe6d)
+Done. [No more submodules.](https://github.com/willhbr/dotfiles/commit/32117b215bde38ea70c4818a2ab3764c67a5fe6d)

@@ -8,7 +8,7 @@ On the [latest episode of Upgrade](https://www.relay.fm/upgrade/198) [^upgrade-i
 
 [^upgrade-is-great]: A great show, definitely listen to it if you're into this kind of thing.
 
-I think I know customising and using the terminal fairly well; [I'm 160 commits into customising how I use it](https://github.com/javanut13/dotfiles) - whenever I'm at a computer (whether that's my Mac or my iPad) I have a terminal open.
+I think I know customising and using the terminal fairly well; [I'm 160 commits into customising how I use it](https://github.com/willhbr/dotfiles) - whenever I'm at a computer (whether that's my Mac or my iPad) I have a terminal open.
 
 The advantage of a command line is not the fact that it is textual. Being able to enter `rm *` is not much faster than selecting everything and hitting cmd-delete in the Finder. The real advantage is that everything uses the exact same set of easily understandable interface concepts, and they can all interact with each other.
 

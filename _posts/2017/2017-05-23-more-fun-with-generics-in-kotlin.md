@@ -30,7 +30,7 @@ val area = width * height
 
 This piqued my interest - how could you implement units like speed and area, that are composed of multiple units? Of course you could just remove the `.div` and `.times` methods and replace them with extension functions that return a `Quantity<Speed>` or `Quantity<Area>` for each combination of units that you're interested in.
 
-But surely we can do better? This is what I set out to do, I wanted to be able to define the [base units](https://en.wikipedia.org/wiki/SI_base_unit) and derive every other unit from them. If you want to skip the rambling, you can check out the [end result here](https://gist.github.com/javanut13/424f33324588107ee59d4b1ae929843d).
+But surely we can do better? This is what I set out to do, I wanted to be able to define the [base units](https://en.wikipedia.org/wiki/SI_base_unit) and derive every other unit from them. If you want to skip the rambling, you can check out the [end result here](https://gist.github.com/willhbr/424f33324588107ee59d4b1ae929843d).
 
 ----
 
@@ -177,4 +177,4 @@ println("Speed ratio: ${jamesSpeed / targetSpeed}")
 
 For completeness I also added operators for multiplying values by numbers with no units - letting you do things like "double this distance" with `2 * distance`. Quantities are also comparable, so less than and greater than also work.
 
-Hopefully this explanation illuminates some of the magic generics in the code - which you can [view here](https://gist.github.com/javanut13/424f33324588107ee59d4b1ae929843d). I'm sure there are operations and helpers that I'm missing, or ways that this code can be cleaned up and simplified. This would make for a kick-ass back-end for a unit conversion app!
+Hopefully this explanation illuminates some of the magic generics in the code - which you can [view here](https://gist.github.com/willhbr/424f33324588107ee59d4b1ae929843d). I'm sure there are operations and helpers that I'm missing, or ways that this code can be cleaned up and simplified. This would make for a kick-ass back-end for a unit conversion app!
