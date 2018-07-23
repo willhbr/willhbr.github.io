@@ -1,10 +1,9 @@
 var options = [
   'Massive nerd',
   'Podcast junkie',
-  'Rails developer',
-  'Allergic to Javascript',
+  'Allergic to JavaScript',
   'Ex-Pebble wearer',
-  "Software engineer",
+  'Software engineer',
   'Employed',
   '<i>Nidan</i>',
   'Has a website',
@@ -12,7 +11,12 @@ var options = [
   'Stock Android evangelist',
   "Doesn't really like Java",
   'Beard owner',
-  'Programming language connoisseur'
+  'Programming language connoisseur',
+  'Pun enthusiast',
+  'SRE @ Google',
+  'Batteries included',
+  'Opinion sharer',
+  'Can close Vim',
 ];
 
 var me = document.getElementById('me-description');
