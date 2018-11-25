@@ -2,14 +2,10 @@
 layout: page
 ---
 
-<img align="left" src="/images/vector-me-smaller.png" height="400" id="me-image">
+<img align="left" src="https://gravatar.com/avatar/7d20c86fcc483e625eb179ca2bbfa0cb.jpg?size=200" id="me-image">
 
-I make stuff and have opinions about things. Just finishing a degree in Software Engineering. Often I spend too much time learning new languages to use them for any real purpose. My main interests are language, parser, and API design.
+Kiwi software engineer with too many silly ideas and not enough patience to finish any of them. Working as an [SRE](https://landing.google.com/sre/) at Google. Learnt some things doing a BE (Hons) in Software Engineering at the University of Canterbury, graduated in 2017. On a quest to find a programming language that makes software development easy, fast, and reliable, but deep down knows that this won't ever happen.
 
-The subjects of my interest at the moment are Swift, Elixir, Crystal, Clojure, Kotlin, and Ruby. Eventually I will get around to writing a post on my language opinions. Even though I am overly picky about languages, I seem to spend a not insignificant amount of time writing shell code (be it BASH or ZSH). The things I make sometimes find themselves on [GitHub](https://github.com/willhbr), and if I am particularly happy with them they get a mention here.
-
-Most of my work is done on a 12.9" iPad Pro - you _can_ do real work on tablets, it turns out. This is done with an intricate system of pulleys and levers that ends up pointing to a little Ubuntu box under my couch, home to my [tmux, zsh, and vim config](https://github.com/willhbr/dotfiles).
+You can find my less well-formed opinions on [Twitter](https://twitter.com/willhbr) or my many half-started projects on [GitHub](https://github.com/willhbr). I seem to have an obsession with writing Lisp interpreters and compilers.
 
 On the occasion that I venture outside, I do so to run, orienteer, or practice Aikido.
-
-My profile picture was illustrated by [Sarang](https://twitter.com/sarangleehan).
