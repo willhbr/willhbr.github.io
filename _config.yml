@@ -2,7 +2,6 @@
 title: Will Richardson
 author: Will Richardson
 author_url: https://twitter.com/willhbr
-email: william.hamish+spam@gmail.com
 description: "Pun Enthusiast. SRE @ Google. Programming language connoisseur."
 baseurl: ""
 url: "https://willhbr.net"
@@ -11,7 +10,7 @@ twitter_username: willhbr
 github_username:  willhbr
 paginate: 10
 paginate_path: "/page/:num"
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 # Build settings
 markdown: kramdown
