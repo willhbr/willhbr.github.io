@@ -74,7 +74,6 @@ Here's hoping that iOS will continue to improve and become more flexible for dif
 
 > If you're an iOS developer who wants to make an app with probably the most limited appeal ever, get in touch.
 
-[^better-internet]: I will sometimes take my iPad to work and let it 
-upload on the much better connection there, but this is inconvenient.
+[^better-internet]: I will sometimes take my iPad to work and let it upload on the much better connection there, but this is inconvenient.
 
 [^probably-faster]: Probably.
