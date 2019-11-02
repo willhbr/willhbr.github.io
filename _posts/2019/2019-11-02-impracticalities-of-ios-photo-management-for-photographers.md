@@ -1,6 +1,6 @@
 ---
 title: "Impracticalities of iOS Photo Management for Photographers"
-date: 2019-10-31
+date: 2019-11-02
 layout: post
 ---
 
