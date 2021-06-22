@@ -19,7 +19,7 @@ On the server that will be your lighthouse (ie a server that has a public static
 Now let's generate some certificates! Generate a CA cert:
 
 ```shell
-nebula-cert ca -name "My Mesh Network"
+$ nebula-cert ca -name "My Mesh Network"
 ```
 
 You should now have `ca.key` and `ca.crt`. Keep `ca.key` super secret - anyone that has access to that has the ability to add new nodes to your network!
@@ -27,7 +27,7 @@ You should now have `ca.key` and `ca.crt`. Keep `ca.key` super secret - anyone t
 Generate a cert for the lighthouse node:
 
 ```shell
-nebula-cert sign -name "lighthouse" -ip "10.45.54.1/24"
+$ nebula-cert sign -name "lighthouse" -ip "10.45.54.1/24"
 ```
 
 > The IP address can be anything in the range of [private network address space](https://en.wikipedia.org/wiki/Private_network). Easiest thing to do is just `10.X.Y.Z` - but choose IPs that aren't already common on private networks! Many routers give out `10.1.1.X`, and so your VPN could clash with devices on your network.
