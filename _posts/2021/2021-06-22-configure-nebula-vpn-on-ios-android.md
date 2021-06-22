@@ -68,7 +68,9 @@ Get the app ([iOS](https://apps.apple.com/us/app/mobile-nebula/id1509587936?itsc
 Sign the key using `ca.key`:
 
 ```shell
-$ nebula-cert sign -ca-crt ./ca.crt -ca-key ./ca.key -in-pub <mobile key file> -name <device name> -ip 10.45.54.2/24
+$ nebula-cert sign -ca-crt ./ca.crt \
+  -ca-key ./ca.key -in-pub <mobile key file> \
+  -name <device name> -ip 10.45.54.2/24
 ```
 
 This should produce `<device name>.crt`. Copy that and `ca.crt` back to your phone.
