@@ -20,13 +20,13 @@ Photos on MacOS has a much more robust and mature album system – the best feat
 
 Of course the real advantage to MacOS is that the photos library lives in the file system, and I can just go and look at it. The real, original bytes that came from my camera are fully within my grasp – I don't have to worry about transparent re-encoding as I move them around – and I can actually back them up to somewhere that isn't iCloud or Google Photos. I can include them in Time Machine, I can copy them to an external drive, or I can create my own janky system that uses `rsync` to copy them to a Raspberry Pi sitting on my network.
 
-I also now have access to more advanced or flexible software. As much as I like [Pixelmator Photo](https://www.pixelmator.com/photo/) it is limited to only making colour adjustments to a single layer. [Pixelmator Pro](https://www.pixelmator.com/pro/) on the other hand has all the same features (even with the same UI) but has layers (and layer masks!), effects (blurring and suchlike), and painting tools. This makes it possible to do things like [merge multiple fireworks shots into one picture](https://pics.willhbr.net/2022/01/01/post.html), [fake the motion of many ferries at once](https://pics.willhbr.net/2021/12/28/post.html)
+I also now have access to more advanced or flexible software. As much as I like [Pixelmator Photo](https://www.pixelmator.com/photo/) it is limited to only making colour adjustments to a single layer. [Pixelmator Pro](https://www.pixelmator.com/pro/) on the other hand has all the same features (even with the same UI) but has layers (and layer masks!), effects (blurring and suchlike), and painting tools. This makes it possible to do things like [merge multiple fireworks shots into one picture](https://pics.willhbr.net/2022/01/01/post.html), or [fake the motion of many ferries at once](https://pics.willhbr.net/2021/12/28/post.html).
 
 ![fireworks photo with implausible number of fireworks](https://pics.willhbr.net/photos/thumb-2022-01-01.jpeg)
 
 In addition to Pixelmator Pro, I've also found use in single-purpose utilities like [Starry Landscape Stacker](https://sites.google.com/site/starrylandscapestacker/home) and [Panorama Stitcher](https://www.panoramastitcher.com) – which has come in useful with my [still-quite-new DJI Mini 2](https://pics.willhbr.net/2022/02/06/post.html).
 
-While none of this is impossible on iPadOS, the tools are made with the assumption of a more serious use – for example I can stitch together 20 raw images from my a6500 and get a 1GB TIFF out the other end. Not a single pixel of data is lost, and the software on MacOS can scale to handle it without hitting any limits.
+While none of this is impossible on iPadOS, these tools are made with the assumption of a more serious use – for example I can stitch together 20 raw images from my a6500 and get a 1GB TIFF out the other end. Not a single pixel of data is lost, and the software on MacOS can scale to handle it without hitting any limits.
 
 ## The Bad
 
