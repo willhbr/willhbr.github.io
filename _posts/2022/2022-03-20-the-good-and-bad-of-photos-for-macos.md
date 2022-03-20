@@ -22,7 +22,7 @@ Of course the real advantage to MacOS is that the photos library lives in the fi
 
 I also now have access to more advanced or flexible software. As much as I like [Pixelmator Photo](https://www.pixelmator.com/photo/) it is limited to only making colour adjustments to a single layer. [Pixelmator Pro](https://www.pixelmator.com/pro/) on the other hand has all the same features (even with the same UI) but has layers (and layer masks!), effects (blurring and suchlike), and painting tools. This makes it possible to do things like [merge multiple fireworks shots into one picture](https://pics.willhbr.net/2022/01/01/post.html), or [fake the motion of many ferries at once](https://pics.willhbr.net/2021/12/28/post.html).
 
-![fireworks photo with implausible number of fireworks](https://pics.willhbr.net/photos/thumb-2022-01-01.jpeg)
+![fireworks photo with implausible number of fireworks](https://pics.willhbr.net/photos/2022-01-01.jpeg)
 
 In addition to Pixelmator Pro, I've also found use in single-purpose utilities like [Starry Landscape Stacker](https://sites.google.com/site/starrylandscapestacker/home) and [Panorama Stitcher](https://www.panoramastitcher.com) – which has come in useful with my [still-quite-new DJI Mini 2](https://pics.willhbr.net/2022/02/06/post.html).
 
