@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 3.7'
-gem 'jekyll-paginate', '~> 1.1.0'
+gem 'jekyll'
+gem 'jekyll-paginate'
 gem 'pygments.rb'
-gem 'kramdown', '>= 2.3.1'
+gem 'kramdown'
 gem 'kramdown-parser-gfm'
 
+
+gem "webrick"
