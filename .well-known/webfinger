@@ -1,0 +1,10 @@
+---
+---
+{
+  "subject": "acct:willhbr@{{ site.human_url }}",
+  "links": [{
+    "rel": "self",
+    "type": "application/activity+json",
+    "href": "https://ruby.social/willhbr"
+  }]
+}

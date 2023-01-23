@@ -1,7 +1,7 @@
 # Site settings
 title: Will Richardson
 author: Will Richardson
-author_url: https://twitter.com/willhbr
+author_url: https://willhbr.net/me
 description: ""
 baseurl: ""
 url: "https://willhbr.net"
@@ -16,3 +16,6 @@ plugins: [jekyll-paginate]
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
+
+include:
+  - .well-known
