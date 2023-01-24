@@ -2,16 +2,18 @@
 layout: page
 ---
 
-You can find me elsewhere:
+![picture of Will walking across a swing bridge, holding a camera tripod]({{ '/images/me.jpg' }})
 
-- [On Twitter](https://twitter.com/willhbr)
+I'm Will - a software engineer and photographer from New Zealand, living in Sydney.
+
+Since 2018 I've been working at Google, before then I studied Software Engineering at the University of Canterbury.
+
+You can find me stuff:
+
+- [On Mastodon]({{ site.mastodon_url }})
 - [On Github](https://github.com/willhbr)
+- [My Photo website](https://pics.willhbr.net/)
 - [On Instagram](https://instagram.com/willhbr)
-- [Look at my photos](https://pics.willhbr.net/)
+- [On Pixelfed](https://pixelfed.nz/willhbr)
 - [On YouTube](https://www.youtube.com/c/WillRichardson13/videos)
 
-From Christchurch, New Zealand.
-
-Studied software engineering at the University of Canterbury.
-
-Working at Google and living in Sydney since 2018.
