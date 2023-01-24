@@ -1,5 +1,1 @@
-# Will Richardson
-
-So, this is my site. Look at it [here](https://willhbr.net).
-
-Follow me [here](https://twitter.com/willhbr), I guess.
+[Look at this here](https://willhbr.net) or my [other site here](https://pics.willhbr.net).
