@@ -6,8 +6,6 @@ description: ""
 baseurl: ""
 url: "https://willhbr.net"
 human_url: "willhbr.net"
-twitter_username: willhbr
-github_username:  willhbr
 paginate: 10
 paginate_path: "/page/:num"
 plugins: [jekyll-paginate]
@@ -19,3 +17,16 @@ highlighter: rouge
 
 include:
   - .well-known
+
+webfinger:
+  subject: "acct:willhbr@ruby.social"
+  aliases": ["https://ruby.social/@willhbr", "https://ruby.social/users/willhbr"]
+  links:
+    - rel: "http://webfinger.net/rel/profile-page"
+      type: "text/html"
+      href: "https://ruby.social/@willhbr"
+    - rel: "self"
+      type: "application/activity+json"
+      href: "https://ruby.social/users/willhbr"
+    - rel: "http://ostatus.org/schema/1.0/subscribe"
+      template: "https://ruby.social/authorize_interaction?uri={uri}"
