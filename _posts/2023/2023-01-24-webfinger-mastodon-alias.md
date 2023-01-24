@@ -63,7 +63,7 @@ That's cool, but we can do better. Replace the `.well-known/webfinger` file with
 ```
 ---
 ---
-{{ site.webfinger | jsonify }}
+{% raw %}{{ site.webfinger | jsonify }}{% endraw %}
 ```
 
 Then you can keep the WebFinger info in `_config.yml` so it's more accessible (not in a hidden directory) and have it checked for syntax errors when your site builds. I've translated mine to YAML:
