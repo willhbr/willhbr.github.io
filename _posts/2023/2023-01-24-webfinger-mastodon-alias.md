@@ -21,7 +21,7 @@ It should look something like:
 ```json
 {
   "subject": "acct:willhbr@ruby.social",
-  "aliases\"": [
+  "aliases": [
     "https://ruby.social/@willhbr",
     "https://ruby.social/users/willhbr"
   ],
