@@ -8,7 +8,7 @@ I'm Will - a software engineer and photographer from New Zealand, living in Sydn
 
 Since 2018 I've been working at Google, before then I studied Software Engineering at the University of Canterbury.
 
-You can find me stuff:
+You can find my stuff:
 
 - [On Mastodon]({{ site.mastodon_url }})
 - [On Github](https://github.com/willhbr)
