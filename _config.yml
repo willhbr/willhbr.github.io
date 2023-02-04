@@ -11,6 +11,9 @@ paginate: 10
 paginate_path: "/page/:num"
 plugins: [jekyll-paginate]
 
+rss: "/feed.xml"
+jsonfeed: "/feed.json"
+
 # Build settings
 markdown: kramdown
 permalink: pretty
