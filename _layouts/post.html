@@ -5,8 +5,6 @@ layout: page
 {% assign post=page %}
 {% include post.html %}
 
-<br>
-
 <div class="post-footer">
   <p>
     {% if page.next.url %}
@@ -20,6 +18,10 @@ layout: page
 
   <p>
     Subscribe via <a href="{{ site.rss | absolute_url }}" target=_blank>RSS</a> or
-    <a href="{{ site.jsonfeed }}" target=_blank>JSON Feed</a>.
+    <a href="{{ site.jsonfeed }}" target=_blank>JSON Feed</a>. More posts are in
+    the <a href="/archive">archive</a>.
+    <br>
+    Send me a toot on Mastodon:
+    <a href="{{ site.mastodon_url }}" target=_blank>@willhbr@ruby.social</a>.
   </p>
 </div>
