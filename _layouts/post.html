@@ -2,31 +2,8 @@
 layout: page
 ---
 
-<h1 class="post-title">
-  <a class="post-link" href="{{ page.url }}">
-    {{ page.title }}
-  </a>
-</h1>
-
-<div class="metadata">
-  <a href="/archive#{{ page.url }}">{{ page.date | date: "%B %-d, %Y" }}</a> &bull;
-  {% if page.author != null %}
-    {% if page.author_url != null %}
-      <a href="{{ page.author_url }}">{{ page.author }}</a>
-    {% else %}
-      {{ page.author }}
-    {% endif %}
-  {% else %}
-    <a href="{{ site.author_url }}">{{ site.author }}</a>
-  {% endif %}
-</div>
-
-<div class="post-body">
-  {% if page.header %}
-    <img src="{{ page.header }}">
-  {% endif %}
-  {{ content }}
-</div>
+{% assign post=page %}
+{% include post.html %}
 
 <br>
 

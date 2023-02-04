@@ -186,3 +186,13 @@ a.footnote:after
   .button
     border-color: $highlight-color-dark
     color: $highlight-color-dark
+
+.pagination .button.current
+  background: $highlight-color
+  color: $text-color-dark
+
+@media (prefers-color-scheme: dark)
+  .pagination .button.current 
+    background: $highlight-color-dark
+    color: $text-color
+
