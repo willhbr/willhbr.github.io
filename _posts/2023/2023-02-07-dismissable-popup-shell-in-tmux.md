@@ -59,6 +59,6 @@ bind -n M-s choose-tree -Zs -f '#{?#{m:_popup_*,#{session_name}},0,1}'
 
 This will hide any sessions beginning with `_popup_`. The `#{?` starts a conditional, the `#{m:_popup_.*,#{session_name}}` does a match on the session name, and rows where the result is `0` are hidden. You get the idea.
 
-The next step is to have some way of promoting a popup shell into a window in the parent session - in a similar way to how `break-pane` moves a pane into its own window. That's a challenge for another day.
+The next step is to have some way of promoting a popup shell into a window in the parent session - in a similar way to how `break-pane` moves a pane into its own window. <del>That's a challenge for another day.</del> UPDATE: I did this almost immediately, it was not very hard.
 
 Have a look at my [dotfiles repo](https://github.com/willhbr/dotfiles) on GitHub to see this config in context: [`tmux.conf`](https://github.com/willhbr/dotfiles/blob/d2d129628cfba248f44e5705f4e0e153193130ca/tmux/tmux.conf#L112) and [`show-tmux-popup.sh`](https://github.com/willhbr/dotfiles/blob/d2d129628cfba248f44e5705f4e0e153193130ca/bin/show-tmux-popup.sh).
