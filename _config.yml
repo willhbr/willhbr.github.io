@@ -13,6 +13,8 @@ plugins: [jekyll-paginate]
 rss: "/feed.xml"
 jsonfeed: "/feed.json"
 
+date_format: "%B %-d, %Y"
+
 # Build settings
 markdown: kramdown
 permalink: pretty

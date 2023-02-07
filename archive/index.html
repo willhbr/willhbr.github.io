@@ -14,7 +14,7 @@ layout: page
   <h2>{{ year_posts.name }}</h2>
   <ul>
     {% for post in year_posts.items %}
-    <li id="{{ post.url }}"><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%-d %B %Y" }})</li>
+    <li id="{{ post.url }}"><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: site.date_format }})</li>
     {% endfor %}
   </ul>
 {% endfor %}
