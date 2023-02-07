@@ -4,11 +4,11 @@
 @import "_syntax"
 
 $highlight-color: #6609a0
-$highlight-color-dark: #c972ff
-$background-color: #eeeeee
+$highlight-color-dark: #D4B3FF
+$background-color: #EEEEEE
 $background-color-dark: #333
 $text-color: #333
-$text-color-dark: #ddd
+$text-color-dark: #DDD
 $blockquote-color: lighten($text-color, 5%)
 $blockquote-color-dark: darken($text-color-dark, 5%)
 $heading-color: darken($highlight-color, 10%)
@@ -88,8 +88,12 @@ img
   margin-top: 0
 
 .metadata, .metadata a
-  color: lighten($text-color, 40%)
+  color: lighten($text-color, 20%)
   font-size: $metadata-size
+
+@media (prefers-color-scheme: dark)
+  .metadata, .metadata a
+    color: darken($text-color-dark, 20%)
 
 .title
   font-weight: 300

@@ -5,16 +5,7 @@
 </h1>
 
 <div class="metadata">
-  <a href="/archive#{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }}</a> &bull;
-  {% if post.author != null %}
-    {% if post.author_url != null %}
-      <a href="{{ post.author_url }}">{{ post.author }}</a>
-    {% else %}
-      {{ post.author }}
-    {% endif %}
-  {% else %}
-    <a href="{{ site.author_url }}">{{ site.author }}</a>
-  {% endif %}
+  <a href="/archive#{{ post.url }}">{{ post.date | date: "%B %-d, %Y" }}</a>
 </div>
 
 <div class="post-body">
