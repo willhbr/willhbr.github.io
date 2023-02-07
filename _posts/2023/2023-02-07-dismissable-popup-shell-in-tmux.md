@@ -11,7 +11,7 @@ What I want is a persistent shell that I can quickly activate or dismiss to run 
 
 So here's the same thing working in tmux:
 
-![a screencast showing tmux with two panes, then an overlay window appears on top and a command is run before the overlay is dismissed](/images/tmux-popup-screen-recording.gif)
+![a screencast showing tmux with two panes, then an overlay window appears on top and a command is run before the overlay is dismissed](/images/tmux-popup-screen-recording.gif){:loading="lazy"}
 
 Anywhere in tmux I can press `M-A` (meta/alt-shift-a) and get a terminal window over the top of whatever I was doing. If I press `M-A` again, it will disappear - but any commands running in it will persist and can be brought back with the same keystroke.
 
