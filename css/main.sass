@@ -3,17 +3,21 @@
 
 @import "_syntax"
 
+// Colours
 $highlight-color: #6609a0
 $highlight-color-dark: #D4B3FF
 $background-color: #EEEEEE
 $background-color-dark: #333
 $text-color: #333
 $text-color-dark: #DDD
+
 $blockquote-color: lighten($text-color, 5%)
 $blockquote-color-dark: darken($text-color-dark, 5%)
 $heading-color: darken($highlight-color, 10%)
 $heading-color-dark: lighten($highlight-color-dark, 10%)
 
+// Text sizes
+$paragraph-size: 16px
 $header-size: 2.2em
 $metadata-size: 1.1rem
 $title-size: 2em
@@ -27,8 +31,8 @@ $page-width: 600px
 body
   background-color: $background-color
   color: $text-color
-  font-family: "Roboto", "Helvetica", sans-serif
-  font-size: 16px
+  font-family: "Helvetica", "Roboto", sans-serif
+  font-size: $paragraph-size
   font-weight: 300
   margin-left: $body-side-margin
   margin-right: $body-side-margin
