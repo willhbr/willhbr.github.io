@@ -4,10 +4,27 @@
     {% include head.html %}
   </head>
   <body>
+    <button id="theme-toggle">light/dark</button>
     {% include header.html %}
     <div class="container">
       {{ content }}
     </div>
     {% include footer.html %}
+    <script>
+      window.addEventListener('load', () => {
+        let classList = document.body.classList;
+        let elem = document.getElementById('theme-toggle');
+        if (!elem) return;
+        elem.onclick = () => {
+          if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            classList.remove("dark-mode");
+            classList.toggle("light-mode");
+          } else {
+            classList.remove("light-mode");
+            classList.toggle("dark-mode");
+          }
+        };
+      });
+    </script>
   </body>
 </html>
