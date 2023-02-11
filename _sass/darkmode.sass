@@ -20,14 +20,14 @@
   --metadata-colour: #{$metadata-colour-dark}
   --footer-colour: #{$footer-colour-dark}
 
-body
+body, body.light-mode
   @include light-mode
 
 body.dark-mode
   @include dark-mode
 
 @media(prefers-color-scheme: dark)
-  body
+  body, body.dark-mode
     @include dark-mode
   body.light-mode
     @include light-mode
