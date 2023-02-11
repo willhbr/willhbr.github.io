@@ -8,7 +8,7 @@ In the last six months or so I have become an enthusiastic hobbyist photographer
 
 > These photos usually end up on [my Instagram](https://instagram.com/willhbr). Here's one from the other day:
 
-![The Sydney Harbour Bridge at sunset](/images/harbour-bridge.jpg)
+![The Sydney Harbour Bridge at sunset](/images/2019/harbour-bridge.jpg)
 
 All the photos that I take on my camera are edited on my iPad using [Pixelmator Photo](https://www.pixelmator.com/photo/). It's an amazingly powerful piece of software - especially considering that it's less than $10.
 

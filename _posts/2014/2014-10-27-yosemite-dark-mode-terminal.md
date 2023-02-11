@@ -19,7 +19,7 @@ But leaves these white:
 
 Previously my terminal was set up like this:
 
-![Original terminal](/images/dark-mode-terminal-1.png)
+![Original terminal](/images/2014/dark-mode-terminal-1.png)
 
 This is the _Pro_ theme with a slight transparency and a custom `PS1` variable - just add this to your `.bash_profile`:
 
@@ -35,7 +35,7 @@ I decided that for Yosemite the background should be blurred and have the same t
 
 Set the background to black, the transparency to 70% and the blur to 100% for 'dat Yosemite style:
 
-![Blurred, transparent terminal](/images/dark-mode-terminal-2.png)
+![Blurred, transparent terminal](/images/2014/dark-mode-terminal-2.png)
 
 And that's that. I think the blur on other parts of Yosemite's UI may be a wee bit more complicated, or at least 'stronger'. The guys on [ATP](https://atp.fm/episodes/88) think it's more complicated.
 

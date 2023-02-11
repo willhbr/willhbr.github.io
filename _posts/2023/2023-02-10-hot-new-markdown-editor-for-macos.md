@@ -2,12 +2,12 @@
 title: "HOT NEW MARKDOWN EDITOR FOR MACOS"
 date: 2023-02-10
 layout: post
-image: /images/markedit.png
+image: /images/2023/markedit.png
 ---
 
 I just came across [MarkEdit](https://markedit.app/) on [Mastodon](https://mastodon.social/@MarkEditApp/109837635866336116), and then instantly installed it. It's advertised as being "TextEdit, but for Markdown" and it totally delivers on that.
 
-![A screenshot of this post, written in MarkEdit](/images/markedit.png)
+![A screenshot of this post, written in MarkEdit](/images/2023/markedit.png)
 
 Since I've started using my Mac more for general tinkering (instead of mostly just photos), I have not been able to find a decent no-nonsense Markdown editor. The options that go around seem to be:
 

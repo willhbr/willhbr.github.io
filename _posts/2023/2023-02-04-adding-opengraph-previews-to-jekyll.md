@@ -2,14 +2,14 @@
 layout: post
 date: 2023-02-04
 title: "Adding OpenGraph previews to Jekyll"
-image: /images/opengraph-message.jpeg
+image: /images/2023/opengraph-message.jpeg
 ---
 
 I'm on a tear adding support for open web standards to my website(s) - if I've missed one, [let me know]({{ site.mastodon_url }}). I've just added [RSS meta tags](https://www.petefreitag.com/item/384.cfm) which allow for feed reading plugins to suggest the RSS feed - rather than people having to find the RSS link (it's at the bottom of the page) and paste that into their feed reader. There must be _dozens_ of people who haven't been reading my amazing content because it was too hard to add my site into their feed reader.
 
 The other standard is [OpenGraph](https://ogp.me) which tells other services how to build a rich preview of your site. The obvious examples are links from social media sites (like Facebook, the author of the standard), or messaging apps:
 
-![a screenshot of an message showing a link to one of my blog posts, with a title and preview image](/images/opengraph-message.jpeg)
+![a screenshot of an message showing a link to one of my blog posts, with a title and preview image](/images/2023/opengraph-message.jpeg)
 
 This is fairly simple to do, you just need to add some `<meta>` tags to the `<head>` of your site, for example my [Jekyll](http://jekyllrb.com) template:
 

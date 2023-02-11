@@ -2,7 +2,7 @@
 title: "Dismissable Popup Shell in tmux"
 date: 2023-02-07
 layout: post
-image: /images/tmux-popup-screen-recording.gif
+image: /images/2023/tmux-popup-screen-recording.gif
 ---
 
 Ok so this is mostly a solution in search of a problem. Or a solution to the problem of "Will read the tmux man page too many times and wants to use all the features". However there's like a 5% chance this is actually useful, and it's something that I've wanted to get working in tmux for a while. It turned out to be much simpler than I thought.
@@ -11,7 +11,7 @@ What I want is a persistent shell that I can quickly activate or dismiss to run 
 
 So here's the same thing working in tmux:
 
-![a screencast showing tmux with two panes, then an overlay window appears on top and a command is run before the overlay is dismissed](/images/tmux-popup-screen-recording.gif){:loading="lazy"}
+![a screencast showing tmux with two panes, then an overlay window appears on top and a command is run before the overlay is dismissed](/images/2023/tmux-popup-screen-recording.gif){:loading="lazy"}
 
 Anywhere in tmux I can press `M-A` (meta/alt-shift-a) and get a terminal window over the top of whatever I was doing. If I press `M-A` again, it will disappear - but any commands running in it will persist and can be brought back with the same keystroke.
 
