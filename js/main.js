@@ -28,7 +28,7 @@ addEventListener('load', () => {
     reset.style.display = 'none';
   }
   toggle.onclick = () => {
-    preference = newPreference(preference);
+    preference = newPreference(localStorage.getItem(PT));
     setTheme(preference);
     localStorage.setItem(PT, preference);
     reset.style.display = 'inline';
