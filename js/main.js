@@ -33,4 +33,11 @@ addEventListener('load', () => {
     localStorage.setItem(PT, preference);
     reset.style.display = 'inline';
   };
+
+  Array.from(document.querySelectorAll('.post-body a.footnote')).forEach(foot => {
+    let ref = document.getElementById(foot.getAttribute('href').substr(1));
+    if (ref) {
+      foot.setAttribute('title', ref.innerText.trim());
+    }
+  });
 });
