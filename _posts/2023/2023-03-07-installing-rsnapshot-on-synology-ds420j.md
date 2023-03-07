@@ -11,7 +11,7 @@ I've got a shiny new Synology DS420j, and I'm in the process of re-implementing 
 
 There are plenty of instructions on how to setup rsnapshot using [Docker](https://www.docker.com) on the higher-end Synology models, but when you're shopping at the bottom of the barrel you don't have that option. We've got to install rsnapshot directly on the Synology - the most cursed Linux environment ever[^citation].
 
-[citation]: citation needed.
+[^citation]: citation needed.
 
 All the instructions I could find were quite old, and the landscape seems to have changed. Synology have changed their package format, so old packages cannot be installed on newer DSM versions (according to [this German forum post](https://www.synology-forum.de/threads/ebi-easy-bootstrap-installer.68335/post-949587)) which means anything that tells you to install pages from [cphub.net](https://www.cphub.net) probably doesn't work any more. `ipkg` is also [no longer maintained](https://www.beatificabytes.be/use-opkg-instead-of-ipkg-on-synology/) and has been replaced by [Entware](https://github.com/Entware/Entware). Once I knew that, the process was relatively straightforward.
 
