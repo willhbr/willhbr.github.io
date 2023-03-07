@@ -2,7 +2,7 @@
 layout: page
 ---
 
-![picture of Will walking across a swing bridge, holding a camera tripod]({{ '/images/me.jpg' }})
+![picture of Will walking across a swing bridge, holding a camera tripod](/images/me.jpg)
 
 I'm Will - a software engineer and photographer from New Zealand, living in Sydney.
 

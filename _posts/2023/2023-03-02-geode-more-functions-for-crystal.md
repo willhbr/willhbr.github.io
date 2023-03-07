@@ -4,7 +4,7 @@ date: 2023-03-02
 title: "Geode: More Functions for Crystal"
 ---
 
-The only project I use for personal projects is [Crystal](https://crystal-lang.org). It is as easy to write as a dynamically typed language - so I don't have to waste time telling the type system what I mean, but it has full type checking - so I also don't waste time on easily preventable mistakes.
+The only language I use for personal projects is [Crystal](https://crystal-lang.org). It is as easy to write as a dynamically typed language - so I don't have to waste time telling the type system what I mean, but it has full type checking - so I also don't waste time on easily preventable mistakes.
 
 > Crystal being the best programming language for side projects is a topic for another blog post. There's a lot to say about how perfect it is.
 
