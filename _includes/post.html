@@ -1,13 +1,17 @@
-<h1 class="post-title">
-  <a class="post-link" href="{{ post.url }}">
-    {{ post.title }}
-  </a>
-</h1>
+<article>
+  <header>
+    <h1 class="post-title">
+      <a class="post-link" href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<div class="metadata">
-  <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
-</div>
+    <div class="metadata">
+      <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
+    </div>
+  </header>
 
-<div class="post-body">
-  {{ post.content }}
-</div>
+  <div class="post-body">
+    {{ post.content }}
+  </div>
+</article>
