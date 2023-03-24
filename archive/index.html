@@ -5,8 +5,8 @@ layout: page
 <h1>Archive</h1>
 
 <p>
-  Subscribe via <a href="{{ site.rss | absolute_url }}" target=_blank>RSS</a> or
-  <a href="{{ site.jsonfeed }}" target=_blank>JSON Feed</a>.
+  Subscribe via <a href="{{ site.feeds.rss_url | absolute_url }}" target=_blank>RSS</a> or
+  <a href="{{ site.feeds.json_url }}" target=_blank>JSON Feed</a>.
 </p>
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}

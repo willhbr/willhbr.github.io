@@ -10,8 +10,10 @@ paginate: 10
 paginate_path: "/page/:num"
 plugins: [jekyll-paginate]
 
-rss: "/feed.xml"
-jsonfeed: "/feed.json"
+feeds:
+  rss_url: "/feed.xml"
+  json_url: "/feed.json"
+  json_include_text: false
 
 date_format: "%B %-d, %Y"
 timezone: Australia/Sydney
