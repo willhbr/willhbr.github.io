@@ -29,6 +29,15 @@ sass:
 include:
   - .well-known
 
+exclude:
+  - build.sh
+  - run.sh
+  - CNAME
+  - Containerfile.local
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
 webfinger:
   subject: "acct:willhbr@ruby.social"
   aliases": ["https://ruby.social/@willhbr", "https://ruby.social/users/willhbr"]
