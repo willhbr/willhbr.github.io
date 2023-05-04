@@ -8,6 +8,15 @@
 
     <div class="metadata">
       <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
+      &bull;
+      {% capture time %}{{ post.content | number_of_words | divided_by: 180  }}{% endcapture %}
+      {% if time != '0' %}
+        ~{{ time }}
+      {% else %}
+        ~1
+      {% endif %} minutes
+      &bull;
+      <a href="{{ post.url | absolute_url }}">Permalink</a>
     </div>
   </header>
 
