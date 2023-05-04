@@ -79,7 +79,7 @@ I also made my first Android app on my netbook. Running Eclipse and an Android e
 
 Eventually I replaced the netbook with a MacBook (one of the white ones that were actually just called "MacBook")—but still ran Ubuntu[^mac-ubuntu] until I realised that Minecraft ran _way_ better on OS X.
 
-[^mac-ubuntu]: Installing Linux on Apple hardware is one of the most painful things you can do, I would not recommend it to anyone. Clearly [The USB Years](#three-the-usb-years) had made me foolhardy enough to try this.
+[^mac-ubuntu]: Installing Linux on Apple hardware is one of the most painful things you can do, I would not recommend it to anyone. Clearly [The USB Years](#two-the-usb-years) had made me foolhardy enough to try this.
 
 Despite having made applications on a variety of different platforms, I hadn't strayed very far into different languages. I'd had to use Python for school and uni, but it's not much of a change from Ruby. It wasn't until 2014 and the introduction of [Swift](https://swift.org) that I actually learnt about a statically-typed language with more features than Java. The idea that you could have a variable _that could never be null_ or _could not be changed_ was completely foreign to me.
 
