@@ -30,7 +30,7 @@ export XDG_RUNTIME_DIR=/run/user/$UID
 We should be able to see that it's running:
 
 ```shell
-systemctl --user status podman.socket
+$ systemctl --user status podman.socket
 ● podman.socket - Podman API Socket
      Loaded: loaded (/usr/lib/systemd/user/podman.socket; enabled; vendor preset: enabled)
      Active: active (listening) since Fri 2023-03-24 10:38:41 UTC; 1 month 11 days ago
