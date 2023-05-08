@@ -30,13 +30,12 @@ include:
   - .well-known
 
 exclude:
-  - build.sh
-  - run.sh
   - CNAME
   - Containerfile.local
   - Gemfile
   - Gemfile.lock
   - README.md
+  - pods.yaml
 
 webfinger:
   subject: "acct:willhbr@ruby.social"

@@ -36,7 +36,7 @@ In a moment of desperation I swapped the `Type` to be "Image" rather than "Photo
 
 Being thorough, I tried changing the `Type` back to "Photo media"... and it also worked. I made a new shortcut and left it at the default of "Photo media"... and it failed again.
 
-The shortcut would only work if I either left the `Type` as "Image", **or** set it to "Image" and then set it back, obviously flipping some invisible internal value^[internals] of the shortcut to correctly compare the width and height.
+The shortcut would only work if I either left the `Type` as "Image", **or** set it to "Image" and then set it back, obviously flipping some invisible internal value[^internals] of the shortcut to correctly compare the width and height.
 
 No programming language, API, library, or framework has made me as frustrated as writing even the most trivial Shortcuts.
 

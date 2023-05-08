@@ -1,0 +1,20 @@
+defaults:
+  build: website
+  run: website
+
+images:
+  website:
+    tag: willhbr.github.io:latest
+    from: Containerfile.local
+containers:
+  website:
+    name: willhbr.github.io
+    image: willhbr.github.io:latest
+    bind-mounts:
+      .: /src
+    ports:
+      4000: 4000
+    interactive: true
+    autoremove: true
+    run-args:
+      userns: ""
