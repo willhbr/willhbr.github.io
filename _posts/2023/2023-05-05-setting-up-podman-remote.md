@@ -13,7 +13,7 @@ There doesn't seem to be foolproof instructions on setting up `podman-remote` fr
 The first thing to do is log in to the host machine and enable the `podman.socket` system service:
 
 ```shell
-$ sudo systemctl --user --global start podman.socket
+$ systemctl --user --global start podman.socket
 ```
 
 On one of my machines I got an error:
