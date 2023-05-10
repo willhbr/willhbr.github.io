@@ -28,8 +28,8 @@ $footer-colour-dark: darken($text-colour-dark, 10%)
 
 @import "darkmode"
 
-$paragraph-size: 16px
-$header-size: 2.2em
+$paragraph-size: 17px
+$header-size: 2.4em
 $metadata-size: 1.1rem
 $title-size: 2em
 $footer-size: 0.9rem
@@ -37,7 +37,7 @@ $footer-size: 0.9rem
 $blockquote-border-width: 3px
 $body-side-margin: 8px
 
-$page-width: 600px
+$page-width: 650px
 
 body
   color: var(--text-colour)
@@ -164,6 +164,9 @@ a.footnote:after
   font-size: $metadata-size
   float: center
   text-align: center
+  .button.current
+    background: var(--highlight-colour)
+    color: var(--background-colour)
 
 .post-footer
   margin-top: 3em
@@ -183,7 +186,3 @@ a.footnote:after
 
 .container .button
   line-height: 2.4
-
-.pagination .button.current
-  background: var(--highlight-colour)
-  color: var(--text-colour)

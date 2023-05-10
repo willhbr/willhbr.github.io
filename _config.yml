@@ -1,14 +1,18 @@
 title: Will Richardson
 author: Will Richardson
-author_url: https://willhbr.net/me
-mastodon_url: https://ruby.social/@willhbr
-description: ""
+
+description: "The blog of Will Richardson, a software engineer and photographer from New Zealand."
 baseurl: ""
-url: "https://willhbr.net"
-human_url: "willhbr.net"
 paginate: 10
 paginate_path: "/page/:num"
 plugins: [jekyll-paginate]
+
+url: "https://willhbr.net"
+urls:
+  mastodon: https://ruby.social/@willhbr
+  author: https://willhbr.net/me
+  human: "willhbr.net"
+  photos: "https://pics.willhbr.net"
 
 feeds:
   rss_url: "/feed.xml"

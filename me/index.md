@@ -18,11 +18,11 @@ Since 2018 I've been working at [Google](https://google.com) in Sydney. Previous
 
 I can be found on other parts of the Internet:
 
-[Mastodon]({{ site.mastodon_url }}){:class="button"} |
+[Mastodon]({{ site.urls.mastodon }}){:class="button"} |
 [Github](https://github.com/willhbr){:class="button"} |
-[My Photo Website](https://pics.willhbr.net/){:class="button"}
+[My Photo Website]({{ site.urls.photos }}){:class="button"}
 [Pixelfed](https://pixelfed.nz/willhbr){:class="button"}
 [Instagram](https://instagram.com/willhbr){:class="button"} |
 [YouTube](https://www.youtube.com/c/WillRichardson13/videos){:class="button"}
 
-If you want to get in contact, [send me a toot on Mastodon]({{ site.mastodon_url }}).
+If you want to get in contact, [send me a toot on Mastodon]({{ site.urls.mastodon }}).

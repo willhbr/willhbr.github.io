@@ -1,6 +1,6 @@
 <header class="site-header">
   <a href="/" class="title">
-    Will Richardson
+    {{ site.title }}
   </a>
   <p>
     {% if page.url != "/" %}
@@ -9,7 +9,7 @@
     {% if page.url != "/me/" %}
       <a class="button" href="/me">Me</a>
     {% endif %}
-    <a class="button" href="https://pics.willhbr.net">Photos</a>
-    <a class="button" rel="me" target=_blank href="{{ site.mastodon_url }}">Mastodon</a>
+    <a class="button" href="{{ site.urls.photos }}">Photos</a>
+    <a class="button" rel="me" target=_blank href="{{ site.urls.mastodon }}">Mastodon</a>
   </p>
 </header>

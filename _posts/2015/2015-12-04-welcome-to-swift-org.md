@@ -2,8 +2,10 @@
 title: Welcome to Swift.org
 layout: post
 date: 2015-12-4
-link: https://swift.org/
+tags: development
 ---
+
+_[Welcome to Swift.org &rarr;](https://swift.org/)_
 
 > Swift is now open source!
 

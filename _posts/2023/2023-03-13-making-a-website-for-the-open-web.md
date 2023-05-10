@@ -79,4 +79,4 @@ I added a [`robots.txt`](http://www.robotstxt.org) file that just tells crawlers
 
 ---
 
-If I've missed a standard that belongs on my website, please [toot me]({{ site.mastodon_url }})!
+If I've missed a standard that belongs on my website, please [toot me]({{ site.urls.mastodon }})!

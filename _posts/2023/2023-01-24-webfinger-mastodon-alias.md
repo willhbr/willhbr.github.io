@@ -8,7 +8,7 @@ If (like me) you've moved to [Mastodon](https://joinmastodon.org) recently and a
 
 Mastodon (and the rest of the ActivityPub fediverse) use [WebFinger](http://webfinger.net) to discover user accounts on other servers and across different services. It's used as the way to get the user's ActivityPub endpoint (which can potentially be on a different domain or non-standard path). We're going to make use of the "different domain" feature here.
 
-The idea is to plop your WebFinger information on your GitHub Pages-powered site, so that Mastodon can dereference something like `@willhbr@willhbr.net` to an actual Mastodon instance (in my case, [ruby.social]({{ site.mastodon_url }})). There are some [plugins](https://github.com/philnash/jekyll-mastodon_webfinger) to do this, but they don't work with GitHub's "no plugins unless you build the site yourself and upload the result" policy. So we're going pluginless.
+The idea is to plop your WebFinger information on your GitHub Pages-powered site, so that Mastodon can dereference something like `@willhbr@willhbr.net` to an actual Mastodon instance (in my case, [ruby.social]({{ site.urls.mastodon }})). There are some [plugins](https://github.com/philnash/jekyll-mastodon_webfinger) to do this, but they don't work with GitHub's "no plugins unless you build the site yourself and upload the result" policy. So we're going pluginless.
 
 Firstly, get the WebFinger info for your Mastodon account:
 
@@ -87,4 +87,4 @@ webfinger:
       template: "https://ruby.social/authorize_interaction?uri={uri}"
 ```
 
-Nerd cred achieved, without a plugin. [Toot me]({{ site.mastodon_url }}).
+Nerd cred achieved, without a plugin. [Toot me]({{ site.urls.mastodon }}).

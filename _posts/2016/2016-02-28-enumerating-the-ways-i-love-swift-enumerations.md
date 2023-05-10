@@ -1,9 +1,11 @@
 ---
-title: "Enumerating The Ways I Love Swift Enumerations"
-link: https://www.caseyliss.com/2016/2/27/swift-enums
+title: Enumerating The Ways I Love Swift Enumerations
 date: 2016-02-28
 layout: post
+tags: development
 ---
+
+_[Enumerating The Ways I Love Swift Enumerations &rarr;](https://www.caseyliss.com/2016/2/27/swift-enums)_
 
 As Casey illustrates, enums in Swift really are quite awesome and really powerful once you get used to them.
 
