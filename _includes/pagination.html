@@ -1,5 +1,6 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
+  <a class="button" href="/archive">Archive</a>
   {% if paginator.previous_page %}
     <a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
   {% endif %}
