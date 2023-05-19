@@ -24,3 +24,5 @@ I wondered if other DNG files have the same issue, so I took a photo with Halide
 Naturally the next thing to do is to try and work out how widespread the issue is while chatting with support to see if they can tell me when it might be fixed. I only managed to work out that my old laptop (Big Sur) has no issues, and that there are [some forum posts](https://www.pixelmator.com/community/viewtopic.php?p=72482#p72482) if you already know what to search for ("DNG broken MacOS" didn't get me many relevant results at the start of this escapade).
 
 Support says that I just need to wait until there's a software update that fixes it. So no drone photos until then.
+
+> Update: MacOS 13.4 appears to have fixed this issue.
