@@ -4,12 +4,12 @@
   </a>
   <p>
     {% if page.url != "/" %}
-      <a class="button" href="/">Blog</a>
+      <a class="button" href="/">Blog</a> /
     {% endif %}
     {% if page.url != "/me/" %}
-      <a class="button" href="/me">Me</a>
+      <a class="button" href="/me">Me</a> /
     {% endif %}
-    <a class="button" href="{{ site.urls.photos }}">Photos</a>
+    <a class="button" href="{{ site.urls.photos }}">Photos</a> /
     <a class="button" rel="me" target=_blank href="{{ site.urls.mastodon }}">Mastodon</a>
   </p>
 </header>
