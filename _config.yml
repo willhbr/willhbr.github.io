@@ -22,6 +22,18 @@ feeds:
 date_format: "%B %-d, %Y"
 timezone: Australia/Sydney
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/me.jpg
+      type: website
+  - scope:
+      path: _posts
+    values:
+      layout: post
+      type: article
+
 # Build settings
 markdown: kramdown
 permalink: pretty
