@@ -3,5 +3,5 @@ RUN apk add g++ musl-dev make libstdc++
 WORKDIR /src
 COPY Gemfile* .
 RUN bundle install
-EXPOSE 4000
-ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "--host=0", "-w"]
+EXPOSE 80
+ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "--host=0", "--port=80", "-w"]

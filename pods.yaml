@@ -9,14 +9,12 @@ images:
 containers:
   website:
     name: willhbr.github.io
-    image: willhbr.github.io:latest
-    bind-mounts:
+    image: localhost/willhbr.github.io:latest
+    bind_mounts:
       .: /src
     ports:
-      4000: 4000
+      4000: 80
     interactive: true
     autoremove: true
-    run-args:
-      userns: ""
-    cmd-args:
+    args:
       - --future
