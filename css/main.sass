@@ -33,6 +33,7 @@ $header-size: 2.4em
 $metadata-size: 1.1rem
 $title-size: 2em
 $footer-size: 0.9rem
+$caption-size: 0.9rem
 
 $blockquote-border-width: 3px
 $body-side-margin: 8px
@@ -93,6 +94,11 @@ img
   margin-top: 10px
   border-radius: 8px
 
+p.small-img
+  text-align: center
+  img
+    width: 50%
+
 .post-body
   margin-top: 1em
   p
@@ -136,6 +142,12 @@ blockquote
   padding-top: 10px
   padding-bottom: 1px
   margin-bottom: 1em
+
+p.caption
+  color: var(--metadata-colour)
+  text-align: center
+  font-style: italic
+  font-size: $caption-size
 
 .container
   margin: auto
