@@ -1,6 +1,5 @@
 ---
 title: "Overcoming a Fear of Containerisation"
-date: 2023-06-08
 ---
 
 I was first introduced to containers at a Docker workshop during my first software engineering internship. The idea was enticing; the ability to package up your applications configuration in a standard way, and run that on a server without having to first to through manually installing dependencies and adjusting configuration. This was while I was still deep in Ruby on Rails development, so setting up servers with things like [Puma](https://puma.io) and [Unicorn](https://en.wikipedia.org/wiki/Unicorn_(web_server)) were all too familiar.

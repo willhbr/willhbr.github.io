@@ -1,7 +1,5 @@
 ---
 title: Scrutinising a Scalable Programming Language
-date: 2017-11-21
-layout: post
 ---
 
 In my opinion, most developers should know three different programming languages, three different tools that can be used for most of the projects you come across. These should include a scripting language - for automating a task or doing something quickly; an application language - for writing user-facing or client applications, which have to be run on systems that you don't control; and an "infrastructure" language for building a system that has many components and runs on your own platform.

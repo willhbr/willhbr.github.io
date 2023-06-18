@@ -1,7 +1,5 @@
 ---
 title: Why I use Nginx
-date: 2016-3-6
-layout: post
 ---
 
 There are two very important reasons why I use Nginx to run my website:

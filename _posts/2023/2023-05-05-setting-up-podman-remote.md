@@ -1,7 +1,5 @@
 ---
 title: "Setting up podman-remote"
-date: 2023-05-05
-layout: post
 ---
 
 [`podman-remote`](https://docs.podman.io/en/latest/markdown/podman-remote.1.html) is a way of running Podman commands on a remote machine (or as different user) transparently. It allows you to add a transparent SSH layer between the `podman` CLI and where the actual podding happens.

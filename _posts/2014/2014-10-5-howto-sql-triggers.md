@@ -1,7 +1,5 @@
 ---
 title: "howto: SQL Triggers"
-layout: post
-date: 2014-09-29
 ---
 
 So, I have a computer science test on Thursday and have been getting annoyed at triggers. Triggers are basically a wee bit of sql that 'watches' the database for a certain action, and then executes a block of sql when the action is performed.

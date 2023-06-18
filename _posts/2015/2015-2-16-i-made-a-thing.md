@@ -1,7 +1,5 @@
 ---
 title: "I made a thing"
-layout: post
-date: 2015-2-16
 ---
 
 Last year I was tasked with creating a database-heavy Android app. The default Android SQLite database is pretty average - everything has to be done with raw SQL statements and the results are always `Cursor` objects, which aren't the best things to deal with. Not wanting to deal with all that business (even though some aspects of the project ended up requiring it) I took a few hours and made the basis of what because a nice wee wrapper for the standard database interface.

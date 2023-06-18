@@ -1,6 +1,4 @@
 ---
-layout: post
-date: 2023-02-04
 title: "Adding OpenGraph previews to Jekyll"
 image: /images/2023/opengraph-message.jpeg
 ---
@@ -27,10 +25,10 @@ This will populate the correct URL (the absolute URL for the current page), gues
 
 ```markdown
 ---
-layout: post
-type: article
-image: /images/some-image.jpeg
 title: "A custom OpenGraph post"
+type: article
+layout: post
+image: /images/some-image.jpeg
 ---
 # ... content of the post
 ```

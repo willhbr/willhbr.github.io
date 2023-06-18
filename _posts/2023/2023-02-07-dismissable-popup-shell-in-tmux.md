@@ -1,7 +1,5 @@
 ---
 title: "Dismissable Popup Shell in tmux"
-date: 2023-02-07
-layout: post
 image: /images/2023/tmux-popup-screen-recording.gif
 ---
 

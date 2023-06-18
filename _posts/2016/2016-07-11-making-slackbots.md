@@ -1,7 +1,5 @@
 ---
 title: Making Slackbots
-date: 2016-7-11
-layout: post
 ---
 
 This semester, for my group project I made a slackbot to select people for code reviews and generally be a nuisance in our slack group. I split it out into a [gem](https://github.com/willhbr/realtime-slackbot) which could be used to integrate easily with the slack real time messaging API. All it really does is provide a wrapper around the websocket connection and calls methods according to the type of the update received (typically the only update you care about is 'message' so there will only be one method). It may just be a wrapper, but it is *my* wrapper and I'm very pleased at how easy writing and maintaining the SENG group bot is.

@@ -1,7 +1,5 @@
 ---
 title: "How to: Pull an app database from android app"
-layout: post
-date: 2014-11-22
 ---
 
 Writing an app on android that uses a database is a bit of a pain - I spent a fair amount of time creating a wrapper around the default interface that makes it behave a bit more like [Arel](https://github.com/rails/arel) and so I don't have to worry about too much SQL. Maybe I'll post it sometime..

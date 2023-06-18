@@ -1,7 +1,5 @@
 ---
 title: Not Enough Magic
-layout: post
-date: 2015-10-22
 ---
 
 There were some [minor murmurings](https://www.reddit.com/r/CrappyDesign/comments/3oqtg1/the_charge_port_location_for_the_new_apple_magic/) this week after Apple released their new peripherals - The new (Magic) Trackpad, Mouse and Keyboard. (This was mostly drowned out by the far more significant news that the new iMac has a platter HDD). A very vocal portion of the internet were outraged that the Magic Mouse has a charging port on the bottom:

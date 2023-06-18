@@ -1,7 +1,5 @@
 ---
 title: "DJI DNG Rendering Broken on Ventura"
-layout: post
-date: 2023-05-10
 image: /images/2023/bad-dng-render.jpeg
 ---
 

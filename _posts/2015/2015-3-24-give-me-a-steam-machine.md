@@ -1,7 +1,5 @@
 ---
 title: "Valve: Give me a Steam Machine"
-layout: post
-date: 2015-3-24
 ---
 
 At GDC this month Valve announced that they will finally ship the [Steam Controller and Steam Link](https://store.steampowered.com/universe/) later this year, opening up the possibility for third party manufacturers to ship their own Steam Machines with a Steam Controller. This again brought out a multitude of articles questioning who would want a Steam Machine; everyone who wants to game already has a gnarly PC and people that don't want to set up a PC or want to play in their living room have a console. However ,I want one. I don't have a console **or** a serious PC and I think there are plenty of people like me that could consider buying a low-mid range Steam Machine.

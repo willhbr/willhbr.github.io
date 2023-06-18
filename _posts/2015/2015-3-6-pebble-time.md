@@ -1,7 +1,5 @@
 ---
 title: "Pebble Time"
-layout: post
-date: 2015-3-6
 image: /images/2015/pebbles.png
 ---
 

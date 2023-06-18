@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "The Good & Bad of Photos for MacOS"
-date: 2022-03-20
 ---
 
 I've [previously written about](https://willhbr.net/2019/11/02/impracticalities-of-ios-photo-management-for-photographers/) how iOS/iPadOS is poorly suited to anything more than casual photography.

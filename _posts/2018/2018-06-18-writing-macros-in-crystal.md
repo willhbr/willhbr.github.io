@@ -1,7 +1,5 @@
 ---
 title: "Writing Macros in Crystal"
-date: 2018-06-18
-layout: post
 ---
 
 The [existing documentation](https://crystal-lang.org/docs/syntax_and_semantics/macros.html) for macros in [Crystal](https://crystal-lang.org) leaves a wee bit to be desired, especially if you want to do anything that's a bit off-the-rails. So here we go, some top tips for macros in Crystal.

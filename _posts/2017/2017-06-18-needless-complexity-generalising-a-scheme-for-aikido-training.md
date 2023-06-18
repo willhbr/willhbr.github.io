@@ -1,7 +1,5 @@
 ---
 title: "Needless complexity: Generalising a Scheme for Aikido Training"
-date: 2017-06-18
-layout: post
 ---
 
 > It is perhaps a little known fact that I have practiced [Aikido][aikido-wiki] for about the last 13 years now.

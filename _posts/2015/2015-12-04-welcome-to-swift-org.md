@@ -1,7 +1,5 @@
 ---
 title: Welcome to Swift.org
-layout: post
-date: 2015-12-4
 tags: development
 ---
 

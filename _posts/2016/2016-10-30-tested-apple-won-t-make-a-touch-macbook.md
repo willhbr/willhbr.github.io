@@ -1,7 +1,5 @@
 ---
 title: "Tested: Apple Won't Make a Touch MacBook"
-date: 2016-10-30
-layout: post
 ---
 
 [Norm and Jeremy on the Tested.com podcast](https://www.tested.com/tech/586632-episode-373-dongle-required-102716/) have frequently complained that Apple doesn't make laptop with touchscreens. This past week they stated that it was almost an inevitability that there would be a touchscreen MacBook some time in the future. I think this is unlikely and most definitely not something that will be released anytime soon.

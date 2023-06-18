@@ -1,7 +1,5 @@
 ---
 title: Templates, Code Generation, and Macros
-date: 2017-03-27
-layout: post
 ---
 
 Macros are a really cool feature that is includes in a few cool languages (Clojure/ Common Lisp/ other Lisps, Elixir, Rust, and Crystal) that allow you to reduce boilerplate code, extend the capabilities of the language, and process data at compile time. There is no shortage of tutorials on macros, but I am going to approach them from a direction that may be more familiar to some people.

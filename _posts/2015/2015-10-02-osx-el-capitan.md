@@ -1,7 +1,5 @@
 ---
 title: "OS X El Capitan"
-date: 2015-10-2
-layout: post
 image: /images/2015/el-cap.jpg
 ---
 

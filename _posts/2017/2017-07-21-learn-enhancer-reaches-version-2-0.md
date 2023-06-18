@@ -1,7 +1,5 @@
 ---
 title: "Learn Enhancer Reaches Version 2.0"
-date: 2017-07-21
-layout: post
 ---
 
 When I first started [Learn Enhancer](https://chrome.google.com/webstore/detail/learn-enhancer/dnllhgllbbihefjdpamldjnlpllogkcf) at the start of my degree - sometime in early 2014 - it was just a single JavaScript file that would redirect to a certain URL if it found a certain element. Eventually I coughed up the $5 required to submit it to the Chrome Webstore, and it started its slow creep on to students browsers.

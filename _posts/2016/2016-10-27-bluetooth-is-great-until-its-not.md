@@ -1,7 +1,5 @@
 ---
 title: Bluetooth is Great, Until it's Not
-date: 2016-10-27
-layout: post
 ---
 
 Did you hear that Apple removed the headphone jack from the latest iPhone? Oh you did, well that's a relief. What do you think? Have you sworn to never use an Apple device ever again? Well I thought I would care - but I don't any more.

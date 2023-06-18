@@ -16,5 +16,10 @@ containers:
       4000: 80
     interactive: true
     autoremove: true
+    labels:
+      endash.links:
+        - name: Website
+          port: 80
     args:
       - --future
+      - --draft

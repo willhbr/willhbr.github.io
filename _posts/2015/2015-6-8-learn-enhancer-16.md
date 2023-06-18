@@ -1,7 +1,5 @@
 ---
 title: Learn Enhancer 1.6
-layout: post
-date: 2015-6-8
 ---
 
 Exam season has started, so naturally I'm looking at any excuse to either not study. Today I had another look at my Chrome extension: [Learn Enhancer](https://chrome.google.com/webstore/detail/learn-enhancer/dnllhgllbbihefjdpamldjnlpllogkcf?hl=en). I made this so when I look at a set of lecture notes instead of showing the content in a tiny frame in the page it would expand it to fill the page. All it does is look for a certain element on a page (an iframe with a pdf in it) and redirect you to the url of the pdf document. All in all it's about 10 lines of javascript.

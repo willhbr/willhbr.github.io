@@ -1,7 +1,5 @@
 ---
 title: "How to: Yosemite Dark Mode Terminal"
-layout: post
-date: 2014-10-27
 ---
 
 After upgrading to Yosemite I found myself blinded by the whiteness of the menus, dock folders and launchpad folders. Too much white for my liking - so I switched to the new dark mode, which makes most of the components black:

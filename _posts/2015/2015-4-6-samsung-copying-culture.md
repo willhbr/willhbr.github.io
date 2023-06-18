@@ -1,7 +1,5 @@
 ---
 title: Samsung Copying Culture
-layout: post
-date: 2015-04-06
 ---
 
 On the latest [Topical podcast](https://topical.fm/4) Russell and Jelly discussed whether Samsung shamelessly copied the iPhone when they made the original Galaxy S, whether it was a smart business move that allowed them to dominate the smartphone market and if they deserve the bad rep they have for being the company that just copies everyones designs.

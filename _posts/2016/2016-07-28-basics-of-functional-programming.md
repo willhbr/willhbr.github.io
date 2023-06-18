@@ -1,7 +1,5 @@
 ---
 title: Basics of Functional Programming
-date: 2016-07-28
-layout: post
 ---
 
 As someone who enjoys learning new programming languages, it was only a matter of time before I came across functional programming languages, higher order functions, and the like. Earlier this year I found out that Java 8 now supports some functional programming and have been writing less boilerplate code ever since - much to the horror of my team mates. So this is for you, so you can hopefully understand my spaghetti of lambdas.

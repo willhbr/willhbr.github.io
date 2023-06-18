@@ -1,7 +1,5 @@
 ---
 title: "Learning Software Engineering"
-date: 2018-07-17
-layout: post
 ---
 
 It's an often-repeated meme that school doesn't teach you the things you need to know to get by in the working world. _"I don't know how to do taxes but at least I can solve differential equations, har har"_ is usually how they go. There is a sub-meme in Software Engineering that the things you learn at university are generally not applicable to what is needed in the industry - most jobs don't require you to be able to implement an in-place quicksort or balance a binary tree.

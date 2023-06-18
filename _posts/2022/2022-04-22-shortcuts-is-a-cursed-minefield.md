@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Shortcuts is a Cursed Minefield"
-date: 2022-04-22
 ---
 
 This all starts with me wanting to [host my photos outside](https://pics.willhbr.net) of [Instagram](https://instagram.com/willhbr). I ended up using GitHub pages and wrote a simple iOS Shortcut to resize and recompress the image to make it suitable for serving on the web.

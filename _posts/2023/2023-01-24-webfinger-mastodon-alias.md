@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Create a Mastodon alias using GitHub Pages"
-date: 2023-01-24
 ---
 
 If (like me) you've moved to [Mastodon](https://joinmastodon.org) recently and are looking for a good way to show off some nerd cred, this is a great way to do it.

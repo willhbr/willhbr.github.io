@@ -1,7 +1,5 @@
 ---
 title: Configure Nebula VPN on iOS/Android
-layout: post
-date: 2021-06-22
 ---
 
 Nebula is now available on iOS and Android, which is very exciting. What is less exciting is the fact I couldn't find any documentation on how to set it up. You're in luck though, because that's just what I've got here - how to setup Nebula on a server, and connect that to a mobile device.

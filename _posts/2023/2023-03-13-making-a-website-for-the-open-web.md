@@ -1,7 +1,5 @@
 ---
-layout: post
 title: "Making a Website for the Open Web"
-date: 2023-03-13
 ---
 
 The open web is complicated[^citation-needed]. Over the last few months I've been trying to make [my website]({{ site.url }}) work with as many standards as I could find. I couldn't find a guide on all the things you should do, so I wrote down all the things I've done to make my website integrate better with the open web:

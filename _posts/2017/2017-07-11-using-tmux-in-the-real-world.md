@@ -1,7 +1,5 @@
 ---
 title: Using tmux in the Real World
-date: 2017-07-11
-layout: post
 ---
 
 Every now and again I happen across a post outlining how to use [tmux](https://tmux.github.io). Since I first happened upon tmux in 2015, my use of it has grown from "occasional", to "frequent", almost to "continual". What I find frustating with these posts is that they don't describe how to actually _use_ tmux in the real world. [The post in question that prompted this post](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340) tells you how to start a session, create new windows, then how to switch between and resize windows.

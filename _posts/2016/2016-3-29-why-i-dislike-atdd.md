@@ -1,7 +1,5 @@
 ---
 title: Why I Dislike ATDD
-layout: post
-date: 2016-3-29
 ---
 
 _This was written as the final section to a university lab report on testing, ATDD, and mocking._

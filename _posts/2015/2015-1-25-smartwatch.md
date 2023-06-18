@@ -1,7 +1,5 @@
 ---
 title: "Smartwatch!?"
-layout: post
-date: 2015-1-25
 ---
 
 First to enter the foray of consumer-friendly wearable computing, the [Pebble](https://getpebble.com) is the product of a highly successful Kickstarter project, raising over 100 times its goal. You know that though. What you don't know, is how it works in the real world and whether it can replace your (probably empty) wrist.

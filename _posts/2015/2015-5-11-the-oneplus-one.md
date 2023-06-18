@@ -1,7 +1,5 @@
 ---
 title: The OnePlus One
-layout: post
-date: 2015-5-11
 image: /images/2015/opo.jpg
 ---
 

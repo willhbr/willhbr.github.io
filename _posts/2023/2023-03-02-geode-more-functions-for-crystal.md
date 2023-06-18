@@ -1,6 +1,4 @@
 ---
-layout: post
-date: 2023-03-02
 title: "Geode: More Functions for Crystal"
 ---
 

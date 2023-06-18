@@ -1,7 +1,5 @@
 ---
 title: Conditionals in SH
-date: 2017-01-11
-layout: post
 ---
 
 I've been spending more time than I would like writing shell scripts recently, as I spend more time [configuring my setup](https://github.com/JavaNut13/dotfiles) than I do on 'real' projects. What I've found interesting is how simple the core of a shell is, and the tricks some commands do to build on this.

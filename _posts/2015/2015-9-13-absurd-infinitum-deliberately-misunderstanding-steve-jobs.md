@@ -1,7 +1,5 @@
 ---
 title: "Absurd infinitum: Deliberately misunderstanding Steve Jobs"
-date: 2015-9-13
-layout: post
 ---
 
 _[Absurd infinitum: Deliberately misunderstanding Steve Jobs &rarr;](https://www.macworld.com/article/2983653/ipads/absurd-infinitum-deliberately-misunderstanding-steve-jobs.html)_

@@ -1,6 +1,5 @@
 ---
 title: "DJI Mini 3 Pro"
-date: 2023-06-11
 image: https://pics.willhbr.net/photos/2023-06-03.jpeg
 ---
 

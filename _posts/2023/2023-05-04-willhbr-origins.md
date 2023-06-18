@@ -1,7 +1,5 @@
 ---
 title: "@willhbr: Origins"
-date: 2023-05-04
-layout: post
 image: /images/2023/arctic-lego.jpeg
 ---
 

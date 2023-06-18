@@ -1,7 +1,5 @@
 ---
 title: "HOT NEW MARKDOWN EDITOR FOR MACOS"
-date: 2023-02-10
-layout: post
 image: /images/2023/markedit.png
 ---
 

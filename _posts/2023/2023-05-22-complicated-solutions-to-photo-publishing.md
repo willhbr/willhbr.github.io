@@ -1,6 +1,5 @@
 ---
 title: "Complicated Solutions to Photo Publishing"
-date: 2023-05-22
 ---
 
 As [previously discussed](/2022/04/22/shortcuts-is-a-cursed-minefield/) there have been some challenges keeping the photos on [my website](https://pics.willhbr.net) up-to-date. The key constraint here is my insistence on using Jekyll for the website (rather than something with a web-based CMS) and wanting somewhat-efficient photo compression (serving 20MB photos is frowned upon). Obviously I considered writing my own CMS for Jekyll with a web interface that I could access from my phone—this seemed like the natural thing to do—but I quickly realised this would spiral into a huge amount of work.

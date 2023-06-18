@@ -1,7 +1,5 @@
 ---
 title: "Impracticalities of iOS Photo Management for Photographers"
-date: 2019-11-02
-layout: post
 ---
 
 In the last six months or so I have become an enthusiastic hobbyist photographer. This started with paying more attention to how I used the camera on my phone, then quickly progressed into buying a [Sony a6000](https://www.sony.com.au/electronics/interchangeable-lens-cameras/ilce-6000-body-kit) mirrorless camera. Before I knew it I had two tripods, a camera bag, an ND filter, and was starting to browse through lenses on Amazon.

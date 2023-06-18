@@ -1,7 +1,5 @@
 ---
 title: A Downgrade
-date: 2017-10-22
-layout: post
 ---
 
 I have decided to downgrade my phone. I don't feel the need for a large HD screen, a massive battery, and 3GB of RAM. The extra resolution of the 13MP camera pretty much wasted on me. I have used this phone - the [OnePlus _One_](https://oneplus.net/one) - for the last two and a half years and have decided that when I get a new phone, I no longer need something of this calibre.

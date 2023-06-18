@@ -1,7 +1,5 @@
 ---
 title: Enumerating The Ways I Love Swift Enumerations
-date: 2016-02-28
-layout: post
 tags: development
 ---
 

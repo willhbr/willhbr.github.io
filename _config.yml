@@ -30,7 +30,7 @@ defaults:
       image: /images/me.jpg
       type: website
   - scope:
-      path: _posts
+      type: posts
     values:
       layout: post
       type: article

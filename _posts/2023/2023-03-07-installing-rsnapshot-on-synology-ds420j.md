@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Installing rsnapshot on Synology DS420j
-date: 2023-03-06
 image: /images/2023/ds420j.png
 ---
 
