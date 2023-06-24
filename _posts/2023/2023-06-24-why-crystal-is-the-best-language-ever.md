@@ -2,7 +2,7 @@
 title: "Why Crystal is the Best Language Ever"
 ---
 
-[Crystal][crystal] is a statically typed language with the syntax of a dynamically typed one. I first used Crystal in 2017—about version `0.20.0` or so. The type of projects I usually work on in my spare time are things like [`pod`][pod], or my [server that posts photos][pixelfed-piper] to my [photos website]({{ site.urls.photos }}).
+[Crystal][crystal] is a statically typed language with the syntax of a dynamically typed one. I first used Crystal in 2016—about version `0.20.0` or so. The type of projects I usually work on in my spare time are things like [`pod`][pod], or my [server that posts photos][pixelfed-piper] to my [photos website]({{ site.urls.photos }}).
 
 [pixelfed-piper]: /2023/05/22/complicated-solutions-to-photo-publishing/
 [pod]: https://github.com/willhbr/pod
