@@ -5,7 +5,7 @@ image: /images/2023/backup-system.jpeg
 
 One of the key characteristics you want from a backup system is reliability. You want to minimise the number of things that can fail, and reduce the impact of each failure for when they do happen. These are not characteristics that would be used to describe my original backup system:
 
-![a small computer sitting on a shoebox with an external HDD next to it, surrounded by a nest of cables](/images/2023/backup-system.jpeg)
+![a small computer sitting on a shoebox with an external HDD next to it, surrounded by a nest of cables](/images/2023/backup-system.jpeg){:loading="lazy"}
 
 The first iteration of my backup system, running on my [Scooter Computer](https://blog.codinghorror.com/the-scooter-computer/) via an external hard drive enclosure.
 {:class="caption"}
@@ -14,7 +14,7 @@ This setup pictured above evolved into a Raspberry Pi (featured unused in the bo
 
 [^cross-compile]: The program was written in Crystal, and those in the know will be aware just how painful cross-compilation to ARM is!
 
-![screenshot of a webpage with a list of backup times in a table](/images/2023/backup-status.jpeg)
+![screenshot of a webpage with a list of backup times in a table](/images/2023/backup-status.jpeg){:loading="lazy"}
 
 My custom backup status page that told me whether I was still snapshotting my data or not.
 {:class="caption"}
