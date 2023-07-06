@@ -54,7 +54,10 @@ The key is to use the development image as a bag to hold all of our dependencies
 We then use a [bind mount](https://docs.podman.io/en/latest/markdown/podman-run.1.html#mount-type-type-type-specific-option) to mount the source code to the container when we _run_ it—which stops us having to re-build the image every time we make a change to our source files. Development looks something like this now:
 
 1. Make a change to `main.rb`
-2. Run the development image: `podman run --mount=type=bind,src=.,dst=/src -it --rm test:latest`[^long-command]
+2. Run the development image:[^long-command]
+```shell
+podman run --mount=type=bind,src=.,dst=/src -it --rm test:latest
+```
 3. Observe results
 
 [^long-command]: Wow that's a long command, if only we [didn't have to type that every time!](/2023/06/08/pod-the-container-manager/)
