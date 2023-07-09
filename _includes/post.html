@@ -18,6 +18,8 @@
 				{% else %}
 					~1
 				{% endif %} minutes
+        &bull;
+        {{ post.content | number_of_words }} words
       {% endif %}
     </div>
   </header>
