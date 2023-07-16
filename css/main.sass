@@ -9,6 +9,8 @@ $background-colour-light: #EEE
 $background-colour-dark: #333
 $text-colour-light: #333
 $text-colour-dark: #EEE
+$inline-code-colour-light: darken($background-colour-light, 10%)
+$inline-code-colour-dark: darken($background-colour-dark, 10%)
 $title-colour-light: black
 $title-colour-dark: white
 
@@ -48,6 +50,8 @@ body
   font-weight: 300
   margin-left: $body-side-margin
   margin-right: $body-side-margin
+*
+  transition: color 0.6s
   transition: background-color 0.6s
 
 #theme-toggle
@@ -126,6 +130,9 @@ p.small-img
 .highlighter-rouge pre, code.highlighter-rouge, .highlight
   border-radius: 4px
   font-size: 0.9em
+code.highlighter-rouge
+  background: var(--inline-code-colour)
+  padding: 2px 4px
 
 header.site-header
   text-align: center
