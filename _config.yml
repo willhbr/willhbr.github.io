@@ -53,6 +53,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - pods.yaml
+  - publish.rb
 
 webfinger:
   subject: "acct:willhbr@ruby.social"
