@@ -12,9 +12,9 @@ $background-colour-dark: #333
 // text colour for body text
 $text-colour-light: #333
 $text-colour-dark: #EEE
-// background of inline code blocks
-$inline-code-colour-light: darken($background-colour-light, 10%)
-$inline-code-colour-dark: darken($background-colour-dark, 10%)
+// background of inline code blocks and footnote links
+$inline-text-pill-colour-light: darken($background-colour-light, 10%)
+$inline-text-pill-colour-dark: darken($background-colour-dark, 10%)
 // colour for site header title
 $title-colour-light: black
 $title-colour-dark: white
@@ -30,7 +30,7 @@ $link-hover-colour-light: darken($highlight-colour-light, 10%)
 $link-hover-colour-dark: lighten($highlight-colour-dark, 10%)
 
 // colour for post metadata, and some other side-notes
-// captions, footnotes
+// captions
 $metadata-colour-light: lighten($text-colour-light, 20%)
 $metadata-colour-dark: darken($text-colour-dark, 20%)
 
@@ -141,7 +141,7 @@ p.small-img
   border-radius: 4px
   font-size: 0.9em
 code.highlighter-rouge
-  background: var(--inline-code-colour)
+  background: var(--inline-text-pill-colour)
   padding: 2px 4px
 
 header.site-header
@@ -183,9 +183,9 @@ footer, footer a
 sup[role=doc-noteref]
   vertical-align: baseline
   a
-    color: var(--background-colour)
-    background: var(--metadata-colour)
-    padding: 0px 6px
+    color: var(--text-colour)
+    background: var(--inline-text-pill-colour)
+    padding: 0px 8px
     border-radius: 1em
   a:hover
     text-decoration: none
