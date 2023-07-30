@@ -91,7 +91,11 @@ struct MyType
 end
 ```
 
-There's no special types that have access to dedicated syntax (except maybe `nil` but that _is_ somewhat special), so you can write a replacement for `Array` and have it look just like the builtin class. Being able to override operators and add methods to existing classes allows things like `4.hours + 5.minutes` which will give you a `Time::Span` of 4:05. If you did this in Java[^java-time] you'd have `Duration.ofHours(4).plus(Duration.ofMinutes(5))` which absolutely does not spark joy.
+There's no special types that have access to dedicated syntax (except maybe `nil` but that _is_ somewhat special), so you can write a replacement for `Array` and have it look just like the builtin class. Being able to override operators and add methods to existing classes allows things like `4.hours + 5.minutes` which will give you a `Time::Span` of 4:05. If you did this in Java[^java-time] you'd have something like this, which absolutely does not spark joy:
+
+```java
+Duration.ofHours(4).plus(Duration.ofMinutes(5))
+```
 
 [^java-time]: After researching for hours which library was the correct one to use.
 
