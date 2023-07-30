@@ -3,28 +3,38 @@
 
 @import "syntax"
 
+// main website theme colour
 $highlight-colour-light: #6609a0
 $highlight-colour-dark: #D4B3FF
+// background colour for whole site
 $background-colour-light: #EEE
 $background-colour-dark: #333
+// text colour for body text
 $text-colour-light: #333
 $text-colour-dark: #EEE
+// background of inline code blocks
 $inline-code-colour-light: darken($background-colour-light, 10%)
 $inline-code-colour-dark: darken($background-colour-dark, 10%)
+// colour for site header title
 $title-colour-light: black
 $title-colour-dark: white
 
+// colour for blockquote fg/bg
 $blockquote-colour-light: lighten($text-colour-light, 5%)
 $blockquote-colour-dark: darken($text-colour-dark, 5%)
 $blockquote-background-light: darken($background-colour-light, 5%)
 $blockquote-background-dark: lighten($background-colour-dark, 5%)
 
+// colour for link a:hover
 $link-hover-colour-light: darken($highlight-colour-light, 10%)
 $link-hover-colour-dark: lighten($highlight-colour-dark, 10%)
 
+// colour for post metadata, and some other side-notes
+// captions, footnotes
 $metadata-colour-light: lighten($text-colour-light, 20%)
 $metadata-colour-dark: darken($text-colour-dark, 20%)
 
+// text colour for footer, including links
 $footer-colour-light: lighten($text-colour-light, 10%)
 $footer-colour-dark: darken($text-colour-dark, 10%)
 
@@ -169,11 +179,16 @@ footer
 footer, footer a
   color: var(--footer-colour)
 
-a.footnote:before
-  content: "["
-
-a.footnote:after
-  content: "]"
+// footnote
+sup[role=doc-noteref]
+  vertical-align: baseline
+  a
+    color: var(--background-colour)
+    background: var(--metadata-colour)
+    padding: 0px 6px
+    border-radius: 1em
+  a:hover
+    text-decoration: none
 
 .footnotes
   margin-top: 4em
