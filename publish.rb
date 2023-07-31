@@ -11,7 +11,7 @@ date = lines.find { |l| l.start_with? 'date:' }
 if date.nil?
   date = Date.today.strftime('%F')
 else
-  date = date[5..]
+  date = date[5..].strip
 end
 year = date[0...4]
 

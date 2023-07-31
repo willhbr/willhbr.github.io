@@ -14,7 +14,7 @@ $text-colour-light: #333
 $text-colour-dark: #EEE
 // background of inline code blocks and footnote links
 $inline-text-pill-colour-light: darken($background-colour-light, 10%)
-$inline-text-pill-colour-dark: darken($background-colour-dark, 10%)
+$inline-text-pill-colour-dark: darken($background-colour-dark, 7%)
 // colour for site header title
 $title-colour-light: black
 $title-colour-dark: white
@@ -42,7 +42,7 @@ $footer-colour-dark: darken($text-colour-dark, 10%)
 
 $paragraph-size: 17px
 $header-size: 2.4em
-$metadata-size: 1.1rem
+$metadata-size: 1rem
 $title-size: 2em
 $footer-size: 0.9rem
 $caption-size: 0.9rem
@@ -102,6 +102,9 @@ h1, h2, h3, h4, h5, h6
   color: var(--highlight-colour)
   font-weight: 300
   margin-bottom: 0
+// <article> shrinks this, make it a wee bigger
+h1
+  font-size: 1.8em
 
 img
   width: 100%
@@ -122,9 +125,6 @@ p.small-img
 .metadata, .metadata a
   color: var(--metadata-colour)
   font-size: $metadata-size
-
-.metadata a:hover
-  text-decoration: underline
 
 .title
   font-weight: 300
