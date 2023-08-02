@@ -9,7 +9,7 @@ Yesterday I came across [Warp Terminal][warp] via their advertisement on [Daring
 [^good-ad]: Who needs ad personalisation when you can just go directly to your target market?
 [modern-shells]: http://steve:4000/2023/07/06/why-modernising-shells-is-a-sisyphean-effort/
 
-> If you're not sure of the difference between a terminal and a shell, [_The TTY demystified_](http://www.linusakesson.net/programming/tty/) is a really good read to understand the history and responsibilities both. Basically the terminal emulator pretends to be a [computer from 1978](https://en.wikipedia.org/wiki/VT100), and the shell runs inside of that.
+> If you're not sure of the difference between a terminal and a shell, [_The TTY demystified_](http://www.linusakesson.net/programming/tty/) is a really good read to understand the history and responsibilities of both. Basically the terminal emulator pretends to be a [computer from 1978](https://en.wikipedia.org/wiki/VT100), and the shell runs inside of that.
 
 I only spent about half an hour playing around with Warp, so my impressions are not particularly well-informed, it's still in beta so many of these issues could be on a roadmap to fix. I didn't look at any of the AI or collaboration features, I'm only interested in the terminal emulation and shell integration.
 
