@@ -3,7 +3,7 @@ title: "Helicopter Tracking for Safer Drone Flights"
 image: /images/2023/dronemapsample.jpeg
 ---
 
-Avid reads will know that I like to fly [my drone](/2023/06/11/dji-mini-3-pro/) around the beaches in Sydney. The airspace is fairly heavily trafficked, and so I take [the drone rules](https://www.casa.gov.au/knowyourdrone) very seriously. This means no flying in restricted airspace (leading to [other solutions for getting photos in these areas](https://youtu.be/gflq7LcE65I)), no flying in airport departure or arrival paths, and no flying above the 120m ceiling (or 90m in certain areas). This is easily tracked with a drone safety app (I'm a big fan of [ok2fly](https://ok2fly.com.au)).
+Avid readers will know that I like to fly [my drone](/2023/06/11/dji-mini-3-pro/) around the beaches in Sydney. The airspace is fairly heavily trafficked, and so I take [the drone rules](https://www.casa.gov.au/knowyourdrone) very seriously. This means no flying in restricted airspace (leading to [other solutions for getting photos in these areas](https://youtu.be/gflq7LcE65I)), no flying in airport departure or arrival paths, and no flying above the 120m ceiling (or 90m in certain areas). This is easily tracked with a drone safety app (I'm a big fan of [ok2fly](https://ok2fly.com.au)).
 
 What is more difficult is flying a drone in an area that may have other aircraft nearby. The [drone rules state](https://www.casa.gov.au/knowyourdrone/drone-rules):
 
