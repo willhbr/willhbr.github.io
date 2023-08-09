@@ -10,6 +10,7 @@ layout: null
   "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
   "favicon": "{{ "/favicon.ico" | absolute_url }}",
   "expired": false,
+  "language": "en",
   "items": [
   {% for post in site.posts limit:10 %}
     {
@@ -19,9 +20,8 @@ layout: null
       {% if site.feeds.json_include_text %}"content_text": {{ post.content | strip_html | strip_newlines | jsonify }},{% endif %}
       "content_html": {{ post.content | jsonify }},
       "url": "{{ post.url | absolute_url }}",
-      {% if post.image.size > 1 %}"image": "{{ post.image }}",{% endif %}
+      {% if post.image.size > 1 %}"image": {{ post.image | absolute_url | jsonify }},{% endif %}
       {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
-      {% if post.banner.size > 1 %}"banner_image": "{{ post.banner }}",{% endif %}
       {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
       {% if post.enclosure.size > 1 %}"attachments": [
       {
