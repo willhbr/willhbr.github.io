@@ -12,14 +12,14 @@
       <a href="{{ post.url | absolute_url }}">Permalink</a>
       {% if jekyll.environment == "development" %}
 				&bull;
-				{% capture time %}{{ post.content | number_of_words | divided_by: 180 }}{% endcapture %}
+				{% capture time %}{{ post.content | strip_html | number_of_words | divided_by: 180 }}{% endcapture %}
 				{% if time != '0' %}
 					~{{ time }}
 				{% else %}
 					~1
 				{% endif %} minutes
         &bull;
-        {{ post.content | number_of_words }} words
+        {{ post.content | strip_html | number_of_words }} words
       {% endif %}
     </div>
   </header>
