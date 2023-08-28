@@ -1,0 +1,28 @@
+---
+layout: page
+---
+
+<h1>Stats</h1>
+
+{% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% assign total_words = 0 %}
+
+{% for year_posts in posts_by_year %}
+  {% assign year_total = 0 %}
+  {% for post in year_posts.items %}
+    {% assign words = post.content | strip_html | number_of_words %}
+    {% assign year_total = year_total | plus: words %}
+    {% assign total_words = total_words | plus: words %}
+  {% endfor %}
+  <h2> {{ year_posts.name }}</h2>
+  <ul>
+    <li>{{ year_total }} words</li>
+    <li>{{ year_posts.items | size }} posts</li>
+  </ul>
+{% endfor %}
+
+<h2>Total</h2>
+<ul>
+  <li>{{ total_words }} words</li>
+  <li>{{ site.posts | size }} posts</li>
+</ul>
