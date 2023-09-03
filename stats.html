@@ -16,13 +16,15 @@ layout: page
   {% endfor %}
   <h2> {{ year_posts.name }}</h2>
   <ul>
-    <li>{{ year_total }} words</li>
-    <li>{{ year_posts.items | size }} posts</li>
+    {% assign post_count = year_posts.items | size %}
+    <li>{{ year_total }} words ({{ year_total | divided_by: post_count }} average)</li>
+    <li>{{ post_count }} posts</li>
   </ul>
 {% endfor %}
 
 <h2>Total</h2>
 <ul>
-  <li>{{ total_words }} words</li>
-  <li>{{ site.posts | size }} posts</li>
+  {% assign post_count = site.posts | size %}
+  <li>{{ total_words }} words ({{ total_words | divided_by: post_count }} average)</li>
+  <li>{{ post_count }} posts</li>
 </ul>
