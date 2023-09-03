@@ -12,7 +12,7 @@ layout: null
   "expired": false,
   "language": "en",
   "items": [
-  {% for post in site.posts limit:10 %}
+  {% for post in site.posts limit:20 %}
     {
       "id": "{{ post.url | absolute_url | sha1 }}",
       "title": {{ post.title | jsonify }},
