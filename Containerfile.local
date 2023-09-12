@@ -4,4 +4,4 @@ WORKDIR /src
 COPY Gemfile .
 RUN bundle install
 EXPOSE 80
-ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "--host=0", "--port=80", "-w"]
+ENTRYPOINT ["bundle", "exec", "jekyll", "serve", "-w"]

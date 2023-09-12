@@ -20,6 +20,8 @@ containers:
       endash.links:
         - name: Website
           port: 80
+    flags:
+      config: _config.yml,_local.yml
     args:
       - --future
       - --draft

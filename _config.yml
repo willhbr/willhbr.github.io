@@ -35,7 +35,6 @@ defaults:
       layout: post
       type: article
 
-# Build settings
 markdown: kramdown
 permalink: pretty
 highlighter: rouge
