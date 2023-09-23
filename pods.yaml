@@ -25,3 +25,23 @@ containers:
     args:
       - --future
       - --draft
+
+  prod:
+    name: willhbr.github.io-prod
+    image: localhost/willhbr.github.io:latest
+    bind_mounts:
+      .: /src
+    ports:
+      4000: 80
+    interactive: true
+    autoremove: true
+    labels:
+      endash.links:
+        - name: Website
+          port: 80
+    environment:
+      JEKYLL_ENV: production
+    flags:
+      config: _config.yml
+      host: 0
+      port: 80
