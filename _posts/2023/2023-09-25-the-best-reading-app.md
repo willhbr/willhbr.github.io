@@ -29,9 +29,7 @@ The app would need all the features of a good read-later app; saving links from 
 
 A problem that I would like solved—but I'm not sure if link-sharing APIs allow for this—is knowing where the link was shared from. I find myself getting to the bottom of a post that I've saved from somewhere and thinking "oh whoever shared this obviously has excellent taste, I should see what else they do" but have no good way to find where I got it from. Alternatively I think of someone that I should share it with, only to find out that they were the person that sent it to me in the first place.
 
-I have considered creating a second Mastodon account and just subscribing to the feeds of websites I follow (or using RSS-to-activitypub translators[^mastofeeder]), and adding this account to [Ivory][ivory]. What stops me from doing this is that it would only get me half way there—no read-later integration—and Ivory would be doing double duty, meaning I'd have to switch accounts constantly.
-
-[^mastofeeder]: [Mastofeeder.com](https://mastofeeder.com) seems like a good option here? You can follow my blog by searching `@willhbr.net@mastofeeder.com` on your favourite Mastodon client.
+I have considered creating a second Mastodon account and just subscribing to the feeds of websites I follow (or using RSS-to-activitypub translators), and adding this account to [Ivory][ivory]. What stops me from doing this is that it would only get me half way there—no read-later integration—and Ivory would be doing double duty, meaning I'd have to switch accounts constantly.
 
 ---
 
