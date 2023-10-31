@@ -8,11 +8,11 @@ layout: page
 <div class="post-footer">
   <p>
     {% if page.next.url %}
-      <a href="{{ page.next.url }}">&larr; {{ page.next.title }}</a>
+      <a href="{{ page.next.url }}">&larr;&nbsp;{{ page.next.title }}</a>
     {% endif %}
     {% if page.previous.url %}
       {% if page.next.url %}|{% endif %}
-      <a href="{{ page.previous.url }}">{{ page.previous.title }} &rarr;</a>
+      <a href="{{ page.previous.url }}">{{ page.previous.title }}&nbsp;&rarr;</a>
     {% endif %}
   </p>
 
