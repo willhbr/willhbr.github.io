@@ -14,6 +14,10 @@ Flags might take arguments, which are often file paths. Like boolean options you
 
 Some flags can accept multiple values, so maybe you should support `--search path/one second/path` as well as `--search=path/one --search=second/path`. Of course you should support `-s` and `-search` and maybe even mixing and matching all of these.
 
+To reduce the amount of typing users have to do, often the short forms of flags can be shoved together into one flag, so instead of typing `-a -b -c` you can just do `-abc`. Hopefully there aren't so many short options that they could spell out the long form of other flags. Some programs allow using this short form and passing a value for the last flag. So if you had a program that has a boolean flag `-b` and a string flag `-s`, you could do `-bs value` instead of `-b -s value`.[^ty-postmodern]
+
+[^ty-postmodern]: Thanks to [@postmodern on Mastodon for pointing out this omission!](https://ruby.social/@postmodern/111396482925514425).
+
 If your program is doing a lot of different things, it probably makes sense to group functionality into _subcommands_, like `git clone` or `tmux attach`. You should then support short subcommand names like `tmux a`, but you've also got to match flags to a certain subcommand.
 
 Some flags are going to apply in all cases—things like the log level config file location—but others will only apply to a specific subcommand. Do you require these flags to be in a certain order, or do you allow them to be mixed? If you allow them to be mixed then you'll have to defer processing any flags until you know the subcommand is—since they could behave differently depending on the subcommand.
