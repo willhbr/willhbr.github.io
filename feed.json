@@ -18,7 +18,8 @@ layout: null
       "title": {{ post.title | jsonify }},
       {% if post.summary %}"summary": {{ post.summary | jsonify }},{% endif %}
       {% if site.feeds.json_include_text %}"content_text": {{ post.content | strip_html | strip_newlines | jsonify }},{% endif %}
-      "content_html": {{ post.content | jsonify }},
+      {% capture content %}{% include feed_post.html %}{% endcapture %}
+      "content_html": {{ content | jsonify }},
       "url": "{{ post.url | absolute_url }}",
       {% if post.image.size > 1 %}"image": {{ post.image | absolute_url | jsonify }},{% endif %}
       {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
