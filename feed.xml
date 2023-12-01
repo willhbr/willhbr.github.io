@@ -18,7 +18,7 @@
         <link>{{ post.url | prepend: site.url }}</link>
         <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
         <description>
-          {% capture content %}{% include feed_post.html %}{% endcapture %}
+          {%- capture content -%}{% include feed_post.html %}{%- endcapture -%}
           {{ content | xml_escape }}
         </description>
       </item>

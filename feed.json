@@ -12,19 +12,19 @@ layout: null
   "expired": false,
   "language": "en",
   "items": [
-  {% for post in site.posts limit:20 %}
+  {%- for post in site.posts limit:20 -%}
     {
       "id": "{{ post.url | absolute_url | sha1 }}",
       "title": {{ post.title | jsonify }},
-      {% if post.summary %}"summary": {{ post.summary | jsonify }},{% endif %}
-      {% if site.feeds.json_include_text %}"content_text": {{ post.content | strip_html | strip_newlines | jsonify }},{% endif %}
-      {% capture content %}{% include feed_post.html %}{% endcapture %}
+      {%- if post.summary -%}"summary": {{ post.summary | jsonify }},{%- endif -%}
+      {%- if site.feeds.json_include_text -%}"content_text": {{ post.content | strip_html | strip_newlines | jsonify }},{%- endif -%}
+      {%- capture content -%}{% include feed_post.html %}{%- endcapture -%}
       "content_html": {{ content | jsonify }},
       "url": "{{ post.url | absolute_url }}",
-      {% if post.image.size > 1 %}"image": {{ post.image | absolute_url | jsonify }},{% endif %}
-      {% if post.link.size > 1 %}"external_url": "{{ post.link }}",{% endif %}
-      {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
-      {% if post.enclosure.size > 1 %}"attachments": [
+      {%- if post.image.size > 1 -%}"image": {{ post.image | absolute_url | jsonify }},{%- endif -%}
+      {%- if post.link.size > 1 -%}"external_url": "{{ post.link }}",{%- endif -%}
+      {%- if post.tags.size > 1 -%}"tags": {{ post.tags | jsonify }},{%- endif -%}
+      {%- if post.enclosure.size > 1 -%}"attachments": [
       {
         "url": "{{ post.enclosure }}",
         "mime_type": "{{ post.enclosure_type }}",
@@ -33,7 +33,7 @@ layout: null
       "date_published": "{{ post.date | date_to_xmlschema }}",
       "date_modified": "{{ post.date | date_to_xmlschema }}",
       "authors": [{"name":{% if post.author %}"{{ post.author }}"{% else %}"{{ site.author }}"{% endif %}}]
-    }{% if forloop.last == false %},{% endif %}
-  {% endfor %}
+    }{%- if forloop.last == false -%},{%- endif -%}
+  {%- endfor -%}
   ]
 }
