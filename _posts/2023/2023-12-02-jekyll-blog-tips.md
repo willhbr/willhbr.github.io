@@ -36,7 +36,7 @@ The trick with getting this to work was that Jekyll stores the post information 
 # _layouts/post.html
 {% assign post=page %}
 {% include post.html %}
-{%- endraw -%}
+{% endraw %}
 ```
 
 ## Data in `_config.yml`

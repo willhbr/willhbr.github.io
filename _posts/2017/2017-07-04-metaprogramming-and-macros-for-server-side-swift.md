@@ -29,7 +29,7 @@ Swift does allow for creating concise DSLs. [Vapor](https://vapor.codes) and [Pe
 
 ```swift
 app.get("/:page_id") { request ->
-	return Response(.text, request.params["page_id"])
+  return Response(.text, request.params["page_id"])
 }
 ```
 
@@ -37,7 +37,7 @@ But this is processed at runtime, and doesn't allow for creating helper methods 
 
 ```swift
 controller("MyController") { app ->
-	app.get("/stuff") { request ->
+  app.get("/stuff") { request ->
     // do something with stuff
   }
   // etc
