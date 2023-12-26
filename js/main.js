@@ -24,7 +24,6 @@ addEventListener('load', () => {
   let preference = localStorage.getItem(PT) || AU;
   toggle.innerText = preference;
   toggle.onclick = () => {
-    let pref = preference;
     preference = newPreference(preference);
     setTheme(preference);
     localStorage.setItem(PT, preference);
