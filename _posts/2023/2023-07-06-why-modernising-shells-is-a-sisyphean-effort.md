@@ -2,7 +2,7 @@
 title: "Why Modernising Shells is a Sisyphean Effort"
 ---
 
-Anyone that knows me is probably aware that I spend a lot of time in the terminal. One of the many things that I have wasted time learning is the various oddities of shell scripting, and so I am cursed with the knowledge of the design tradeoffs in their design. It seems to be something that most people don't appreciate. Your shell has to find a balance between getting out of your way for interactive use, and being the best way to link together multiple unrelated programs to do something useful. The Unix philosophy of having many small tools, each dedicated to one simple job means that you can more easily replace one with an alternative, or a new tool doesn't have to reinvent the wheel before it can be useful.
+Anyone that knows me is probably aware that I spend a lot of time in the terminal. One of the many things that I have wasted time learning is the various oddities of shell scripting, and so I am cursed with the knowledge of the tradeoffs in their design. It seems to be something that most people don't appreciate. Your shell has to find a balance between getting out of your way for interactive use, and being the best way to link together multiple unrelated programs to do something useful. The Unix philosophy of having many small tools, each dedicated to one simple job means that you can more easily replace one with an alternative, or a new tool doesn't have to reinvent the wheel before it can be useful.
 
 The problem is that to most people, the shell is completely inscrutable. Even experienced programmers who have no problem juggling many other programming languages will get into a muddle with even a simple shell script. To be honest, you can't really blame them. Shell languages are full of bizarre syntax and subtle traps.
 
@@ -18,7 +18,7 @@ What sets a shell apart from other languages is that external programs are first
 
 So if you want programs to fit in just the same as shell functions, your functions need to work like POSIX processes. This means they can't return something—just input and output streams—and their arguments must be handled as strings. This makes implementing a scripting language that can be compared to Ruby or Python basically impossible. The constraints of having all your functions act like processes hampers your ability to make useful APIs.
 
-This makes it really difficult for your shell language to support any kind of strong typing—since everything passed to any command or function needs to be a string, you're constantly reinterpreting data and risking it being reinterpreted differently. Having everything be handled like a string is consistent with how programs run (they have to work out how to interpret the type of their arguments) it is a constant source of bugs in shell scripts.
+This makes it really difficult for your shell language to support any kind of strong typing—since everything passed to any command or function needs to be a string, you're constantly reinterpreting data and risking it being reinterpreted differently. Having everything be handled like a string is consistent with how programs run (they have to work out how to interpret the type of their arguments) is a constant source of bugs in shell scripts.
 
 > My favourite fun fact about shells is that some of the "syntax" is actually just a clever use of the command calling convention. For example, the square bracket in conditionals is [actually a program called `[`](/2017/01/11/conditionals-in-sh/).
 

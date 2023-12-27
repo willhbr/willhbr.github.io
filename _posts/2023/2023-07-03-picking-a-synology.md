@@ -47,7 +47,7 @@ Eventually I decided that the advantages of Btrfs and Docker support were not en
 
 I've had the DS420j for about three months now, it's been running almost constantly the entire time, and my backup system has moved over to it entirely.
 
-The first thing I realised when setting up the DS420j is despite the OS being Linux based, it does not embrace Linux conventions. Critically it eschews the Linux permission model entirely and implements its own permissions, so every file has to be `777`—world read and writable—for the Synology bits to work. This has knock-on effects to the SSH, SFTP, and rsync features; any user that has access to these has access to the entire drive. Since I'm the user on the Synology, I'm not that bothered by this. The only reason I'd want different users is to have guarantees that different device backups couldn't overwrite each other.
+The first thing I realised when setting up the DS420j is despite the OS being Linux based, it does not embrace Linux conventions. Critically it eschews the Linux permission model entirely and implements its own permissions, so every file has to be `777`—world read and writable—for the Synology bits to work. This has knock-on effects to the SSH, SFTP, and rsync features; any user that has access to these has access to the entire drive. Since I'm the only user on the Synology, I'm not that bothered by this. The only reason I'd want different users is to have guarantees that different device backups couldn't overwrite each other.
 
 The best thing by far with the Synology is how much stuff is built in or available in the software centre. Setting up Tailscale connectivity, archives from cloud storage (eg Dropbox), and storage usage analysis was trivial.
 

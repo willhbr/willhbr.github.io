@@ -11,7 +11,7 @@ What is more difficult is flying a drone in an area that may have other aircraft
 
 This basically means that if a helicopter turns up, you should get the drone as low as possible and land as quickly as possible. In theory, crewed aircraft should be above 150m (500ft), with a 30m (100ft) vertical gap between them and the highest drones. However on the occasions where there have been helicopters passing by, to my eye they seem to be much closer than that, which makes me anxious—I want my drone to remain well clear of any helicopters.
 
-Virtually all aircraft carry an [ABS-B transmitter][adsb] which broadcasts their GPS location to nearby planes and ground stations. They use this location to avoid running into each other, especially in low-visibility conditions. Flight-tracking services like [flightradar24](http://flightradar24.com) aggregate this data globally and present it on a map.
+Virtually all aircraft carry an [ADS-B transmitter][adsb] which broadcasts their GPS location to nearby planes and ground stations. They use this location to avoid running into each other, especially in low-visibility conditions. Flight-tracking services like [flightradar24](http://flightradar24.com) aggregate this data globally and present it on a map.
 
 [adsb]: https://en.wikipedia.org/wiki/Automatic_Dependent_Surveillance–Broadcast
 
