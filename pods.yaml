@@ -25,6 +25,8 @@ containers:
     args:
       - --future
       - --draft
+      - --incremental
+      - --strict_front_matter
 
   prod:
     name: willhbr.github.io-prod
@@ -45,3 +47,5 @@ containers:
       config: _config.yml
       host: 0
       port: 80
+    args:
+      - --strict_front_matter

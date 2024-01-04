@@ -34,6 +34,7 @@ defaults:
     values:
       layout: post
       type: article
+      auto_excerpt: true
 
 markdown: kramdown
 permalink: pretty
