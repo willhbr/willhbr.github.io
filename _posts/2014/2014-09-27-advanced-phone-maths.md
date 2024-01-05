@@ -6,7 +6,7 @@ So, the iPhone 6 sports a revolutionary new 4.7" display. This upgrade was compl
 
 The increased screen size is definitely a big improvement. Games can worry less about your fingers covering up all the action and videos can be watched in their full 4.7" glory. However the phone is too big. It has the same footprint as my Galaxy S3 - from 2012 - a phone that when you take a step back from and look at the whole device it actually has a fairly small screen. Samsung even squeezed an extra .3" into the S4, while keeping the same footprint.
 
-This led me to wonder how the iPhone stacked up against the other flagships of the last few years, in terms of the ratio of screen area to the area of the device. After some trips to [GSM Arena](gsmarena.com) and some spreadsheet-foo, I'd come up with an answer:
+This led me to wonder how the iPhone stacked up against the other flagships of the last few years, in terms of the ratio of screen area to the area of the device. After some trips to [GSM Arena](https://gsmarena.com) and some spreadsheet-foo, I'd come up with an answer:
 
 ![Graph of phones](/images/2014/phone-graph.png)
 

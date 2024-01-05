@@ -7,7 +7,7 @@ Yesterday I came across [Warp Terminal][warp] via their advertisement on [Daring
 [warp]: https://www.warp.dev
 [df-ad]: https://daringfireball.net/feeds/sponsors/2023/07/warp_your_terminal_reimagined
 [^good-ad]: Who needs ad personalisation when you can just go directly to your target market?
-[modern-shells]: http://steve:4000/2023/07/06/why-modernising-shells-is-a-sisyphean-effort/
+[modern-shells]: /2023/07/06/why-modernising-shells-is-a-sisyphean-effort/
 
 > If you're not sure of the difference between a terminal and a shell, [_The TTY demystified_](http://www.linusakesson.net/programming/tty/) is a really good read to understand the history and responsibilities of both. Basically the terminal emulator pretends to be a [computer from 1978](https://en.wikipedia.org/wiki/VT100), and the shell runs inside of that.
 

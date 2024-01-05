@@ -43,7 +43,7 @@ if let k = key, let value = myDict[k] {
 }
 ```
 
-What makes Swift that bit cooler than other languages that I've dabbled in is that it has the standard functional programming functions - `map`, `filter`, and `reduce` - which makes working with arrays a whole lot less cumbersome for anyone with a bit of [functional programming prowess](https://gist.github.com/JavaNut13/6e4d65328306b993ca6d). Paired with the powerful closure support, it's easy to express an operation in terms of a few closures. To turn a list of strings into a list of all the ones that can be turned into ints you can just map and filter them:
+What makes Swift that bit cooler than other languages that I've dabbled in is that it has the standard functional programming functions - `map`, `filter`, and `reduce` - which makes working with arrays a whole lot less cumbersome for anyone with a bit of [functional programming prowess](https://gist.github.com/willhbr/6e4d65328306b993ca6d). Paired with the powerful closure support, it's easy to express an operation in terms of a few closures. To turn a list of strings into a list of all the ones that can be turned into ints you can just map and filter them:
 
 ```swift
 let nums = myStringList.map({ str in
@@ -58,7 +58,7 @@ To sum these you can use the name-less closure syntax:
 ```swift
 nums.reduce(0, { $0 + $1 })
 ```
-    
+
 None of this would be possible without Swift's type system. When first looking at Swift I thought that it was simply statically typed like Java, except you didn't have to explicitly declare the type of variables - they would be set for you if the compiler could work it out. However Swift can behave somewhat like [Haskell's types](https://www.learnyouahaskell.com/types-and-typeclasses) to create functions that don't just work on on a string or a number, but any type that implements a certain protocol.
 
 In Haskell you might come across something like:
