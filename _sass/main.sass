@@ -33,6 +33,10 @@ $metadata-colour-dark: darken($text-colour-dark, 20%)
 $footer-colour-light: lighten($text-colour-light, 10%)
 $footer-colour-dark: darken($text-colour-dark, 10%)
 
+$title-font-family: "Bahnschrift", "DIN Alternate", "Roboto Condensed", sans-serif
+$body-font-family: "Helvetica", "Roboto", sans-serif
+$code-font-family: "Fira Code", "Anonymous Pro", monospace
+
 @import "darkmode"
 
 $paragraph-size: 17px
@@ -51,7 +55,7 @@ html
 body
   color: var(--text-colour)
   background-color: var(--background-colour)
-  font-family: "Helvetica", "Roboto", sans-serif
+  font-family: $body-font-family
   font-size: $paragraph-size
   font-weight: 300
   margin-left: $body-side-margin
@@ -92,7 +96,7 @@ h1.post-title
     text-decoration: none
 
 h1, h2, h3, h4, h5, h6
-  font-family: "Bahnschrift", "DIN Alternate", sans-serif
+  font-family: $title-font-family
   color: var(--highlight-colour)
   font-weight: 300
   margin-bottom: 0
@@ -124,7 +128,7 @@ p
   font-size: $metadata-size
 
 .title
-  font-family: "Bahnschrift", "DIN Alternate", sans-serif
+  font-family: $title-font-family
   font-size: $header-size
   color: var(--title-colour)
 .title:hover, .button:hover
@@ -134,6 +138,8 @@ p
   padding: 2px 10px 5px 10px
   overflow: scroll
 
+pre, code
+  font-family: $code-font-family
 .highlighter-rouge pre, code.highlighter-rouge, .highlight
   border-radius: 4px
   font-size: 0.9em

@@ -1,8 +1,7 @@
 ---
 layout: page
+title: 'Will Richardson: About Me'
 ---
-
-# Hi!
 
 I'm Will - a software engineer and photographer from New Zealand, living in Sydney.
 
