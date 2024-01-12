@@ -25,7 +25,6 @@ containers:
     args:
       - --future
       - --draft
-      - --incremental
       - --strict_front_matter
 
   prod:
