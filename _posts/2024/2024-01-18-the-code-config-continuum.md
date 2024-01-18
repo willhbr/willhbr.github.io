@@ -80,13 +80,12 @@ Some things that you can't do in YAML.
 That being said, YAML is far from simple:
 
 > The YAML spec is 23,449 words; for comparison, TOML is 3,339 words, JSON is 1,969 words, and XML is 20,603 words.
-> Who among us have read all that? Who among us have read and understood all of that? Who among of have read, understood, and remembered all of that?
+> Who among us have read all that? Who among us have read and understood all of that? Who among us have read, understood, and remembered all of that?
 > For example did you know there are nine ways to write a multi-line string in YAML with subtly different behaviour?
+>
+> —[Martin Tournoij: _YAML: probably not so great after all_](https://www.arp242.net/yaml-config.html)
 
-[Martin Tournoij: "YAML: probably not so great after all"](https://www.arp242.net/yaml-config.html)
-{:class="caption"}
-
-YAML is full of surprising traps, like the fact that the [presence of absence of quotes around a value changes how it is parsed](https://github.com/crystal-lang/crystal/pull/13546) and so the [country code for Norway gets parsed as the boolean value `false`](https://www.bram.us/2022/01/11/yaml-the-norway-problem/).
+YAML is full of surprising traps, like the fact that the [presence or absence of quotes around a value changes how it is parsed](https://github.com/crystal-lang/crystal/pull/13546) and so the [country code for Norway gets parsed as the boolean value `false`](https://www.bram.us/2022/01/11/yaml-the-norway-problem/).
 
 Even if you decide that the power of YAML is worth these costs, you're still going to run into a wall eventually. [`noyaml.com`](https://noyaml.com/) is a good entrypoint to the world of weird YAML behaviour.
 
