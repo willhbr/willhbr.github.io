@@ -1,5 +1,6 @@
 ---
 title: 40th Anniversary Macs
+image: /images/2024/macbook-air.png
 ---
 
 ![My current M1 MacBook Air, taken in BitCam](/images/2024/macbook-air.png)
