@@ -6,6 +6,8 @@ images:
   website:
     tag: willhbr.github.io:latest
     from: Containerfile.local
+    build_flags:
+      cache-ttl: 24h
 containers:
   website:
     name: willhbr.github.io
@@ -33,7 +35,7 @@ containers:
     bind_mounts:
       .: /src
     ports:
-      4000: 80
+      0: 80
     interactive: true
     autoremove: true
     labels:
