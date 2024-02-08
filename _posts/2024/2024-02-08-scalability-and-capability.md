@@ -1,5 +1,6 @@
 ---
 title: Scalability and Capability
+image: https://pics.willhbr.net/photos/2021-07-10.jpeg
 ---
 
 I thought of this as a single topic, but when I started writing it I realised that I was really thinking about two different things—scalability and capability—but after writing half of this I also realised that the broader idea that I've been thinking about needs to include both. So let's start with:
