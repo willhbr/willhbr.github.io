@@ -1,7 +1,5 @@
-name: &name Will Richardson 
-
-title: *name
-author: *name
+title: Will Richardson
+author: Will Richardson
 
 description: "The blog of Will Richardson, a software engineer and photographer from New Zealand."
 baseurl: ""
