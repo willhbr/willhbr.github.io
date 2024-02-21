@@ -29,6 +29,21 @@ containers:
       - --draft
       - --strict_front_matter
 
+  mdl:
+    name: willhbr.github.io-mdl
+    image: localhost/willhbr.github.io:latest
+    bind_mounts:
+      .: /src
+    interactive: true
+    autoremove: true
+    run_flags:
+      entrypoint:
+        - mdl
+        - --ignore-front-matter
+        - -r
+        - '~MD013'
+        - _posts
+
   prod:
     name: willhbr.github.io-prod
     image: localhost/willhbr.github.io:latest

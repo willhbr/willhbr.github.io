@@ -41,4 +41,3 @@ The most annoying thing is a very subtle difference in how Feedly and FreshRSS t
 To avoid exposing FreshRSS to the outside world, it's only accessible when I'm connected to my VPN, so I don't have to worry about having a domain name, SSL cert, secure login, and all that.
 
 I haven't had any reliability issues with FreshRSS yet, obviously the biggest disadvantage is that I'm signing myself up to be a sysadmin for it, and the time that it will break is when I'm away from home without my laptop.
-
