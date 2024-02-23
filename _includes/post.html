@@ -20,9 +20,6 @@
 				{% endif %} minutes
         &bull;
         {{ post.content | strip_html | number_of_words }} words
-        &bull;
-        <a href="/admin/collections/posts/{{ post.path | replace: "_posts/", "" }}"
-          target=_blank>Edit</a>
       {% endif %}
     </div>
   </header>

@@ -19,17 +19,12 @@ File.open(path) do |f|
 end
 frontmatter = YAML.load(front, permitted_classes: [Date])
 title = frontmatter["title"]
-date = frontmatter["date"]
-
-if date.nil?
-  date = Date.today
-end
-year = date.year
+date = frontmatter["date"] || Date.today
 
 slug = title.downcase.gsub(/[\W]+/, '-')
-filename = "#{date}-#{slug}.md"
+filename = "#{date.strftime('%F')}-#{slug}.md"
 
-dest = "./_posts/#{year}/#{filename}"
+dest = "./_posts/#{date.year}/#{filename}"
 
 puts({
   slug: slug,
