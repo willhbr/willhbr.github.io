@@ -75,10 +75,10 @@ They are really just a placeholder to keep the type system in check. We can then
 ```kotlin
 operator fun <R: Unit> div(quantity: Quantity<R>): Quantity<QuotientUnit<T, R>> {
   return Quantity(amount / quantity.amount, QuotientUnit(unit, quantity.unit))
-} 
+}
 operator fun <R: Unit> times(quantity: Quantity<R>): Quantity<ProductUnit<T, R>> {
   return Quantity(amount * quantity.amount, ProductUnit(unit, quantity.unit))
-} 
+}
 ```
 
 So now when we divide a distance in kilometers by a time in hours, we get a `QuotientUnit<Distance, Time>` with a suffix of "km/h":

@@ -41,7 +41,12 @@ containers:
         - mdl
         - --ignore-front-matter
         - -r
-        - '~MD013'
+        # 7: unordered list indentation
+        # 13: Line length
+        # 14: Dollar signs in code blocks with no output
+        # 33: Inline HTML
+        # 26: Punctuation after headers
+        - '~MD007,~MD013,~MD014,~MD033,~MD026'
         - _posts
 
   prod:

@@ -25,10 +25,12 @@ gitlab-ci-multi-runner register
 
 The register command sets up a runner to point to a certain GitLab url (either GitLab.com or your custom instance) and the token needed to pull your code. I setup mine with:
 
-    URL: https://gitlab.com/ci
-    Token: ~~ secret token ~~ # Accessed in the main project settings
-    Description: Test runner
-    Executor: shell
+```
+URL: https://gitlab.com/ci
+Token: ~~ secret token ~~ # Accessed in the main project settings
+Description: Test runner
+Executor: shell
+```
 
 I made a quick branch on [one of my projects](https://github.com/JavaNut13/WORM) that has fair number of unit tests that are easily run. All I had to do was add a `.gitlab-ci.yml` file:
 

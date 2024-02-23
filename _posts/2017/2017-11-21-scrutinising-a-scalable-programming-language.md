@@ -4,7 +4,7 @@ title: Scrutinising a Scalable Programming Language
 
 In my opinion, most developers should know three different programming languages, three different tools that can be used for most of the projects you come across. These should include a scripting language - for automating a task or doing something quickly; an application language - for writing user-facing or client applications, which have to be run on systems that you don't control; and an "infrastructure" language for building a system that has many components and runs on your own platform.
 
-> I don't really do any systems programming - which I see as basically being dominated by C anyway - so I would lump it in with your application language, as the situation is very similar. If this is not the case then the target hardware and tooling probably dictates using C anyway.  
+> I don't really do any systems programming - which I see as basically being dominated by C anyway - so I would lump it in with your application language, as the situation is very similar. If this is not the case then the target hardware and tooling probably dictates using C anyway.
 
 A scripting language is usually dynamically typed and interpreted. It starts up fast and lets you cut as many corners as needed until the problem is solved. It should be good at dealing with files, text, and simple HTTP requests. For this I will usually use Ruby, as it is very quick to write and has useful shortcuts for common things scripts do - like running shell commands. On occasion I will use Python, but I can't think of any reason that I would use it over Ruby - except for Ruby not being installed.
 
@@ -16,39 +16,45 @@ The "infrastructure" language is probably closest to what I find most interestin
 
 I expect that most people - like me - would choose three fairly different languages. What if we had a language that could be used easily for all of these situations? What would it take, and what (in my opinion) is stopping existing languages from being used everywhere?
 
-> Most of these languages can be used in all situations, but there are some things that get in the way of them being a great choice. If you are an expert in one particular language then the familiarity will likely win out over the suitability of another.  
+> Most of these languages can be used in all situations, but there are some things that get in the way of them being a great choice. If you are an expert in one particular language then the familiarity will likely win out over the suitability of another.
 
-## Go
+# Go
+
 Go excels at building highly concurrent and performant applications. What makes it even more useful is the ability to easily cross compile to pretty much every major platform. Not having exceptions makes it easy to cut corners in error handling - which makes building an initial prototype or experiment easier. For me the verbose syntax and lack of (seemingly simple) language features pushes me away from Go - but I'll happily reap the benefits of others using it by making use of [their applications](https://gitea.io).
 
 The other aspect of Go that I find frustrating is the enforced package structure and (lack of) dependency management. There is a fair bit of work from just using `go run` on a single file to setting up a proper Go environment - especially if you have an existing way of organising your projects.
 
-## Java/ Other JVM Languages
+# Java/ Other JVM Languages
+
 The main pitfall of using the JVM for quick tasks is that it usually takes longer for the JVM to start than it does for your program to run. In the time that it takes to start a Clojure REPL, I can typically open a few other terminals and launch a Ruby, Python, and Elixir REPL.
 
 Plain Java also lacks a build system - who in their right mind would use `javac` to compile multiple files? No simple script should start by writing a `pom.xml` file. Kotlin is a lot closer to being used for scripting, but still has the problem of slow JVM startup.
 
-## Python & Ruby
+# Python & Ruby
+
 Both are great scripting languages, and often get paired with native extensions that increase performance without you having to step down to a lower-level language yourself. However I find that the native extensions or systems that manage the running of your code (Passenger, etc) hard to understand and deploy. I like the idea of being able to run the application completely in production mode locally, which is often not really the case for these types of systems. For example, Rails is usually run in production through a Rack-based server that lets your application handle concurrent requests easily, however in development it just uses a simple single-threaded server.
 
 This makes deployment more difficult, and Pythons versioning fiasco doesn't help. I once wrote a simple script to run on my Raspberry Pi, and because I couldn't get the correct version of Pip installed to load the dependencies onto the Pi I just reimplemented the same script in Go and cross-compiled it.
 
-## JavaScript & Node
+# JavaScript & Node
+
 I don't have a lot of experience with JavaScript, but it is one of the few languages that is probably being used in almost every scenario. Quick scripts using Node, applications either in Electron or even just as a web page, and potentially back to Node for your infrastructure. However the ecosystem and build tools are not really to my liking (to say the least), so I will rarely use Node for anything unless I really have to.
 
-## Swift
+# Swift
+
 Swift has the potential to be a great option for solving all kinds of problems, but the focus on iOS and macOS development hinders it in the areas that I am interested in - backend development on Linux. This fragments libraries and frameworks, some depend on being built by XCode and use Foundation or Cocoa, others use the Swift Package Manager and use third-party implementations of what you would expect from a standard library. For example, I don't know how to open a file in Swift. I know how to do it using Foundation, but not on Linux - or maybe that's changed in the latest version?
 
 String handling makes Swift awkward to use for scripting - indexing can only be done using a `Index` rather than an `Int`. This makes sense - indexing a UTF-8 string is an O(n) operation as characters can be pretty much any number of bytes. It does mean that you end up with a spaghetti of `string.startIndex` and `string.index(after: idx)`.
 
-## Elixir
+# Elixir
+
 I find [Elixir](https://elixir-lang.org) great for making systems with many different components - which isn't a surprise given the concurrent focus of Erlang and the BEAM VM. The tooling for Elixir is also great, which makes it a pleasure to develop with. Creating a new project, pulling in some dependencies, building a system, and deploying it is well supported for a new language.
 
 The tooling is necessary - working with multiple files isn't really possible outside of a Mix (the Elixir build system) project, as Mix makes a load of bits and bobs that allows BEAM to put all the code together.
 
 I would never imagine building something designed to run on a computer that's not my own with Elixir - having someone install Erlang or bundling all of it into a platform-specific binary seems a bit flaky. Also the type of code you write for a client-side application usually isn't suited for Elixir.
 
-## Crystal
+# Crystal
 
 [Crystal](https://crystal-lang.org) is an interesting new language - it's still in alpha. What makes it interesting is it has global type inference; instead of just inferring the type for variable assignments based on the return type of functions, it takes into account the usage of every function to determine what types the arguments and result are.
 

@@ -30,7 +30,7 @@ There are a lot of small things that make this course work, but I'm just going t
 
 Firstly having a massive project that is too big for one person to do or to cram in at the start of the year, it is always big enough that you can't see the whole scope and how things fit together until you've finished the initial parts - this forces the team to work sustainably and discourages cramming it all at the last minute or trying to get everything out of the way. This should guide the team to get into a consistent rhythm.
 
-The team should reflect the size of an industry software engineering team - about six to ten people. I think seven is a good size - it is small enough that everyone can keep up-to-date with the rest of the team, but big enough to produce a sizeable amount of work throughout the year. 
+The team should reflect the size of an industry software engineering team - about six to ten people. I think seven is a good size - it is small enough that everyone can keep up-to-date with the rest of the team, but big enough to produce a sizeable amount of work throughout the year.
 
 Instead of having a single deadline at the end of the project where the team dumps a load of work and promptly forgets about it, the team should at least be getting feedback on how their development process is improving. Ideally, teachers would be able to do significant analysis into how the team is working - incorporating both data gathered from the codebase, the development process, and subjective feedback from students.
 

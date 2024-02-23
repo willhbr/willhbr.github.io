@@ -8,7 +8,7 @@ Functional programming is based around the idea of passing code around just like
 
 Most languages that support higher-order functions (functions that take code as a parameter) have three 'bread and butter' functions built-in: `map`, `filter`, and `reduce`. These simplify common list operations by abstracting away the boilerplate.
 
-## Map
+# Map
 
 Let's say that I have a list of countries, and I want to present them to a user in a certain format. This is a faily common example where I have a list and I want to do an operation on each of its elements to produce a new list. You could say that there will be a _mapping_ from each element in the first list to the element in the second list. In first year you are told to do something like this:
 
@@ -32,7 +32,7 @@ Both methods are doing the same thing, but (for someone who understands function
 
 An important note with map is that the operation should affect the object that you are mapping. For example if you map the countries to get all their names, but also reset some attribute of the country - you're asking for problems in the future. If someone later decides that they only want to get the names of the first ten countries and you were relying on the fact that some other action is performed on all of them - problems are inbound.
 
-## Filter
+# Filter
 
 Filter treats your function like a sieve - everything that it accepts is let through, the rest is ignored. So in this case your lambda is taking an item and returning `true` if you want that item to make it through the sieve. Filter reduces even more boilerplate:
 
@@ -55,7 +55,7 @@ let even_numbers = numbers.filter { number in number % 2 == 0 }
 
 You can of course chain filter statements together, or include a few conditions - basically like an SQL `WHERE` clause. Filter is especially useful when you have a list of objects, and you want to get rid of the ones that are null.
 
-## Reduce
+# Reduce
 
 When you have a list of items and want to distill it down to one object that represents some aspect of the whole list, reduce is what you're looking for. The lambda takes two arguments - the reduced list so far, and the item that you want to reduce 'into' this reduced form. Reduce also takes an intial value, which is what the reduced form should start off as. A great example is summing a list of numbers - the initial reduced form is `0`, and each time you want to add the current number to that.
 
@@ -68,7 +68,7 @@ Reduce is hard to explain - mainly because I don't end up using it very often. M
 
 > If you think about it, both map and filter can be implemented using reduce - making reduce the only list operation you really need. So really map and filter are just helpers the common cases of reduce.
 
-## Let's make a lambda!
+# Let's make a lambda!
 
 So with all this knowledge, how do you go about using it? Well...
 
@@ -90,7 +90,7 @@ List<String> names = countries
 
 (Of course Java manages to still make a one line function into four)
 
-### Method references
+## Method references
 
 If you functionally program enough, there will be some boilerplate - like creating a lambda that just calls one method on an object. So you can often just refer to that method, rather than writing out the whole lambda declaration:
 

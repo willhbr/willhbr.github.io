@@ -19,17 +19,17 @@ The problem first started when [a friend of mine](https://instagram.com/sam_yamo
 There are two big problems here:
 
 1. my iPad only has 250GB of storage
-2. my home internet is too slow to upload this many photos to Google Photos[^better-internet]
+1. my home internet is too slow to upload this many photos to Google Photos[^better-internet]
 
 My first thought was to just dump my unused photos onto an external drive (now that iOS 13 adds support for them natively) and delete them from my iPad. This works OK for video - you have a handful of files, each of which are a few gigabytes. Background processing isn't great in iOS, but I can deal with having to keep the app open in the foreground while the copy is happening.
 
 This is not the case with photos. You instead have hundreds and hundreds of small files, so if the copy fails you have no idea how much you have to continue with. That being said, if you were shooting jpegs, you could do something like:
 
 1. import into the Photos app
-2. swap the SD card out for an external drive
-3. select all the photos you just imported (hoping that you can just select in a date range)
-4. drag the photos into a folder on the external drive
-5. baby sit the Files app while it copies
+1. swap the SD card out for an external drive
+1. select all the photos you just imported (hoping that you can just select in a date range)
+1. drag the photos into a folder on the external drive
+1. baby sit the Files app while it copies
 
 Less than ideal, but workable. Ok, now why won't that work for raw files?
 
@@ -62,9 +62,9 @@ One solution could be to connect my external drive to my home server, and find a
 I think the only thing that can make this practical - outside of iOS getting much better at managing external drives - is to make an app that reads the full image data from Photos, and writes to a directory on an external drive. It could also keep a record of what it has exported, and allow for cleaning up any photos that didn't get edited automatically. The workflow would look something like:
 
 1. attach SD card and import into Photos app
-2. attach external drive and use photo exporting app to copy new photos onto the drive
-3. edit/delete photos using any app that takes your fancy
-4. use photo export app to remove any photo that wasn't edited or marked in some way (eg, favorited) in one go
+1. attach external drive and use photo exporting app to copy new photos onto the drive
+1. edit/delete photos using any app that takes your fancy
+1. use photo export app to remove any photo that wasn't edited or marked in some way (eg, favorited) in one go
 
 This would patch over the poor experience of copying to external drives, making iOS-only photography more practical for people who don't want to pay for cloud storage for hundreds of mediocre shots.
 

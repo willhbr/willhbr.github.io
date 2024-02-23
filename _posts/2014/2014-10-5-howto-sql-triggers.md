@@ -8,7 +8,7 @@ The action can be an `insert`, `update` or `delete` and the trigger can be run `
 
 For example the following statement is triggered when there is a new row inserted into the `testtable` table and it will duplicate two attributes (`attr` and `attr1`) into a second table called `result`, once for each row that has been inserted.
 
-```
+```sql
 create trigger testtrigger
   before insert on testtable
   for each row
@@ -34,7 +34,7 @@ This snippet will run before an update on `testtable` and will execute one of tw
 
 When the trigger started on insert or update, a tuple `new` is set to be the new row that is being inserted (Sometimes you need to call it `:new`). On update you get `new` and `old` to work with.
 
-### Gotcha
+# Gotcha
 
 When you're running this in some clients or interactive prompts, the interpreter will mistake the first semicolon as the end of the statement and fail. To fix this you just need to add:
 

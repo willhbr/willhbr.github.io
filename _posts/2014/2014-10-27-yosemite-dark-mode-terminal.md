@@ -25,7 +25,7 @@ This is the _Pro_ theme with a slight transparency and a custom `PS1` variable -
 export PS1="\[\033[0;36m\]\h \[\033[0;37m\](\W) "
 ```
 
-## Yosemite Style
+# Yosemite Style
 
 I decided that for Yosemite the background should be blurred and have the same transparency as the menu bar, so I inspected a screenshot and found it to have 70% opacity. To mimick this look I went to:
 

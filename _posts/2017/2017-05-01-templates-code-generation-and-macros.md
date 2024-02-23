@@ -34,8 +34,8 @@ Sourcery is quite cool - but it means that you have to have a special Sourcery f
 
 This is essentially what macros are. They are pieces of code that make more code, and are run when the program is compiled. For example if Swift supported this, it might look something like:
 
-{% raw %}
 ```swift
+{% raw %}
 func ==(other: this.class.name) {
   for attr in this.storedVariables {
     quote {
@@ -46,8 +46,8 @@ func ==(other: this.class.name) {
     return true
   }
 }
-```
 {% endraw %}
+```
 
 I'm imagining that `quote` will turn whatever is inside it into code that will be generated (like other languages), and the double curly braces escape a variable - {% raw %}`{{ attr }}`{% endraw %} would be expanded to the name of the attribute.
 

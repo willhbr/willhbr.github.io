@@ -4,7 +4,7 @@ title: "Smartwatch!?"
 
 First to enter the foray of consumer-friendly wearable computing, the [Pebble](https://getpebble.com) is the product of a highly successful Kickstarter project, raising over 100 times its goal. You know that though. What you don't know, is how it works in the real world and whether it can replace your (probably empty) wrist.
 
-## What it does
+# What it does
 
 Once you've got your pebble paired with your phone it will display one of the three default watchfaces (a word clock, a basic 'analogue' watch and a tacky-looking digital one). The [Android app](https://play.google.com/store/apps/details?id=com.getpebble.android) now has the option right out of the box to show notifications from your calls, texts, calendar, email & any other 3rd party apps. This works best with android 4.3+ so it can use the official notification API.
 
@@ -16,7 +16,7 @@ The music app is almost worth buying the Pebble for. Yup, I did just say that: N
 
 This does come with a drawback of the _native_ music app; it ties the controls to a single app (In my case I have it linked to [Pocketcasts](https://www.shiftyjelly.com/pocketcasts)) which allows it to open the app if it is not already, and then start playing music. If you have Pocketcasts set as the app to control, and you're listening to music on Spotify and you try to skip a track, the Pebble will send the command to Pocketcasts not Spotify. There are apps ([MusicBoss](https://play.google.com/store/apps/details?id=ca.rebootsramblings.musicboss)) that you can use to improve the behaviour and make the pebble. I listen to podcasts most of the time so I just leave it on Pocketcasts and I'm happy.
 
-## Pebble 2.0: What I'd like to see
+# Pebble 2.0: What I'd like to see
 
 With the introduction of the Apple Watch and more Android Wear devices next year, Pebble will have to step up their smartwatch game to remain relevant. With no input method the Pebble remains to be a status display with hotkeys for your phone.
 
@@ -34,7 +34,7 @@ However no voice input will be a dealbreaker for the massive smartwatch market (
 
 'Always on' voice recognition driven by the phone could be a marketing nightmare because it would depend fully on the chipset in the phone that it is paired with - ie no iPhones and only a couple of Android phones (Motorola is the only company that seems to be doing this well as far as I can remember) - meaning that the general public won't be seeing the features they'd hoped for.
 
-## Should your mum get one?
+# Should your mum get one?
 
 Unless your mum is a massive nerd, then no. The pebble still has some weird connectivity issues that can't be solved by simply pressing a 'reconnect' button - every few days it gets sad and disconnects itself so thoroughly I have to go into the bluetooth settings on the watch, remove my phone from the list of known devices and then try and reconnect. That sometimes works.
 

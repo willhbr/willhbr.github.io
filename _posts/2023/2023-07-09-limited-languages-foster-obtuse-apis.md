@@ -87,5 +87,3 @@ Of course no blog post about languages would be complete without me explaining h
 [^actually-overridable]: There are [actually variations of this syntax](https://crystal-lang.org/reference/1.8/syntax_and_semantics/literals/array.html) that other types can override.
 
 What this really boils down to is that programming language design should limit the amount of syntax that are bound to specific types. In Java this is operators and subscripts, in Go this is also includes channels. The Java ecosystem's obsession with design patterns and abstraction is fuelled by the lack features in the language, requiring developers to invent another sub-language on top using the pieces of Java that they have access to—types and method calls. Go might have different built-in tools (like coroutines and channels) but since they are baked right into the language syntax, they can't be replaced or altered as developer needs change.
-
-

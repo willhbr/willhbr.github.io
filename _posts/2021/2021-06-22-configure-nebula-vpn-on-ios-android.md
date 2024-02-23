@@ -11,8 +11,8 @@ Installing Nebula is a fairly straightforward (but manual) process. It's not ava
 On the server that will be your lighthouse (ie a server that has a public static IP, and can open a port to the outside world).
 
 1. Download the latest release for your platform from [GitHub](https://github.com/slackhq/nebula/releases).
-2. Extract the archive and put `nebula` and `nebula-cert` somewhere in your `$PATH` - like `/usr/local/bin`. Make sure they're executable: `sudo chmod +x /usr/local/bin/nebula*`.
-3. Download the [example config](https://github.com/slackhq/nebula/blob/master/examples/config.yml) to `/etc/nebula/config.yml`.
+1. Extract the archive and put `nebula` and `nebula-cert` somewhere in your `$PATH` - like `/usr/local/bin`. Make sure they're executable: `sudo chmod +x /usr/local/bin/nebula*`.
+1. Download the [example config](https://github.com/slackhq/nebula/blob/master/examples/config.yml) to `/etc/nebula/config.yml`.
 
 Now let's generate some certificates! Generate a CA cert:
 

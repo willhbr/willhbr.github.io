@@ -37,5 +37,3 @@ There is however - as is tradition when talking about iOS releases - always next
 What I don't want to see is a literal port of the command line to iOS, because that would be a significant step back in imagining a new way of handling inter-app communication and would most likely be so constrained that it wouldn't be able to fill the use cases of todays terminals. A bad terminal on iOS would only serve to further the argument that doing work on iOS is a dead end.
 
 But hey, I'm just some guy that uses tools that are decades older than him.
-
-

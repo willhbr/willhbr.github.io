@@ -41,9 +41,9 @@ ENTRYPOINT ["ruby", "main.rb"]
 Our development iteration then goes something like:
 
 1. Make a change to `main.rb`
-2. Build a new image: `podman build -t my-image .`
-3. Run the image: `podman run -it --rm test:latest`
-4. Observe the results, and go back to 1
+1. Build a new image: `podman build -t my-image .`
+1. Run the image: `podman run -it --rm test:latest`
+1. Observe the results, and go back to 1
 
 Building the image takes a few seconds, and that's without any dependencies and only one source file. If we're not careful about the ordering of our commands in the containerfile, we can end up with a really slow build. And we have to do that every time we want to run the container! We've just taken the fast iteration of an interpreted language and made it as slow as a compiled one.
 
@@ -54,11 +54,11 @@ The key is to use the development image as a bag to hold all of our dependencies
 We then use a [bind mount](https://docs.podman.io/en/latest/markdown/podman-run.1.html#mount-type-type-type-specific-option) to mount the source code to the container when we _run_ it—which stops us having to re-build the image every time we make a change to our source files. Development looks something like this now:
 
 1. Make a change to `main.rb`
-2. Run the development image:[^long-command]
+1. Run the development image:[^long-command]
 ```shell
 podman run --mount=type=bind,src=.,dst=/src -it --rm test:latest
 ```
-3. Observe results
+1. Observe results
 
 [^long-command]: Wow that's a long command, if only we [didn't have to type that every time!](/2023/06/08/pod-the-container-manager/)
 

@@ -8,7 +8,7 @@ image: /images/2015/pebbles.png
 A wee while ago I wrote a [semi-review of the original Pebble Smartwatch](/2015/01/25/smartwatch/) after I splashed out and bought one (because why not?). I made some predictions of what I thought Pebble would and wouldn't do with the next major iteration of the watch:
 
 > What I don't think Pebble will do:
-> 
+>
 > + Color screen
 > + Touch screen
 > + Android wear OS

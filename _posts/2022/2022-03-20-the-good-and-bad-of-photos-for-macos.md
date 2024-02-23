@@ -8,7 +8,7 @@ Unsurprisingly there hasn't been a change in iPadOS's capabilities since 2019. H
 
 > As well as ending up on Instagram, my photos also end up on [a real website](https://pics.willhbr.net).
 
-## The Good
+# The Good
 
 Reviewing and flagging photos on MacOS is much quicker and easier than on iPadOS. The arrow keys move instantly between photos (instead of having to swipe and see an animation), which means you can have a more direct comparison between two shots. Pressing "." quickly favourites a photo, which I use to mark a photo as a possible editing opportunity. Deleting photos or removing them from an album can be done with one shortcut – no annoying confirmation required _every time_. These few things alone make it much easier for me to scan through my photos, find the best ones, and clear out any obvious rubbish.
 
@@ -26,7 +26,7 @@ In addition to Pixelmator Pro, I've also found use in single-purpose utilities l
 
 While none of this is impossible on iPadOS, these tools are made with the assumption of a more serious use – for example I can stitch together 20 raw images from my a6500 and get a 1GB TIFF out the other end. Not a single pixel of data is lost, and the software on MacOS can scale to handle it without hitting any limits.
 
-## The Bad
+# The Bad
 
 While much of the software _around_ Photos on MacOS is built for serious users, Photos itself is still lacking. For example, when you export a JPEG, you get a few pre-defined choices for quality instead of a slider. I'd like to export at 95% quality, but instead I'm stuck with whatever "high" or "maximum" mean (probably 80% and 100%). I could probably work around this with Shortcuts, but that's another whole can of worms.
 

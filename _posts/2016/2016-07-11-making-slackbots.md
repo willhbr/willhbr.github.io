@@ -13,11 +13,11 @@ It's important to understand that there is a significant difference between a Sl
 My previous bots had all been custom integrations - specifically tailored to my team and hosted on my Raspberry Pi at home. What Logan and I were setting out to do was make a proper Slack app that could be installed and used by anyone, in any team. This meant implementing the OAuth 'flow' to get a token that could be used in a certain team. The sequence of events goes something like:
 
 1. The user clicks the Add to Slack button on your website
-2. They select one of their teams to add the app to
-3. Slack sends a one-time code to your server
-4. You use this code to get a permenant auth token for the team
-5. You send this token to the RTM.start method of the API to get a websocket URL
-6. A new bot instance connects to this URL and starts interacting with the members of the team.
+1. They select one of their teams to add the app to
+1. Slack sends a one-time code to your server
+1. You use this code to get a permenant auth token for the team
+1. You send this token to the RTM.start method of the API to get a websocket URL
+1. A new bot instance connects to this URL and starts interacting with the members of the team.
 
 My gem was built to only handle the last two steps of this sequence. So we obviously had to implement a webserver that could handle the callback from slack, and host somewhere for the Add to Slack button to live. We ended up using Sinatra for this, as it is very well supported and can be used in a single file - which is great when you just want to serve two mostly static pages.
 

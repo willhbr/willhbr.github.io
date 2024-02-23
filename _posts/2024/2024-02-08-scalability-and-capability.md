@@ -19,7 +19,6 @@ The difficulty is that this introduces a possibility for windows being "lost" on
 
 Tablets haven't yet managed to re-invent window management for a touch-first era. Allowing multitasking while not breaking the single-full-screen-app model is exceptionally challenging, and what we've ended up with is a complicated series of interdependent states and app stacks that even power-users don't understand. Even the iPad falls back to floating windows when an external monitor is connected, as being limited to two apps on a screen larger than 13" is not a good use of screen real estate.
 
-
 # Capability
 
 Something simultaneously wonderful and boring about computers is that while they continue to get better over time, they don't really _do_ anything more over time. The computer that I bought from a recycling centre for $20 basically does the same things as the laptop that I'm using to write this very post.

@@ -10,15 +10,15 @@ In an effort to keep things simple and avoiding the temptation to write my own s
 
 I have of course worked out a variety of ways to maximise my use of this constrained environment.
 
-## Default Post Attributes
+# Default Post Attributes
 
 Jekyll allows you to specify the default front matter attributes in the config file. Previously whenever I would read these attributes in a template I would check if they were empty, and put the default right there in the template. Being able to configure a default makes this much easier. The defaults set the layout and [OpenGraph metadata](/2023/02/04/adding-opengraph-previews-to-jekyll/).
 
-## 404 Page
+# 404 Page
 
 Originally GH Pages didn't support a custom 404 page (instead just delivering a generic one common to all sites) but you can now create a `404.md` file and tell people they're looking for something that doesn't exist. [This is what mine looks like](/404.html).
 
-## Make The Most of Layouts and Includes
+# Make The Most of Layouts and Includes
 
 There are four places that posts can appear on the website; the actual post page, the index page, and the two feeds (RSS and JSON). I'm sad to say that despite Liquid supporting re-using files, I just copy-pasted the content of the post header between the index page and the post layout. There were definitely a few times where I was making edits to one and getting confused why I didn't see any changes to the site.
 
@@ -39,13 +39,13 @@ The trick with getting this to work was that Jekyll stores the post information 
 {% endraw %}
 ```
 
-## Data in `_config.yml`
+# Data in `_config.yml`
 
 The content of `_config.yml` is basically mapped directly to the `site` object, so you can define additional configuration knobs instead of setting them multiple times across the site. I use this to define a single date format that is used wherever a human-readable date is shown. I set `date_format: "%B %-d, %Y"` in the config and whenever I show a date I can access that format: `{% raw %}{{ post.date | date: site.date_format }}{% endraw %}`.
 
 I also use this for some common URLs—not because I'm likely to change them, but to avoid me mistyping them. Or you can dump data directly from the config file into a page, as I did with [the webfinger Mastodon trick](/2023/01/24/webfinger-mastodon-alias/) earlier this year.
 
-## Jekyll Admin
+# Jekyll Admin
 
 [Jekyll Admin](https://jekyll.github.io/jekyll-admin/) is a web UI that allows you to edit posts and pages, as well as upload files. Since I write on my laptop but run the Jekyll dev server on my home server, this avoids some awkward `scp`-ing by allowing me to just paste my posts into a webform.
 
@@ -55,13 +55,13 @@ I don't know if it's a problem with the version of Jekyll that I run (I use loca
 
 > Adding this very post to Jekyll Admin showed an error banner that said "Error: Could not update the doc". The doc had updated without any problems.
 
-## Development-Only Content
+# Development-Only Content
 
 Liquid has conditional expressions, and Jekyll has `jekyll.environment`. Smash these two together and you can add extra information that you only want visible when you run the website locally. For example I have a link to Jekyll Admin show as an additional link in the status bar, and every post has an "Edit" link that takes me directly to the Jekyll Admin edit interface for that post. Since the site is statically generated, that information obviously not just hidden on the real site—it's completely gone.
 
 > A Jekyll issue that's made worse with Jekyll Admin is the handling of the site URL. If you want to listen on all interfaces—because you're developing in a container or running the Jekyll dev server on a different machine than the one you want to view the website on—then you set `host: 0` either in `_config.yml` or via command-line arguments. The problem is that this overrides `site.url`, so any absolute URL will be `http://0:80/my_url` which is meaningless. Jekyll doesn't allow you to set the host without overriding the site URL, and Jekyll admin generates a bunch of these URLs that don't work properly.
 
-## Run it in a Container
+# Run it in a Container
 
 My website was actually one of the first things that I containerised and saw a real benefit. Even though Ruby environment management is a pretty well-trodden area, I still would run into dependency issues from time to time. Now I can simply just `pod run` and have the server running with basically no effort. Ideally I would use the exact same image GH Pages uses to build the site, but I haven't set that up yet and to be honest the benefits are probably fairly academic.
 

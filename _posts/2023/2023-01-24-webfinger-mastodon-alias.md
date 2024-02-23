@@ -54,7 +54,7 @@ Then just commit and push your site to GitHub. Once it's deployed, you should be
 
 > Since the server is static, it can't change the response based on the `resource` query parameter, but since (I assume) you're doing this for yourself on your personal website, that shouldn't matter too much.
 
-## Needless Polishing
+# Needless Polishing
 
 That's cool, but we can do better. Replace the `.well-known/webfinger` file with a template:
 

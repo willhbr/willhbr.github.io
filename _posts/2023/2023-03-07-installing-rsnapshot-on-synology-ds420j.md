@@ -13,17 +13,17 @@ There are plenty of instructions on how to setup rsnapshot using [Docker](https:
 
 All the instructions I could find were quite old, and the landscape seems to have changed. Synology have changed their package format, so old packages cannot be installed on newer DSM versions (according to [this German forum post](https://www.synology-forum.de/threads/ebi-easy-bootstrap-installer.68335/post-949587)) which means anything that tells you to install pages from [cphub.net](https://www.cphub.net) probably doesn't work any more. `ipkg` is also [no longer maintained](https://www.beatificabytes.be/use-opkg-instead-of-ipkg-on-synology/) and has been replaced by [Entware](https://github.com/Entware/Entware). Once I knew that, the process was relatively straightforward.
 
-## Preamble
+# Preamble
 
 You probably need to enable the `rsync` service, enable `ssh`, etc for this to work. I'm assuming that you've got a Synology already setup that you can SSH into and sync files to from your other computers. If you don't, then you should sort that out and then come back. I'll wait.
 
-## Install Entware
+# Install Entware
 
 Entware have [detailed installation instructions on GitHub](https://github.com/Entware/Entware/wiki/Install-on-Synology-NAS). Remember that the DS420j is `armv8`, check yours with `cat /proc/cpuinfo`.
 
 Once you've yolo-run the various install scripts and added enough backdoors into the device that holds all your most valuable information, you just need to add the scheduled tasks to keep Entware from being removed (take note of this, we'll use this again later for rsnapshot).
 
-## Setup `rsnapshot`
+# Setup `rsnapshot`
 
 Now we can use `opkg` to install `rsnapshot`:
 
@@ -34,30 +34,30 @@ $ sudo opkg install rsnapshot
 And then edit `/opt/etc/rsnapshot.conf` to taste. For example here's mine:
 
 ```conf
-config_version	1.2
+config_version  1.2
 
-snapshot_root	/volume1/rsnapshot
+snapshot_root  /volume1/rsnapshot
 
 # Commands
-cmd_cp	/bin/cp
-cmd_rm	/bin/rm
-cmd_rsync	/usr/bin/rsync
-cmd_ssh	/usr/bin/ssh
-cmd_logger	/usr/bin/logger
-cmd_du	/usr/bin/du
-cmd_rsnapshot_diff	/opt/bin/rsnapshot-diff
+cmd_cp  /bin/cp
+cmd_rm  /bin/rm
+cmd_rsync  /usr/bin/rsync
+cmd_ssh  /usr/bin/ssh
+cmd_logger  /usr/bin/logger
+cmd_du  /usr/bin/du
+cmd_rsnapshot_diff  /opt/bin/rsnapshot-diff
 
 # Backups
-retain	daily	28
-retain	weekly	26
+retain  daily  28
+retain  weekly  26
 
 # Opts
-verbose	2
-loglevel	3
-logfile	/var/log/rsnapshot.log
-lockfile	/var/run/rsnapshot.pid
+verbose  2
+loglevel  3
+logfile  /var/log/rsnapshot.log
+lockfile  /var/run/rsnapshot.pid
 
-backup	/volume1/Backups	Backups/
+backup  /volume1/Backups  Backups/
 ```
 
 Now check that the config is valid:
@@ -67,7 +67,7 @@ $ sudo rsnapshot configtest
 Syntax OK
 ```
 
-## Schedule `rsnapshot`
+# Schedule `rsnapshot`
 
 We could use `cron` to schedule our rsnapshot job, but since Synology isn't quite normal Linux, I think it's best to use the built-in GUI rather than install more custom packages.
 

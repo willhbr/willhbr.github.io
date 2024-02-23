@@ -19,7 +19,9 @@ MarkEdit is really impressive for a project with an [initial commit only two day
 Since I'm writing this entirely to spread the news of a good app, I thought I'd ask ChatGPT to write a one-paragraph review:
 
 > Me: Write a one-paragraph review of MarkEdit, the new markdown editor for macOS. This review should be SEO-optimised for maximum engagement and clicks.
-
+>
+> ---
+>
 > MarkEdit is a cutting-edge markdown editor for macOS users. Its sleek and intuitive design makes it easy to create and edit documents in markdown format, with features like live preview, robust syntax highlighting, and powerful editing tools. Whether you're a seasoned writer or a beginner, MarkEdit offers a seamless experience for anyone looking to create high-quality, professional-looking documents in markdown. Its advanced feature set and user-friendly interface make it a top choice for anyone looking to take their writing to the next level. So, if you're looking for the best markdown editor for your Mac, be sure to check out MarkEdit!
 
 Couldn't have said it better myself.
