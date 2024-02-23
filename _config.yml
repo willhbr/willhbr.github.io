@@ -37,7 +37,7 @@ defaults:
       auto_excerpt: true
 
 markdown: kramdown
-permalink: pretty
+permalink: '/:year/:month/:day/:title/'
 highlighter: rouge
 
 sass:
@@ -53,8 +53,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - scripts
   - pods.yaml
-  - publish.rb
+  - '*.swo'
 
 webfinger:
   subject: "acct:willhbr@ruby.social"
