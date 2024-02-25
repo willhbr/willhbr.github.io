@@ -37,7 +37,7 @@ defaults:
       auto_excerpt: true
 
 markdown: kramdown
-permalink: '/:year/:month/:day/:title/'
+permalink: pretty
 highlighter: rouge
 
 sass:
@@ -55,7 +55,7 @@ exclude:
   - README.md
   - scripts
   - pods.yaml
-  - '*.swo'
+  - .sass-cache
 
 webfinger:
   subject: "acct:willhbr@ruby.social"

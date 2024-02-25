@@ -14,11 +14,9 @@ $inline-text-pill-colour-dark: darken($background-colour-dark, 7%)
 $title-colour-light: black
 $title-colour-dark: white
 
-// colour for blockquote fg/bg
-$blockquote-colour-light: lighten($text-colour-light, 5%)
-$blockquote-colour-dark: darken($text-colour-dark, 5%)
-$blockquote-background-light: darken($background-colour-light, 5%)
-$blockquote-background-dark: lighten($background-colour-dark, 5%)
+// colour for blockquote bg
+$blockquote-background-light: darken($background-colour-light, 3%)
+$blockquote-background-dark: lighten($background-colour-dark, 3%)
 
 // colour for link a:hover
 $link-hover-colour-light: darken($highlight-colour-light, 10%)
@@ -85,10 +83,11 @@ a:hover
 
 hr
   border: none
-  height: 1px
-  color: var(--text-colour)
-  background-color: var(--text-colour)
-  width: 70%
+  height: 5px
+  border-radius: 3px
+  color: var(--inline-text-pill-colour)
+  background-color: var(--inline-text-pill-colour)
+  width: 30%
 
 h1.post-title
   font-size: $title-size
@@ -152,7 +151,6 @@ header.site-header
     margin-top: 0
 
 blockquote
-  color: var(--blockquote-colour)
   background: var(--blockquote-background)
   border-left: $blockquote-border-width solid var(--highlight-colour)
   padding: 10px ($body-side-margin - $blockquote-border-width) 1px

@@ -37,7 +37,7 @@ If this was JSON or TOML I would have to repeat that same block of config five t
 However, YAML is a very powerful config language; you can capture references to parts of the config and then re-use them in other parts of the file:
 
 ```yaml
-flags: &default-falgs
+flags: &default-flags
   timezone: Australia/Sydney
   point_a:
     lat: -34.570
