@@ -1,0 +1,21 @@
+media: media
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: '_posts'
+    view:
+      fields: [ title, date, image ]
+    fields:
+      - name: date
+        label: Date
+        type: date
+      - name: title
+        label: Title
+        type: string
+      - name: image
+        label: 'OpenGraph Image URL'
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
