@@ -9,11 +9,11 @@ I feel like I really have to emphasise this: I'm not running a command-line prog
 
 Watch a demo of it in action below or [on YouTube][tmux-video]:
 
-<iframe src="https://www.youtube.com/embed/6V3KnjiBuhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="650" height="400" src="https://www.youtube.com/embed/6V3KnjiBuhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 [tmux-video]: https://youtu.be/6V3KnjiBuhU
 
-This whole mess started when I [solved an issue I had with a helper script](https://github.com/willhbr/dotfiles/commit/967856270409b77814694c3963f0183ad79b377f) using the tmux `wait-for` command. I thought to myself "wow tmux has a lot of weird features, it seems like you could run a program in it" which I [joked about on Mastodon](https://ruby.social/@willhbr/112048862227851022). This idea completely took over my brain and I couldn't think of anything else. I had to know if it was possible.
+This whole mess started when I [solved an issue I had with a helper script](https://github.com/willhbr/dotfiles/commit/967856270409b77814694c3963f0183ad79b377f) using the tmux `wait-for` command. I thought to myself "[wow tmux has a lot of weird features, it seems like you could run a program in it](https://ruby.social/@willhbr/112048862227851022)". This idea completely took over my brain and I couldn't think of anything else. I had to know if it was possible.
 
 I spent a week [writing a compiler][tmux-compiler] that turns Python(ish) code into a tmux config file, which when you load makes tmux swap between windows super fast and run that code.
 
