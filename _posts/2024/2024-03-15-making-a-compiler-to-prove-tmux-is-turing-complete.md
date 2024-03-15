@@ -9,7 +9,11 @@ I feel like I really have to emphasise this: I'm not running a command-line prog
 
 Watch a demo of it in action below or [on YouTube][tmux-video]:
 
-<iframe width="650" height="400" src="https://www.youtube.com/embed/6V3KnjiBuhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+  width="650" height="400" src="https://www.youtube.com/embed/6V3KnjiBuhU"
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 [tmux-video]: https://youtu.be/6V3KnjiBuhU
 
