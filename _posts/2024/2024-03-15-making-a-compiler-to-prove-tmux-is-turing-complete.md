@@ -7,7 +7,7 @@ You can use features of tmux to implement a Turing-complete instruction set, all
 
 I feel like I really have to emphasise this: I'm not running a command-line program in tmux, or using tmux to launch a program. I can get tmux to run real code by switching between windows.
 
-[Watch a video of it in action on YouTube.][tmux-video]
+<iframe src="https://www.youtube.com/embed/6V3KnjiBuhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 [tmux-video]: https://youtu.be/6V3KnjiBuhU
 
