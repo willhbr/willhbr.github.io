@@ -3,7 +3,7 @@ title: "Further Adventures in tmux Code Evaluation"
 image: /images/2024/tmux-diagram.webp
 ---
 
-In [my previous post][tmux-compiler-post] about how I wrote a compiler that turns Python code into a tmux config file that makes tmux evaluate the program by performing actions while switching between windows. My implementation relies on a [feature in tmux called "hooks"](https://www.man7.org/linux/man-pages/man1/tmux.1.html#HOOKS) which run an command whenever a certain action happens in tmux. The action that I was using was when a pane received focus. This worked great except I had to do some trickery to avoid tmux's cycle detection in hooks—it won't run a hook on an action that is triggered by a hook, which is a sensible thing to do.
+In [my previous post][tmux-compiler-post] I wrote a compiler that turns Python code into a tmux config file. It makes tmux evaluate a program by performing actions while switching between windows. My implementation relies on a [feature in tmux called "hooks"](https://www.man7.org/linux/man-pages/man1/tmux.1.html#HOOKS) which run an command whenever a certain action happens in tmux. The action that I was using was when a pane received focus. This worked great except I had to do some trickery to avoid tmux's cycle detection in hooks—it won't run a hook on an action that is triggered by a hook, which is a sensible thing to do.
 
 I don't want things to be sensible, and I managed to work around this by running every tmux action as a shell command using the tmux `run` command. I've now worked out an even sillier way that this could work by using two tmux sessions[^actually-one], each attached back to the other, then using `bind-key` and `send-keys` to trigger actions.
 
