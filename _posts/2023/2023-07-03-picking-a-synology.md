@@ -1,6 +1,7 @@
 ---
 title: "Picking a Synology"
 image: /images/2023/backup-system.jpeg
+tags: homelab
 ---
 
 One of the key characteristics you want from a backup system is reliability. You want to minimise the number of things that can fail, and reduce the impact of each failure for when they do happen. These are not characteristics that would be used to describe my original backup system:

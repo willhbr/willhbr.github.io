@@ -1,5 +1,6 @@
 ---
 title: "pod, the container manager"
+tags: projects pod podman
 ---
 
 I've been working on a project to make development using containers easier (specifically [Podman](https://podman.io)), to remove dependency conflicts, and make it easier to run applications on other servers.

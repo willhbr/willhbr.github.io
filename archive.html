@@ -6,7 +6,7 @@ layout: page
 
 <p>
   Subscribe via <a href="{{ site.feeds.rss_url | absolute_url }}" target=_blank>RSS</a> or
-  <a href="{{ site.feeds.json_url }}" target=_blank>JSON Feed</a>.
+  <a href="{{ site.feeds.json_url }}" target=_blank>JSON Feed</a>. Find posts by <a href="/tags">tag</a> as well.
 </p>
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}

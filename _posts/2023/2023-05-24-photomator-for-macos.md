@@ -1,5 +1,6 @@
 ---
 title: "Photomator for MacOS"
+tags: photography
 ---
 
 Since moving my [photo editing to MacOS just over two years ago][macos-migration], I have been using [Pixelmator Pro][pro] as my photo editor of choice. The move from [Pixelmator Photo][photomator] was easy—the editing controls are the same, and I'm generally familiar with layer-based image editors from a misspent youth using [the GIMP][gimp].

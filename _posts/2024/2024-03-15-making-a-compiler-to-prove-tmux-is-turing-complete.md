@@ -1,6 +1,7 @@
 ---
 title: "Making a Compiler to Prove tmux Is Turing Complete"
 image: /images/2024/tmux-hello-world.gif
+tags: tmux projects
 ---
 
 You can use features of tmux to implement a Turing-complete instruction set, allowing you to compile code that runs in tmux by moving windows.

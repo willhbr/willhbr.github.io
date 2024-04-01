@@ -1,5 +1,6 @@
 ---
 title: Using tmux in the Real World
+tags: tmux
 ---
 
 Every now and again I happen across a post outlining how to use [tmux](https://tmux.github.io). Since I first happened upon tmux in 2015, my use of it has grown from "occasional", to "frequent", almost to "continual". What I find frustating with these posts is that they don't describe how to actually _use_ tmux in the real world. [The post in question that prompted this post](https://hackernoon.com/a-gentle-introduction-to-tmux-8d784c404340) tells you how to start a session, create new windows, then how to switch between and resize windows.
@@ -16,7 +17,7 @@ The aspect of tmux that redeems these oddities is it's extensive set of customis
 
 ---
 
-> This post isn't a one-stop-shop for all your tmux needs, instead it's just a quick walkthough of the basic ways that I make tmux more appropriate for daily use [^other-notes]. All the snippets should be added to your tmux config file, which lines in `~/.tmux.conf` by default.  
+> This post isn't a one-stop-shop for all your tmux needs, instead it's just a quick walkthough of the basic ways that I make tmux more appropriate for daily use [^other-notes]. All the snippets should be added to your tmux config file, which lines in `~/.tmux.conf` by default.
 
 [^other-notes]: Other things that irk me are poor window indicators in the status bar - mine has more color to show the current window. The status bar also does a poor job of showing the status info - especially the current host. I change the color of part of the status bar depending on the host I'm on (mostly for aesthetics). And the default green highlight is super gross.
 

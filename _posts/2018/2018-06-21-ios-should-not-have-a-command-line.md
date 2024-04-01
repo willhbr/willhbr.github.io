@@ -1,5 +1,6 @@
 ---
 title: "iOS Should Not Have a Command Line"
+tags: opinion
 ---
 
 On the [latest episode of Upgrade](https://www.relay.fm/upgrade/198) [^upgrade-is-great] Jason and Myke briefly discuss the idea of Apple adding a command line to iOS. They quickly dismiss it because of the constraints of sandboxing and security - instead suggesting that the command line will be a feature that keeps people at the Mac. I find the idea of a new command line really interesting, so I wanted to expand on some more reasons why there shouldn't be a command line on iOS - unless it comes with massive changes to how you think about a command line.

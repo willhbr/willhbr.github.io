@@ -1,5 +1,6 @@
 ---
 title: "Simple Home Server Monitoring with Prometheus in Podman"
+tags: homelab projects podman
 ---
 
 The next step in my containerising journey is setting up [Prometheus][prometheus] monitoring. I'm not going to use this for alerts or anything fancy yet, just to collect data and see what the load and health of my server is and be able to track trends over time. In doing this I wanted:

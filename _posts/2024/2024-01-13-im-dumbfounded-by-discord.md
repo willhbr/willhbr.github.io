@@ -1,5 +1,6 @@
 ---
 title: I'm Dumbfounded by Discord
+tags: opinion
 ---
 
 I find [Discord](https://discord.com) baffling. Not in its popularity in group messaging for a class, team, or friend group—it seems fine at that—but the other, larger use cases.

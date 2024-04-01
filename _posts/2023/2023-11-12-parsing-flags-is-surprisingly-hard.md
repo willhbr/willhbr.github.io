@@ -1,5 +1,6 @@
 ---
 title: Parsing Flags is Surprisingly Hard
+tags: design
 ---
 
 On the topic of "thinking too much about things that you didn't really want to think about", have you considered just how hard it is to parse command-line arguments? Most tools—especially the battle-tested standard POSIX command-line tools—have this worked out pretty well, and work in a fairly predictable way. Until you start trying to implement them yourself, you might not notice just how much of a messy job it is.

@@ -1,5 +1,6 @@
 ---
 title: "The Curse of Knowledge"
+tags: opinion design
 ---
 
 The [curse of knowledge][curse-of-knowledge] is the idea that as you become more of an expert in an area, it becomes harder to explain basic concepts in that area, because your assumed based level of knowledge is much greater than the typical level of understanding. Basically you might try and explain at an undergraduate level, but in reality you need to start from a high school level and build up from there. You forget the difficulty of grasping the key concepts of the topic.

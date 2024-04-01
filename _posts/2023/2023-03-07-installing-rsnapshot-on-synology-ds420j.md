@@ -1,6 +1,7 @@
 ---
 title: Installing rsnapshot on Synology DS420j
 image: /images/2023/ds420j.png
+tags: projects homelab
 ---
 
 I've got a shiny new Synology DS420j, and I'm in the process of re-implementing the wheels of computer suffering that I call my backup system on it. Part of this is setting up `rsnapshot` to create point-in-time snapshots of my backups, so I can rewind back to an old version of my data.

@@ -1,6 +1,7 @@
 ---
 title: "Dismissable Popup Shell in tmux"
 image: /images/2023/tmux-popup-screen-recording.gif
+tags: tmux projects
 ---
 
 Ok so this is mostly a solution in search of a problem. Or a solution to the problem of "Will read the tmux man page too many times and wants to use all the features". However there's like a 5% chance this is actually useful, and it's something that I've wanted to get working in tmux for a while. It turned out to be much simpler than I thought.

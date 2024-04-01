@@ -1,5 +1,6 @@
 ---
 title: "Compiling for Shortcuts"
+tags: projects shortcuts
 ---
 
 In [this video](https://youtu.be/Xe-8Vp0e9qE) I show a program written in [Cub](https://github.com/louisdh/cub) being compiled and run inside of the iOS Shortcuts app. The program is a simple recursive factorial function, and I can use it to calculate the factorial of 5 to be 120. Super useful stuff.

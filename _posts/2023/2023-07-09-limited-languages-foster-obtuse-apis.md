@@ -1,5 +1,6 @@
 ---
 title: "Limited Languages Foster Obtuse APIs"
+tags: opinion design
 ---
 
 On the topic of the [design decisions of a low-level system limiting the design space of things built on top of them][design-decisions], the design of programming languages has a significant impact on the APIs and software built using them.

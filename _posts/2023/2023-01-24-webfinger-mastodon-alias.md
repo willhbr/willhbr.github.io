@@ -1,5 +1,6 @@
 ---
 title: "Create a Mastodon alias using GitHub Pages"
+tags: projects web
 ---
 
 If (like me) you've moved to [Mastodon](https://joinmastodon.org) recently and are looking for a good way to show off some nerd cred, this is a great way to do it.

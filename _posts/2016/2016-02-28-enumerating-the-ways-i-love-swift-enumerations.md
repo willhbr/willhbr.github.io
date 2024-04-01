@@ -1,6 +1,5 @@
 ---
 title: Enumerating The Ways I Love Swift Enumerations
-tags: development
 ---
 
 _[Enumerating The Ways I Love Swift Enumerations &rarr;](https://www.caseyliss.com/2016/2/27/swift-enums)_

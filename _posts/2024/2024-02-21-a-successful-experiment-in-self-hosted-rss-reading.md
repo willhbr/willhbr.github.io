@@ -1,5 +1,6 @@
 ---
 title: "A Successful Experiment in Self-Hosted RSS Reading"
+tags: projects homelab
 ---
 
 For just over a month, my RSS reading has been self-hosted. Usually I'd write about this kind of thing because there was an interesting challenge or something that I learnt in the process, but it has basically been a completely transparent change.

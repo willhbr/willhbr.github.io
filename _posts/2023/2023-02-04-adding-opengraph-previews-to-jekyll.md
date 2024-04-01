@@ -1,6 +1,7 @@
 ---
 title: "Adding OpenGraph previews to Jekyll"
 image: /images/2023/opengraph-message.jpeg
+tags: projects web
 ---
 
 I'm on a tear adding support for open web standards to my website(s) - if I've missed one, [let me know]({{ site.urls.mastodon }}). I've just added [RSS meta tags](https://www.petefreitag.com/item/384.cfm) which allow for feed reading plugins to suggest the RSS feed - rather than people having to find the RSS link (it's at the bottom of the page) and paste that into their feed reader. There must be _dozens_ of people who haven't been reading my amazing content because it was too hard to add my site into their feed reader.

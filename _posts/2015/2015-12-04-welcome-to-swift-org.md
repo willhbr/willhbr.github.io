@@ -1,6 +1,5 @@
 ---
 title: Welcome to Swift.org
-tags: development
 ---
 
 _[Welcome to Swift.org &rarr;](https://swift.org/)_

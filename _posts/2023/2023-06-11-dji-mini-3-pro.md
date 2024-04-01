@@ -1,6 +1,7 @@
 ---
 title: "DJI Mini 3 Pro"
 image: https://pics.willhbr.net/photos/2023-06-03.jpeg
+tags: opinion photography
 ---
 
 Most camera reviews are pretty decent when it comes to photo and video quality (although for the type of cameras I buy, photo quality is usually an afterthought[^photo-reviews]). The thing that seems to be left out is the annoying nits and limitations that you become aware of after using something for a while. I just upgraded from the [DJI Mini 2][mini-2] to the [DJI Mini 3 Pro][mini-3-pro] and _oh boy_ do I have nits to share.

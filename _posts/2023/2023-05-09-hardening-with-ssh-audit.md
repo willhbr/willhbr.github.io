@@ -1,5 +1,6 @@
 ---
 title: "Hardening with ssh-audit"
+tags: projects homelab
 ---
 
 My [comment the other day](/2023/05/05/setting-up-podman-remote/) about how I didn't understand SSH encryption or key types very well got me thinking that maybe it's something that I should understand a bit more.

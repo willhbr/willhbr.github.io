@@ -1,6 +1,7 @@
 ---
 title: "Interfaces of Spatial Photo Editing"
 date: 2023-06-18
+tags: opinion photography
 ---
 
 How would you import, edit, and export photos using an AR/VR headset? I _personally_ think there is a lot of potential for this to be an exceptional experience, far better than working on a laptop, especially in sub-optimal working conditions. I also think the jump from hand to face is a significant hurdle that you might not want to dive head-first into—I've relegated a lot of that to the footnotes.[^footnotes]

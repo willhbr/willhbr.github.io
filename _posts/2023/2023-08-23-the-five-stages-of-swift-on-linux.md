@@ -1,5 +1,6 @@
 ---
 title: "The Five Stages of Swift on Linux"
+tags: opinion
 ---
 
 Recently I attempted to learn about Swift's async support by doing my favourite thing—writing an RPC framework. In this case the "RPC framework" is just a request/response abstraction over websockets (which are message-based), which makes the actual RPC bit very simple, as all it's really doing is wrapping some objects and matching responses to requests.

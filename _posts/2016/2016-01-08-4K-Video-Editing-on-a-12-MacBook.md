@@ -1,6 +1,5 @@
 ---
 title: 4K Video Editing on a 12" MacBook?
-tags: macos
 ---
 
 _[4K Video Editing on a 12" MacBook? &rarr;](https://www.youtube.com/watch?v=KnapaZYD2cU)_

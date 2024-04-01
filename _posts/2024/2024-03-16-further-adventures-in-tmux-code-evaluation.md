@@ -1,6 +1,7 @@
 ---
 title: "Further Adventures in tmux Code Evaluation"
 image: /images/2024/tmux-diagram.webp
+tags: tmux
 ---
 
 In [my previous post][tmux-compiler-post] I wrote a compiler that turns Python code into a tmux config file. It makes tmux evaluate a program by performing actions while switching between windows. My implementation relies on a [feature in tmux called "hooks"](https://www.man7.org/linux/man-pages/man1/tmux.1.html#HOOKS) which run an command whenever a certain action happens in tmux. The action that I was using was when a pane received focus. This worked great except I had to do some trickery to avoid tmux's cycle detection in hooks—it won't run a hook on an action that is triggered by a hook, which is a sensible thing to do.

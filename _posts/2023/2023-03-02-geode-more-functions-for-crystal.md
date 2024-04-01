@@ -1,5 +1,6 @@
 ---
 title: "Geode: More Functions for Crystal"
+tags: crystal projects
 ---
 
 The only language I use for personal projects is [Crystal](https://crystal-lang.org). It is as easy to write as a dynamically typed language - so I don't have to waste time telling the type system what I mean, but it has full type checking - so I also don't waste time on easily preventable mistakes.

@@ -1,5 +1,6 @@
 ---
 title: "Why Modernising Shells is a Sisyphean Effort"
+tags: opinion design
 ---
 
 Anyone that knows me is probably aware that I spend a lot of time in the terminal. One of the many things that I have wasted time learning is the various oddities of shell scripting, and so I am cursed with the knowledge of the tradeoffs in their design. It seems to be something that most people don't appreciate. Your shell has to find a balance between getting out of your way for interactive use, and being the best way to link together multiple unrelated programs to do something useful. The Unix philosophy of having many small tools, each dedicated to one simple job means that you can more easily replace one with an alternative, or a new tool doesn't have to reinvent the wheel before it can be useful.

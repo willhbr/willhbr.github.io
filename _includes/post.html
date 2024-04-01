@@ -10,6 +10,11 @@
       <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
       &bull;
       <a href="{{ post.url | absolute_url }}">Permalink</a>
+      &bull;
+      {% assign tags = post.tags | sort %}
+      {% for tag in tags %}
+        <a href="/tags#{{ tag }}">{{ tag }}</a>{%- if forloop.last == false -%},{%- endif -%}
+      {% endfor %}
       {% if jekyll.environment == "development" %}
 				&bull;
 				{% capture time %}{{ post.content | strip_html | number_of_words | divided_by: 180 }}{% endcapture %}
