@@ -8,23 +8,23 @@
 
     <div class="metadata">
       <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
-      &bull;
-      <a href="{{ post.url | absolute_url }}">Permalink</a>
+      &bull; <a href="{{ post.url | absolute_url }}">&infin; link</a>
       &bull;
       {% assign tags = post.tags | sort %}
       {% for tag in tags %}
-        <a href="/tags#{{ tag }}">{{ tag }}</a>{%- if forloop.last == false -%},{%- endif -%}
+        <a href="/tags#{{ tag }}">{{ tag }}</a>
       {% endfor %}
       {% if jekyll.environment == "development" %}
 				&bull;
-				{% capture time %}{{ post.content | strip_html | number_of_words | divided_by: 180 }}{% endcapture %}
+        {% assign words = post.content | strip_html | number_of_words %}
+        {% assign time = words | divided_by: 180 %}
 				{% if time != '0' %}
 					~{{ time }}
 				{% else %}
 					~1
 				{% endif %} minutes
         &bull;
-        {{ post.content | strip_html | number_of_words }} words
+        {{ words }} words
       {% endif %}
     </div>
   </header>
