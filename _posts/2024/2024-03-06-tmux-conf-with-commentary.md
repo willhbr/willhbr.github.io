@@ -156,7 +156,7 @@ What I've done is something like a "more zoomed" mode[^shortcut-choice]. This wi
 
 So when I `ssh` to another machine I can press `M-Z` and all my local tmux UI disappears, so when I start tmux on the remote machine it looks and behaves like I'm connected directly, not nested. If I need to use the local session, I can press `M-Z` again and the local tmux UI reappears and the key bindings reactivate, allowing me to move around in the local session, with the remote session being relegated back to its own window.
 
-Where this gets _really_ clever is in [my shell wrapper around `ssh`](https://github.com/willhbr/dotfiles/blob/main/shell/autoload/ssh). It checks that I'm in a tmux session, and automatically switches to the nested mode when I start an `ssh` connection, so I don't even have to press a key.
+Where this gets _really_ clever is in [my shell wrapper around `ssh`](https://github.com/willhbr/dotfiles/blob/fae7f784ab4befe9fc25de690e379810194671f4/shell/autoload/ssh). It checks that I'm in a tmux session, and automatically switches to the nested mode when I start an `ssh` connection, so I don't even have to press a key.
 
 This doesn't really work with triply-nested sessions however, since the second time you press `M-Z` the outer session with un-nest itself, rather than the middle session nesting itself. If I had two separate bindings—one for "nest" and a different one for "unnest" then it would work, but that would be 100% more nesting-related shortcuts to learn, and I don't triple-nest enough to justify that.
 

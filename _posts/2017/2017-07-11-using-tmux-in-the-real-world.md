@@ -90,7 +90,7 @@ set -g base-index 1
 set -g default-terminal "screen-256color"
 ```
 
-So what to do about managing your sessions? Almost everyone I've talked to has made a little wrapper script that basically does this: if no arguments are given, list all the sessions. If an argument is given, connect to that session if it exists, otherwise create a session with that name. This avoids having unnamed sessions and means you don't have to remember to run `tmux ls` every time. [I've made a version of this with more bells and whistles](https://github.com/willhbr/dotfiles/blob/master/shell/autoload/mux.sh) but this is the basic idea:
+So what to do about managing your sessions? Almost everyone I've talked to has made a little wrapper script that basically does this: if no arguments are given, list all the sessions. If an argument is given, connect to that session if it exists, otherwise create a session with that name. This avoids having unnamed sessions and means you don't have to remember to run `tmux ls` every time. [I've made a version of this with more bells and whistles](https://github.com/willhbr/dotfiles/blob/21e4ba8cdf1ea910ecc2a8c7388461191f838fcb/shell/autoload/mux.sh) but this is the basic idea:
 
 ```shell
 mux() {

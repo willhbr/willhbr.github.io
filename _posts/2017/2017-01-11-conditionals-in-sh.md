@@ -2,7 +2,7 @@
 title: Conditionals in SH
 ---
 
-I've been spending more time than I would like writing shell scripts recently, as I spend more time [configuring my setup](https://github.com/JavaNut13/dotfiles) than I do on 'real' projects. What I've found interesting is how simple the core of a shell is, and the tricks some commands do to build on this.
+I've been spending more time than I would like writing shell scripts recently, as I spend more time [configuring my setup](https://github.com/willhbr/dotfiles) than I do on 'real' projects. What I've found interesting is how simple the core of a shell is, and the tricks some commands do to build on this.
 
 Most \*nix users have probably had a moment were they were writing a shell script and forgotten the syntax for an `if` statement. I write shell scripts so infrequently I often have to look it up. However all the `if` statement does is run the condition command and check the exit status, if it is 0 it will run the main block, anything else and it runs the else block.
 
@@ -24,7 +24,7 @@ So this means that we can do things like this:
 [ -f some/file/path ] && cool_function_on_file some/file/path
 ```
 
-Making use of the `&&` builtin, rather than writing a whole `if;then;fi` block. Or when we remember that the condition can be any command, we can be a [bit smarter in scripts](https://github.com/JavaNut13/dotfiles/blob/master/zsh/gcd.sh#L109):
+Making use of the `&&` builtin, rather than writing a whole `if;then;fi` block. Or when we remember that the condition can be any command, we can be a [bit smarter in scripts](https://github.com/willhbr/dotfiles/blob/a1e7d4e12fc0dfae279bf1b6e972d29750b3e309/zsh/gcd.sh#L109):
 
 ```shell
 if git clone "$full_remote$user/$project.git" "$_path"; then

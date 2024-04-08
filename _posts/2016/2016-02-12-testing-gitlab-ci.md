@@ -32,7 +32,7 @@ Description: Test runner
 Executor: shell
 ```
 
-I made a quick branch on [one of my projects](https://github.com/JavaNut13/WORM) that has fair number of unit tests that are easily run. All I had to do was add a `.gitlab-ci.yml` file:
+I made a quick branch on [one of my projects](https://github.com/willhbr/WORM) that has fair number of unit tests that are easily run. All I had to do was add a `.gitlab-ci.yml` file:
 
 ```yaml
 maven-package:
