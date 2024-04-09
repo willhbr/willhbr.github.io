@@ -9,8 +9,10 @@
     <div class="metadata">
       <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
       &bull; <a href="{{ post.url | absolute_url }}">&infin; link</a>
-      &bull;
       {% assign tags = post.tags | sort %}
+      {% if tags.length > 0 %}
+        &bull;
+      {% endif %}
       {% for tag in tags %}
         <a href="/tags#{{ tag }}">{{ tag }}</a>
       {% endfor %}
