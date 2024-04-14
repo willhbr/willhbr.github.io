@@ -14,7 +14,10 @@ $inline-text-pill-colour-dark: darken($background-colour-dark, 7%)
 $title-colour-light: black
 $title-colour-dark: white
 
-// colour for blockquote bg
+$link-underline-colour-light: lighten(desaturate($highlight-colour-light, 40%), 40%)
+$link-underline-colour-dark: darken(desaturate($highlight-colour-dark, 70%), 40%)
+
+// colour for blockquote text
 $blockquote-colour-light: lighten($text-colour-light, 15%)
 $blockquote-colour-dark: darken($text-colour-dark, 15%)
 
@@ -32,7 +35,7 @@ $footer-colour-light: lighten($text-colour-light, 10%)
 $footer-colour-dark: darken($text-colour-dark, 10%)
 
 $title-font-family: "Bahnschrift", "DIN Alternate", "Roboto Condensed", sans-serif
-$body-font-family: "Helvetica", "Roboto", sans-serif
+$body-font-family: "Helvetica Neue", "Helvetica", "Roboto", sans-serif
 $code-font-family: "Fira Code", "Anonymous Pro", monospace
 
 @import "darkmode"
@@ -75,6 +78,13 @@ a
   color: var(--highlight-colour)
   text-decoration: none
   cursor: pointer
+
+article .post-body
+  a
+    text-decoration-line: underline
+    text-decoration-color: var(--link-underline-colour)
+  a:hover
+    text-decoration: underline
 
 a:hover
   color: var(--link-hover-colour)
