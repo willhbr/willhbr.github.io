@@ -1,6 +1,6 @@
 ---
 title: "Glory Is an Indeterminate Amount of Bandwidth Away"
-tags: opinion
+tags: opinion design web
 ---
 
 On Mastodon I saw [this toot][toot] showing a tangle of interconnected AWS services used to host a Wordpress site. I don't speak AWS so it looks confusing.[^wordpress] One of the replies linked to [this post][the-post], which I'd come across last week. Seeing it twice was clearly a sign to share my thoughts.
