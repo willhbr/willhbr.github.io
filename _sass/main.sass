@@ -53,8 +53,8 @@ html
   border-top: 10px solid $highlight-colour-dark
 
 body
-  color: var(--text-colour)
-  background-color: var(--background-colour)
+  color: $text-colour
+  background-color: $background-colour
   font-family: $body-font-family
   font-size: $paragraph-size
   font-weight: 300
@@ -68,34 +68,34 @@ body
   top: 0
   border: none
   background: none
-  color: var(--text-color)
+  color: $text-colour
   padding: 10px 5px
 
 strong
   font-weight: bold
 
 a
-  color: var(--highlight-colour)
+  color: $highlight-colour
   text-decoration: none
   cursor: pointer
 
 article .post-body
   a
     text-decoration-line: underline
-    text-decoration-color: var(--link-underline-colour)
+    text-decoration-color: $link-underline-colour
   a:hover
     text-decoration: underline
 
 a:hover
-  color: var(--link-hover-colour)
+  color: $link-hover-colour
   text-decoration: underline
 
 hr
   border: none
   height: 5px
   border-radius: 3px
-  color: var(--inline-text-pill-colour)
-  background-color: var(--inline-text-pill-colour)
+  color: $inline-text-pill-colour
+  background-color: $inline-text-pill-colour
   width: 30%
 
 h1.post-title
@@ -105,7 +105,7 @@ h1.post-title
 
 h1, h2, h3, h4, h5, h6
   font-family: $title-font-family
-  color: var(--highlight-colour)
+  color: $highlight-colour
   font-weight: 300
   margin-bottom: 0
 
@@ -129,13 +129,13 @@ p
 
 .metadata, .metadata a
   margin-top: 0.2em
-  color: var(--metadata-colour)
+  color: $metadata-colour
   font-size: $metadata-size
 
 .title
   font-family: $title-font-family
   font-size: $header-size
-  color: var(--title-colour)
+  color: $title-colour
 .title:hover, .button:hover
   text-decoration: none
 
@@ -149,7 +149,7 @@ pre, code
   border-radius: 4px
   font-size: 0.9em
 code.highlighter-rouge
-  background: var(--inline-text-pill-colour)
+  background: $inline-text-pill-colour
   padding: 2px 4px
 
 header.site-header
@@ -160,13 +160,13 @@ header.site-header
     margin-top: 0
 
 blockquote
-  color: var(--blockquote-colour)
-  border-left: 3px solid var(--highlight-colour)
+  color: $blockquote-colour
+  border-left: 3px solid $highlight-colour
   padding-left: .5em
   margin-left: .5em
 
 p.caption
-  color: var(--metadata-colour)
+  color: $metadata-colour
   text-align: center
   font-style: italic
   font-size: $caption-size
@@ -182,14 +182,14 @@ footer
   text-align: center
 
 footer, footer a
-  color: var(--footer-colour)
+  color: $footer-colour
 
 // footnote
 sup[role=doc-noteref]
   vertical-align: baseline
   a
-    color: var(--text-colour)
-    background: var(--inline-text-pill-colour)
+    color: $text-colour
+    background: $inline-text-pill-colour
     padding: 0px 8px
     border-radius: 1em
   a:hover
@@ -204,8 +204,8 @@ sup[role=doc-noteref]
   float: center
   text-align: center
   .button.current
-    background: var(--highlight-colour)
-    color: var(--background-colour)
+    background: $highlight-colour
+    color: $background-colour
 
 .post-footer
   margin-top: 3em
@@ -219,7 +219,7 @@ sup[role=doc-noteref]
   line-height: 1.5
   border-radius: 3px
   background: transparent
-  color: var(--highlight-colour)
+  color: $highlight-colour
   font-weight: bold
   text-transform: uppercase
 

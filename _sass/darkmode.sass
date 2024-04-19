@@ -1,26 +1,26 @@
 @mixin light-mode
-  --title-colour: #{$title-colour-light}
-  --highlight-colour: #{$highlight-colour-light}
-  --link-underline-colour: #{$link-underline-colour-light}
-  --background-colour: #{$background-colour-light}
-  --text-colour: #{$text-colour-light}
-  --inline-text-pill-colour: #{$inline-text-pill-colour-light}
-  --blockquote-colour: #{$blockquote-colour-light}
-  --link-hover-colour: #{$link-hover-colour-light}
-  --metadata-colour: #{$metadata-colour-light}
-  --footer-colour: #{$footer-colour-light}
+  --tc: #{$title-colour-light}
+  --hc: #{$highlight-colour-light}
+  --luc: #{$link-underline-colour-light}
+  --bc: #{$background-colour-light}
+  --tec: #{$text-colour-light}
+  --itpc: #{$inline-text-pill-colour-light}
+  --blc: #{$blockquote-colour-light}
+  --lhc: #{$link-hover-colour-light}
+  --mc: #{$metadata-colour-light}
+  --fc: #{$footer-colour-light}
 
 @mixin dark-mode
-  --title-colour: #{$title-colour-dark}
-  --highlight-colour: #{$highlight-colour-dark}
-  --link-underline-colour: #{$link-underline-colour-dark}
-  --background-colour: #{$background-colour-dark}
-  --text-colour: #{$text-colour-dark}
-  --inline-text-pill-colour: #{$inline-text-pill-colour-dark}
-  --blockquote-colour: #{$blockquote-colour-dark}
-  --link-hover-colour: #{$link-hover-colour-dark}
-  --metadata-colour: #{$metadata-colour-dark}
-  --footer-colour: #{$footer-colour-dark}
+  --tc: #{$title-colour-dark}
+  --hc: #{$highlight-colour-dark}
+  --luc: #{$link-underline-colour-dark}
+  --bc: #{$background-colour-dark}
+  --tec: #{$text-colour-dark}
+  --itpc: #{$inline-text-pill-colour-dark}
+  --blc: #{$blockquote-colour-dark}
+  --lhc: #{$link-hover-colour-dark}
+  --mc: #{$metadata-colour-dark}
+  --fc: #{$footer-colour-dark}
 
 body, body.light-mode
   @include light-mode
@@ -33,3 +33,14 @@ body.dark-mode
     @include dark-mode
   body.light-mode
     @include light-mode
+
+$title-colour: var(--tc)
+$highlight-colour: var(--hc)
+$link-underline-colour: var(--luc)
+$background-colour: var(--bc)
+$text-colour: var(--tec)
+$inline-text-pill-colour: var(--itpc)
+$blockquote-colour: var(--blc)
+$link-hover-colour: var(--lhc)
+$metadata-colour: var(--mc)
+$footer-colour: var(--fc)
