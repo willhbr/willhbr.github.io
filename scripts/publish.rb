@@ -21,7 +21,7 @@ frontmatter = YAML.load(front, permitted_classes: [Date])
 title = frontmatter["title"]
 date = frontmatter["date"] || Date.today
 
-slug = title.downcase.gsub("'", '').gsub(/[\W]+/, '-')
+slug = title.downcase.gsub("'", '').gsub(/[\W]+/, '-').chomp('-')
 filename = "#{date.strftime('%F')}-#{slug}.md"
 
 dest = "./_posts/#{date.year}/#{filename}"
