@@ -8,7 +8,7 @@ layout: page
 
 {% for post in paginator.posts %}
   {% include post.html %}
-  <hr>
+  {% unless forloop.last %}<hr>{% endunless %}
 {% endfor %}
 
 {% include pagination.html %}

@@ -34,7 +34,7 @@ $metadata-colour-dark: darken($text-colour-dark, 20%)
 $footer-colour-light: lighten($text-colour-light, 10%)
 $footer-colour-dark: darken($text-colour-dark, 10%)
 
-$title-font-family: "Bahnschrift", "DIN Alternate", "Roboto Condensed", sans-serif
+$title-font-family: "Bahnschrift", "DIN Alternate", "Roboto Slab", "Roboto Condensed", sans-serif
 $body-font-family: "Helvetica Neue", "Helvetica", "Roboto", sans-serif
 $code-font-family: "Fira Code", "Anonymous Pro", monospace
 
@@ -79,6 +79,10 @@ a
   text-decoration: none
   cursor: pointer
 
+a:hover
+  color: $link-hover-colour
+  text-decoration: underline
+
 article .post-body
   a
     text-decoration-line: underline
@@ -86,10 +90,6 @@ article .post-body
   a:hover
     text-decoration-color: $link-hover-colour
     text-decoration: underline
-
-a:hover
-  color: $link-hover-colour
-  text-decoration: underline
 
 hr
   border: none
@@ -137,6 +137,7 @@ p
   font-family: $title-font-family
   font-size: $header-size
   color: $title-colour
+
 .title:hover, .button:hover
   text-decoration: none
 
@@ -146,9 +147,11 @@ p
 
 pre, code
   font-family: $code-font-family
+
 .highlighter-rouge pre, code.highlighter-rouge, .highlight
   border-radius: 4px
   font-size: 0.9em
+
 code.highlighter-rouge
   background: $inline-text-pill-colour
   padding: 2px 4px
@@ -185,7 +188,6 @@ footer
 footer, footer a
   color: $footer-colour
 
-// footnote
 sup[role=doc-noteref]
   vertical-align: baseline
   a
@@ -200,6 +202,8 @@ sup[role=doc-noteref]
 .footnotes
   margin-top: 2em
   font-size: 0.9rem
+  a.reversefootnote
+    text-decoration: none
 
 .pagination
   font-size: $metadata-size
