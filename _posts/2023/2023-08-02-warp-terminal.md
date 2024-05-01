@@ -1,5 +1,6 @@
 ---
 title: "Warp Terminal"
+tags: opinion tools
 ---
 
 Yesterday I came across [Warp Terminal][warp] via their advertisement on [Daring Fireball][df-ad].[^good-ad] Immediately I was fascinated to know what their backwards-compatibility story was, and how their features were implemented. This is in a similar vein to the difficulties of modernising shells, that I [wrote about in more detail last month][modern-shells].

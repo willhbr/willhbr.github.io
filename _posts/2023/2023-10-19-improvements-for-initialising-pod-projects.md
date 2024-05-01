@@ -1,6 +1,6 @@
 ---
 title: Improvements for Initialising Pod Projects
-tags: projects pod podman
+tags: projects pod podman tools
 ---
 
 One of the major usability misses with [`pod`][pod] was that it was tricky to setup a new project. My goal was remove the need for language-specific development tools installed directly onto my computer, but whenever I started a new project with `pod`, I would need to run `crystal init` to create the basic project skeleton. With the new `pod init` command, this is now unnecessary.

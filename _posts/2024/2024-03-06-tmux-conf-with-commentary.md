@@ -1,6 +1,6 @@
 ---
 title: "tmux.conf, With Commentary"
-tags: tmux
+tags: tmux tools
 ---
 
 I'm a very heavy user of tmux, and like to share how I make the most of it. This was going to be a short list of some nice things to know and some pointers to features people might not be aware of, but then I realised it's probably easier to just explain the stuff that I have configured, and so here we are. I grabbed the [current version of my `tmux.conf`](https://github.com/willhbr/dotfiles/blob/main/tmux/tmux.conf) and added an explanation after each section.
