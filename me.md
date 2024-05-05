@@ -22,4 +22,4 @@ I can be found on other parts of the Internet:
 [Instagram](https://instagram.com/willhbr){:class="button"} |
 [YouTube](https://www.youtube.com/c/WillRichardson13/videos){:class="button"}
 
-If you want to get in contact, [send me a toot on Mastodon]({{ site.urls.mastodon }}).
+If you want to get in contact, send me a [toot on Mastodon]({{ site.urls.mastodon }}) or [an email](mailto:{{ site.email }}).

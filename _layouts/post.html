@@ -17,11 +17,23 @@ layout: page
   </p>
 
   <p>
+    Send feedback via
+      mastodon: <a href="{{ site.urls.mastodon }}" target=_blank>{{ site.mastodon }}</a> or
+      {% capture subject %}Feedback: {{ post.title }}{% endcapture %}
+      email: <a href="mailto:{{ site.email }}?subject={{ subject | uri_escape }}" target=_blank>{{ site.email }}</a>.
+  </p>
+
+  <p>
     Subscribe via <a href="{{ site.feeds.rss_url | absolute_url }}" target=_blank>RSS</a> or
-    <a href="{{ site.feeds.json_url }}" target=_blank>JSON Feed</a>. More posts are in
-    the <a href="/archive">archive</a>.
+    <a href="{{ site.feeds.json_url }}" target=_blank>JSON Feed</a>.
     <br>
-    Send me a toot on Mastodon:
-    <a href="{{ site.urls.mastodon }}" target=_blank>@willhbr@ruby.social</a>.
+    {% if tags.size > 0 %}
+      More posts are in the <a href="/archive">archive</a>, or posts tagged
+      {% for tag in tags %}
+        <a href="/tags#{{ tag }}">{{ tag }}</a>{%- if forloop.last == false -%},{%- else -%}.{% endif %}
+      {% endfor %}
+    {% else %}
+      More posts are in the <a href="/archive">archive</a>.
+    {% endif %}
   </p>
 </div>

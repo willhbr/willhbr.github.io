@@ -7,6 +7,9 @@ paginate: 10
 paginate_path: "/page/:num"
 plugins: [jekyll-paginate]
 
+email: feedback@willhbr.net
+mastodon: '@willhbr@ruby.social'
+
 url: "https://willhbr.net"
 urls:
   mastodon: https://ruby.social/@willhbr

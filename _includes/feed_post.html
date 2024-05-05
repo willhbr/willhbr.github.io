@@ -2,4 +2,7 @@
 
 <a href="{{ post.url | absolute_url }}">Permalink</a>
 &bull; {{ post.date | date: site.date_format }}
-&bull; <a href="{{ site.urls.mastodon }}">Send feedback via Mastodon &rarr;</a>
+&bull; Send feedback via
+  <a href="{{ site.urls.mastodon }}" target=_blank>mastodon</a> or
+  {% capture subject %}Feedback: {{ post.title }}{% endcapture %}
+  <a href="mailto:{{ site.email }}?subject={{ subject | uri_escape }}" target=_blank>email</a>.
