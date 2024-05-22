@@ -3,12 +3,12 @@
     {{ site.title }}
   </a>
   <p>
-    {% if page.url != "/me/" %}
+    {%- if page.url != "/me/" -%}
       <a class="button" href="/me">Me</a> /
     {% endif %}
-    {% if page.url != "/" %}
+    {%- if page.url != "/" -%}
       <a class="button" href="/">Blog</a> /
-    {% else %}
+    {%- else -%}
       <a class="button" href="/archive">Posts</a> /
     {% endif %}
     <a class="button" href="{{ site.urls.photos }}">Photos</a> /

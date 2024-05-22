@@ -1,7 +1,7 @@
 title: Will Richardson
 author: Will Richardson
 
-description: "The blog of Will Richardson, a software engineer and photographer from New Zealand."
+description: "Computers, photography, and related matters."
 baseurl: ""
 paginate: 10
 paginate_path: "/page/:num"

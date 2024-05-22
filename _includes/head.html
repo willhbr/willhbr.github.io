@@ -17,8 +17,7 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.feeds.rss_url | absolute_url }}" />
 <link rel="alternate" type="application/feed+json" title="{{ site.title }}" href="{{ site.feeds.json_url | absolute_url }}" />
 
-<meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
 <meta property="og:type" content="{{ page.type }}">
 <meta property="og:title" content="{{ title }}">
-<meta property="og:description" content="{{ page_description }}">
-<meta property="og:image" content="{{ page.image }}">
+<meta property="og:image" content="{{ page.image | absolute_url }}">
