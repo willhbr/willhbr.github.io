@@ -43,11 +43,11 @@ SQLite takes this to a whole new level, you don't have to specify the types of c
 
 The post also argues against using "the edge"[^the-edge], basically stating that the added complexity of getting content to the edge isn't worth it for the reduced latency. Obviously this again depends on the type of website you're building, if it's mostly static then keeping an edge cache up-to-date isn't too hard, if it's changing constantly then it's a huge pain.
 
-[^the-edge]: It's all all-time great heading. You know the one.
+[^the-edge]: It's an all-time great heading. You know the one.
 
 It's definitely worth squeezing as much out of your monolith before you decide to split it up, even if that means migrating to a faster language (like the author's preferred [Elixir](https://elixir-lang.org)). You might even be able to make some interesting product decisions where you defer some work that could be real-time but is cheaper to do in a batch off-peak.
 
-A quick aside about English-speaking countries, the post says:
+A quick aside about English-speaking countries. The post says:
 
 > Plop [a server] in Virginia and you can get the English speaking world in under 100ms of latency.
 
@@ -55,7 +55,7 @@ I know we've got different accents down here in the south, but we do mostly spea
 
 If you're not sharding your application around the world for latency, you might want to shard it for maintainability. You don't want your 11MB/s of traffic to be dropped on the floor because of a failed OS update on your server. Turning your application into a distributed system increases the complexity dramatically, but also adds so many more ways to operate on it while it's still running. Things like having two redundant servers so that you can slowly move traffic between them when running a deployment, or take one offline to do maintenance or an upgrade. There are plenty of benefits outside of the increased compute capacity of adding more hardware.
 
-One final thing, I know I'm a huge [container nerd][podman] but there are plenty of reasons to containerise your application other than horizontal scaling. I keep everything in containers because I like being able to blow away my entire dev setup and start again from scratch. It's probably easier and to deploy your containerised application on a new server than if you have to go in and manually install the right version of Ruby and all your dependencies. If you've got a bug that only appears in production it's really convenient to be able to run "production" on your local machine, and containers are a great way to do that.
+One final thing, I know I'm a huge [container nerd][podman] but there are plenty of reasons to containerise your application other than horizontal scaling. I keep everything in containers because I like being able to blow away my entire dev setup and start again from scratch. It's probably easier to deploy your containerised application on a new server than if you have to go in and manually install the right version of Ruby and all your dependencies. If you've got a bug that only appears in production it's really convenient to be able to run "production" on your local machine, and containers are a great way to do that.
 
 [podman]: /tags/#podman
 

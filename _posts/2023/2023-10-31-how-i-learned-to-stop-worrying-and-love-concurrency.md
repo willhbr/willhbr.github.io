@@ -107,7 +107,7 @@ Swift is mostly the outlier here in terms of the status-quo of mainstream langua
 
 # `async` / `await` & Concurrency
 
-The most popular[^most-popular] implementation of concurrency into language is using two keywords—`async` and `await`—to annotate points in the program where it can stop and do something else while something happens in the background. Usually this bridges to a historical API that uses something called a "future" or a "promise".
+The most popular[^most-popular] way of implementating concurrency into a language is using two keywords—`async` and `await`—to annotate points in the program where it can stop and do something else while something happens in the background. Usually this bridges to a historical API that uses something called a "future" or a "promise".
 
 [^most-popular]: Measured entirely on vibes.
 
