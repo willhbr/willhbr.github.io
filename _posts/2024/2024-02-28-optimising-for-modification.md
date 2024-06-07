@@ -1,6 +1,6 @@
 ---
 title: "Optimising for Modification"
-tags: opinion
+tags: opinion languages
 ---
 
 It is an accepted wisdom that it's more important to write code that is easily read and understood, in contrast to writing code that is fast to write[^run-fast]. This is typically used in discussions around verbose or statically typed languages versus terser dynamically typed languages.

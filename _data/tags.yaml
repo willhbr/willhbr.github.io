@@ -1,10 +1,12 @@
 crystal: Adventures with the [Crystal](https://crystal-lang.org) programming language.
 design: Thoughts on software design problems, and occasionally solutions.
 homelab: Shenanigans with my home server(s).
+languages: Writing about writing stuff for computers.
 opinion: Thoughts on whatever. Probably computers.
 photography: Photography equipment, software, and suchlike.
 pod: Updates on my container-management program, [Pod](https://pod.willhbr.net).
 podman: Containerisation with [Podman](https://podman.io).
 projects: Things that I've been working on.
 tmux: Doing weird things with [tmux](https://github.com/tmux/tmux).
+tools: Things that run on computers, used to do other things with computers.
 web: Doing things with the web, probably with this website.

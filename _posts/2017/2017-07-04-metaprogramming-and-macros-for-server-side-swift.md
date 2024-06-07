@@ -1,5 +1,6 @@
 ---
 title: Metaprogramming and Macros for Server-Side Swift
+tags: languages
 ---
 
 I have been a fan of the Swift programming language since it was first announced, and [especially after](/2015/12/04/welcome-to-swift-org/) it was open sourced. The place that I thought Swift could be the most interesting for me was for server applications - I'm not much of an iOS/ macOS developer. The progress of Swift-on-Linux is slow for someone that doesn't like digging around Makefiles and linking to C libraries.

@@ -1,6 +1,6 @@
 ---
 title: The Code-Config Continuum
-tags: design
+tags: design languages
 ---
 
 At some point you've probably written or edited a config file that had the same block of config repeated over and over again with just one or two fields changed each time. Every time you added a new block you'd just duplicate the previous block and change the one field. Maybe you've wished that the application you're configuring supported some way of saying "configure all these things in the same way".

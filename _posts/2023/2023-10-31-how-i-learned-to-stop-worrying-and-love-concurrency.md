@@ -1,6 +1,6 @@
 ---
 title: How I Learned to Stop Worrying and Love Concurrency
-tags: opinion design
+tags: opinion design languages
 ---
 
 Doing more than one thing at a time is still a somewhat unsolved problem in programming languages. We've largely settled on how variables, types, exceptions, functions, and suchlike usually work, but when it comes to concurrency the options vary between "just use threads" and some version of "green threads" that just allows for something that looks like a thread but takes fewer resources. We've also mostly been stuck on whether to _actually do_ more than one thing at a time[^not-at-the-same-time], rather than how best to do it.
