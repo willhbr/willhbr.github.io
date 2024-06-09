@@ -39,7 +39,7 @@ If you don't want to capture something from really high up (since the legal limi
 
 When the drone is stationary, the camera points directly down. When it flies forward, the drone body tilts forward and the camera gimbal tilts upwards to compensate—keeping it pointed down. When the drone stops (especially if it stops suddenly) the body tilts _backwards_ to counteract its forward momentum. The gimbal tries to keep the camera pointed down, but the gimbal on the Mini 2 doesn't rotate far enough to compensate for the backwards angle of the drone. The result is that the camera view appears to be "kicked" upwards whenever the drone comes to a stop, and you have to adjust it back down before taking each shot.
 
-This could be worked around in software in the Mini 2—once the breaking move is complete, readjust the gimbal to be in the position it was while the drone was in motion. Or you could just re-engineer the next version of the drone to allow the gimbal to rotate far further backwards, allowing it to stay pointing downwards no matter what the drone is doing.
+This could be worked around in software in the Mini 2—once the braking move is complete, readjust the gimbal to be in the position it was while the drone was in motion. Or you could just re-engineer the next version of the drone to allow the gimbal to rotate far further backwards, allowing it to stay pointing downwards no matter what the drone is doing.
 
 ![A tasteful topdown drone shot from Newport beach](https://pics.willhbr.net/photos/2023-06-03.jpeg)
 {:class="small-img" loading="lazy"}
