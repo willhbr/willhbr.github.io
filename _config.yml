@@ -62,7 +62,7 @@ exclude:
 
 webfinger:
   subject: "acct:willhbr@ruby.social"
-  aliases": ["https://ruby.social/@willhbr", "https://ruby.social/users/willhbr"]
+  aliases: ["https://ruby.social/@willhbr", "https://ruby.social/users/willhbr"]
   links:
     - rel: "http://webfinger.net/rel/profile-page"
       type: "text/html"

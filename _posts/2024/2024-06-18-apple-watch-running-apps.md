@@ -8,7 +8,7 @@ This year I'm running the Sydney Marathon, and so I've got a lot of running on t
 
 [workoutdoors]: http://www.workoutdoors.net
 
-Often I'll do trail runs with my friend Max[^website-pending], who is always organised enough that I don't need to know where we're going. I bought WorkOutDoors as a backup but then never got around to using, it until a few months ago. It's a bit intimidating, but it's super useful for trail runs where you're not sure of exactly which track you need to be on.
+Often I'll do trail runs with my friend Max[^website-pending], who is always organised enough that I don't need to know where we're going. I bought WorkOutDoors as a backup but then never got around to using it, until a few months ago. It's a bit intimidating, but it's super useful for trail runs where you're not sure of exactly which track you need to be on.
 
 [^website-pending]: Website pending.
 
