@@ -35,4 +35,7 @@ User-agent: YouBot
 Disallow: /
 
 User-agent: *
+Disallow: /page/*
+
+User-agent: *
 Allow: /

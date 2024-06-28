@@ -24,6 +24,7 @@ feeds:
   json_include_text: false
 
 date_format: "%B %-d, %Y"
+date_format_short: "%B %-d"
 timezone: Australia/Sydney
 
 defaults:
