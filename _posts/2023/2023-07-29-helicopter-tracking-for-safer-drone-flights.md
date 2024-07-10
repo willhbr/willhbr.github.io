@@ -20,7 +20,7 @@ My first idea was to write an app that would stream the ADS-B data from a servic
 
 [^no-sideload]: I could install it on my phone with a free developer account, but that requires re-installing the app from Xcode every week.
 
-![a drone photo of waves coming in to a beach](https://pics.willhbr.net/photos/2023-06-17.jpeg){:loading="lazy"}
+![a drone photo of waves coming in to a beach](https://photography.willhbr.net/photos/2023-06-03-cce4c2.jpeg){:loading="lazy"}
 {:class="small-img"}
 
 I realise that I'm a few paragraphs into a post about drone photography and haven't included a drone photo yet. Here you go.

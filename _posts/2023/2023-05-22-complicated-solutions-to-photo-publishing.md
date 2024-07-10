@@ -3,7 +3,7 @@ title: "Complicated Solutions to Photo Publishing"
 tags: projects photography homelab
 ---
 
-As [previously discussed](/2022/04/22/shortcuts-is-a-cursed-minefield/) there have been some challenges keeping the photos on [my website](https://pics.willhbr.net) up-to-date. The key constraint here is my insistence on using Jekyll for the website (rather than something with a web-based CMS) and wanting somewhat-efficient photo compression (serving 20MB photos is frowned upon). Obviously I considered writing my own CMS for Jekyll with a web interface that I could access from my phone—this seemed like the natural thing to do—but I quickly realised this would spiral into a huge amount of work.
+As [previously discussed](/2022/04/22/shortcuts-is-a-cursed-minefield/) there have been some challenges keeping the photos on [my website](https://photography.willhbr.net) up-to-date. The key constraint here is my insistence on using Jekyll for the website (rather than something with a web-based CMS) and wanting somewhat-efficient photo compression (serving 20MB photos is frowned upon). Obviously I considered writing my own CMS for Jekyll with a web interface that I could access from my phone—this seemed like the natural thing to do—but I quickly realised this would spiral into a huge amount of work.
 
 My intermediate idea was absolutely brilliant—but not very practical, which is why it's the intermediate idea. The key problem that I had before was that Shortcuts is cursed and every second I spend dragging actions around takes days off my life expectancy due to the increase in stress. The resizing and recompression would have to happen on a Real Computer™. Thankfully I have a few of those.
 
@@ -29,6 +29,6 @@ Shortcuts can somewhat reliably send HTTP requests, so it's just a matter of bas
 
 So now if you look at [my photo website]({{ site.urls.photos}}) you should see some recent photos are a bit higher quality now:
 
-[![A drone photo of the Sydney city skyline](https://pics.willhbr.net/photos/2023-05-22.jpeg){:loading="lazy"}](https://pics.willhbr.net/2023/05/22/post.html)
+[![A drone photo of the Sydney city skyline](https://photography.willhbr.net/photos/2023-05-22-f8d178.jpeg){:loading="lazy"}](https://photography.willhbr.net/2023-05-22/)
 
 You might even be able to zoom in and spot me somewhere in that photo!

@@ -7,7 +7,7 @@ I've [previously written about](https://willhbr.net/2019/11/02/impracticalities-
 
 Unsurprisingly there hasn't been a change in iPadOS's capabilities since 2019. However through a fortunate series of events I've found myself in possession of an M1 MacBook Air, and have been using that for storing/editing my photos for the last year or so.
 
-> As well as ending up on Instagram, my photos also end up on [a real website](https://pics.willhbr.net).
+> As well as ending up on Instagram, my photos also end up on [a real website](https://photography.willhbr.net).
 
 # The Good
 
@@ -19,11 +19,11 @@ Photos on MacOS has a much more robust and mature album system – the best feat
 
 Of course the real advantage to MacOS is that the photos library lives in the file system, and I can just go and look at it. The real, original bytes that came from my camera are fully within my grasp – I don't have to worry about transparent re-encoding as I move them around – and I can actually back them up to somewhere that isn't iCloud or Google Photos. I can include them in Time Machine, I can copy them to an external drive, or I can create my own janky system that uses `rsync` to copy them to a Raspberry Pi sitting on my network.
 
-I also now have access to more advanced or flexible software. As much as I like [Pixelmator Photo](https://www.pixelmator.com/photo/) it is limited to only making colour adjustments to a single layer. [Pixelmator Pro](https://www.pixelmator.com/pro/) on the other hand has all the same features (even with the same UI) but has layers (and layer masks!), effects (blurring and suchlike), and painting tools. This makes it possible to do things like [merge multiple fireworks shots into one picture](https://pics.willhbr.net/2022/01/01/post.html), or [fake the motion of many ferries at once](https://pics.willhbr.net/2021/12/28/post.html).
+I also now have access to more advanced or flexible software. As much as I like [Pixelmator Photo](https://www.pixelmator.com/photo/) it is limited to only making colour adjustments to a single layer. [Pixelmator Pro](https://www.pixelmator.com/pro/) on the other hand has all the same features (even with the same UI) but has layers (and layer masks!), effects (blurring and suchlike), and painting tools. This makes it possible to do things like [merge multiple fireworks shots into one picture](https://photography.willhbr.net/2021-12-31/), or [fake the motion of many ferries at once](https://photography.willhbr.net/2021-12-28/).
 
-![fireworks photo with implausible number of fireworks](https://pics.willhbr.net/photos/2022-01-01.jpeg)
+![fireworks photo with implausible number of fireworks](https://photography.willhbr.net/photos/2021-12-31-630b39.jpeg)
 
-In addition to Pixelmator Pro, I've also found use in single-purpose utilities like [Starry Landscape Stacker](https://sites.google.com/site/starrylandscapestacker/home) and [Panorama Stitcher](https://www.panoramastitcher.com) – which has come in useful with my [still-quite-new DJI Mini 2](https://pics.willhbr.net/2022/02/06/post.html).
+In addition to Pixelmator Pro, I've also found use in single-purpose utilities like [Starry Landscape Stacker](https://sites.google.com/site/starrylandscapestacker/home) and [Panorama Stitcher](https://www.panoramastitcher.com) – which has come in useful with my [still-quite-new DJI Mini 2](https://photography.willhbr.net/2022-01-20/).
 
 While none of this is impossible on iPadOS, these tools are made with the assumption of a more serious use – for example I can stitch together 20 raw images from my a6500 and get a 1GB TIFF out the other end. Not a single pixel of data is lost, and the software on MacOS can scale to handle it without hitting any limits.
 

@@ -1,6 +1,6 @@
 ---
 title: Scalability and Capability
-image: https://pics.willhbr.net/photos/2021-07-10.jpeg
+image: https://photography.willhbr.net/photos/2021-07-10-9bdc9c.jpeg
 tags: design opinion
 ---
 
@@ -34,7 +34,7 @@ However in 2020 I did manage to learn how to use [Blender](https://blender.org) 
 
 All those same skills applied when I built a powerful PC with a dedicated graphics card to run renders faster. This allowed me to improve my work much faster and use features like volumetric rendering that were prohibitively slow running on a laptop.
 
-![A computer render of a small cabin in a foggy forest with a radio mast next to it with sunlight shining through the trees](https://pics.willhbr.net/photos/2021-07-10.jpeg)
+![A computer render of a small cabin in a foggy forest with a radio mast next to it with sunlight shining through the trees](https://photography.willhbr.net/photos/2021-07-10-9bdc9c.jpeg)
 
 Rendering the fog in this shot would likely have taken days on my laptop, but rendering this at ultra-high quality probably took less than an hour.
 {:class="caption"}
