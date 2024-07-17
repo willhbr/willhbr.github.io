@@ -36,4 +36,4 @@ image: /images/some-image.jpeg
 
 I then checked using [opengraph.xyz](http://opengraph.xyz) that my formatting was correct. As with most standards, different implementations with have varying quirks and may display things differently. Since I'm just adding a preview image, I'm not too fussed about 100% correctness.
 
-This has also been done to my [photos website](https://pics.willhbr.net) so if a particular post is shared from there, it will get the preview thumbnail.
+This has also been done to my [photos website]({{ site.urls.photos }}) so if a particular post is shared from there, it will get the preview thumbnail.

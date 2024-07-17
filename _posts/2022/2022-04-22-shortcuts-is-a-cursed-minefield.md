@@ -3,7 +3,7 @@ title: "Shortcuts is a Cursed Minefield"
 tags: opinion shortcuts
 ---
 
-This all starts with me wanting to [host my photos outside](https://pics.willhbr.net) of [Instagram](https://instagram.com/willhbr). I ended up using GitHub pages and wrote a simple iOS Shortcut to resize and recompress the image to make it suitable for serving on the web.
+This all starts with me wanting to [host my photos outside]({{ site.urls.photos }}) of [Instagram](https://instagram.com/willhbr). I ended up using GitHub pages and wrote a simple iOS Shortcut to resize and recompress the image to make it suitable for serving on the web.
 
 The shortcut is fairly simple - it takes an image, creates two versions (a main image and a thumbnail for the homepage), crops the thumbnail into a square to fit on the homepage grid, then saves the images to [Working Copy](https://workingcopyapp.com) ready to be published to GitHub Pages.
 

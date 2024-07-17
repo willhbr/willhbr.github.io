@@ -4,7 +4,7 @@ image: /images/2023/bad-dng-render.jpeg
 tags: photography
 ---
 
-As [previously mentioned](/2022/03/20/the-good-and-bad-of-photos-for-macos/) I use my M1 MacBook Air to edit photos, which I post on [my website](https://pics.willhbr.net) and on [Instagram](https://instagram.com/willhbr). This past weekend I went to the beach and flew my drone (a wee DJI Mini 2) around, and got some nice pictures of the rocks, sand and the stunningly clear water.
+As [previously mentioned](/2022/03/20/the-good-and-bad-of-photos-for-macos/) I use my M1 MacBook Air to edit photos, which I post on [my website]({{ site.urls.photos }}) and on [Instagram](https://instagram.com/willhbr). This past weekend I went to the beach and flew my drone (a wee DJI Mini 2) around, and got some nice pictures of the rocks, sand and the stunningly clear water.
 
 Well, I thought they were good until I got home and looked at them on my laptop—every one of them had a horrible grid of coloured blobs overlaid on it, which made them basically unsalvageable. This is not something I'd come across before with my drone, so it was definitely a surprise. Naturally I started debugging.
 
