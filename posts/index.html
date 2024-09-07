@@ -1,0 +1,16 @@
+---
+layout: page
+---
+
+{% if page.url != '/' %}
+  {% include pagination.html %}
+{% endif %}
+
+{% for post in paginator.posts %}
+  {% if post.url != site.posts[0].url %}
+    {% include post.html %}
+    {% unless forloop.last %}<hr>{% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% include pagination.html %}

@@ -1,22 +1,26 @@
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
-  <a class="button" href="/archive">Archive</a>
   {% if paginator.previous_page %}
-    <a class="button" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+    <a class="button" href="{{ paginator.previous_page_path }}">&laquo;</a>
+  {% else %}
+    <a class="button" href="/">&laquo;</a>
   {% endif %}
+  <a class="button" href="/">Home</a>
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
       <a class="button current">{{ page }}</a>
     {% elsif page == 1 %}
-      <a class="button" href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}" class="other-page">{{ page }}</a>
+      <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page  }}</a>
     {% else %}
-      <a class="button" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" class="other-page">{{ page }}</a>
+      <a class="button" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
     {% endif %}
   {% endfor %}
 
   {% if paginator.next_page %}
-    <a class="button" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+    <a class="button" href="{{ paginator.next_page_path | replace: '//', '/' }}">&raquo;</a>
   {% endif %}
+  <a class="button" href="/archive">Archive</a> /
+  <a class="button" href="/tags">Tags</a>
 </div>
 {% endif %}

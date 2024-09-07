@@ -9,6 +9,7 @@ I just bought a new (second-hand) TV—upgrading from my 42" 1080p second-hand T
 [^new-tv]: It's a Samsung TU-8000, if you're interested. It replaces some random Panasonic TV that I've had for years.
 
 ![The volume control](/images/2024/tv-volume-control.webp)
+{:loading="lazy"}
 
 The TV was cheap because of the panel defect around the edge.
 {:class="caption"}

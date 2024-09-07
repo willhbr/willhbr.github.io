@@ -3,8 +3,8 @@ author: Will Richardson
 
 description: "Computers, photography, and related matters."
 baseurl: ""
-paginate: 10
-paginate_path: "/page/:num"
+paginate: 13
+paginate_path: "/posts/:num"
 plugins: [jekyll-paginate]
 
 email: feedback@willhbr.net

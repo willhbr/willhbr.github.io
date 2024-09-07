@@ -12,9 +12,11 @@
       </head>
       <body>
         <header class="site-header">
-          <a href="/" class="title">
-            {{ site.title }}
-          </a>
+          <div class="items">
+            <a href="/" class="title">
+              {{ site.title }}
+            </a>
+          </div>
         </header>
         <div class="container">
           <div class="post-body">

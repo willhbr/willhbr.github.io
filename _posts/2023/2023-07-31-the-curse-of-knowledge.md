@@ -35,7 +35,7 @@ Ok I need to share just how neat the tmux API is. It's all really well documente
 
 Most tmux commands print some kind of output, by default it's somewhat human-readable, intended to display in a terminal. Take `tmux list-sessions` as an example:
 
-```shell
+```console
 $ tmux list-sessions
 flight-tracker: 2 windows (created Fri Jul 28 10:41:53 2023)
 pixelfed-piper: 1 windows (created Fri Jul 28 11:14:18 2023)
@@ -45,7 +45,7 @@ willhbr-github-io: 2 windows (created Fri Jul 28 11:13:50 2023) (attached)
 
 It would be really annoying to write a script to parse that into a useful data structure (especially for every single command!), and thankfully we don't have to! Every tmux command that prints output also supports a format string to specify what to print and how to print it:
 
-```shell
+```console
 $ tmux list-sessions -F '#{session_id}||#{session_name}||#{session_created}'
 $1||flight-tracker||1690540913
 $3||pixelfed-piper||1690542858

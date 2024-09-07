@@ -57,7 +57,7 @@ ssh://$USER@$HOST_MACHINE:$PORT/$SOCKET_PATH
 
 We should see that `~/.config/containers/containers.conf` has been updated with the new config:
 
-```
+```conf
 [engine]
   [engine.service_destinations]
     [engine.service_destinations.bruce]

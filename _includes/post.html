@@ -1,14 +1,11 @@
 <article>
   <header>
     <h1 class="post-title">
-      <a class="post-link" href="{{ post.url }}">
-        {{ post.title }}
-      </a>
+      <a href="{{ post.url }}">{{ post.title }}</a>
     </h1>
 
     <div class="metadata">
       <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
-      &bull; <a href="{{ post.url | absolute_url }}">&infin; link</a>
       {% assign tags = post.tags | sort %}
       {% if tags.size > 0 %}
         &bull;
@@ -17,16 +14,13 @@
         <a href="/tags#{{ tag }}">{{ tag }}</a>
       {% endfor %}
       {% if jekyll.environment == "development" %}
-				&bull;
         {% assign words = post.content | strip_html | number_of_words %}
         {% assign time = words | divided_by: 180 %}
-				{% if time != '0' %}
-					~{{ time }}
+				({%- if time != '0' -%}~{{ time }}
 				{% else %}
 					~1
-				{% endif %} minutes
-        &bull;
-        {{ words }} words
+				{% endif %} minutes,
+        {{ words }} words)
       {% endif %}
     </div>
   </header>

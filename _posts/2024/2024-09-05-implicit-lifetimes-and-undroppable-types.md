@@ -124,7 +124,7 @@ fn main() {
 
 That would of course fail to compile:
 
-```shell
+```console
 $ cargo run
    Compiling
  --> src/main.rs:2:7
@@ -171,7 +171,7 @@ I remember in university being _explicitly_ told that objected-oriented "becomes
 
 Last year [I wrote a long ramble about concurrency](/2023/10/31/how-i-learned-to-stop-worrying-and-love-concurrency/), where I mostly glossed over the whole concept of lifetimes, but wrote:
 
->  What I’d like is—somehow—for concurrent data access to be verified as easily as types are checked in Crystal. I get most of the benefits of static typing and dynamic typing by using Crystal’s type inference, can the lifetimes of variables be inferred in a similar way? I think this would be a very hard problem, and probably only practical if the general population of developers was already used to adding lifetime annotations—like they are with types—so you could just require fewer of them.
+> What I’d like is—somehow—for concurrent data access to be verified as easily as types are checked in Crystal. I get most of the benefits of static typing and dynamic typing by using Crystal’s type inference, can the lifetimes of variables be inferred in a similar way? I think this would be a very hard problem, and probably only practical if the general population of developers was already used to adding lifetime annotations—like they are with types—so you could just require fewer of them.
 
 Much like nullability in Java, adding any kind of lifetimes into an existing type system would be incredibly difficult, as you don't know the lifetime of any unannotated type, so all bets are immediately off. In Java you `@NotNull` as much as you want, but someone can totally just throw a `null` your way and you have to deal with that at runtime.
 

@@ -1,7 +1,5 @@
 @mixin light-mode
-  --tc: #{$title-colour-light}
   --hc: #{$highlight-colour-light}
-  --luc: #{$link-underline-colour-light}
   --bc: #{$background-colour-light}
   --tec: #{$text-colour-light}
   --itpc: #{$inline-text-pill-colour-light}
@@ -10,10 +8,14 @@
   --mc: #{$metadata-colour-light}
   --fc: #{$footer-colour-light}
 
+  --c-b: #{$code-background-light}
+  --c-t: #{$code-type-light}
+  --c-s: #{$code-string-light}
+  --c-l: #{$code-literal-light}
+  --c-k: #{$code-keyword-light}
+
 @mixin dark-mode
-  --tc: #{$title-colour-dark}
   --hc: #{$highlight-colour-dark}
-  --luc: #{$link-underline-colour-dark}
   --bc: #{$background-colour-dark}
   --tec: #{$text-colour-dark}
   --itpc: #{$inline-text-pill-colour-dark}
@@ -22,21 +24,20 @@
   --mc: #{$metadata-colour-dark}
   --fc: #{$footer-colour-dark}
 
-body, body.light-mode
+  --c-b: #{$code-background-dark}
+  --c-t: #{$code-type-dark}
+  --c-s: #{$code-string-dark}
+  --c-l: #{$code-literal-dark}
+  --c-k: #{$code-keyword-dark}
+
+body
   @include light-mode
 
-body.dark-mode
-  @include dark-mode
-
 @media(prefers-color-scheme: dark)
-  body, body.dark-mode
+  body
     @include dark-mode
-  body.light-mode
-    @include light-mode
 
-$title-colour: var(--tc)
 $highlight-colour: var(--hc)
-$link-underline-colour: var(--luc)
 $background-colour: var(--bc)
 $text-colour: var(--tec)
 $inline-text-pill-colour: var(--itpc)
@@ -44,3 +45,9 @@ $blockquote-colour: var(--blc)
 $link-hover-colour: var(--lhc)
 $metadata-colour: var(--mc)
 $footer-colour: var(--fc)
+
+$code-background: var(--c-b)
+$code-type: var(--c-t)
+$code-string: var(--c-s)
+$code-literal: var(--c-l)
+$code-keyword: var(--c-k)

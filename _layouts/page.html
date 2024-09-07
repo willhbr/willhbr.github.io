@@ -4,13 +4,10 @@
     {% include head.html %}
   </head>
   <body>
-    <script>document.body.classList.add(localStorage.getItem('theme-toggle') + '-mode')</script>
-    <button id="theme-toggle"></button>
     {% include header.html %}
     <div class="container">
       {{ content }}
     </div>
     {% include footer.html %}
-    <script type="text/javascript" async src="/js/main.js"/> </script>
   </body>
 </html>

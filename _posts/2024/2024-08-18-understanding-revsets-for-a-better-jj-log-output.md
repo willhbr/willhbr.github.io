@@ -9,7 +9,7 @@ The revset language is a declarative query language—not unlike SQL—that lets
 
 That's getting a little bit ahead of ourselves. Why did I go down a rabbit hole of learning about revsets in the first place? Well, one of the [many nice things](/2024/04/01/its-not-me-its-git/) about JJ is that the default output of the `log` command is to show just the stuff you care about, not the full history. For example here's the current state of the repo for my website:
 
-```shell
+```console
 $ jj log
 @  t Will Richardson now e
 │  Add post about revsets
@@ -44,7 +44,7 @@ I wanted the log to show all the commit branches (branches as in the sense of a 
 
 In the Crystal repo this gives us a huge output, let's peek at just the top:
 
-```shell
+```console
 $ jj log -r 'visible_heads()' | head -n 20
 @  x Will Richardson 14 minutes ago c
 │  (no description set)
@@ -71,7 +71,7 @@ There's my working copy commit, and then a bunch of in-flight work like the [cha
 
 If we want to show a bit more context, we can use the `ancestors()` function (yeah there are functions in revsets) to get the parents of each of the heads:
 
-```shell
+```console
 $ jj log -r 'ancestors(visible_heads(), 1)'
 @  x Will Richardson 21 minutes ago c
 │  (no description set)

@@ -1,0 +1,20 @@
+{% assign post_count = site.posts.size %}
+{% assign page_count = post_count | divided_by: site.paginate %}
+{% if post_count | modulo: site.paginate > 0 %}
+  {% assign page_count = page_count | plus: 1 %}
+{% endif %}
+<div class="pagination">
+  <a class="button current" href="/">Home</a>
+
+  {% for page in (1..page_count) %}
+    {% if page == 1 %}
+      <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page }}</a>
+    {% else %}
+      <a class="button" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  <a class="button" href="/posts">&raquo;</a>
+  <a class="button" href="/archive">Archive</a> /
+  <a class="button" href="/tags">Tags</a>
+</div>

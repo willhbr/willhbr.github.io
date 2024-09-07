@@ -2,13 +2,20 @@
 layout: page
 ---
 
-{% if page.url != '/' %}
-  {% include pagination.html %}
-{% endif %}
+{% assign post = site.posts[0] %}
+{% include post.html %}
 
-{% for post in paginator.posts %}
-  {% include post.html %}
-  {% unless forloop.last %}<hr>{% endunless %}
+<hr>
+
+<h1><a href="/posts">Older</a></h1>
+<ul>
+{% for post in site.posts limit:site.paginate offset:1 %}
+  <li {% if post.draft %} style="font-style: italic"{% endif %}>
+    <a href="{{ post.url }}">{{ post.title }}</a> <span class="metadata">({{ post.date | date: site.date_format_short }})</span>
+  </li>
 {% endfor %}
+<li><a href="/archive">More &rarr;</a></li>
+</ul>
+<br>
 
-{% include pagination.html %}
+{% include fake_pagination.html %}

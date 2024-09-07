@@ -1,11 +1,304 @@
 ---
 ---
 
+$paragraph-size: 16px
+$header-size: 2.5em
+$metadata-size: 1rem
+$title-size: 1.8em
+$footer-size: 0.9rem
+$caption-size: 0.9rem
+$body-side-margin: 8px
 $page-width: 650px
+$title-font-family: 'DIN', sans-serif-condensed, sans-serif
+$body-font-family: 'IBM Plex Sans', system-ui, sans-serif
+$code-font-family: "Fira Code", "Anonymous Pro", monospace
 
+// main website theme colour
+$highlight-colour-light: #6609a0
+$highlight-colour-dark: #bf8eff
+// background colour for whole site
+$background-colour-light: #f9f9f9
+$background-colour-dark: #262626
+// text colour for body text
+$text-colour-light: #333
+$text-colour-dark: #eee
+// background of inline code blocks and footnote links
+$inline-text-pill-colour-light: darken($background-colour-light, 10%)
+$inline-text-pill-colour-dark: darken($background-colour-dark, 7%)
+
+// colour for blockquote text
+$blockquote-colour-light: lighten($text-colour-light, 15%)
+$blockquote-colour-dark: darken($text-colour-dark, 15%)
+
+// colour for link a:hover
+$link-hover-colour-light: darken($highlight-colour-light, 10%)
+$link-hover-colour-dark: lighten($highlight-colour-dark, 10%)
+
+// colour for post metadata, and some other side-notes
+// captions
+$metadata-colour-light: lighten($text-colour-light, 20%)
+$metadata-colour-dark: darken($text-colour-dark, 30%)
+
+// text colour for footer, including links
+$footer-colour-light: lighten($text-colour-light, 10%)
+$footer-colour-dark: darken($text-colour-dark, 10%)
+
+// Syntax highlighting
+
+$code-background-light: darken($background-colour-light, 10%)
+$code-background-dark: darken($background-colour-dark, 3%)
+$code-type-light: lighten($highlight-colour-light, 5%)
+$code-type-dark: lighten($highlight-colour-dark, 10%)
+$code-string-light: change-color($highlight-colour-light, $hue: 102deg)
+$code-string-dark: change-color($highlight-colour-dark, $hue: 102deg)
+$code-literal-light: change-color($highlight-colour-light, $hue: 13deg)
+$code-literal-dark: change-color($highlight-colour-dark, $hue: 13deg)
+$code-keyword-light: change-color($highlight-colour-light, $hue: 220deg)
+$code-keyword-dark: change-color($highlight-colour-dark, $hue: 220deg)
+
+@import "darkmode"
 @import "syntax"
-@import "main"
+
+@font-face
+  font-family: "DIN"
+  src: local("DIN"), url("/css/din.woff2") format("woff2")
+@font-face
+  font-family: "IBM Plex Sans"
+  src: local("IBM Plex Sans"), url("/css/plex-sans-text.woff2") format("woff2")
+@font-face
+  font-family: "IBM Plex Sans"
+  font-style: italic
+  src: local("IBM Plex Sans"), url("/css/plex-sans-text-italic.woff2") format("woff2")
+
+// HEADER
+
+.title
+  font-family: $title-font-family
+  font-size: $header-size
+
+.title:hover
+  text-decoration: none
+
+header.site-header
+  padding-top: 4em
+  text-align: left
+  margin-bottom: 50px
+  background: $highlight-colour
+  margin: auto
+  width: 100%
+  color: $background-colour
+  a
+    color: $background-colour
+
+header .items
+  padding: 1em
+  max-width: $page-width
+  margin: auto
+  display: grid
+  grid-template-areas: '. .'
+  align-items: self-end
+
+header .links
+  text-align: right
+  vertical-align: baseline
+  font:
+    size: 1.2em
+    family: $title-font-family
+  text-transform: uppercase
+  ul
+    li
+      display: inline
+    li:after
+      content: " / "
+    li:last-child:after
+      content: ""
+    list-style-type: none
+    margin-bottom: 4px
+
+@media (max-width: 39em)
+  header.site-header
+    padding-top: 0
+  header .links
+    ul li
+      display: block
+    ul li:after
+      content: ""
+
+@media (max-width: 21em)
+  header.site-header
+    padding-top: 0
+  header .items
+    display: block
+
+// GENERAL NONSENSE
+
+body
+  color: $text-colour
+  background-color: $background-colour
+  font:
+    family: $body-font-family
+    size: $paragraph-size
+  margin: 0
+
+strong
+  font-weight: bold
+
+a
+  color: $highlight-colour
+  cursor: pointer
+
+a:hover
+  color: $link-hover-colour
+  text-decoration: underline
+
+hr
+  border: none
+  height: 5px
+  border-radius: 3px
+  color: $inline-text-pill-colour
+  background-color: $inline-text-pill-colour
+  width: 30%
+
+.highlighter-rouge pre
+  padding: 2px 10px 5px 10px
+  overflow: scroll
+
+pre, code
+  font-family: $code-font-family
+
+.highlighter-rouge pre, code.highlighter-rouge, .highlight
+  border-radius: 4px
+  font-size: 0.9em
+
+code.highlighter-rouge
+  background: $inline-text-pill-colour
+  padding: 2px 4px
+  padding-bottom: 1px
+
+.container
+  margin: auto
+  padding:
+    left: $body-side-margin
+    right: $body-side-margin
+  max-width: $page-width
+
+footer
+  clear: both
+  font-size: $footer-size
+  padding: 8px
+  text-align: center
+
+footer, footer a
+  color: $footer-colour
+
+.pagination
+  margin-top: 1em
+  font-size: $metadata-size
+  text-align: center
+  .button.current
+    background: $highlight-colour
+    color: $background-colour
+
+.button
+  padding: 6px 8px
+  font-size: $footer-size
+  line-height: 1.5
+  background: transparent
+  color: $highlight-colour
+  font-weight: bold
+  text-transform: uppercase
+  text-decoration: none
+  border-radius: 3px
+  line-height: 2.4
+
+// POSTS
+
+h1.post-title
+  font-size: $title-size
+
+h1, h2, h3, h4, h5, h6
+  font-weight: normal
+  font-family: $title-font-family
+  color: $highlight-colour
+  margin-bottom: 0
+  a
+    text-decoration: none
+
+
+header a
+  text-decoration: none
+
+.post-body
+  margin-top: 1em
+  img
+    width: 100%
+    margin-top: 10px
+    border-radius: 8px
+  p
+    margin-top: 0
+  a:hover
+    text-decoration: underline
+
+p
+  line-height: 1.4
+
+p.small-img
+  text-align: center
+  img
+    width: 50%
 
 img
   width: 100%
   border-radius: 10px
+
+.metadata, .metadata a
+  margin-top: 0.2em
+  color: $metadata-colour
+  font-size: $metadata-size
+
+blockquote
+  color: $blockquote-colour
+  border-left: 3px solid $highlight-colour
+  padding-left: .5em
+  margin-left: .5em
+
+p.caption
+  color: $metadata-colour
+  text-align: center
+  font-style: italic
+  font-size: $caption-size
+
+.post-nav
+  div
+    padding: 1em
+    place-self: center
+  display: grid
+  grid-auto-rows: 1fr
+  grid-template-columns: 1fr 1fr
+
+sup[role=doc-noteref]
+  vertical-align: baseline
+  a
+    color: $text-colour
+    background: $inline-text-pill-colour
+    padding: 0px 8px
+    border-radius: 1em
+    text-decoration: none
+    margin-left: 3px
+  a:hover
+    text-decoration: none
+
+.footnotes
+  margin-top: 2em
+  font-size: 0.9rem
+  a.reversefootnote
+    text-decoration: none
+
+.post-footer
+  margin-top: 3em
+  width: 100%
+  text-align: center
+
+.highlight, .highlight pre
+  color: $text-colour
+  background: $code-background

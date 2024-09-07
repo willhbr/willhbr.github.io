@@ -1,17 +1,19 @@
 <header class="site-header">
-  <a href="/" class="title">
-    {{ site.title }}
-  </a>
-  <p>
-    {%- if page.url != "/me/" -%}
-      <a class="button" href="/me">Me</a> /
-    {% endif %}
-    {%- if page.url != "/" -%}
-      <a class="button" href="/">Blog</a> /
-    {%- else -%}
-      <a class="button" href="/archive">Posts</a> /
-    {% endif %}
-    <a class="button" href="{{ site.urls.photos }}">Photos</a> /
-    <a class="button" rel="me" target=_blank href="{{ site.urls.mastodon }}">Mastodon</a>
-  </p>
+  <div class="items">
+    <a href="/" class="title">{{ site.title }}</a>
+    <div class="links">
+      <ul>
+        {%- if page.url != "/me/" -%}
+          <li><a href="/me">Me</a></li>
+        {% endif %}
+        {%- if page.url != "/" -%}
+          <li><a href="/">Blog</a></li>
+        {%- else -%}
+          <li><a href="/posts">Posts</a></li>
+        {% endif %}
+        <li><a href="{{ site.urls.photos }}">Photos</a></li>
+        <li><a rel="me" target=_blank href="{{ site.urls.mastodon }}">Mastodon</a></li>
+      </ul>
+    </div>
+  </div>
 </header>
