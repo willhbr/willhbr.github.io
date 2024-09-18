@@ -64,11 +64,11 @@ $code-keyword-dark: change-color($highlight-colour-dark, $hue: 220deg)
   src: local("DIN"), url("/css/din.woff2") format("woff2")
 @font-face
   font-family: "IBM Plex Sans"
-  src: local("IBM Plex Sans"), url("/css/plex-sans-text.woff2") format("woff2")
+  src: local("IBM Plex Sans"), url("/css/plex-sans.woff2") format("woff2")
 @font-face
   font-family: "IBM Plex Sans"
   font-style: italic
-  src: local("IBM Plex Sans"), url("/css/plex-sans-text-italic.woff2") format("woff2")
+  src: local("IBM Plex Sans"), url("/css/plex-sans-italic.woff2") format("woff2")
 
 // HEADER
 
@@ -190,8 +190,10 @@ footer
 
 footer, footer a
   color: $footer-colour
+  text-decoration: none
 
 .pagination
+  font-variant-numeric: normal
   margin-top: 1em
   font-size: $metadata-size
   text-align: center
@@ -221,6 +223,7 @@ h1, h2, h3, h4, h5, h6
   font-family: $title-font-family
   color: $highlight-colour
   margin-bottom: 0
+  text-wrap: balance
   a
     text-decoration: none
 
@@ -240,6 +243,7 @@ header a
     text-decoration: underline
 
 p
+  font-variant-numeric: oldstyle-nums
   line-height: 1.4
 
 p.small-img
@@ -278,13 +282,14 @@ p.caption
 
 sup[role=doc-noteref]
   vertical-align: baseline
+  font-variant-numeric: normal
   a
     color: $text-colour
     background: $inline-text-pill-colour
     padding: 0px 8px
     border-radius: 1em
     text-decoration: none
-    margin-left: 3px
+    margin-left: 2px
   a:hover
     text-decoration: none
 

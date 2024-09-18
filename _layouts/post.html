@@ -28,7 +28,7 @@ layout: page
   </div>
 
   <p>
-    <a class=button href="/archive">Archive</a>
+    <a class="button" href="/archive#{{ page.date | date: '%Y' }}">Archive</a>
     {% if tags.size > 0 %}
       {% for tag in tags %}
         / <a class="button" href="/tags#{{ tag }}">{{ tag }}</a>

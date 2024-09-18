@@ -20,7 +20,7 @@
   {% if paginator.next_page %}
     <a class="button" href="{{ paginator.next_page_path | replace: '//', '/' }}">&raquo;</a>
   {% endif %}
-  <a class="button" href="/archive">Archive</a> /
+  <a class="button" href="/archive#{{ paginator.posts[0].date | date: '%Y' }}">Archive</a> /
   <a class="button" href="/tags">Tags</a>
 </div>
 {% endif %}
