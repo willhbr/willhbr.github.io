@@ -40,11 +40,9 @@ I just need to grab the latest release, and from the release get the asset that 
 ```
 .[0].assets
 | .[]
-| select(
-  .name
-  | contains("$arch"))
-  | select(.name | contains("$os")
-) | .browser_download_url
+| select(.name | contains("$arch"))
+| select(.name | contains("$os"))
+| .browser_download_url
 ```
 
 Just set `$arch` and `$os` to the right values ("x64_64" and "linux" will probably do the trick) and you've got a script that can download the latest release on demand. I [popped this into my install script](https://github.com/willhbr/dotfiles/blob/8602f53addbb51e77a27897fef1eba074a826f08/install.sh#L15-L33) so I can keep my install up-to-date and setup new machines quickly.
