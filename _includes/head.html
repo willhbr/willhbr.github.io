@@ -2,8 +2,8 @@
 {% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
 <title>{{ title }}</title>
 <link rel="stylesheet" href="/css/main.css">
-<meta name="theme-color" media="(prefers-color-scheme: light)" content="#6609a0" />
-<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#bf8eff" />
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="{{ site.theme_colour.light }}" />
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="{{ site.theme_colour.dark }}" />
 <link rel="preload" href="/css/din.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/css/plex-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/css/plex-sans-italic.woff2" as="font" type="font/woff2" crossorigin>

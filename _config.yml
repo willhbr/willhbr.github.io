@@ -18,6 +18,10 @@ urls:
   photos: "https://photography.willhbr.net"
   pixelfed: "https://pixelfed.nz/willhbr"
 
+theme_colour:
+  light: "#6609a0"
+  dark: "#bf8eff"
+
 feeds:
   rss_url: "/feed.xml"
   json_url: "/feed.json"
