@@ -9,7 +9,13 @@ tags: tools
 
 You can download prebuilt JJ binaries for most distributions/architectures from the GitHub releases page, which is how I'd typically install it. I used the GitHub API and [`jq`](https://github.com/jqlang/jq) to parse the list of releases and get the download URL for the right architecture, then download, untar, and install the binary.
 
-The API endpoint is `https://api.github.com/repos/martinvonz/jj/releases`, and the important part looks like this:
+The API endpoint is:
+
+```
+https://api.github.com/repos/martinvonz/jj/releases
+```
+
+The important part of the response looks like this:
 
 ```json
 {
