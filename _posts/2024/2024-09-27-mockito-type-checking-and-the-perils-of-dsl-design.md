@@ -1,5 +1,6 @@
 ---
 title: "Mockito, Type Checking, and the Perils of DSL Design"
+tags: languages design
 ---
 
 So this one takes a bit of explaining but we'll get there in the end. The Mockito `when()` function has a really subtle trap that can lead to unexpected behaviour. For the longest time I thought it was because the authors wanted a slightly cleaner API, but after some more thought I realised that it's almost unavoidable. We'll get to that later, first let's get into the actual API.
