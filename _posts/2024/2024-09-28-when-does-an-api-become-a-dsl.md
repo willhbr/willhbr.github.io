@@ -125,7 +125,7 @@ router.GET("/", func(w http.ResponseWriter, r *http.Request, _ httprouter.Params
 
 I don't know whether this would work (i.e: whether the `router` object gets closed for modification when you start accepting requests) but it's clearly not the intended use of the API as it doesn't match the simple language that is constructed by the API.
 
-A great example of something that's clearly a DSL is [Ecto](https://hexdocs.pm/ecto/Ecto.html), the database wrapper/OEM for Elixir. Ecto has a full-on language defined with macros that gets translated to SQL. Take this example from the documentation:
+A great example of something that's clearly a DSL is [Ecto](https://hexdocs.pm/ecto/Ecto.html), the database wrapper/ORM for Elixir. Ecto has a full-on language defined with macros that gets translated to SQL. Take this example from the documentation:
 
 ```elixir
 query = from u in "users",
