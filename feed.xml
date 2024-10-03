@@ -20,7 +20,11 @@
         <guid isPermaLink="true">{{ post.url | prepend: site.url }}</guid>
         <description>
           {%- capture content -%}{% include feed_post.html %}{%- endcapture -%}
-          {{ content | xml_escape }}
+          {%- if content contains "]]>" -%}
+            {{ content | xml_escape }}
+          {%- else -%}
+            <![CDATA[{{ content }}]]>
+          {%- endif -%}
         </description>
       </item>
     {% endfor %}
