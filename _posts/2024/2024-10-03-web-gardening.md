@@ -1,6 +1,7 @@
 ---
 title: "Web Gardening"
 image: /images/2024/new-website.webp
+tags: web
 ---
 
 Just over four months ago—in [a post celebrating the 10th birthday of my website](/2024/05/05/happy-birthday-to-website/)—I wrote:

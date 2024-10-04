@@ -26,13 +26,16 @@ To write type of a closure (for example to receive it as an argument) also uses 
 
 # Python
 
-Python just goes that extra few centimetres, you can use the same syntax inside a function, but there's also the `lambda` keyword as a shortcut for single-expression closures:
+Python just goes that extra few centimetres, you can use the same syntax inside a function, but there's also the `lambda` keyword as a shortcut for single-expression closures:[^correction]
+
+[^correction]: Previously my example incorrectly showed it being possible to omit the name in `def` and use it as a value, but this is not the case, thanks Susanne for the correction!
 
 ```python
-func = def(a):
-  return a + 41
-# can be written as:
-func = lambda a: a + 41
+def main():
+  def func(a):
+    return a + 41
+  # can be written as:
+  func = lambda a: a + 41
 ```
 
 The `lambda` keyword is a bit verbose for my liking, and Python's indent-based blocks don't really lend themselves well to many alternatives that are longer than one expression.
