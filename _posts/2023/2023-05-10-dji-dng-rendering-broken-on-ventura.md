@@ -1,7 +1,7 @@
 ---
 title: "DJI DNG Rendering Broken on Ventura"
 image: /images/2023/bad-dng-render.jpeg
-tags: photography
+tags: photography debugging
 ---
 
 As [previously mentioned](/2022/03/20/the-good-and-bad-of-photos-for-macos/) I use my M1 MacBook Air to edit photos, which I post on [my website]({{ site.urls.photos }}) and on [Instagram](https://instagram.com/willhbr). This past weekend I went to the beach and flew my drone (a wee DJI Mini 2) around, and got some nice pictures of the rocks, sand and the stunningly clear water.

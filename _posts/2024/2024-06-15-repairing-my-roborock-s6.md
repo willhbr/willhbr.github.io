@@ -1,6 +1,7 @@
 ---
 title: "Repairing My Roborock S6"
 image: /images/2024/henry.webp
+tags: debugging
 ---
 
 About three weeks ago my previously-trusty [Roborock S6](https://global.roborock.com/pages/roborock-s6) (named Henry) stopped halfway through a clean. Usually this means that he found a tasty looking cable or shoelace and got tangled up, but when I got home he was just sitting in the hallway unobstructed. I popped him on his base, and didn't think much of it. The next time he was scheduled to clean up I got a notification saying that the laser distance sensor had malfunctioned, and that I should remove any obstructions and retry. That was cause for more concern.
