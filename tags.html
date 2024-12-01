@@ -16,7 +16,13 @@ layout: page
   {% endif %}
   <ul class="post-list">
     {% for post in tag[1] %}
-      <li id="{{ post.url }}"><a href="{{ post.url }}">{{ post.title }}</a> <span class="metadata">({{ post.date | date: site.date_format }})</span></li>
+      <li{% if post.draft %} style="font-style: italic"{% endif %}>
+        <a href="{{ post.url }}">
+          <span class="post-name">{{ post.title }}</span>
+          <span class="dots"></span>
+          <span class="date">{{ post.date | date: site.date_format }}</span>
+        </a>
+      </li>
     {% endfor %}
   </ul>
 {% endfor %}

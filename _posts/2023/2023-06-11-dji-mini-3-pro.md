@@ -7,7 +7,7 @@ tags: opinion photography
 Most camera reviews are pretty decent when it comes to photo and video quality (although for the type of cameras I buy, photo quality is usually an afterthought[^photo-reviews]). The thing that seems to be left out is the annoying nits and limitations that you become aware of after using something for a while. I just upgraded from the [DJI Mini 2][mini-2] to the [DJI Mini 3 Pro][mini-3-pro] and _oh boy_ do I have nits to share.
 
 ![A shot of surfers floating over underwater rocks](https://photography.willhbr.net/photos/2023-06-10-865bcc.jpeg)
-{:class="small-img" loading="lazy"}
+{:loading="lazy"}
 
 Shot on the Mini 3 Pro, this one had plenty of room to play with the colours.
 {:class="caption"}
@@ -24,7 +24,7 @@ Looking at some of the photos I've taken at the beach at the same time of day, t
 I don't really understand enough about cameras to accurately explain _why_ you can edit the Mini 3 photos more. There's more dynamic range? More bits? Deeper bits? Something for me to understand another time. The end result is that editing the Mini 2 photos feels like trying to sculpt almost-dry clay. You can't really make substantial changes, and if you try too hard you'll end up breaking something. On the other end of the spectrum is raw files from the a6500, which can be edited like modelling clay. The Mini 3 isn't nearly as flexible as that, but it's substantially better than the 2. I can actually recover some of the highlights, and I don't have to discard photos because the sky is completely blown out.
 
 ![A photo of an ocean pool with a wave breaking towards it](https://photography.willhbr.net/photos/2022-10-29-7eb22c.jpeg)
-{:class="small-img" loading="lazy"}
+{:loading="lazy"}
 
 Shot on the Mini 2, it's challenging to get the exposure of the waves right without making the whole image too dark. This is easier in the Mini 3, but still easy to get wrong.
 {:class="caption"}
@@ -42,7 +42,7 @@ When the drone is stationary, the camera points directly down. When it flies for
 This could be worked around in software in the Mini 2—once the braking move is complete, readjust the gimbal to be in the position it was while the drone was in motion. Or you could just re-engineer the next version of the drone to allow the gimbal to rotate far further backwards, allowing it to stay pointing downwards no matter what the drone is doing.
 
 ![A tasteful topdown drone shot from Newport beach](https://photography.willhbr.net/photos/2023-06-03-92a734.jpeg)
-{:class="small-img" loading="lazy"}
+{:loading="lazy"}
 
 Shot on the Mini 3 Pro, it's not too hard to play with the colour from the raw image, and the detail of the footprints in the sand is impressive.
 {:class="caption"}
@@ -50,7 +50,7 @@ Shot on the Mini 3 Pro, it's not too hard to play with the colour from the raw i
 In reality the best thing about the Mini 3 is having true vertical shooting. I don't know if I'm just a slave to the Instagram 4:5 format or if there's some other explanation, but I love shooting vertically on the Mini 3. The perspective of a linear feature stretching off into the distance is probably my second favourite drone angle after a top-down shot. With the Mini 2 I would have to throw away almost half of the pixels to get this perspective, but now I can get it for free.
 
 ![The Rakaia river stretches off into the distance in a low-quality Mini 2 photo](https://photography.willhbr.net/photos/2022-06-20-56b5a9.jpeg)
-{:class="small-img" loading="lazy"}
+{:loading="lazy"}
 
 Shot on Mini 2, getting a vertical composition means cropping out the left and right sides of the image.
 {:class="caption"}
@@ -60,7 +60,7 @@ The next nit is capture speed. The Mini 2 would pause for what seemed like an et
 It hasn't been too windy around here so I haven't been able to see how wind-hardy the Mini 3 is, but the Mini 2 would rarely get too bothered by the wind. It would occasionally complain that there was too much wind for it to get home automatically, but you could always keep going and just hope you could fly it home yourself. Probably the most stressed I've been while flying a drone was after taking [this picture](https://photography.willhbr.net/2022-06-29/) (below), doing another flight further up the valley on the same battery and flying downwind, and then having to fly back against the wind above a huge drop-off with the battery close to running out. Don't do that, it's a bad idea. Although the Mini 2 handled the wind like a champ, and I am assured that the Mini 3 is even more capable.
 
 ![The view down Otira gorge](https://photography.willhbr.net/photos/2022-06-29-f34243.jpeg)
-{:class="small-img" loading="lazy"}
+{:loading="lazy"}
 
 Shot on Mini 2, you don't want your battery to run out while over something like this.
 {:class="caption"}
