@@ -7,7 +7,7 @@ $metadata-size: 1rem
 $title-size: 1.8em
 $footer-size: 0.9rem
 $caption-size: 0.9rem
-$body-side-margin: 8px
+$body-side-margin: 0.5em
 $page-width: 41em
 $title-font-family: 'DIN', sans-serif-condensed, sans-serif
 $body-font-family: 'IBM Plex Sans', system-ui, sans-serif
@@ -154,7 +154,7 @@ a:hover
 hr
   border: none
   height: 0.3em
-  border-radius: 3px
+  border-radius: 0.2em
   color: $inline-text-pill-colour
   background-color: $inline-text-pill-colour
   width: 30%
@@ -291,15 +291,22 @@ ul.post-list
     display: flex
     align-items: baseline
     justify-content: space-between
-    text-decoration: none
     flex-wrap: wrap
+    text-decoration: none
     .dots
       flex-grow: 1
       border-bottom: 2px dotted $metadata-colour
-      margin-left: 0.5em
-      margin-right: 0.5em
+      margin-left: 0.2em
+      margin-right: 0.2em
     .date
       color: $metadata-colour
+  li a:hover .post-name
+    text-decoration: underline
+
+@media (max-width: 28em)
+  ul.post-list
+    li .dots
+      display: none
 
 sup[role=doc-noteref]
   vertical-align: baseline
