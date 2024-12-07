@@ -45,7 +45,7 @@ defaults:
       type: article
       auto_excerpt: true
 
-markdown: kramdown
+markdown: CustomKramdownConverter
 permalink: pretty
 highlighter: rouge
 

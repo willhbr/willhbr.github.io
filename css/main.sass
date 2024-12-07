@@ -189,6 +189,7 @@ pre, code
   font-family: $code-font-family
   font-size: 0.9em
   border-radius: 4px
+  break-inside: avoid
 
 code
   padding: 0 4px
@@ -332,7 +333,7 @@ ul.post-list
       flex-direction: column
       margin-bottom: 0.5em
 
-sup[role=doc-noteref]
+p > sup:has(.footnote)
   vertical-align: baseline
   font-variant-numeric: normal
   a

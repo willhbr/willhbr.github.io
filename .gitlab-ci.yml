@@ -1,17 +1,19 @@
-image: ruby:2.3
-variables:
-  JEKYLL_ENV: production
-  LC_ALL: C.UTF-8
-
-before_script:
-  - bundle install
-
-pages:
-  stage: deploy
-  script:
-  - bundle exec jekyll build -d public
-  artifacts:
+default:
+  image: ruby:3.2
+  before_script:
+    - 'apt update && apt install -y brotli'
+    - gem install bundler
+    - bundle config set path vendor
+    - bundle install
+  cache:
     paths:
-    - public
+      - vendor/
+
+create-pages:
+  script:
+    - bundle exec jekyll build -d public
+    - find public -type f -regex '.*\.\(htm\|html\|xml\|txt\|text\|js\|css\|svg\)$' -exec gzip -f -k {} \;
+    - find public -type f -regex '.*\.\(htm\|html\|xml\|txt\|text\|js\|css\|svg\)$' -exec brotli -f -k {} \;
+  pages: true
   only:
-  - master
+  - main

@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'github-pages'
-gem 'mdl'
+gem 'jekyll', '~> 4.4'
+gem 'rouge'
+gem 'jekyll-paginate'
 gem 'webrick'
+gem 'logger'

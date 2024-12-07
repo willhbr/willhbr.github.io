@@ -4,7 +4,7 @@ layout: page
 
 <h1>Stats</h1>
 
-<p>As of {{ site.time | date: site.date_format }}</p>
+<p>As of {{ site.time | date: site.date_format }}, generated with Jekyll {{ jekyll.version }}.</p>
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% assign total_words = 0 %}
