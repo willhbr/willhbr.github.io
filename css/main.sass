@@ -157,7 +157,7 @@ hr
   border-radius: 0.2em
   color: $inline-text-pill-colour
   background-color: $inline-text-pill-colour
-  width: 30%
+  width: 20%
 
 .highlighter-rouge pre
   padding: 2px 10px 5px 10px
@@ -183,7 +183,6 @@ code.highlighter-rouge
   max-width: $page-width
 
 footer
-  clear: both
   font-size: $footer-size
   padding: 0.5em
   text-align: center
@@ -205,7 +204,6 @@ footer, footer a
 .button
   padding: 6px 8px
   font-size: $footer-size
-  line-height: 1.5
   background: transparent
   color: $highlight-colour
   font-weight: bold
@@ -305,8 +303,12 @@ ul.post-list
 
 @media (max-width: 28em)
   ul.post-list
+    line-height: 140%
     li .dots
       display: none
+    li a
+      flex-direction: column
+      margin-bottom: 0.5em
 
 sup[role=doc-noteref]
   vertical-align: baseline

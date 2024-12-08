@@ -18,8 +18,5 @@ I can be found on other parts of the Internet:
 [Mastodon]({{ site.urls.mastodon }}){:class="button"} |
 [Github](https://github.com/willhbr){:class="button"} |
 [My Photo Website]({{ site.urls.photos }}){:class="button"}
-[Pixelfed](https://pixelfed.nz/willhbr){:class="button"}
-[Instagram](https://instagram.com/willhbr){:class="button"} |
-[YouTube](https://www.youtube.com/c/WillRichardson13/videos){:class="button"}
 
 If you want to get in contact, send me a [toot on Mastodon]({{ site.urls.mastodon }}) or [an email](mailto:{{ site.email }}).
