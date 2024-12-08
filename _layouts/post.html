@@ -11,7 +11,6 @@ layout: page
     <a href="{{ site.urls.mastodon }}" target=_blank>Mastodon</a> or
     {% capture subject %}Feedback: {{ post.title }}{% endcapture %}
     <a href="mailto:{{ site.email }}?subject={{ subject | uri_escape }}" target=_blank>email</a>.
-    Subscribe via <a href="{{ site.feeds.rss_url }}">RSS</a> or <a href="{{ site.feeds.json_url }}">JSON Feed</a>.
   </p>
 
   <div class="post-nav">
@@ -26,13 +25,4 @@ layout: page
       {% endif %}
     </div>
   </div>
-
-  <p>
-    <a class="button" href="/archive#{{ page.date | date: '%Y' }}">Archive</a>
-    {% if tags.size > 0 %}
-      {% for tag in tags %}
-        / <a class="button" href="/tags#{{ tag }}">{{ tag }}</a>
-      {% endfor %}
-    {% endif %}
-  </p>
 </div>

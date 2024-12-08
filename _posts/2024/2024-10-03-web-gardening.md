@@ -23,7 +23,7 @@ The most obvious new feature is the big purple header:
 
 ![The new website](/images/2024/new-website.webp)
 
-I'd been thinking about a new design basically since I made that comment at the end of the 10th birthday post. No ideas really stuck. I think played around with the most minor of changes—putting the navigation links to the side of the site title—and then thought that maybe the header could be designed as a block that dropped down from the accent strip at the top. I quickly realised that this would look terrible, but realised that on a sufficiently small screen, it would take up the full width—why not just do that for all screens?[^especially-mobile]
+I'd been thinking about a new design basically since I made that comment at the end of the 10th birthday post. No ideas really stuck. I played around with the most minor of changes—putting the navigation links to the side of the site title—and then thought that maybe the header could be designed as a block that dropped down from the accent strip at the top. I quickly realised that this would look terrible, but realised that on a sufficiently small screen, it would take up the full width—why not just do that for all screens?[^especially-mobile]
 
 [^especially-mobile]: Especially since most visitors are probably on phones anyway.
 

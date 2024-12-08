@@ -5,9 +5,6 @@ layout: page
 {% assign post = site.posts[0] %}
 {% include post.html %}
 
-<hr>
-
-<h1><a href="/posts">Older</a></h1>
 <ul class="post-list">
   {% for post in site.posts limit:site.paginate offset:1 %}
     <li{% if post.draft %} style="font-style: italic"{% endif %}>
@@ -19,7 +16,6 @@ layout: page
     </li>
   {% endfor %}
 </ul>
-<a href="/archive">More &rarr;</a>
 
 <br>
 
