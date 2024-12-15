@@ -140,6 +140,12 @@ body
     size: $paragraph-size
   margin: 0
 
+@media print
+  body
+    background: white
+  img, code, pre
+    break-inside: avoid
+
 strong
   font-weight: bold
 
