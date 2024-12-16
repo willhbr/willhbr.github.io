@@ -1,5 +1,6 @@
 ---
 title: "Upsetting the Apricot Cart"
+tags: opinion
 ---
 
 Imagine for a minute that I had a pair of apricot trees in my garden. I don't actually have a garden, so you'll have to imagine that I have one of those too. I love a nice fresh ripe apricot. However, I can't eat every single apricot that comes off the trees—there are just too many! There aren't enough apricots to start an apricot-selling business, plus I've got a job anyway. Instead I setup a stall in the street and give away my apricots to anyone passing by that shares my love of stone fruits. After a while word gets around and people in the neighbourhood know that they can get some apricots from Will's stall, and they'll drop by to see if I've got any to give away.

@@ -1,6 +1,7 @@
 ---
 title: "HOT NEW MARKDOWN EDITOR FOR MACOS"
 image: /images/2023/markedit.png
+tags: tools
 ---
 
 I just came across [MarkEdit](https://markedit.app/) on [Mastodon](https://mastodon.social/@MarkEditApp/109837635866336116), and then instantly installed it. It's advertised as being "TextEdit, but for Markdown" and it totally delivers on that.

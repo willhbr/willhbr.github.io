@@ -1,5 +1,6 @@
 ---
 title: "Merging JJ Repos"
+tags: tools
 ---
 
 So here's a weird thought: can you merge two repositories in [JJ](https://github.com/martinvonz/jj)? I have just ended up in a weird state (for unimportant reasons) where I had a remote repo and a local repo that diverged entirely due to me rewriting the commit history. I was going to delete the local copy and re-clone (since the remote was now the source of truth) but I thought "what happens if I add the remote and fetch from it?", and thought I might as well satisfy my curiosity first.

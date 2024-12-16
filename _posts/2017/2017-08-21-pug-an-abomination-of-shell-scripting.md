@@ -1,5 +1,6 @@
 ---
 title: "Pug: An Abomination of Shell Scripting"
+tags: tools projects
 ---
 
 Pug started out a few months ago as a slightly silly idea of writing my own plugin manager for Vim and ZSH plugins. There is no shortage of ways of managing Vim plugins - [Pathogen](https://github.com/tpope/vim-pathogen) or [Vundle](https://github.com/VundleVim/Vundle.vim) seem to be the most common. For ZSH everyone swears by [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) which includes every bell and whistle you could imagine.

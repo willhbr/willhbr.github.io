@@ -1,5 +1,6 @@
 ---
 title: "Interoperability Tier List"
+tags: opinion
 ---
 
 There is almost nothing built-in to your computer, phone, tablet, etc that allows you to interact directly with someone else's computer. If you have a photo on your phone, and your sitting next to someone with their phone, the easiest way to transfer the data between those two devices usually involves using someone else's computer in a datacenter thousands of kilometres away.
