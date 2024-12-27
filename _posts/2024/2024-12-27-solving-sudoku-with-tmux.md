@@ -260,6 +260,6 @@ While trying to solve a sudoku with 6 numbers missing, I worked out from the sta
 
 After extensive research with [Good Sudoku](https://www.playgoodsudoku.com) I found that a typical "easy" had about 35 pre-placed numbers, so 46 missing numbers. That's 9<sup>46</sup> solutions that my incredibly dumb solver would have to try.
 
-9<sup>46</sup> is 78,551,672,112,789,411,833,022,577,315,290,546,060,373,041. Multiply that by 8.6ms and you get 6.8x10<sup>41</sup> seconds. This is a very, very long time. If you've done a sudoku before then you can probably solve it faster.[^samply]
+9<sup>46</sup> is 78x10<sup>43</sup>. Multiply that by 8.6ms and you get 6.8x10<sup>41</sup> seconds. This is a very, very long time. If you've done a sudoku before then you can probably solve it faster.[^samply]
 
 [^samply]: I did take a quick trace using [Samply](https://github.com/mstange/samply) and tmux is obviously spending most of its time expanding format strings and getting options to put in format strings.
