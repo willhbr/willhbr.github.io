@@ -100,7 +100,7 @@ if -F '#{window_zoomed_flag}' {
 
 That's how you might use `if` in a tmux config file. It even supports braces (same as any other tmux command) and can be given an `else` block.
 
-I've you've [actually written a sudoku solver][sigh-solver] you might think of all the optimisations you could make so that it can find the solution to a "hard" sudoku in a reasonable amount of time. This project is not about doing things reasonably, so I chose to just enumerate every possible solution, and check if it was solved every time.
+If you've [actually written a sudoku solver][sigh-solver] you might think of all the optimisations you could make so that it can find the solution to a "hard" sudoku in a reasonable amount of time. This project is not about doing things reasonably, so I chose to just enumerate every possible solution, and check if it was solved every time.
 
 [sigh-solver]: https://github.com/sigh/Interactive-Sudoku-Solver
 
