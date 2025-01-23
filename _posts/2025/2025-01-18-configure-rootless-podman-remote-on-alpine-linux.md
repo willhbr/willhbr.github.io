@@ -82,18 +82,7 @@ Podman will likely complain about not being able to open the connection, which a
 AllowTcpForwarding yes
 ```
 
-After restarting `sshd` (`service sshd restart`) that _might_ be enough to get things working, but I ran into a problem at this point where podman would constantly complain of mismatching host keys, but connecting with `ssh` would work just fine. If I deleted the entry in `.ssh/known_hosts` and connected with podman first it would work, but then connecting with `ssh` would complain of a mismatching key. Eventually I worked out that I could re-order the keys in `.ssh/known_hosts` and have both work, but that seemed like a horrible hack.
-
-The problem seems to be the difference in algorithms supported by podman's Go-based SSH implementation and the OpenSSH `ssh` CLI. After a little bit of desperation, I copied the config from [ssh-audit](https://ssh-audit.com) into the `sshd_config`—removing some unsupported algorithms:
-
-```
-KexAlgorithms sntrup761x25519-sha512@openssh.com,curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha256
-Ciphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr
-MACs hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,umac-128-etm@openssh.com
-HostKeyAlgorithms ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256,rsa-sha2-256-cert-v01@openssh.com
-```
-
-Which worked, and allowed me to login over SSH and use podman-remote without any mismatched key shenanigans.
+After restarting `sshd` (`service sshd restart`) that should be enough to get things working.
 
 At this point you should add the config to `~/.config/containers/containers.conf` so you don't have to type out `--url` every time:
 
@@ -104,5 +93,9 @@ identity = "/home/will/.ssh/id_ed25519"
 ```
 
 Then you can run `podman -c alpine-server` to do anything on the remote machine.
+
+Originally I ran into a problem at this point where podman would constantly complain of mismatching host keys, but connecting with `ssh` would work just fine. If I deleted the entry in `.ssh/known_hosts` and connected with podman first it would work, but then connecting with `ssh` would complain of a mismatching key. Eventually I worked out that I could re-order the keys in `.ssh/known_hosts` and have both work, but that seemed like a horrible hack.
+
+I thought this was a difference in the Go SSH client and the OpenSSH CLI, but it ended up being the hardened SSH config that [I setup a while ago](/2023/05/09/hardening-with-ssh-audit/). The `ssh` CLI wouldn't add the `ecdsa-sha2-nistp256` key, whereas Podman would _only_ add that key. The end result is they both think something nefarious is going on because the key in `known_hosts` doesn't match. Adding the hardened sshd config from [ssh-audit](https://ssh-audit.com) would make it work because Podman would be forced to use `ssh-ed25519` instead, which is what `ssh` expects. Removing the hardened ssh config from the client made it work without any issues as `ssh` would add the `ecdsa-sha2-nistp256` key to `known_hosts`, so Podman would see what it expected.
 
 The aim of this exercise was to be able to setup a minimal host OS install with a single non-root user that will run containers. The host OS should have as little as possible installed, and the setup should be as scriptable as possible. Automating the setup in this post is a story for another time.
