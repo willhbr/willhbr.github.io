@@ -9,15 +9,12 @@ images:
     build_flags:
       cache-ttl: 24h
 
-containers:
+development:
   website:
     name: willhbr.github.io
-    image: localhost/willhbr.github.io:latest
-    bind_mounts:
-      .: /src
+    image: :website
     ports:
       4000: 80
-    interactive: true
     autoremove: true
     labels:
       endash.links:
@@ -30,6 +27,7 @@ containers:
       - --draft
       - --strict_front_matter
 
+containers:
   mdl:
     name: willhbr.github.io-mdl
     image: localhost/willhbr.github.io:latest
