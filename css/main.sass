@@ -34,6 +34,9 @@ $blockquote-colour-dark: darken($text-colour-dark, 15%)
 $link-hover-colour-light: #c67a07
 $link-hover-colour-dark: #f99734
 
+$link-visited-colour-light: darken($highlight-colour-light, 7%)
+$link-visited-colour-dark: lighten($highlight-colour-dark, 7%)
+
 // colour for post metadata, and some other side-notes
 // captions
 $metadata-colour-light: lighten($text-colour-light, 20%)
@@ -153,9 +156,12 @@ a
   color: $highlight-colour
   cursor: pointer
 
-a:hover
+a:hover, a:visited:hover
   color: $link-hover-colour
   text-decoration: underline
+
+a:visited
+  color: $link-visited-colour
 
 hr
   border: none
@@ -261,7 +267,7 @@ p.small-img
   img
     width: 50%
 
-.metadata, .metadata a
+.metadata, .metadata a, .metadata a:visited
   margin-top: 0.2em
   color: $metadata-colour
   font-size: $metadata-size
