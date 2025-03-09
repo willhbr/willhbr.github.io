@@ -329,13 +329,13 @@ print(a)
 The compiler will:
 
 1. Push `1` onto the stack
-2. Set `@a` to the top of the stack
-3. Pop the top of the stack
-4. Push the value of `@a` onto the stack
-5. Call `display-message` with the topmost element from the stack
-6. Pop the top of the stack
-7. Push `0` as a "return value" of `print` to the stack
-8. Pop the top of the stack, since no one consumes it
+1. Set `@a` to the top of the stack
+1. Pop the top of the stack
+1. Push the value of `@a` onto the stack
+1. Call `display-message` with the topmost element from the stack
+1. Pop the top of the stack
+1. Push `0` as a "return value" of `print` to the stack
+1. Pop the top of the stack, since no one consumes it
 
 All that _could_ be replaced with something much simpler:
 

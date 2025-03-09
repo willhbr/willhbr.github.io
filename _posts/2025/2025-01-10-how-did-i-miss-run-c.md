@@ -33,4 +33,4 @@ However, this comes at a cost. It seems that tmux can only process keybindings s
 So there you go, you probably learnt two things today:
 
 1. tmux has a command for running tmux commands
-2. tmux keybindings become unreliable if you're pressing around 270 keys per second
+1. tmux keybindings become unreliable if you're pressing around 270 keys per second

@@ -361,4 +361,3 @@ If we've only got one window and the target session doesn't exist, we can just r
 If there's more than one window in the current session, then create or switch to the new or existing target session and move the current window along with us.
 
 This is almost certainly unnecessary, but it avoids me leaving a trail of sessions that I've finished with and avoids me having to exit out of tmux to switch between sessions, which is what I'd have to do previously to avoid the nested-sessions error, since the script would try to attach while already inside of tmux.
-

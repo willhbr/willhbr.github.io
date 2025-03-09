@@ -39,7 +39,7 @@ grafana.willhbr.net:80 {
 }
 ```
 
-Requests to `grafana.willhbr.net` will be forwarded to the container running on port `61300`. I no longer have to use semi-memorable port numbers or navigate through my dashboard, instead just visiting `grafana.willhbr.net` [^not-my-domain] and immediately see graphs.
+Requests to `grafana.willhbr.net` will be forwarded to the container running on port `61300`. I no longer have to use semi-memorable port numbers or navigate through my dashboard, instead just visiting `grafana.willhbr.net` and immediately see graphs.
 
 This can be made a little bit neater with a [search domain](https://tailscale.com/kb/1054/dns#search-domains). By adding the domain in here, any hostname that doesn't resolve will get directed to my home server. I don't know _exactly_ what the limitations of this are—I assume it won't absorb all my traffic for any domain that doesn't resolve—but the end result is that I can visit `http://grafana/` and Caddy running on my home server will receive the request and route it appropriately based on the domain. I just have to add `grafana:80` as another host for the reverse proxy.
 

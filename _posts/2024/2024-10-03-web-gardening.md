@@ -17,7 +17,7 @@ And it turns out you won't need to wait until 2034, because we've got a redesign
 In case you forgot, this is what my site used to look like.
 {:class="caption"}
 
-## New Header
+# New Header
 
 The most obvious new feature is the big purple header:
 
@@ -29,11 +29,11 @@ I'd been thinking about a new design basically since I made that comment at the 
 
 That ended up looking pretty good, and made me happy with both the light and dark themes for the site (whereas before the light theme just didn't really hit the spot). The big colourful header makes the site stand out a little more, and hopefully makes it a bit more memorable than the previous mostly-grey or mostly-white design. I did tweak the dark mode colours to be a little more vibrant (the lavender is a little more saturated, the grey background is much darker) which I think better matches the feel of the light mode colours.
 
-## No JavaScript
+# No JavaScript
 
 Previously the main use of JavaScript was to provide an override to the theme, so that you could have my site in dark mode while your device was in light mode, or vice-versa. The control for this was somewhat unceremoniously plonked in the upper-right corner. With the new header design it stood out much more, and I made the decision that providing the toggle wasn't worth the effort of finding a home for the button, or having every visitor make an additional HTTP request to fetch the JavaScript file.
 
-## Web Fonts
+# Web Fonts
 
 After shunning the idea of web fonts earlier this year, I experimented with using web fonts and liked the look more than I disliked the amount of extra content that has to be downloaded. I hadn't realised before this that you needed to have a separate font file for regular, italic, bold, and bold italic, each costing around 20kB and a separate network request. I'm currently committing the [type crime](https://ellenlupton.com/Thinking-with-Type) of allowing the browser to create a fake bold font instead of providing one myself, since bold text isn't crucial to my site.
 
@@ -47,8 +47,7 @@ This is where I learnt about [`text-wrap: balance`](https://sinja.io/blog/web-ty
 
 Another interesting post was [this one](https://sia.codes/posts/making-google-fonts-faster/) about web font performance, which explains what Google Fonts is _actually_ doing when you use the single-line include, and how that can impact the load time on your website. I've tried to make my fonts as fast to load as possible by adding a `preload` for each in the HTML, so that by the time the browser has loaded the CSS it should already be well on its way to downloading the fonts.
 
-
-## Needless Optimisation
+# Needless Optimisation
 
 In order to justify the increased initial download size from adding web fonts, I tried to optimise the rest of the site to be as small as possible. The biggest optimisation was to move the paginated list of posts off the front page. Instead of putting 10 posts on the homepage, there's only one. This cuts the size of the HTML file from >300kB to ~25kB.
 
@@ -121,7 +120,7 @@ With rules like this:
 
 I saved a whole kilobyte of CSS. Although that is before compression, so the actual gain of minimising data transferred over the network would be much smaller. And then of course I decided to make my own highlighting theme, which made this whole exercise pointless.
 
-## Syntax Highlighting
+# Syntax Highlighting
 
 For the longest time I had just used the [Pygments](https://pygments.org) [_Railscasts_](http://railscasts.com/about) theme, which didn't really fit in with the rest of the site, and would always be set on a dark background. I'd thought about finding another theme to use in light-mode, but never got around to it.
 
@@ -131,7 +130,7 @@ Initially my process was to assign colours based on [the token types from Rouge]
 
 [^languages]: So far that's Bash, Clojure, "conf" (for tmux config files), Console (for shell sessions), C++, Crystal, CSS, Docker, Elixir, ERB, Go, Haskell, HTML, Java, JavaScript, JSON, Kotlin, Markdown, Python, Ruby, Rust, Shell, SQL, Swift, TOML, and YAML.
 
-## Front Page Design
+# Front Page Design
 
 The decision to shrink the size of the front page meant that I needed (or wanted) to have some way of showing some older posts on the homepage. My theory is that someone might come to visit my site, see one post and not be interested, and then leave. If I put a few titles of posts at the bottom, then maybe they'll find what they're looking for. Of course this is assuming anyone visits my site in the first place.
 
@@ -141,7 +140,7 @@ Something I did to make this slightly more seamless is to add pagination control
 
 The older Jekyll version used by GitHub Pages uses the also-old `jekyll-paginate` plugin (instead of the newer `jekyll-paginate-v2`). This is accessed with the `paginator` object, but I discovered that this is only available on the page that is going to be paginated, not on any other pages. Since my front page isn't paginated (there's a separate page for the paginated content) I couldn't include the same pagination layout on the front page. Instead, I created a separate layout that does some hacks to approximate the same information. It can be a bit simpler since it'll always be focussed on the "home" page, and it can just use the total post count to count the number of page links to create.
 
-## Permalinks and URL Formats
+# Permalinks and URL Formats
 
 Something I considered was changing my URL format. Currently this is `/YYYY/MM/DD/:title` (the default Jekyll "pretty" URL style), but since I don't post multiple times per day (especially with the same title) the format is overly verbose. I could just use `/:title` since my titles are (so far) unique, but I like indicating the approximate age of the post in the URL. `/YYYY/:title` was tempting, but in the end I decided that changing URLs was too big a change for not that much benefit. Especially since I'd have to ensure that all the existing posts maintained their existing links.
 
