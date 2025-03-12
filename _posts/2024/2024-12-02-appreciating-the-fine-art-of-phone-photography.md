@@ -15,7 +15,7 @@ A phone form-factor has a bunch of advantages to even a moderately compact dedic
 ![Paris pic](https://photography.willhbr.net/photos/2024-10-23-b12ca7.jpeg)
 {:loading="lazy"}
 
-During these rainy days I took lots of pictures of the Parisian architecture and edited them in [Photomator](http://photomator.com) right on my phone. I'm not a big user of presets, but because of the overcast skies and uniformity in the colours of the buildings in Paris, after editing a few photos I stopped copy-pasting the same edits and just made a preset called "Paris". This would accentuate the colour of the limestone buildings, add contrast to the sky, and push the colours of the foliage more towards an autumnal tone.
+During these rainy days I took lots of pictures of the Parisian architecture and edited them in [Photomator](https://www.pixelmator.com/photomator/) right on my phone. I'm not a big user of presets, but because of the overcast skies and uniformity in the colours of the buildings in Paris, after editing a few photos I stopped copy-pasting the same edits and just made a preset called "Paris". This would accentuate the colour of the limestone buildings, add contrast to the sky, and push the colours of the foliage more towards an autumnal tone.
 
 ![A classic "Paris" photo](/images/2024/paris-comparison.webp)
 {:loading="lazy"}

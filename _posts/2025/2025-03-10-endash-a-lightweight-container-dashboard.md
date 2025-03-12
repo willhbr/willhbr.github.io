@@ -35,7 +35,7 @@ Other containers—like the endash container—have podman labels defined to add
 
 I did this purposefully to integrate with my [status page library](https://github.com/willhbr/status_page) for Crystal web servers. It serves a simple web UI on `/status` that shows information about the running program. By default this includes things like uptime, logs, and the program config, but I have also added interceptors to show HTTP request information.
 
-This is really useful for checking the progress of a long-running server without having access to a terminal to run `podman logs`. A lot of this was built while I was making my DS-B data collector to [plot the flight paths of helicopters along the Sydney beaches][helicopters]. At any point I could just open endash, click the status button, and see how it was progressing.
+This is really useful for checking the progress of a long-running server without having access to a terminal to run `podman logs`. A lot of this was built while I was making my ADS-B data collector to [plot the flight paths of helicopters along the Sydney beaches][helicopters]. At any point I could just open endash, click the status button, and see how it was progressing.
 
 [helicopters]: /2023/07/29/helicopter-tracking-for-safer-drone-flights/
 
