@@ -192,8 +192,4 @@ if -F '#{&&:#{==:#{@apple_y},#{@head_y}},#{==:#{@apple_x},#{@head_x}}}' {
 
 The last job of the update function is to schedule the next update—if we haven't ended the game—and then it all happens again. Unlike playing video, where you want as many updates per second as possible, tmux is able to keep up with this reasonably well.
 
-- conclusion
-	- it's actually shorter than my tmux config (150 lines vs 190)
-	- you could probably do Tetris and suchlike
-
 Believe it or not, the entire implementation is written by hand, and is fewer lines than my actual real-world tmux config—140 versus 192. All you need to play it is tmux, around version 3.4 or so. Grab the [code from here][tmux-snake-repo] and give it a go!
