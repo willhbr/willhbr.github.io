@@ -21,7 +21,16 @@ frontmatter = YAML.load(front, permitted_classes: [Date])
 title = frontmatter["title"]
 date = frontmatter["date"] || Date.today
 
-slug = title.downcase.gsub("'", '').gsub(/[\W]+/, '-').chomp('-')
+slug = title.gsub(/\d+,\d+/) { |num| num.gsub(',', '') }
+slug = slug.downcase.gsub("'", '').gsub(/[\W]+/, '-').chomp('-')
+
+if slug.size > 35
+  puts slug
+  print "That's a long slug, want a smaller one? "
+  re = STDIN.gets&.chomp
+  slug = re unless re.empty?
+end
+
 filename = "#{date.strftime('%F')}-#{slug}.md"
 
 dest = "./_posts/#{date.year}/#{filename}"
