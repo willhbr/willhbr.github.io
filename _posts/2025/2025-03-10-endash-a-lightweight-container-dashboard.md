@@ -26,8 +26,7 @@ So what does endash actually do?
 
 It's just one screen that shows a list of containers:
 
-![screenshot of endash showing a list of containers, some metadata for each one, and a few buttons next to each](/images/2025/endash.webp)
-{:loading="lazy"}
+![screenshot of endash showing a list of containers, some metadata for each one, and a few buttons next to each](/images/2025/endash.webp){:loading="lazy"}
 
 These containers are fetched using podman-remote and aggregated into one list. It exposes a web UI to view the containers (ok it returns the logs as plain text which your browser will render), and adds a link to visit any port exposed by the container. In the screenshot above you can see that `podman-exporter` has host port 36797 mapped to container port 9882.
 

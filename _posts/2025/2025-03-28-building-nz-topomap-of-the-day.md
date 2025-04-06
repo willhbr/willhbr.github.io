@@ -10,8 +10,7 @@ Wouldn't it be cool to have wallpapers with contours that corresponded to real g
 
 [nz-topomap]: https://geodata.nz/geonetwork/srv/api/records/eb3e0bd2-fd4a-7f71-30d1-3128d268ae44
 
-![a section of topomap showing forest and mountains](/images/2025/topomap.webp)
-{:loading="lazy"}
+![a section of topomap showing forest and mountains](/images/2025/topomap.webp){:loading="lazy"}
 
 The topomap for March 13th, 2025.
 {:class="caption"}

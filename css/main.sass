@@ -76,7 +76,6 @@ $code-keyword-dark: change-color($highlight-colour-dark, $hue: 220deg)
 // HEADER
 
 .title
-  font-family: $title-font-family
   font-size: $header-size
 
 .title:hover
@@ -90,7 +89,8 @@ header.site-header
   margin: auto
   width: 100%
   color: $background-colour
-  a
+  font-family: $title-font-family
+  a, a:hover, a:visited
     color: $background-colour
 
 header .items
@@ -104,9 +104,7 @@ header .items
 header .links
   text-align: right
   vertical-align: baseline
-  font:
-    size: 1.2em
-    family: $title-font-family
+  font-size: 1.2em
   text-transform: uppercase
   ul
     li
@@ -135,6 +133,7 @@ header .links
 
 // GENERAL NONSENSE
 
+
 body
   color: $text-colour
   background-color: $background-colour
@@ -142,6 +141,13 @@ body
     family: $body-font-family
     size: $paragraph-size
   margin: 0
+
+.container
+  margin: auto
+  padding:
+    left: $body-side-margin
+    right: $body-side-margin
+  max-width: $page-width
 
 @media print
   body
@@ -186,13 +192,6 @@ code.highlighter-rouge
   background: $inline-text-pill-colour
   padding: 2px 4px
   padding-bottom: 1px
-
-.container
-  margin: auto
-  padding:
-    left: $body-side-margin
-    right: $body-side-margin
-  max-width: $page-width
 
 footer
   font-size: $footer-size

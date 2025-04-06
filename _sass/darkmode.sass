@@ -1,3 +1,7 @@
+\:root
+ color-scheme: light dark
+
+
 @mixin light-mode
   --hc: #{$highlight-colour-light}
   --bc: #{$background-colour-light}
@@ -32,11 +36,11 @@
   --c-l: #{$code-literal-dark}
   --c-k: #{$code-keyword-dark}
 
-body
+html
   @include light-mode
 
 @media(prefers-color-scheme: dark)
-  body
+  html
     @include dark-mode
 
 $highlight-colour: var(--hc)

@@ -12,13 +12,11 @@ The first day in Paris was grey and drizzling with rain. I carried my a6500 with
 
 A phone form-factor has a bunch of advantages to even a moderately compact dedicated camera. I think the biggest is the social/psychological advantage: taking photos on a phone is much more normal than using a dedicated camera. Someone taking a photo on their phone basically just blends into the background, whereas someone using a dedicated camera with a big lens is clearly doing _photography_ which is treated differently by other people. I always try to make it clear that I'm taking photos of _things_, not the people around them, and that I'm happy to wait until there's a clear moment to get my shot—so please just keep doing what you're doing and don't worry about where you're standing. I've thankfully never had anyone confront me while I'm taking photos, but I'm socially awkward enough to try and avoid any confrontation preemptively.
 
-![Paris pic](https://photography.willhbr.net/photos/2024-10-23-b12ca7.jpeg)
-{:loading="lazy"}
+![Paris pic](https://photography.willhbr.net/photos/2024-10-23-b12ca7.jpeg){:loading="lazy"}
 
 During these rainy days I took lots of pictures of the Parisian architecture and edited them in [Photomator](https://www.pixelmator.com/photomator/) right on my phone. I'm not a big user of presets, but because of the overcast skies and uniformity in the colours of the buildings in Paris, after editing a few photos I stopped copy-pasting the same edits and just made a preset called "Paris". This would accentuate the colour of the limestone buildings, add contrast to the sky, and push the colours of the foliage more towards an autumnal tone.
 
-![A classic "Paris" photo](/images/2024/paris-comparison.webp)
-{:loading="lazy"}
+![A classic "Paris" photo](/images/2024/paris-comparison.webp){:loading="lazy"}
 
 A comparison of the original image (left) and the edited image (right). See the full [photo here](https://photography.willhbr.net/2024-10-23/).
 {:class="caption"}
@@ -31,8 +29,7 @@ iOS 18 added the ability to customise the buttons on the lock screen, so I can s
 
 The most frustrating thing about the action button is the fact that it could be used to do so much more, but it's currently limited to a single action. Right now it is activated by a semi-long press, but you could easily imagine having different actions for a double press, short press, or even short press followed by a long press. Having two different actions could allow for using the button for quick camera access _and_ doing the various interesting productivity whatsits that people have devised. As it stands, I don't want to lose quick access to the camera so reassigning the button is a non-starter.
 
-![A photo of a dam with a mountain in the background](https://photography.willhbr.net/photos/2024-11-16-50a80f.jpeg)
-{:loading="lazy"}
+![A photo of a dam with a mountain in the background](https://photography.willhbr.net/photos/2024-11-16-50a80f.jpeg){:loading="lazy"}
 
 I was pleasantly surprised that the preset that I had made for buildings in Paris during overcast weather also applied quite well to completely different scenes.
 {:class="caption"}
@@ -45,8 +42,7 @@ While HDR can save you a lot of the time, it's worth checking—even on an overc
 
 Sometimes the dynamic range is just too much for the phone, in which case just take the photo anyway, but then reconsider your framing and take some alternatives that don't push it as much. Maybe the first one will be recoverable, but maybe you'll end up with a better exposed shot even if it's not the composition you wanted originally.
 
-![a photo of an alleyway in Marseille where the sky could be blown out if you're not careful](https://photography.willhbr.net/photos/2024-11-09-49d938.jpeg)
-{:loading="lazy"}
+![a photo of an alleyway in Marseille where the sky could be blown out if you're not careful](https://photography.willhbr.net/photos/2024-11-09-49d938.jpeg){:loading="lazy"}
 
 For photos like this your phone will often expose for the street, and over-expose the patch of sky.
 {:class="caption"}
@@ -79,8 +75,7 @@ The biggest advantage of the main lens is that it's got a larger sensor, wider a
 
 There are the 3 additional fake "lenses" that just crop the 48MP image from the 24mm camera: 28mm, 35mm, and 48mm. The image quality from these goes downhill as the crop increases, but they provide enough of a different perspective that I think they're worth using. I would find myself using the 35mm and 48mm zooms fairly often, to get closer to that "neutral" 50mm zoom. This is often just enough zoom to hide some pesky tourists, cars, or signage just out of frame.
 
-![Montserrat, taken with the main lens](https://photography.willhbr.net/photos/2024-11-15-257eb8.jpeg)
-{:loading="lazy"}
+![Montserrat, taken with the main lens](https://photography.willhbr.net/photos/2024-11-15-257eb8.jpeg){:loading="lazy"}
 
 Montserrat, taken with the main lens.
 {:class="caption"}
@@ -107,8 +102,7 @@ I know that everyone loves portrait mode, and it's got so much better than when 
 
 When the sky is overcast and cloudy, I often cheat and use the ["select sky" feature][select-sky] in Photomator to create an adjustment layer only touching the sky. I then lower the exposure and crank up the clarity and texture to accentuate the contrast in the clouds.
 
-![a photo of a building in Paris with a very moody sky](https://photography.willhbr.net/photos/2024-10-26-78d2b2.jpeg)
-{:loading="lazy"}
+![a photo of a building in Paris with a very moody sky](https://photography.willhbr.net/photos/2024-10-26-78d2b2.jpeg){:loading="lazy"}
 
 It's easy to get this over-dramatic crunchy sky look with a little bit of ML and a cranked texture slider.
 {:class="caption"}

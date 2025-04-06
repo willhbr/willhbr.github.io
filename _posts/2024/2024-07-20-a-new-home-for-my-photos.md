@@ -10,16 +10,14 @@ My photo website was forked from this site a few years ago. The purpose of the d
 
 [^no-theme]: If I did GitHub Pages with a custom build action, perhaps I could turn this into a theme that could be properly shared between the two sites.
 
-![screenshot of my old photos website](/images/2024/old-photos-website.webp)
-{:loading="lazy"}
+![screenshot of my old photos website](/images/2024/old-photos-website.webp){:loading="lazy"}
 
 That's my old photos website, with an Instagram-style grid layout.
 {:class="caption"}
 
 Over the course of about a day I pulled together a new site that is less of a copy of Instagram and more of a photo journal. You can [see it live here](https://photography.willhbr.net).
 
-![screenshot of my new photos website](/images/2024/new-photos-website.webp)
-{:loading="lazy"}
+![screenshot of my new photos website](/images/2024/new-photos-website.webp){:loading="lazy"}
 
 The current state of my new photos website.
 {:class="caption"}

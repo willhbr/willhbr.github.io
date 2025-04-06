@@ -67,8 +67,7 @@ Unlike displaying the video, I would only need to change 1-2 pixels per update, 
 
 One addition here is the ability to give the snake eyes, both because it's cute, as well as differentiating the head and tail:
 
-![image of cute tmux snake](/images/2025/snake-eyes.png)
-{:loading="lazy"}
+![image of cute tmux snake](/images/2025/snake-eyes.png){:loading="lazy"}
 
 Isn't it adorable?
 {:class="caption"}

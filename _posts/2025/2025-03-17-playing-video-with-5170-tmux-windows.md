@@ -10,8 +10,7 @@ You know how there's [that scene in Apollo 13][apollo-13] where they need to wor
 
 The most basic building block here is a tmux window. We're not going to use the actual terminal bit—I'm just interested in the status line, the bar at the bottom of the screen. You see, you can change the style of how the windows appear in the status line, I do this to differentiate the current window from the rest:
 
-![tmux status line with different window styles](/images/2024/tmux-status-line.gif)
-{:loading="lazy"}
+![tmux status line with different window styles](/images/2024/tmux-status-line.gif){:loading="lazy"}
 
 The active window is grey and white, inactive ones are dark grey, and windows with activity or a bell are purple.
 
@@ -19,8 +18,7 @@ In that image you might see four windows, but what I see is four pixels. If I ad
 
 Showing multiple rows of pixels is a little trickier, but not impossible. It's not recommended—tmux will insist that it's a bad idea—but you can run one tmux session inside another. If you do it looks like this with two status lines:
 
-![two tmux status lines stacked on top of one another](/images/2025/tmux-double-status.webp)
-{:loading="lazy"}
+![two tmux status lines stacked on top of one another](/images/2025/tmux-double-status.webp){:loading="lazy"}
 
 Since you can have one tmux inside another, what's to say you can't have three tmux sessions nested one inside the other inside the other? Who's going to stop you from repeating the nesting 55 times? That way we have 55 status lines, each with their own windows.
 
@@ -73,8 +71,7 @@ bind -n a {
 
 Once loaded it'll rename all the windows and show an image entirely made up of windows in tmux status lines:
 
-![a very pixellated still frame from Apollo 13 inside tmux](/images/2025/apollo-13.webp)
-{:loading="lazy"}
+![a very pixellated still frame from Apollo 13 inside tmux](/images/2025/apollo-13.webp){:loading="lazy"}
 
 Now, video is a bunch of images. We just need to grab a video from somewhere, use `ffmpeg` to convert the video to images, run that through my script to convert the images into a series of tmux config files, and then have the last statement in the config file schedule loading the next file:
 
