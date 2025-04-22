@@ -62,7 +62,6 @@ This script checks if there's enough room for another window, and if so it creat
 
 Instead of recursively calling `source-file`, I could have done this with a recursive keybinding, but the end result is about the same. It might be faster to use keybindings, but you'd have to worry about the keys getting sent to the right session which isn't something I have to do here.
 
-
 Unlike displaying the video, I would only need to change 1-2 pixels per update, instead of a whole frame worth. The only things that move are the head and tail of the snake and the location of the apple. Keeping track of this was a bit more challenging for the game logic, but for the display it just meant a few `rename-window -t Y:=X` commands.
 
 One addition here is the ability to give the snake eyes, both because it's cute, as well as differentiating the head and tail:

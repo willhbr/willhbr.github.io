@@ -1,6 +1,7 @@
 defaults:
   build: website
   run: website
+  update: website
 
 images:
   website:
@@ -30,7 +31,7 @@ development:
 containers:
   mdl:
     name: willhbr.github.io-mdl
-    image: localhost/willhbr.github.io:latest
+    image: :website
     bind_mounts:
       .: /src
     interactive: true
@@ -50,7 +51,7 @@ containers:
 
   prod:
     name: willhbr.github.io-prod
-    image: localhost/willhbr.github.io:latest
+    image: :website
     bind_mounts:
       .: /src
     ports:
