@@ -1,6 +1,6 @@
 ---
 title: "Some Hot JJ Tips"
-tags: tools
+tags: tools jj
 ---
 
 I spent a bunch of time learning how to use JJ properly after I [gave up on git](/2024/04/01/its-not-me-its-git/). Up until this point, I had been dumping commits directly onto `main` and just pushing the branch occasionally. I had avoided learning the pull/merge request flow because it's not something I use on personal projects, but it turns out to work pretty well. With a few tactically-deployed aliases I've got a pretty simple flow going.

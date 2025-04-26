@@ -1,6 +1,6 @@
 ---
 title: "It's Not Me, It's Git"
-tags: opinion tools
+tags: opinion tools jj
 ---
 
 tl;dr: I've been using [`jj`][jj] for version control in my personal projects and it makes me much happier than using git. Continue reading for lukewarm takes on the git CLI.

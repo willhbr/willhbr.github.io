@@ -1,6 +1,6 @@
 ---
 title: "Understanding Revsets for a Better JJ Log Output"
-tags: tools
+tags: tools jj
 ---
 
 In git you can do something like `HEAD~` to refer to the parent commit of `HEAD`. Mercurial has a similar feature [called revsets](https://repo.mercurial-scm.org/hg/help/revsets) which [JJ took inspiration from](https://martinvonz.github.io/jj/latest/revsets/) (including the name).
