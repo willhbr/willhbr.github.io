@@ -11,7 +11,7 @@ $body-side-margin: 0.5em
 $page-width: 41em
 $title-font-family: 'DIN', sans-serif-condensed, sans-serif
 $body-font-family: 'IBM Plex Sans', system-ui, sans-serif
-$code-font-family: "Fira Code", "Anonymous Pro", monospace
+$code-font-family: "JetBrains Mono", "Fira Code", "Anonymous Pro", monospace
 
 // main website theme colour
 $highlight-colour-light: {{ site.theme_colour.light }}
@@ -72,6 +72,9 @@ $code-keyword-dark: change-color($highlight-colour-dark, $hue: 220deg)
   font-family: "IBM Plex Sans"
   font-style: italic
   src: local("IBM Plex Sans"), url("/css/plex-sans-italic.woff2") format("woff2")
+@font-face
+  font-family: "JetBrains Mono"
+  src: local("JetBrains Mono"), url("/css/jetbrains-mono.woff2") format("woff2")
 
 // HEADER
 

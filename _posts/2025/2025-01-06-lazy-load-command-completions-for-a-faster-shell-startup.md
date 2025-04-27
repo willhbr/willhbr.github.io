@@ -52,7 +52,7 @@ jj() {
 On the first run, since `$JJ_LOADED` is unset, it'll source the autocompletion code before running `jj`. On subsequent runs, it'll just delegate to `jj` immediately. This does mean that the first interaction with JJ will be ~50ms slower, but because that additional wait is in the context of running a command, it's barely noticeable. The result is a much faster startup:
 
 ```console
-$ $repeat 10 time zsh -i -c exit
+$ repeat 10 time zsh -i -c exit
 zsh -i -c exit  0.05s user 0.02s system 99% cpu 0.065 total
 zsh -i -c exit  0.04s user 0.01s system 99% cpu 0.056 total
 zsh -i -c exit  0.04s user 0.02s system 99% cpu 0.056 total
