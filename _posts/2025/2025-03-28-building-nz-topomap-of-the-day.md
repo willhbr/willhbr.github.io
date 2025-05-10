@@ -74,7 +74,7 @@ Instead I wrote a persistent server in Crystal that runs the Python program as a
 
 This does have a very small list of advantages: the server runs my [status page library][status-page] so I can look at the logs and suchlike from my phone, and has an endpoint to re-generate the image for a particular day in case I run into a poorly-merged tile.
 
-[status-page]: https://github.com/willhbr/status_page
+[status-page]: https://codeberg.org/willhbr/status_page
 
 The biggest disadvantage in terms of development is that I didn't spend the time to build a single container image that included both the Python dependencies _and_ a Crystal compiler. Instead I would work on the generator using a Python-based image, then work on the website using a Crystal image, then test them together by building a release image using a multi-step containerfile that copied the compiled Crystal program into the Python image.
 

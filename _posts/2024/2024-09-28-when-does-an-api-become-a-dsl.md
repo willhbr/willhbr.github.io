@@ -24,7 +24,7 @@ You can imagine writing a code linter that ensured that the argument passed to `
 Staying within the JVM, Kotlin has some features that make writing DSLs much easier. [Receiver blocks][kt-receiver-blocks] allow for altering the typical scoping rules that determine how method and property names are resolved. The documentation uses an HTML-generator DSL as an example, which is something that [I've also built in Crystal][status-page-builder].
 
 [kt-receiver-blocks]: https://kotlinlang.org/docs/type-safe-builders.html
-[status-page-builder]: https://github.com/willhbr/status_page/blob/main/src/status_page/html_builder.cr
+[status-page-builder]: https://codeberg.org/willhbr/status_page/src/branch/main/src/status_page/html_builder.cr
 
 You can see how the change in scoping rules breaks how you might refactor the code, for example if we want to avoid repeating the definition of the button:
 

@@ -47,4 +47,4 @@ def call(context : HTTP::Server::Context)
 end
 ```
 
-You can [have a look at it on GitHub](https://github.com/willhbr/http-router).
+You can [have a look at it on Codeberg](https://codeberg.org/willhbr/http-router).

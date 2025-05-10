@@ -365,7 +365,7 @@ end
 end
 ```
 
-I've used this to make a simple HTML builder for my [status page library](https://github.com/willhbr/status_page).
+I've used this to make a simple HTML builder for my [status page library](https://codeberg.org/willhbr/status_page).
 
 # Ruby
 
