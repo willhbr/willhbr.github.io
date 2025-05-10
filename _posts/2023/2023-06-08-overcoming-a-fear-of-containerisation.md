@@ -101,8 +101,7 @@ Living the multi-image lifestyle has meant that I can use containers to run any 
 Although these commands are quite long, and I can't type that fast or remember all those flags. So [I made a command-line tool](https://pod.willhbr.net) that makes dealing with multiple images or containers easier. _That's_ actually what I have been using to do my development, and to run projects on my home server. You can read more about it:
 
 - [In my other blog post](/2023/06/08/pod-the-container-manager/)
-- [On the project website](https://pod.willhbr.net)
-- [On GitHub](https://github.com/willhbr/pod)
+- [On Codeberg](https://codeberg.org/willhbr/pod)
 
 The tl;dr is that with some fairly simple config, I can run any project with just:
 

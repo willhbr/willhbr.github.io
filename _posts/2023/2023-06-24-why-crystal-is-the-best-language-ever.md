@@ -6,14 +6,14 @@ tags: opinion crystal languages
 [Crystal][crystal] is a statically typed language with the syntax of a dynamically typed one. I first used Crystal in 2016—about version `0.20.0` or so. The type of projects I usually work on in my spare time are things like [`pod`][pod], or my [server that posts photos][pixelfed-piper] to my [photos website]({{ site.urls.photos }}).
 
 [pixelfed-piper]: /2023/05/22/complicated-solutions-to-photo-publishing/
-[pod]: https://github.com/willhbr/pod
+[pod]: https://codeberg.org/willhbr/pod
 [crystal]: https://crystal-lang.org
 
 # Type System
 
 This is the main selling point of Crystal, you can write code that looks dynamically typed but it'll actually get fully type checked. The reality of this is that if I know the type and the method is part of a public interface (for me that's usually just a method that I'm going to be calling from another file), I'll put a type annotation there. That way I usually only have to chase down type errors in single files. If I'm extracting out a helper method, I won't bother with types. You can see this in [the code that I write][code-link]:
 
-[code-link]: https://github.com/willhbr/pod/blob/baeff9f871eaff05c962178be3c80e53ff46a689/src/pod/updater.cr#L64
+[code-link]: https://codeberg.org/willhbr/pod/src/commit/baeff9f871eaff05c962178be3c80e53ff46a689/src/pod/updater.cr#L64
 
 ```crystal
 private def calculate_update(config, container, remote) : ContainerUpdate

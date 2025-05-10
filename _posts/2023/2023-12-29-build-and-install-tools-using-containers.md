@@ -52,6 +52,6 @@ containers:
 
 I can then run `pod build` to create a new image and build new executables with `cargo`. Then `pod run` the container to copy them out of the image and into the `$PATH` on my host system.
 
-This is the same approach I used for [the automatic install script for `pod`](https://github.com/willhbr/pod/blob/main/install.sh) itself—except using `podman` commands directly rather than a `pod` config. I've done the same thing to install [`rubyfmt`](https://github.com/fables-tales/rubyfmt) since that is only packaged with Brew, or requires Cargo to build from source.
+This is the same approach I used for [the automatic install script for `pod`](https://codeberg.org/willhbr/pod/src/branch/main/install.sh) itself—except using `podman` commands directly rather than a `pod` config. I've done the same thing to install [`rubyfmt`](https://github.com/fables-tales/rubyfmt) since that is only packaged with Brew, or requires Cargo to build from source.
 
 I'm sure at some point an incompatibility between libraries inside and outside of the container will create a whole host of bizarre issues, but until then I will continue using this approach to install things.

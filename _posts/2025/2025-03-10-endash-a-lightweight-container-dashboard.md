@@ -18,7 +18,7 @@ It serves two purposes: exposing a simple web interface that shows the state of 
 
 There are plenty of projects like this, I think the most well-known one is [Portainer](https://www.portainer.io). There isn't any particular reason that I decided to write my own apart from only wanting a few features, as well as just wanting to do things myself.
 
-I'd already written a lot of code to interact with Podman while making [pod][pod, so I had a bit of a head start. This code is now in a [shared library](https://codeberg.org/willhbr/podman-cr) for use in both projects.
+I'd already written a lot of code to interact with Podman while making [pod][pod], so I had a bit of a head start. This code is now in a [shared library](https://codeberg.org/willhbr/podman-cr) for use in both projects.
 
 [pod]: https://pod.willhbr.net
 

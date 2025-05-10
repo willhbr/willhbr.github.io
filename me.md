@@ -16,6 +16,7 @@ Despite appearances, I do venture outside on occasion. For example:
 I can be found on other parts of the Internet:
 
 [Mastodon]({{ site.urls.mastodon }}){:class="button"} |
+[Codeberg](https://codeberg.org/willhbr){:class="button"}
 [Github](https://github.com/willhbr){:class="button"} |
 [My Photo Website]({{ site.urls.photos }}){:class="button"}
 
