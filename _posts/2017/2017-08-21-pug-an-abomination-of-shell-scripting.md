@@ -9,12 +9,12 @@ However each of these only work for the one tool. What if (for some reason) I wa
 
 Pug can be used to manage packages for any utility - out of the box it has installers for Vim and ZSH, but other installers can be added by writing a simple shell script. I'll probably write some more builtin ones myself.
 
-To [get started with Pug](https://github.com/willhbr/pug/blob/master/README.md), head over to the [Pug repo](https://github.com/willhbr/pug). My favourite ZSH plugins - syntax highlighting and auto suggestions - can be installed with Pug:
+To [get started with Pug](https://codeberg.org/willhbr/pug/src/branch/master/README.md), head over to the [Pug repo](https://codeberg.org/willhbr/pug). My favourite ZSH plugins - syntax highlighting and auto suggestions - can be installed with Pug:
 
 Install Pug:
 
 ```shell
-curl https://raw.githubusercontent.com/willhbr/pug/master/install.sh | bash
+curl https://codeberg.org/willhbr/pug/raw/branch/master/install.sh | bash
 ```
 
 Create a `deps.pug` file somewhere:

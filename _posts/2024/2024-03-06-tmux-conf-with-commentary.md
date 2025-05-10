@@ -338,7 +338,7 @@ if '[ -e ~/.tmux-local.conf ]' {
 }
 ```
 
-I still use my package manager `pug`, that I [wrote in 2017](/2017/08/21/pug-an-abomination-of-shell-scripting/) to manage my shell packages. I've since accepted that no one else is going to use it and have just merged it into my [dotfiles repo](https://codeberg.org/willhbr/dotfiles). The only tmux package that this loads is [`vim-tmux-navigator`](https://github.com/willhbr/vim-tmux-navigator) which I forked from [the original](https://github.com/christoomey/vim-tmux-navigator) in order to make it installable from `pug`.
+I still use my package manager `pug`, that I [wrote in 2017](/2017/08/21/pug-an-abomination-of-shell-scripting/) to manage my shell packages. I've since accepted that no one else is going to use it and have just merged it into my [dotfiles repo](https://codeberg.org/willhbr/dotfiles). The only tmux package that this loads is [`vim-tmux-navigator`](https://codeberg.org/willhbr/vim-tmux-navigator) which I forked from [the original](https://github.com/christoomey/vim-tmux-navigator) in order to make it installable from `pug`.
 
 It seems a shame to relegate `vim-tmux-navigator` to the bottom since it's one of the neatest tricks to make tmux more usable for Vim enthusiasts. But this is what the format demands[^my-format]. For the uninitiated, it adds shortcuts to Vim and tmux to navigate splits with `C-h/j/k/l`—so you can navigate the splits interchangeably. I forget that I have it installed, splits are just splits and I don't have to think about how to navigate them.
 

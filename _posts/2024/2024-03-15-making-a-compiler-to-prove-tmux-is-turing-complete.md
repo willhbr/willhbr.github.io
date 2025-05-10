@@ -22,13 +22,13 @@ This whole mess started when I [solved an issue I had with a helper script](http
 
 I spent a week [writing a compiler][tmux-compiler] that turns Python(ish) code into a tmux config file, which when you load makes tmux swap between windows super fast and run that code.
 
-[tmux-compiler]: https://github.com/willhbr/tmux-compiler
+[tmux-compiler]: https://codeberg.org/willhbr/tmux-compiler
 
 If you just want to run your own code in tmux, you can grab the compiler [from GitHub][tmux-compiler] or see it in action in [this video][tmux-video].
 
 ---
 
-I'm not really a byte-code kinda guy. I've tinkered around with [plenty](https://github.com/willhbr/slang) [of](https://github.com/willhbr/slang-vm) [interpreters](https://github.com/willhbr/lisp.js) [before](https://github.com/willhbr/SwiftLisp), but those were tree-walk interpreters, or they compiled to another high-level language. I haven't spent much time thinking about byte code instructions and how VMs actually get implemented since my second year of university where we had to implement a simple language that compiled to the JVM. I do own a physical copy of the delightful [_Crafting Interpreters_](https://craftinginterpreters.com) by [Robert Nystrom](https://journal.stuffwithstuff.com), which I assume counts for _something_.
+I'm not really a byte-code kinda guy. I've tinkered around with [plenty](https://codeberg.org/willhbr/slang) [of](https://codeberg.org/willhbr/slang-vm) [interpreters](https://codeberg.org/willhbr/lisp.js) [before](https://codeberg.org/willhbr/SwiftLisp), but those were tree-walk interpreters, or they compiled to another high-level language. I haven't spent much time thinking about byte code instructions and how VMs actually get implemented since my second year of university where we had to implement a simple language that compiled to the JVM. I do own a physical copy of the delightful [_Crafting Interpreters_](https://craftinginterpreters.com) by [Robert Nystrom](https://journal.stuffwithstuff.com), which I assume counts for _something_.
 
 One thing I'm pretty sure I need is a stack. The easiest way to evaluate an arbitrarily-nested expression is to have each operation take the top N items from the stack, process them, and put the result on the top of the stack. The next operation takes another N items, and so on.
 

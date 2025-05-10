@@ -13,7 +13,7 @@ Since I've started using my Mac more for general tinkering (instead of mostly ju
 - MacDown, an open source split-screen editor which used to work quite well but has [significant issues open for multiple years](https://github.com/MacDownApp/macdown/issues/1104)
 - IA Writer, Ulysses, and other "professional" apps. These are no doubt the best and most feature-complete, but for writing stuff here it seems like overkill.
 - TextMate/BBEdit/Atom/VS Code/etc. Having declared text editor bankruptcy by moving to Vim, I don't really want to think about these. Plus their main focus isn't going to be Markdown, and they'll come with many more bells/whistles than I need.
-- Obsidian. This is what I had ended up using (and even [writing a plugin](https://github.com/willhbr/obsidian-publish-to-jekyll)) to write the file out to my GitHub Pages repo.
+- Obsidian. This is what I had ended up using (and even [writing a plugin](https://codeberg.org/willhbr/obsidian-publish-to-jekyll)) to write the file out to my GitHub Pages repo.
 
 MarkEdit is really impressive for a project with an [initial commit only two days ago](https://github.com/MarkEdit-app/MarkEdit/commit/67fe2e847a4870430c28712281555aec0cdef14f) (do people really scrub their version control history before publishing‽).
 

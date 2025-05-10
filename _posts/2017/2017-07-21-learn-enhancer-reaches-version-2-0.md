@@ -8,6 +8,6 @@ This initial version didn't catch every case, and so just over a year later I gr
 
 One of the features that I wanted to include but never quite worked out was auto-login, so that I didn't have to two buttons before accessing content on Learn. This never quite worked out, until this morning I saw [Patrick](https://github.com/agronauts) working on a script to do it. Thankfully he was receptive to the idea of incorporating this into Learn Enhancer, and soon he had a it working in the extension.
 
-So here we go, Learn Enhancer has hit 2.0. Since this is my last year at UC, I have put [Learn Enhancer on GitHub](https://github.com/willhbr/learn-enhancer) so that (in theory) current students can contribute fixes when Learn inevitably changes after I have graduated.
+So here we go, Learn Enhancer has hit 2.0. Since this is my last year at UC, I have put [Learn Enhancer on GitHub](https://codeberg.org/willhbr/learn-enhancer) so that (in theory) current students can contribute fixes when Learn inevitably changes after I have graduated.
 
 If you are a current UC student, download [Learn Enhancer](https://chrome.google.com/webstore/detail/learn-enhancer/dnllhgllbbihefjdpamldjnlpllogkcf), you will almost definitely appreciate it.

@@ -94,4 +94,4 @@ And so once we've compiled the video into config files, we're able to play it en
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-Have a look at the [complete code here](https://github.com/willhbr/tmux-video), or read about the time I [solved a sudoku in tmux](/2024/12/27/solving-sudoku-with-tmux/) or [compiled Python to tmux configs](/2024/03/15/making-a-compiler-to-prove-tmux-is-turing-complete/).
+Have a look at the [complete code here](https://codeberg.org/willhbr/tmux-video), or read about the time I [solved a sudoku in tmux](/2024/12/27/solving-sudoku-with-tmux/) or [compiled Python to tmux configs](/2024/03/15/making-a-compiler-to-prove-tmux-is-turing-complete/).

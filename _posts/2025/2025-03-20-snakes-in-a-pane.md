@@ -12,7 +12,7 @@ Honestly I'd stop if I could, but I just get carried away. After [making a compi
 
 Unlike the [video player][tmux-video], this isn't just rendering Snake inside tmux. The entire game—input, game logic, and rendering—is done using tmux config files. You just load tmux with this config, and you'll have Snake. Check out the [code][tmux-snake-repo] or have a look at me playing it in [the video][snake-video]:
 
-[tmux-snake-repo]: https://github.com/willhbr/tmux-snake
+[tmux-snake-repo]: https://codeberg.org/willhbr/tmux-snake
 [snake-video]: https://youtu.be/djuRZN6ecQQ
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">

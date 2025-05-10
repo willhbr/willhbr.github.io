@@ -17,4 +17,4 @@ A lot of debugging and crashing Shortcuts later, I had a working compiler that c
 
 The main shortcoming with this hack is that every action has a non-obvious (and non-documented) identifier and argument scheme that you have to reverse engineer for every action. If this was going to be a general-purpose solution, you'd have to deconstruct all the options for every action and map this to an equivalent API in Cub.
 
-If you're intrigued you can run the compiler yourself (be warned; it is janky). All you need is Swift 4.2 and the code [from GitHub](https://github.com/willhbr/cub-shortcuts).
+If you're intrigued you can run the compiler yourself (be warned; it is janky). All you need is Swift 4.2 and the code [from Codeberg](https://codeberg.org/willhbr/cub-shortcuts).

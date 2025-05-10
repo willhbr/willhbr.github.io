@@ -8,4 +8,4 @@ I basically tried to replicate what [Arel](https://github.com/rails/arel) does, 
 
 One of the cool things that you can do that I didn't design for is that the `Record` subclasses don't have to represent a table in the database; As long as the query you send to the constructor has the correct column names the object will get set as expected. (Although like an SQL view, saving the 'record' won't do anything).
 
-I'll try and keep it updated as I use it for new projects and add some features that I may need. If you're looking for an easy/ lightweight way to manage a medium-sized database in your app, then [I've got the thing for you!](https://github.com/willhbr/Android-DB-Interface)
+I'll try and keep it updated as I use it for new projects and add some features that I may need. If you're looking for an easy/ lightweight way to manage a medium-sized database in your app, then [I've got the thing for you!](https://codeberg.org/willhbr/Android-DB-Interface)

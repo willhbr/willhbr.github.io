@@ -99,7 +99,7 @@ However it seemed completely out of reach—it relied on you being able to use a
 
 Much like my learning to skateboard (which was spurred by a friend helping me stand on their longboard, showing me that it wasn't impossible)—my journey down the Vim rabbit hole started with a friend pointing out that "you can just use the Vim keybindings in Atom" (which allows you to do _some_ Vim stuff, but also use it like a normal text editor).
 
-At university my interests veered into more and more abstract projects. Instead of making apps and websites for people to use, I was [learning Haskell to implement random algorithms](https://gist.github.com/willhbr/6e4d65328306b993ca6d) and [writing Lisp compilers](https://github.com/willhbr/lisp.js).
+At university my interests veered into more and more abstract projects. Instead of making apps and websites for people to use, I was [learning Haskell to implement random algorithms](https://gist.github.com/willhbr/6e4d65328306b993ca6d) and [writing Lisp compilers](https://codeberg.org/willhbr/lisp.js).
 
 ---
 
