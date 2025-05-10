@@ -3,7 +3,7 @@ title: "tmux.conf, With Commentary"
 tags: tmux tools
 ---
 
-I'm a very heavy user of tmux, and like to share how I make the most of it. This was going to be a short list of some nice things to know and some pointers to features people might not be aware of, but then I realised it's probably easier to just explain the stuff that I have configured, and so here we are. I grabbed the [current version of my `tmux.conf`](https://github.com/willhbr/dotfiles/blob/main/tmux/tmux.conf) and added an explanation after each section.
+I'm a very heavy user of tmux, and like to share how I make the most of it. This was going to be a short list of some nice things to know and some pointers to features people might not be aware of, but then I realised it's probably easier to just explain the stuff that I have configured, and so here we are. I grabbed the [current version of my `tmux.conf`](https://codeberg.org/willhbr/dotfiles/src/branch/main/tmux/tmux.conf) and added an explanation after each section.
 
 This assumes that you use tmux in the same way that I do. Some people like to just use it as a way to get a few pre-defined splits in their terminal and they never want to change those splits. Other people just use it in case their ssh connection drops. When I'm working I basically always have a large or full-screen terminal open that's connected via SSH to a server, and on server running tmux attached to a session for the specific project that I'm working on. If I work on a different project I'll just detach from that session and start a new one.
 
@@ -156,7 +156,7 @@ What I've done is something like a "more zoomed" mode[^shortcut-choice]. This wi
 
 So when I `ssh` to another machine I can press `M-Z` and all my local tmux UI disappears, so when I start tmux on the remote machine it looks and behaves like I'm connected directly, not nested. If I need to use the local session, I can press `M-Z` again and the local tmux UI reappears and the key bindings reactivate, allowing me to move around in the local session, with the remote session being relegated back to its own window.
 
-Where this gets _really_ clever is in [my shell wrapper around `ssh`](https://github.com/willhbr/dotfiles/blob/fae7f784ab4befe9fc25de690e379810194671f4/shell/autoload/ssh). It checks that I'm in a tmux session, and automatically switches to the nested mode when I start an `ssh` connection, so I don't even have to press a key.
+Where this gets _really_ clever is in [my shell wrapper around `ssh`](https://codeberg.org/willhbr/dotfiles/src/commit/fae7f784ab4befe9fc25de690e379810194671f4/shell/autoload/ssh). It checks that I'm in a tmux session, and automatically switches to the nested mode when I start an `ssh` connection, so I don't even have to press a key.
 
 This doesn't really work with triply-nested sessions however, since the second time you press `M-Z` the outer session with un-nest itself, rather than the middle session nesting itself. If I had two separate bindings—one for "nest" and a different one for "unnest" then it would work, but that would be 100% more nesting-related shortcuts to learn, and I don't triple-nest enough to justify that.
 
@@ -266,7 +266,7 @@ This is a super dense section, and to be honest a picture is the easiest way to 
 
 ![tmux status line](/images/2024/tmux-status-line.gif)
 
-All my computers [have a unique `$HOST_COLOR` set](https://github.com/willhbr/dotfiles/blob/main/shell/autoload/hostname_color), and I use that to set the highlight colour for a bunch of things in tmux as well as my zsh prompt. The screenshot above shows the colour that I use on my main computer, ANSI colour 183, which almost exactly matches the highlight colour for my website in dark mode. This is something I setup when I was in university and my time was split between my laptop and a few servers fairly frequently, so having them be immediately identifiable was really useful. Now it's just nice that I can change one file and have a new colour.
+All my computers [have a unique `$HOST_COLOR` set](https://codeberg.org/willhbr/dotfiles/src/branch/main/shell/autoload/hostname_color), and I use that to set the highlight colour for a bunch of things in tmux as well as my zsh prompt. The screenshot above shows the colour that I use on my main computer, ANSI colour 183, which almost exactly matches the highlight colour for my website in dark mode. This is something I setup when I was in university and my time was split between my laptop and a few servers fairly frequently, so having them be immediately identifiable was really useful. Now it's just nice that I can change one file and have a new colour.
 
 The left side of the status bar has the session name, host name, and current time. If there is a popup shell (see below) then I get a simple "+" indicator next to the session name (that's what the `#{?#{N/s:_popup_#S},+, }` is doing).
 
@@ -338,7 +338,7 @@ if '[ -e ~/.tmux-local.conf ]' {
 }
 ```
 
-I still use my package manager `pug`, that I [wrote in 2017](/2017/08/21/pug-an-abomination-of-shell-scripting/) to manage my shell packages. I've since accepted that no one else is going to use it and have just merged it into my [dotfiles repo](https://github.com/willhbr/dotfiles). The only tmux package that this loads is [`vim-tmux-navigator`](https://github.com/willhbr/vim-tmux-navigator) which I forked from [the original](https://github.com/christoomey/vim-tmux-navigator) in order to make it installable from `pug`.
+I still use my package manager `pug`, that I [wrote in 2017](/2017/08/21/pug-an-abomination-of-shell-scripting/) to manage my shell packages. I've since accepted that no one else is going to use it and have just merged it into my [dotfiles repo](https://codeberg.org/willhbr/dotfiles). The only tmux package that this loads is [`vim-tmux-navigator`](https://github.com/willhbr/vim-tmux-navigator) which I forked from [the original](https://github.com/christoomey/vim-tmux-navigator) in order to make it installable from `pug`.
 
 It seems a shame to relegate `vim-tmux-navigator` to the bottom since it's one of the neatest tricks to make tmux more usable for Vim enthusiasts. But this is what the format demands[^my-format]. For the uninitiated, it adds shortcuts to Vim and tmux to navigate splits with `C-h/j/k/l`—so you can navigate the splits interchangeably. I forget that I have it installed, splits are just splits and I don't have to think about how to navigate them.
 

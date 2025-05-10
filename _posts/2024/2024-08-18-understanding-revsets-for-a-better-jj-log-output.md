@@ -35,7 +35,7 @@ If you want to learn the revset language properly, you should read the [revset l
 log = '@ | ancestors(trunk()..(visible_heads() & mine()), 2) | trunk()'
 ```
 
-That's the config that I [ended up settling on](https://github.com/willhbr/dotfiles/blob/main/git/jjconfig.toml).
+That's the config that I [ended up settling on](https://codeberg.org/willhbr/dotfiles/src/branch/main/jj/jjconfig.toml).
 {:class="caption"}
 
 I wanted the log to show all the commit branches (branches as in the sense of a tree structure, not branches as in git branches) that I had authored that weren't merged into the main branch.

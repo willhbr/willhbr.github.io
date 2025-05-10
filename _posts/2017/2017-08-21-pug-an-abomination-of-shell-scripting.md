@@ -44,4 +44,4 @@ You'll be prompted to add this to your `.zshrc` file:
 source "$HOME/.pug/source/zsh/pug"
 ```
 
-Done. [No more submodules.](https://github.com/willhbr/dotfiles/commit/32117b215bde38ea70c4818a2ab3764c67a5fe6d)
+Done. [No more submodules.](https://codeberg.org/willhbr/dotfiles/commit/32117b215bde38ea70c4818a2ab3764c67a5fe6d)

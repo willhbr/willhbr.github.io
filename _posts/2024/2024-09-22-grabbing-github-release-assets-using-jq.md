@@ -5,7 +5,7 @@ tags: tools
 
 `JJ` has become enough of a must-have tool that I wanted to have my dotfiles install it automatically. In [`install.sh`][install.sh] I install a handful of utilities via `apt`, but JJ does not have a Debian/Ubuntu package so I have improvised something. It's a little bit of a hack.
 
-[install.sh]: https://github.com/willhbr/dotfiles/blob/main/install.sh
+[install.sh]: https://codeberg.org/willhbr/dotfiles/src/branch/main/install.sh
 
 You can download prebuilt JJ binaries for most distributions/architectures from the GitHub releases page, which is how I'd typically install it. I used the GitHub API and [`jq`](https://github.com/jqlang/jq) to parse the list of releases and get the download URL for the right architecture, then download, untar, and install the binary.
 
@@ -51,4 +51,4 @@ I just need to grab the latest release, and from the release get the asset that 
 | .browser_download_url
 ```
 
-Just set `$arch` and `$os` to the right values ("x64_64" and "linux" will probably do the trick) and you've got a script that can download the latest release on demand. I [popped this into my install script](https://github.com/willhbr/dotfiles/blob/8602f53addbb51e77a27897fef1eba074a826f08/install.sh#L15-L33) so I can keep my install up-to-date and setup new machines quickly.
+Just set `$arch` and `$os` to the right values ("x64_64" and "linux" will probably do the trick) and you've got a script that can download the latest release on demand. I [popped this into my install script](https://codeberg.org/willhbr/dotfiles/src/commit/8602f53addbb51e77a27897fef1eba074a826f08/install.sh#L15-L33) so I can keep my install up-to-date and setup new machines quickly.

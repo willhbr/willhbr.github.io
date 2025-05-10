@@ -11,7 +11,7 @@ pager = "delta"
 diff.format = "git"
 ```
 
-I tried it and the diff looks nice. However I also noticed that it was _really_ slow. On my [dotfiles repo](https://github.com/willhbr/dotfiles) it took just over 400ms to diff a commit. That's not a big repo in any measure: it doesn't have many files, the files are small, and there aren't many commits. Showing the diff without `delta` took less than 100ms. Even more puzzling was that setting `ui.pager = "delta"` also made `jj log` take a similar amount of time—it jumped from ~80ms to ~430ms. The output of `jj log` doesn't even show any diffs (by default), so what's my computer doing for those 400 milliseconds?
+I tried it and the diff looks nice. However I also noticed that it was _really_ slow. On my [dotfiles repo](https://codeberg.org/willhbr/dotfiles) it took just over 400ms to diff a commit. That's not a big repo in any measure: it doesn't have many files, the files are small, and there aren't many commits. Showing the diff without `delta` took less than 100ms. Even more puzzling was that setting `ui.pager = "delta"` also made `jj log` take a similar amount of time—it jumped from ~80ms to ~430ms. The output of `jj log` doesn't even show any diffs (by default), so what's my computer doing for those 400 milliseconds?
 
 Initially I was a bit puzzled as to why `log` was also slowing down, but a look at the code reveals that JJ will [always call out to the pager program][log.rs], it's just that `less` will check the screen height and do a transparent pass-through if the output is smaller than the height of the screen.
 

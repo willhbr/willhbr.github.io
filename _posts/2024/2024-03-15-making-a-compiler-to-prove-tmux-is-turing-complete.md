@@ -18,7 +18,7 @@ Watch a demo of it in action below or [on YouTube][tmux-video]:
 
 [tmux-video]: https://youtu.be/6V3KnjiBuhU
 
-This whole mess started when I [solved an issue I had with a helper script](https://github.com/willhbr/dotfiles/commit/967856270409b77814694c3963f0183ad79b377f) using the tmux `wait-for` command. I thought to myself "[wow tmux has a lot of weird features, it seems like you could run a program in it](https://ruby.social/@willhbr/112048862227851022)". This idea completely took over my brain and I couldn't think of anything else. I had to know if it was possible.
+This whole mess started when I [solved an issue I had with a helper script](https://codeberg.org/willhbr/dotfiles/commit/967856270409b77814694c3963f0183ad79b377f) using the tmux `wait-for` command. I thought to myself "[wow tmux has a lot of weird features, it seems like you could run a program in it](https://ruby.social/@willhbr/112048862227851022)". This idea completely took over my brain and I couldn't think of anything else. I had to know if it was possible.
 
 I spent a week [writing a compiler][tmux-compiler] that turns Python(ish) code into a tmux config file, which when you load makes tmux swap between windows super fast and run that code.
 
