@@ -102,7 +102,7 @@ end
 
 Although thankfully I managed to pull myself away before getting too into that.
 
-Since the program is completely IO-bound—it spends almost all its time waiting for JJ subprocesses to run—it's a great candidate for lightweight concurrency. I just wrapped the `.each` call with a [`Spindle`](https://github.com/willhbr/geode/blob/main/src/geode/spindle.cr) and then every subprocess was launched at the same time, and the spindle will wait for them all to complete before continuing.
+Since the program is completely IO-bound—it spends almost all its time waiting for JJ subprocesses to run—it's a great candidate for lightweight concurrency. I just wrapped the `.each` call with a [`Spindle`](https://codeberg.org/willhbr/geode/src/branch/main/src/geode/spindle.cr) and then every subprocess was launched at the same time, and the spindle will wait for them all to complete before continuing.
 
 Formatting the output is also straightforward, I tried to write directly to an `IO` wherever possible, to avoid allocating strings unnecessarily (foreshadowing). I used the `Colorize` module from the standard library to make the output more legible.
 
@@ -223,7 +223,7 @@ Then I realised that `colored` also doesn't support numbers. I could re-implemen
 
 Which then led me to [`owo-colors`](https://docs.rs/owo-colors/latest/owo_colors/), _another_ ANSI colouring library. It supports numbers, so I swapped over the code one last time to the `owo-colors` API.
 
-This is definitely the biggest difference in development experience moving from Crystal to Rust. Crystal has everything in the standard library: async runtime, async subprocess management, terminal colouring, JSON parsing, date and time handling, etc. It's rare (at least for the projects that I make) for me to pull in a third-party library. The most common thing I pull in is [`geode`](http://github.com/willhbr/geode), my own set of helper functions, and even then that's mostly just to get some logging and formatting styles that I prefer.
+This is definitely the biggest difference in development experience moving from Crystal to Rust. Crystal has everything in the standard library: async runtime, async subprocess management, terminal colouring, JSON parsing, date and time handling, etc. It's rare (at least for the projects that I make) for me to pull in a third-party library. The most common thing I pull in is [`geode`](http://codeberg.org/willhbr/geode), my own set of helper functions, and even then that's mostly just to get some logging and formatting styles that I prefer.
 
 Of course, this is due to the difference in focus between Crystal and Rust. Crystal is a batteries-included application programming language, designed to be fast _enough_ while also being easily understood by developers that are familiar with Ruby. Rust by itself is a systems programming language, that can be used to write applications that run on desktop OSes.
 

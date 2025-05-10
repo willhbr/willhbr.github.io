@@ -6,7 +6,7 @@ image: /images/2025/endash.webp
 
 In my [last post](/2025/03/09/a-slim-home-server-with-alpine-linux/) I mentioned my container dashboard, which I had been using as the main way to access the exposed ports of the various containers that I run on my home computers. I've just [published the source][endash] so you can run it yourself, if it's the kind of thing you're interested in.
 
-[endash]: https://github.com/willhbr/endash
+[endash]: https://codeberg.org/willhbr/endash
 
 The project is called [endash][endash], and is the successor to a similar but less useful project that I abandoned called emdash[^emdash]. Maybe the next version will be called "hyphen".
 
@@ -18,7 +18,7 @@ It serves two purposes: exposing a simple web interface that shows the state of 
 
 There are plenty of projects like this, I think the most well-known one is [Portainer](https://www.portainer.io). There isn't any particular reason that I decided to write my own apart from only wanting a few features, as well as just wanting to do things myself.
 
-I'd already written a lot of code to interact with Podman while making [pod][pod, so I had a bit of a head start. This code is now in a [shared library](https://github.com/willhbr/podman-cr) for use in both projects.
+I'd already written a lot of code to interact with Podman while making [pod][pod, so I had a bit of a head start. This code is now in a [shared library](https://codeberg.org/willhbr/podman-cr) for use in both projects.
 
 [pod]: https://pod.willhbr.net
 
@@ -32,7 +32,7 @@ These containers are fetched using podman-remote and aggregated into one list. I
 
 Other containers—like the endash container—have podman labels defined to add custom named links instead of just showing the port numbers. This way I can get quickly to certain pages, rather than just going to the root. This integrates with [pod][pod] where it's easy to define labels with complex JSON data on your containers—check out the [repo][endash] for examples of how this is used.
 
-I did this purposefully to integrate with my [status page library](https://github.com/willhbr/status_page) for Crystal web servers. It serves a simple web UI on `/status` that shows information about the running program. By default this includes things like uptime, logs, and the program config, but I have also added interceptors to show HTTP request information.
+I did this purposefully to integrate with my [status page library](https://codeberg.org/willhbr/status_page) for Crystal web servers. It serves a simple web UI on `/status` that shows information about the running program. By default this includes things like uptime, logs, and the program config, but I have also added interceptors to show HTTP request information.
 
 This is really useful for checking the progress of a long-running server without having access to a terminal to run `podman logs`. A lot of this was built while I was making my ADS-B data collector to [plot the flight paths of helicopters along the Sydney beaches][helicopters]. At any point I could just open endash, click the status button, and see how it was progressing.
 

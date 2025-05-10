@@ -9,14 +9,14 @@ The only language I use for personal projects is [Crystal](https://crystal-lang.
 
 Naturally this means that over the last 6 or so years that I've been using Crystal, I've assembled a messy collection of utility functions and classes that I share between projects.
 
-I've collected some of the best bits into a library: [Geode](https://github.com/willhbr/geode). Features include:
+I've collected some of the best bits into a library: [Geode](https://codeberg.org/willhbr/geode). Features include:
 
-- [A generic circular buffer](https://github.com/willhbr/geode/blob/main/src/geode/circular_buffer.cr)
-- [Some helpers to get build metadata](https://github.com/willhbr/geode/blob/main/src/geode/program_info.cr)
-- [A more succinct `to_s` implementation for `Time::Span`](https://github.com/willhbr/geode/blob/main/src/geode/time_span.cr)
-- [Structured concurrency in the form of a `Spindle`](https://github.com/willhbr/geode/blob/main/src/geode/spindle.cr) (see [this post](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/), based on [this implementation](https://gist.github.com/straight-shoota/4437971943bae7000f03fabf3d814a2f))
-- [Some additions to the `Log` module](https://github.com/willhbr/geode/blob/main/src/geode/log.cr)
-- [A basic worker pool to limit parallelism of tasks](https://github.com/willhbr/geode/blob/main/src/geode/worker_pool.cr)
+- [A generic circular buffer](https://codeberg.org/willhbr/geode/src/branch/main/src/geode/circular_buffer.cr)
+- [Some helpers to get build metadata](https://codeberg.org/willhbr/geode/src/branch/main/src/geode/program_info.cr)
+- [A more succinct `to_s` implementation for `Time::Span`](https://codeberg.org/willhbr/geode/src/branch/main/src/geode/time_span.cr)
+- [Structured concurrency in the form of a `Spindle`](https://codeberg.org/willhbr/geode/src/branch/main/src/geode/spindle.cr) (see [this post](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/), based on [this implementation](https://gist.github.com/straight-shoota/4437971943bae7000f03fabf3d814a2f))
+- [Some additions to the `Log` module](https://codeberg.org/willhbr/geode/src/branch/main/src/geode/log.cr)
+- [A basic worker pool to limit parallelism of tasks](https://codeberg.org/willhbr/geode/src/branch/main/src/geode/worker_pool.cr)
 
 More bits will be added as I need them.
 
