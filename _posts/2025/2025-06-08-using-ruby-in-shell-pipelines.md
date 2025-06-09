@@ -3,7 +3,7 @@ title: "Using Ruby in Shell Pipelines"
 tags: tools
 ---
 
-Like most normal people I have spent a normal amount of time learning how to use `grep`, `cut` `sed` and friends (but not AWK) to manipulate the output of a shell command. Usually this is something like parsing sections of an error message so I can find at all the things that are failing and go about fixing them.
+Like most normal people I have spent a normal amount of time learning how to use `grep`, `cut`, `sed` and friends (but not `awk`) to manipulate the output of a shell command. Usually this is something like parsing sections of an error message so I can find at all the things that are failing and go about fixing them.
 
 At some point a few weeks ago I hit a limit. I think I wanted to get the names of classes defined in a set of files—or something like that—so I had to extract the classname from a line like `class AbstractFactoryImpl implements FactoryFactory {`. Usually I would have done this with `sed` but with all the backslashes and forward slashes it's a right pain. You can do it with `grep` but I think you need to enable extended regex support. I thought "if this was Ruby it would be so easy" and then I realised it _could_ be Ruby. I have the power to make that happen!
 
