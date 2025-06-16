@@ -49,7 +49,7 @@ Each frame will contain one or more `GIFEntry`. I can just keep parsing entries 
 
 Instead I did something much more silly, I used the duration of each frame to indicate how many entries there were. It has the side benefit that a human looking at the GIF gets more time to mentally decode the messagepack from a frame with more entries in it.
 
-I used [JJ](https://jj-vcs.github.io/jj/latest/) to read from the git repo, for the reasons I [explained before](http://brett:4000/2025/04/26/writing-in-crystal-rewriting-in-rust/). The template and revset languages make this much easier than dealing with git.
+I used [JJ](https://jj-vcs.github.io/jj/latest/) to read from the git repo, for the reasons I [explained before](/2025/04/26/writing-in-crystal-rewriting-in-rust/). The template and revset languages make this much easier than dealing with git.
 
 To make things simpler, I just read the entire repo into memory (the full file contents of every file in every revision), which meant I could easily work out the size of the GIF by looking at all the files. A better implementation would allow splitting files across multiple frames, and build the GIF as it traversed the repository.
 
@@ -57,6 +57,6 @@ Another simplification was storing the entire file contents for each commit, rat
 
 Decoding is just encoding backwards, and as is tradition you only realise you have bugs in your encoder when you try and write a decoder. Eventually I built up a list of commits, each with the contents of the changed files in that revision (or a marker that the file should be deleted).
 
-Each commit has the list of parent commit IDs, so I just needed to do a [topographical sort](https://en.wikipedia.org/wiki/Topological_sorting) to get a list of commits in the order that they could be inserted into a new repository. Once they're in order, I can just run `jj new` with all the parent IDs and commit message, then write out the file contents which will get picked up automatically.
+Each commit has the list of parent commit IDs, so I just needed to do a [topological sort](https://en.wikipedia.org/wiki/Topological_sorting) to get a list of commits in the order that they could be inserted into a new repository. Once they're in order, I can just run `jj new` with all the parent IDs and commit message, then write out the file contents which will get picked up automatically.
 
 The original idea for this project was to make a web UI that could load git repos from images, allowing you to use any image hosting service as a git forge, with some inspiration from [other naughty usages of images to store arbitrary data](https://purplesyringa.moe/blog/webp-the-webpage-compression-format/). GIF is of course a terrible choice for this, since more often than not it's actually translated into an MP4 video for better playback, so you'd have to add some error correction or ensure your image is bit-for-bit identical.
