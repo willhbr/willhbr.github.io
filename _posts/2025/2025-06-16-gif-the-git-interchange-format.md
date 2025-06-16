@@ -1,5 +1,6 @@
 ---
 title: "GIF: The Git Interchange Format"
+image: /images/2025/git-interchange.gif
 tags: projects
 ---
 
