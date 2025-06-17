@@ -1,26 +1,22 @@
+#!/usr/bin/ruby
 require 'yaml'
 require 'date'
 require 'fileutils'
 
 path = ARGV[0]
-front = ''
-File.open(path) do |f|
-  first = true
-  f.each_line do |line|
-    if first
-      first = false
-      next
-    end
-    if line.strip == '---'
-      break
-    end
-    front += line
-  end
+contents = File.read(path)
+frontmatter = YAML.load(contents, permitted_classes: [Date])
+
+if contents.match /https?:\/\/brett(:\d+)?/
+  raise "looks like you've got a dev server address in there"
 end
-frontmatter = YAML.load(front, permitted_classes: [Date])
+
+if contents.match(/^!\[/) && frontmatter['image'].nil?
+  raise "you've included an image but it's not in the frontmatter"
+end
+
 title = frontmatter["title"]
 date = frontmatter["date"] || Date.today
-
 slug = title.gsub(/\d+,\d+/) { |num| num.gsub(',', '') }
 slug = slug.downcase.gsub("'", '').gsub(/[\W]+/, '-').chomp('-')
 
