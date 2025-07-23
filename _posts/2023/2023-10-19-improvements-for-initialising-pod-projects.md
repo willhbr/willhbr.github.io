@@ -1,11 +1,11 @@
 ---
 title: Improvements for Initialising Pod Projects
-tags: projects pod podman tools
+tags: projects podman tools
 ---
 
 One of the major usability misses with [`pod`][pod] was that it was tricky to setup a new project. My goal was remove the need for language-specific development tools installed directly onto my computer, but whenever I started a new project with `pod`, I would need to run `crystal init` to create the basic project skeleton. With the new `pod init` command, this is now unnecessary.
 
-[pod]: https://pod.willhbr.net
+[pod]: https://codeberg.org/willhbr/pod
 
 To create a new project that wasn't Crystal (like when I was [messing around with Swift websockets](https://willhbr.net/2023/08/23/the-five-stages-of-swift-on-linux/)) I would manually run a shell in a container using the image for the language and bind mount my working directory. I'd then use the package manager within the container to setup a project (eg: running `swift package init`) and then copy-paste some containerfiles from a previous project. This is incredibly fiddly and tedious. So I added functionality to `pod` that does this automatically.
 
@@ -43,4 +43,4 @@ entrypoints:
     shell: bin/rails console
 ```
 
-I've enjoyed working in a container-first and now largely container-only way, and improving `pod` is what has made this possible for me to do. You can [check it out here][pod], specifically the documentation for [getting started](https://pod.willhbr.net/examples/getting-started/).
+I've enjoyed working in a container-first and now largely container-only way, and improving `pod` is what has made this possible for me to do. You can [check it out here][pod], specifically the documentation for getting started.

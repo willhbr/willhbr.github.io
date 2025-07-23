@@ -1,6 +1,6 @@
 ---
 title: "pod, the container manager"
-tags: projects pod podman tools
+tags: projects podman tools
 ---
 
 I've been working on a project to make development using containers easier (specifically [Podman](https://podman.io)), to remove dependency conflicts, and make it easier to run applications on other servers.
@@ -78,4 +78,4 @@ $ pod update --diff prod
 
 Which will show the difference and then update the running containers to match the intent. `pod` fully [supports podman-remote](/2023/05/05/setting-up-podman-remote/), so it can handle containers running on a different machine just as easily as it can handle those running locally.
 
-I'm super happy with what `pod` is able to do, and plan on using it to manage building and running any container I use. You can find it on [Codeberg](https://codeberg.org/willhbr/pod), the [project website](https://pod.willhbr.net), or read my [previous post explaining some more of the backstory](/2023/06/08/overcoming-a-fear-of-containerisation/)
+I'm super happy with what `pod` is able to do, and plan on using it to manage building and running any container I use. You can find it on [Codeberg](https://codeberg.org/willhbr/pod), the [project website](https://codeberg.org/willhbr/pod), or read my [previous post explaining some more of the backstory](/2023/06/08/overcoming-a-fear-of-containerisation/)

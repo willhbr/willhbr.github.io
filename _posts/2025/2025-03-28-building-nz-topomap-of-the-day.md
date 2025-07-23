@@ -126,7 +126,7 @@ topomap.willhbr.net {
 
 The config is fairly easy to read, but a bit annoying to write. I don't really have a good understanding of the structure of the file, for example I assume the `@static` is defining some kind of match block, could I put that inline into the `header` statement? I don't know. Thankfully there are plenty of examples to choose from and the options that I'm setting are quick and easy to verify.
 
-To deploy the actual map generation, I'm using my container-management tool, [`pod`](https://pod.willhbr.net). I just define the config in the `pods.yaml` file, run `pod build prod` to get the production image—with both the compiled Crystal binary and Python dependencies—then `pod update` to stop the old container and replace it with one running the new image.
+To deploy the actual map generation, I'm using my container-management tool, [`pod`](https://codeberg.org/willhbr/pod). I just define the config in the `pods.yaml` file, run `pod build prod` to get the production image—with both the compiled Crystal binary and Python dependencies—then `pod update` to stop the old container and replace it with one running the new image.
 
 I did run into one wrinkle with this approach. Up until now all the containers I've been deploying have run on my home servers, which have access to a container registry running locally. All the images get pushed to the registry, and any server can just pull the new version from the registry. I didn't want the VPS to have access back into my home network, so it couldn't pull from the registry.
 

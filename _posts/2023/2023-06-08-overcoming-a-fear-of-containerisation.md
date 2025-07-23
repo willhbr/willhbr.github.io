@@ -1,6 +1,6 @@
 ---
 title: "Overcoming a Fear of Containerisation"
-tags: pod podman opinion
+tags: podman opinion
 ---
 
 I was first introduced to containers at a Docker workshop during my first software engineering internship. The idea was enticing; the ability to package up your applications configuration in a standard way, and run that on a server without having to first to through manually installing dependencies and adjusting configuration. This was while I was still deep in Ruby on Rails development, so setting up servers with things like [Puma](https://puma.io) and [Unicorn](https://en.wikipedia.org/wiki/Unicorn_(web_server)) were all too familiar.
@@ -98,7 +98,7 @@ ENTRYPOINT ["/bin/my-project"]
 
 Living the multi-image lifestyle has meant that I can use containers to run any one of my projects (including when I run this website locally to make changes) in the same way without having a major development experience impact.
 
-Although these commands are quite long, and I can't type that fast or remember all those flags. So [I made a command-line tool](https://pod.willhbr.net) that makes dealing with multiple images or containers easier. _That's_ actually what I have been using to do my development, and to run projects on my home server. You can read more about it:
+Although these commands are quite long, and I can't type that fast or remember all those flags. So [I made a command-line tool](https://codeberg.org/willhbr/pod) that makes dealing with multiple images or containers easier. _That's_ actually what I have been using to do my development, and to run projects on my home server. You can read more about it:
 
 - [In my other blog post](/2023/06/08/pod-the-container-manager/)
 - [On Codeberg](https://codeberg.org/willhbr/pod)

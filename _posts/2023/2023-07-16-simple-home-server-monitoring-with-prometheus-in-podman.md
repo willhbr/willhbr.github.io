@@ -13,7 +13,7 @@ The next step in my containerising journey is setting up [Prometheus][prometheus
 
 There are plenty of existing posts on setting up Prometheus in a container, so I'll keep this short. I used [pod][pod] to configure the containers:
 
-[pod]: https://pod.willhbr.net
+[pod]: https://codeberg.org/willhbr/pod
 
 ```yaml
 containers:

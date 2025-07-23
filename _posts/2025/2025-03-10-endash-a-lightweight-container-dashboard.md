@@ -20,7 +20,7 @@ There are plenty of projects like this, I think the most well-known one is [Port
 
 I'd already written a lot of code to interact with Podman while making [pod][pod], so I had a bit of a head start. This code is now in a [shared library](https://codeberg.org/willhbr/podman-cr) for use in both projects.
 
-[pod]: https://pod.willhbr.net
+[pod]: https://codeberg.org/willhbr/pod
 
 So what does endash actually do?
 

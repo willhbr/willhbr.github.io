@@ -1,6 +1,6 @@
 ---
 title: Build and Install Tools Using Containers
-tags: podman pod tools
+tags: podman tools
 ---
 
 Another challenge in my quest to not have any programming languages installed directly on my computer is installing programs that need to be built from source. I've been using [`jj`](https://github.com/martinvonz/jj) in place of Git for the last few months[^jj-review]. To [install it](https://martinvonz.github.io/jj/v0.12.0/install-and-setup/) you can either download the pre-build binaries, or build from source using `cargo`. When I first started using it there was a minor bug that was fixed on main but not the latest release, so I needed to build and install it myself instead of just downloading the binary.
@@ -30,7 +30,7 @@ for bin in jj scm-diff-editor; do
 done
 ```
 
-So the last part is just putting it all together with a [`pod`](https://pod.willhbr.net) config file:
+So the last part is just putting it all together with a [`pod`](https://codeberg.org/willhbr/pod) config file:
 
 ```yaml
 images:

@@ -15,7 +15,7 @@ The ease of moving between RSS services is really what makes this an easy projec
 
 [^as-of-now]: As of the time of writing, that is.
 
-NetNewsWire supports pulling from [FreshRSS][freshrss], which is an open-source self-hosted feed aggregator. It supports running in a container, so naturally all I needed to do was add the config to a [`pod`](https://pod.willhbr.net) file:
+NetNewsWire supports pulling from [FreshRSS][freshrss], which is an open-source self-hosted feed aggregator. It supports running in a container, so naturally all I needed to do was add the config to a [`pod`](https://codeberg.org/willhbr/pod) file:
 
 ```yaml
 freshrss:

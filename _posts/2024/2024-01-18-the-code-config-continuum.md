@@ -19,7 +19,7 @@ To remedy the first issue you could probably move to something like YAML or TOML
 
 If you stuck with JSON or chose to use TOML, you'll soon end up with another problem: you need to keep common sections in sync. Say you have something like a set of database connection configs, one for production and one for development (a good example is a Rails `database.yml` file). You want to keep all the boring bits in sync so that development and production don't stray too far from one another.
 
-I run into this with my [`pods.yaml` config files](https://pod.willhbr.net). The program I wrote to [track helicopter movements around the Sydney beaches](/2023/07/29/helicopter-tracking-for-safer-drone-flights/) has five different container configurations that I can run, all of them need the a handful of common flags:
+I run into this with my [`pods.yaml` config files](https://codeberg.org/willhbr/pod). The program I wrote to [track helicopter movements around the Sydney beaches](/2023/07/29/helicopter-tracking-for-safer-drone-flights/) has five different container configurations that I can run, all of them need the a handful of common flags:
 
 ```yaml
 flags:
