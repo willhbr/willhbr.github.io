@@ -17,9 +17,9 @@ With projects like this, seeing is believing, so I made a [quick video showing w
 
 [tmux-video]: https://youtu.be/Tz74vs_nH7M
 
-If you want to just check out the code for yourself, you can see the code [on GitHub][sudoku-github] but the real joy is understanding in great detail how this works.
+If you want to just check out the code for yourself, you can see the code [on Codeberg][sudoku-codeberg] but the real joy is understanding in great detail how this works.
 
-[sudoku-github]: https://github.com/willhbr/tmux-sudoku
+[sudoku-codeberg]: https://codeberg.org/willhbr/tmux-sudoku
 
 I got the idea for this project after seeing [_konsti_ write a sudoku solver using Python dependency resolution][sudoku-pip]. This seemed like an interesting area to apply my (very weird) expertise. It's also much more useful than the `is_prime` function that I ran on tmux before.
 
@@ -250,7 +250,7 @@ I knew in the back of my mind when I wrote the Python-tmux compiler that what I 
 
 Now, how fast is it?
 
-I made a few decorative modifications to the program, allowing it to be quit more easily, visualise the progress, write the solution to a file, and exit on completion (have a look at [the repo][sudoku-github] for the final program). This made it easier to run it with `time` without me having to sit there waiting for it to complete.
+I made a few decorative modifications to the program, allowing it to be quit more easily, visualise the progress, write the solution to a file, and exit on completion (have a look at [the repo][sudoku-codeberg] for the final program). This made it easier to run it with `time` without me having to sit there waiting for it to complete.
 
 I started with a solved sudoku and progressively deleted more numbers from it. With 4 numbers missing, it solved it in 41 seconds. With 5 missing, it took 6:40.[^on-nuc]
 

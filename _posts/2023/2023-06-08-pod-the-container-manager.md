@@ -7,7 +7,7 @@ I've been working on a project to make development using containers easier (spec
 
 The project is called `pod`, you can learn more at on [Codeberg](https://codeberg.org/willhbr/pod). It's a wrapper around the `podman` command-line tool, with the aim of reducing the amount of boilerplate commands you have to type.
 
-Local versions of both [this website](https://github.com/willhbr/willhbr.github.io/blob/main/pods.yaml) and [my photos website](https://github.com/willhbr/sturdy-guacamole/blob/main/pods.yaml) have been using `pod` for a while. This has made it really easy to run a server while I've been making changes, as well as allowing me to easily daemonise the server and have it continue to run in the background.
+Local versions of both [this website](https://github.com/willhbr/willhbr.github.io/blob/main/pods.yaml) and [my photos website](https://github.com/willhbr/photos/blob/main/pods.yaml) have been using `pod` for a while. This has made it really easy to run a server while I've been making changes, as well as allowing me to easily daemonise the server and have it continue to run in the background.
 
 At its core, `pod` is a YAML file that configures the arguments to a Podman command. Most commands will map one-to-one. The simplest example is something like:
 
