@@ -5,7 +5,7 @@ tags: tools
 
 Most of my projects are now consolidated [on Codeberg][my-codeberg]. Previously my projects were split between GitHub and GitLab, but I've finally put in the effort to get everything (or at least most of everything) together in one place.
 
-[my-codeberg]: https://codeberg.org/willhbr.
+[my-codeberg]: https://codeberg.org/willhbr
 
 I started using GitLab because at the time GitHub didn't offer private repositories for free accounts, whereas GitLab did. So I'd have all the work I wanted to share on GitHub, and then all my non-shared work and in-progress work on GitLab.
 
