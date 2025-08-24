@@ -37,6 +37,7 @@ defaults:
     values:
       image: /images/opengraph.png
       type: website
+      noindex: false
   - scope:
       type: posts
     values:
