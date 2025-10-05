@@ -1,23 +1,21 @@
 ---
 layout: page
-title: 'Will Richardson: About Me'
+title: 'About - Will Richardson'
+image: /images/me.webp
 ---
 
-I'm Will - a software engineer and photographer from New Zealand, living in Sydney. In 2008 I started programming as a hobby, graduated from the University of Canterbury with a degree in Software Engineering in 2017. Since 2018 I have worked at [Google](https://google.com), as an [SRE](https://sre.google) on database infrastructure, and now on Maps for Android Automotive.
+# About
 
-This is entirely my personal blog, its content is solely my personal views, not those of my employer.
+![picture of me looking whistful](/images/me.webp){:id="me-image"}
 
-Most often I write about my personal projects and areas of computing that I find interesting. You can find the projects that I have published on [Github](https://github.com/willhbr).
+I'm a software engineer, [photographer]({{ site.urls.photos }}), and computer enthusiast, living in [Sydney, Australia](https://en.wikipedia.org/wiki/Sydney). As long as I can remember I've been taking things apart and then failing to put them back together again.
 
-Despite appearances, I do venture outside on occasion. For example:
+Most of my favourite projects prompt questions like "what's even the point" or "why did you even think of that", like the time when I [proved that you can run arbitrary code by swapping between tmux windows](/2024/03/15/making-a-compiler-to-prove-tmux-is-turing-complete/), then [wrote a sudoku solver](/2024/12/27/solving-sudoku-with-tmux/), then [played a video with 5,170 tmux windows](/2025/03/17/playing-video-with-5170-tmux-windows/), and finally [implemented Snake with tmux configs](/2025/03/20/snakes-in-a-pane/).
 
-![picture of Will walking across a swing bridge, holding a camera tripod](/images/me.jpg)
+Sometimes I work on normal projects, but they're not interesting enough to get on the about page. You can find a lot of them over on [Codeberg](https://codeberg.org/willhbr).
 
-I can be found on other parts of the Internet:
+I studied Software Engineering at the [University of Canterbury][canterbury], graduating in 2017. Since 2018 I have worked at [Google](https://google.com) Sydney, first as an [SRE](https://sre.google) in database infrastructure, and now on Maps for Android Automotive. This is personal website, if you want my employer's views on things, you'll have to find another website.
 
-[Mastodon]({{ site.urls.mastodon }}){:class="button"} |
-[Codeberg](https://codeberg.org/willhbr){:class="button"}
-[Github](https://github.com/willhbr){:class="button"} |
-[My Photo Website]({{ site.urls.photos }}){:class="button"}
+[canterbury]: https://www.canterbury.ac.nz
 
-If you want to get in contact, send me a [toot on Mastodon]({{ site.urls.mastodon }}) or [an email](mailto:{{ site.email }}).
+Comments, corrections, and questions are always welcome about my projects, writing, or if you just want to say hello. You can contact me on [Mastodon]({{ site.urls.mastodon }}) or via [email](mailto:{{ site.email }}).

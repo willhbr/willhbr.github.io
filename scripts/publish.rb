@@ -7,7 +7,7 @@ path = ARGV[0]
 contents = File.read(path)
 frontmatter = YAML.load(contents, permitted_classes: [Date])
 
-if contents.match /https?:\/\/brett(:\d+)?/
+if contents.match /http:\/\/\w+(:\d+)/
   raise "looks like you've got a dev server address in there"
 end
 
