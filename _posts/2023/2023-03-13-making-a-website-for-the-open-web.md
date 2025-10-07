@@ -42,7 +42,7 @@ What I had missed adding was the correct metadata that allows browsers and feed 
 
 # OpenGraph Previews
 
-I [wrote about this](https://willhbr.net/2023/02/04/adding-opengraph-previews-to-jekyll/) when I added them, since I was so stoked to have proper previews when sharing links.
+I [wrote about this](/2023/02/04/adding-opengraph-previews-to-jekyll/) when I added them, since I was so stoked to have proper previews when sharing links.
 
 My assumption had always been that services just fetched the URL and guessed at what image should be included in the preview (I guess this is what Facebook did before publishing the standard?).
 
@@ -66,7 +66,7 @@ I won't go into the full details of how I implemented this, but it boils down to
 
 # Alias Your Domain to Your ActivityPub Profile
 
-[Something else I wrote about earlier](https://willhbr.net/2023/01/24/webfinger-mastodon-alias/). Not something that I think everyone needs to do, but if you like the idea of a computer being able to find your toots from your own domain, it's probably worth doing. Especially because it's quite straightforward.
+[Something else I wrote about earlier](/2023/01/24/webfinger-mastodon-alias/). Not something that I think everyone needs to do, but if you like the idea of a computer being able to find your toots from your own domain, it's probably worth doing. Especially because it's quite straightforward.
 
 # Good Favicons
 

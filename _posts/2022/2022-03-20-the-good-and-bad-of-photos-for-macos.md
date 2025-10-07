@@ -3,7 +3,7 @@ title: "The Good & Bad of Photos for MacOS"
 tags: opinion photography
 ---
 
-I've [previously written about](https://willhbr.net/2019/11/02/impracticalities-of-ios-photo-management-for-photographers/) how iOS/iPadOS is poorly suited to anything more than casual photography.
+I've [previously written about](/2019/11/02/impracticalities-of-ios-photo-management-for-photographers/) how iOS/iPadOS is poorly suited to anything more than casual photography.
 
 Unsurprisingly there hasn't been a change in iPadOS's capabilities since 2019. However through a fortunate series of events I've found myself in possession of an M1 MacBook Air, and have been using that for storing/editing my photos for the last year or so.
 

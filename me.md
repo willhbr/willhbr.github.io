@@ -6,7 +6,7 @@ image: /images/me.webp
 
 # About
 
-![picture of me looking whistful](/images/me.webp){:id="me-image"}
+![picture of me looking whistful](/images/me.webp){:class="half-right" style="aspect-ratio: 4/5"}
 
 I'm a software engineer, [photographer]({{ site.urls.photos }}), and computer enthusiast, living in [Sydney, Australia](https://en.wikipedia.org/wiki/Sydney). As long as I can remember I've been taking things apart and then failing to put them back together again.
 

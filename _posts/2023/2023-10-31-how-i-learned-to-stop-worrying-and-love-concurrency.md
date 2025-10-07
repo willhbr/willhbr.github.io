@@ -200,7 +200,7 @@ So why do we have `async` and `await` in the first place? As far as I can see th
 
 If you're making a brand-new language that isn't saddled with backwards compatibility to an existing language or runtime, would you make this same tradeoff? The [best language ever][crystal] ([Crystal](https://crystal-lang.org)) and notable poster-child of concurrency ([Go](https://golang.org)) both omit the need for an `async` keyword.
 
-[crystal]: https://willhbr.net/2023/06/24/why-crystal-is-the-best-language-ever/
+[crystal]: /2023/06/24/why-crystal-is-the-best-language-ever/
 
 In both languages, every function is treated as async. At any point[^with-yield] in a function, execution can swap to a different function and do some work there before swapping back. Much to the fear of people that like their code to be explicit, at any point in your program, an arbitrarily large gap in execution could happen.
 

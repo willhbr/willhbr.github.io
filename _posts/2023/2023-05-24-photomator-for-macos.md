@@ -60,7 +60,7 @@ The Pixelmator folks definitely lean into the ML-powered tools for marketing, bu
 
 This is the real key, the ML tools can be a great starting point. They have a very low cost to try (they typically take less than a second to compute on my M1 MacBook), and they're easy to adjust or revert if they do the wrong thing. Almost all edits that I make start with an ML adjustment to correct the exposure and white balance—and it often does a decent job.
 
-[macos-migration]: https://willhbr.net/2022/03/20/the-good-and-bad-of-photos-for-macos/
+[macos-migration]: /2022/03/20/the-good-and-bad-of-photos-for-macos/
 [pro]: http://pixelmator.com/pro/
 [photomator]: https://www.pixelmator.com/photomator/
 [gimp]: https://www.gimp.org

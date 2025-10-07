@@ -39,4 +39,4 @@ The shortcut would only work if I either left the `Type` as "Image", **or** set 
 
 No programming language, API, library, or framework has made me as frustrated as writing even the most trivial Shortcuts.
 
-[^internals]: I briefly tried inspecting the internals of the `.shortcut` file [as I have done before](https://willhbr.net/2018/12/26/compiling-for-shortcuts/), but the signing that is now included made that more difficult than I had enthusiasm for.
+[^internals]: I briefly tried inspecting the internals of the `.shortcut` file [as I have done before](/2018/12/26/compiling-for-shortcuts/), but the signing that is now included made that more difficult than I had enthusiasm for.
