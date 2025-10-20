@@ -70,6 +70,9 @@ I graphed that on the release year of each OS version, doing the same for dark m
   <text x="325" y="255">0%</text>
 </svg>
 
+This graph is an SVG, which may not render correctly in feed readers. [View this post on the web](/2025/10/20/light-mode-infffffflation/).
+{:class="caption"}
+
 You can clearly see that the brightness of the UI has been steadily increasing for the last 16 years. The upper line is the default mode/light mode, the lower line is dark mode. When I started using MacOS in 2012, I was running Snow Leopard, the windows had an average brightness of 71%. Since then they've steadily increased so that in MacOS Tahoe, they're at a full 100%.
 
 What I've graphed here is just the brightness of the window chrome, which isn't really representative of the actual total screen brightness. A better study would be looking at the overall brightness of a typical set of apps. The default background colour for windows, as well as the colours for inactive windows, would probably give a more complete picture.
