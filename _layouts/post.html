@@ -15,13 +15,13 @@ layout: page
 
   <div class="post-nav">
     <div class="nav-left">
-      {% if page.next.url %}
-        &larr;&nbsp;<a href="{{ page.next.url }}">{{ page.next.title }}</a>
+      {% if page.previous.url %}
+        &larr;&nbsp;<a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
       {% endif %}
     </div>
     <div class="nav-right">
-      {% if page.previous.url %}
-        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>&nbsp;&rarr;
+      {% if page.next.url %}
+        <a href="{{ page.next.url }}">{{ page.next.title }}</a>&nbsp;&rarr;
       {% endif %}
     </div>
   </div>
