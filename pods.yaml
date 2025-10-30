@@ -7,12 +7,12 @@ images:
   website:
     tag: willhbr.github.io:latest
     from: Containerfile.local
-    build_flags:
-      cache-ttl: 24h
 
 development:
   website:
     name: willhbr.github.io
+    bind_mounts:
+      ~/Sync/Drafts: /src/_drafts
     image: :website
     ports:
       4000: 80
