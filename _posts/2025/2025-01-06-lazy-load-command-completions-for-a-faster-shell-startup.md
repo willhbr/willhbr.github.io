@@ -9,7 +9,7 @@ It's a new year and you know what that means: time to remove unnecessary work fr
 
 Throughout the year there's always a little more bloat that creeps in. Like a frog in a pot you don't notice it until you're sitting there waiting hundreds of milliseconds for your shell to load. Well you deserve better, so take the time to remove unnecessary cruft and trim down that load time.
 
-If you haven't done this before, [this post by Matthew Clemente](https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load/) goes into much more detail on debugging startup time in ZSH.
+If you haven't done this before, [this post by Matthew Clemente](https://blog.mattclemente.com/2020/06/26/oh-my-zsh-slow-to-load/) goes into much more detail on debugging startup time in Zsh.
 
 Since I use [my own plugin system](/2017/08/21/pug-an-abomination-of-shell-scripting/) a lot of the oh-my-zsh debugging isn't relevant, and I just end up commenting out blocks of code and using this hack to get the load time:
 
@@ -29,7 +29,7 @@ zsh -i -c exit  0.08s user 0.03s system 101% cpu 0.109 total
 
 A little over 100ms isn't too bad, but I've found something that's contributing about 50ms to that which I can cut out completely.
 
-The culprit is the [JJ ZSH autocomplete](https://jj-vcs.github.io/jj/latest/install-and-setup/#zsh):
+The culprit is the [JJ Zsh autocomplete](https://jj-vcs.github.io/jj/latest/install-and-setup/#zsh):
 
 ```zsh
 source <(jj util completion zsh)

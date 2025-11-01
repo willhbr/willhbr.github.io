@@ -11,7 +11,7 @@ The root of the problem is POSIX; it defines the API for most Unix (and Unix-lik
 
 [^new-os]: Which doesn't seem to be something many people are interested in; we're pretty invested in this Linux thing at this point.
 
-> POSIX does also define the syntax for the shell language, which is why Bash, ZSH, and other shells all work in a similar way. Fish, xonsh, nushell, and Oil are not entirely POSIX compatible, and so are free to alter their syntax.
+> POSIX does also define the syntax for the shell language, which is why Bash, Zsh, and other shells all work in a similar way. Fish, xonsh, nushell, and Oil are not entirely POSIX compatible, and so are free to alter their syntax.
 
 What sets a shell apart from other languages is that external programs are first-class citizens[^not-first-class], you don't have to do anything special to launch them. If you type `git status` the shell will go off and find the `git` program, and then launch it with a single argument `status`. If you were to do this in Ruby, you'd have to do `system('git', 'status')`—more fiddly typing, and completely different from calling a function.
 
@@ -67,4 +67,4 @@ Once you've split the capabilities of functions and commands, you might as well 
 
 [^will-not-learn-awk]: I know I can probably somehow do all this with `awk`. I know that anything is possible in `awk`. There are some lines I will not cross, and learning `awk` is one of them.
 
-There's also a third dimension for any shell, and that's how well it works as an actual interface to type things into. The syntax of the Oil `ysh` shell is better than ZSH, but in ZSH I can customise the prompt from hundreds of existing examples, I can use Vim keybindings to edit my command, I have syntax highlighting, I have integration with tools like `fzf` to find previous commands, and I have hundreds of lines of existing shell functions that help me get things done. And to top it all off, I can install ZSH on any machine from official package sources. Right now, it's not worth it for me to switch over and lose these benefits.
+There's also a third dimension for any shell, and that's how well it works as an actual interface to type things into. The syntax of the Oil `ysh` shell is better than Zsh, but in Zsh I can customise the prompt from hundreds of existing examples, I can use Vim keybindings to edit my command, I have syntax highlighting, I have integration with tools like `fzf` to find previous commands, and I have hundreds of lines of existing shell functions that help me get things done. And to top it all off, I can install Zsh on any machine from official package sources. Right now, it's not worth it for me to switch over and lose these benefits.
