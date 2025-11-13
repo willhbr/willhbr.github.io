@@ -18,14 +18,14 @@ ECR (Embedded Crystal) is the compile-time templating system [included in the Cr
 </section>
 ```
 
-Will get turned into roughly this code:
+It will get turned into roughly this code:
 
 ```crystal
 io << "<section>\n  <h1>"
 title.to_s io
 io << "</h1>\n  <p>"
 content.to_s io
-io << "</section>"
+io << "</p>\n</section>"
 ```
 
 The problem is that `title` or `content` could contain HTML, like a naughty `<script>` tag, which would get dumped directly into our HTML document. The obvious thing to do is wrap every variable in `HTML.escape`:
