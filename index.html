@@ -5,6 +5,15 @@ layout: page
 {% assign post = site.posts[0] %}
 {% include post.html %}
 
+<div class="post-footer">
+  <p>
+    Send feedback via
+    <a href="{{ site.urls.mastodon }}" target=_blank>Mastodon</a> or
+    {% capture subject %}Feedback: {{ post.title }}{% endcapture %}
+    <a href="mailto:{{ site.email }}?subject={{ subject | uri_escape }}">email</a>.
+  </p>
+</div>
+
 <ul class="post-list">
   {% for post in site.posts limit:site.paginate offset:1 %}
     <li{% if post.draft %} style="font-style: italic"{% endif %}>
