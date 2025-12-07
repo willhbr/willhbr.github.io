@@ -17,7 +17,7 @@ Seriously, the oh-my-zsh git plugin [defines over 200 aliases][omz-git]. Somethi
 
 I have seven VCS-related shell aliases, which is the amount of letter salad that I can handle.
 
-```
+```shell
 alias g="jj"
 alias gs=" g status"
 alias gd=" g diff"

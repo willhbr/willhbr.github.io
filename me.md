@@ -19,3 +19,5 @@ I studied Software Engineering at the [University of Canterbury][canterbury], gr
 [canterbury]: https://www.canterbury.ac.nz
 
 Comments, corrections, and questions are always welcome about my projects, writing, or if you just want to say hello. You can contact me on [Mastodon]({{ site.urls.mastodon }}) or via [email](mailto:{{ site.email }}).
+
+<div id="signature"></div>
