@@ -62,7 +62,7 @@ Your website should respect the system dark-mode setting, which you can get in C
 
 This is fairly easy to support - just override the colours with dark-mode variants - but it gets more complicated if you want to allow visitors to toggle light/dark mode (some may want to have their OS in one mode but read _your_ site in a the other).
 
-I won't go into the full details of how I implemented this, but it boils down to having the `@media` query, a class on the `<body>` tag, _and_ using CSS variables to define colours. Look at [`main.js`](https://github.com/willhbr/willhbr.github.io/blob/main/js/main.js) and [`darkmode.sass`](https://github.com/willhbr/willhbr.github.io/blob/main/_sass/darkmode.sass) for how I did it.
+I won't go into the full details of how I implemented this, but it boils down to having the `@media` query, a class on the `<body>` tag, _and_ using CSS variables to define colours. Look at [`main.js`](https://github.com/willhbr/willhbr.github.io/blob/2c10f89153561643596d0278286734518668c36e/js/main.js) and [`darkmode.sass`](https://github.com/willhbr/willhbr.github.io/blob/9d232f016efe3787d12df5ebb38715d9723b9a37/_sass/darkmode.sass) for how I did it.
 
 # Alias Your Domain to Your ActivityPub Profile
 

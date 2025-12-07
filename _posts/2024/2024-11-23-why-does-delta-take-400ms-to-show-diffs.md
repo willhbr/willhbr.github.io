@@ -3,7 +3,7 @@ title: "Why Does Delta Take 400ms to Show Diffs?"
 tags: debugging
 ---
 
-The other day I saw a link to [`delta`](https://github.com/dandavison/delta), which is a tool that integrates with git to add both add better diff highlighting (similar to what you'd see in the GitHub/GitLab web UI) and syntax highlighting. I decided to give it a try. There's even a note in the [JJ docs](https://martinvonz.github.io/jj/latest/config/#processing-contents-to-be-paged) on how to set it up (since obviously I'm [not going to be using git](/2024/04/01/its-not-me-its-git/)):
+The other day I saw a link to [`delta`](https://github.com/dandavison/delta), which is a tool that integrates with git to add both add better diff highlighting (similar to what you'd see in the GitHub/GitLab web UI) and syntax highlighting. I decided to give it a try. There's even a note in the [JJ docs](https://jj-vcs.dev/latest/config/#processing-contents-to-be-paged) on how to set it up (since obviously I'm [not going to be using git](/2024/04/01/its-not-me-its-git/)):
 
 ```toml
 [ui]
@@ -15,7 +15,7 @@ I tried it and the diff looks nice. However I also noticed that it was _really_ 
 
 Initially I was a bit puzzled as to why `log` was also slowing down, but a look at the code reveals that JJ will [always call out to the pager program][log.rs], it's just that `less` will check the screen height and do a transparent pass-through if the output is smaller than the height of the screen.
 
-[log.rs]: https://github.com/martinvonz/jj/blob/ffe5519fd0f2c63a378239fb81b5cbffab06f3e4/cli/src/commands/log.rs#L175
+[log.rs]: https://github.com/jj-vcs/jj/blob/ffe5519fd0f2c63a378239fb81b5cbffab06f3e4/cli/src/commands/log.rs#L175
 
 In order to get a few more data points, I tried `jj log | delta`, which should result in the same amount of work and thus take the same amount of time. This was not the case—piping the log output into `delta` didn't slow things down at all, it was about the same speed as using `less`.
 

@@ -49,7 +49,7 @@ Each frame will contain one or more `GIFEntry`. I can just keep parsing entries 
 
 Instead I did something much more silly, I used the duration of each frame to indicate how many entries there were. It has the side benefit that a human looking at the GIF gets more time to mentally decode the messagepack from a frame with more entries in it.
 
-I used [JJ](https://jj-vcs.github.io/jj/latest/) to read from the git repo, for the reasons I [explained before](/2025/04/26/writing-in-crystal-rewriting-in-rust/). The template and revset languages make this much easier than dealing with git.
+I used [JJ](https://jj-vcs.dev/latest/) to read from the git repo, for the reasons I [explained before](/2025/04/26/writing-in-crystal-rewriting-in-rust/). The template and revset languages make this much easier than dealing with git.
 
 To make things simpler, I just read the entire repo into memory (the full file contents of every file in every revision), which meant I could easily work out the size of the GIF by looking at all the files. A better implementation would allow splitting files across multiple frames, and build the GIF as it traversed the repository.
 

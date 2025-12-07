@@ -29,7 +29,7 @@ zsh -i -c exit  0.08s user 0.03s system 101% cpu 0.109 total
 
 A little over 100ms isn't too bad, but I've found something that's contributing about 50ms to that which I can cut out completely.
 
-The culprit is the [JJ Zsh autocomplete](https://jj-vcs.github.io/jj/latest/install-and-setup/#zsh):
+The culprit is the [JJ Zsh autocomplete](https://docs.jj-vcs.dev/latest/install-and-setup/#zsh):
 
 ```zsh
 source <(jj util completion zsh)

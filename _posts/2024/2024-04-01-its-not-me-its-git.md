@@ -67,13 +67,13 @@ In a similar way, working with git feels like I'm building with some incredibly 
 
 I had a lecturer in uni that was adamant that students should work on their assignment throughout the semester instead of cramming it in a weekend. They were so paranoid that they created periodic copies of all our repos throughout the semester to check that the history in the final repo hadn't been tampered with. If you're on that level, you might be reading this thinking "oh no, if editing history is that easy, you'll just mess up your whole repo!" This is understandable, but JJ (by default) only allows [editing the history that hasn't been in `main`][immutable-commits], so you're only allowed to edit commits before you merge them into the main branch.
 
-[immutable-commits]: https://jj-vcs.github.io/jj/v0.15.1/config/#set-of-immutable-commits
+[immutable-commits]: https://jj-vcs.dev/v0.15.1/config/#set-of-immutable-commits
 
 It's these kinds of sensible defaults that make JJ more approachable. I like that in git it's _possible_ to edit the history—for example if you're helping students work out why it's so slow to work with their repository after committing multiple gigabytes of test data, then creating another commit deleting it. I've been using JJ co-located with git. The repository still has a `.git` folder and I can run any git command I want, but most of the operations I do through JJ.[^git-benefits]
 
 [^git-benefits]: This is super convenient, because I can still push to GitLab or GitHub or whatever, I can still use basically any tool that relies on a git repo, my history is still just normal git history so it can be inspected or analysed by any tool that works on git repos, and I can still work with anyone that is using plain-old git.
 
-Perhaps it's just that I'm more invested in using JJ, but after skimming the [reference](https://jj-vcs.github.io/jj/prerelease/cli-reference/) and using it for a few months, I'm able to do more than I am with git. In no small part because I can just repeat the same few commands that operate on commits[^not-commit].
+Perhaps it's just that I'm more invested in using JJ, but after skimming the [reference](https://jj-vcs.dev/prerelease/cli-reference/) and using it for a few months, I'm able to do more than I am with git. In no small part because I can just repeat the same few commands that operate on commits[^not-commit].
 
 [^not-commit]: Oh yeah I think _technically_ they're changes or revisions, not commits.
 
@@ -86,7 +86,7 @@ Perhaps it's just that I'm more invested in using JJ, but after skimming the [re
 
 Something that's amazing is that I honestly couldn't tell you if there's a way to remove changes from a commit. Since it's so easy to `split` and `abandon` changes, I just do that instead of looking for a command that can do it in one step.
 
-I didn't think I'd really care about how [conflicts are handled](https://jj-vcs.github.io/jj/v0.15.1/conflicts/), but not having your repo get "locked out" because you're in the middle of a merge or rebase is just really nice. I almost never get conflicts because my personal projects are basically always just authored by me on one machine, but the few times I've run into them it's freeing to have the option to just go off and do something else in the repo.
+I didn't think I'd really care about how [conflicts are handled](https://jj-vcs.dev/v0.15.1/conflicts/), but not having your repo get "locked out" because you're in the middle of a merge or rebase is just really nice. I almost never get conflicts because my personal projects are basically always just authored by me on one machine, but the few times I've run into them it's freeing to have the option to just go off and do something else in the repo.
 
 Many people think that the main part of software engineering is writing code, but any software engineer will correct you and point out all the talking to people that's often overlooked. However even just focussing on the time when you're writing code, a large part of that is just [reading other code to work out what to write](/2024/02/28/optimising-for-modification/). If you've spent enough time in large codebases you'll know how important it is to investigate the history of the code—looking at a single snapshot only tells a fraction of the story. Tools that make working with the history easier are incredibly valuable.
 

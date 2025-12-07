@@ -3,7 +3,7 @@ title: "Using JJ for the Version Control Operation Audit"
 tags: tools jj
 ---
 
-So I [just wrote about](/2024/06/07/the-version-control-operation-audit/) the version control operations that I use day-to-day. My new favourite thing is [JJ](https://github.com/martinvonz/jj)—a git-compatible version control system that I've also [written about before](/2024/04/01/its-not-me-its-git/)—so I thought I would explain how each of these operations are done with JJ.
+So I [just wrote about](/2024/06/07/the-version-control-operation-audit/) the version control operations that I use day-to-day. My new favourite thing is [JJ](https://github.com/jj-vcs/jj)—a git-compatible version control system that I've also [written about before](/2024/04/01/its-not-me-its-git/)—so I thought I would explain how each of these operations are done with JJ.
 
 # View what's about to be committed
 
@@ -49,7 +49,7 @@ It's just `jj split`. No tricks.
 
 # Merging two changes into one
 
-I'd like to be able to do this with a murcurial-style `histedit`-and-fold, but [JJ doesn't have `histedit` yet](https://github.com/martinvonz/jj/issues/1531) so the next best thing is `jj squash --from $a --into $b`, and then `jj abandon` the empty commit.
+I'd like to be able to do this with a murcurial-style `histedit`-and-fold, but [JJ doesn't have `histedit` yet](https://github.com/jj-vcs/jj/issues/1531) so the next best thing is `jj squash --from $a --into $b`, and then `jj abandon` the empty commit.
 
 # Writing dependent changes
 
@@ -57,7 +57,7 @@ The depends on the review system you're using, but in the common branch-based on
 
 # Reordering dependent changes
 
-JJ doesn't have a mercurial `histedit` command ([yet](https://github.com/martinvonz/jj/issues/1531)), so I'd do this with multiple `rebase -s X -d Y` invocations. This is less than ideal, but gets the job done.
+JJ doesn't have a mercurial `histedit` command ([yet](https://github.com/jj-vcs/jj/issues/1531)), so I'd do this with multiple `rebase -s X -d Y` invocations. This is less than ideal, but gets the job done.
 
 # Make a dependent change independent
 

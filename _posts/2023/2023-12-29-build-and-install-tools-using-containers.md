@@ -3,7 +3,7 @@ title: Build and Install Tools Using Containers
 tags: podman tools
 ---
 
-Another challenge in my quest to not have any programming languages installed directly on my computer is installing programs that need to be built from source. I've been using [`jj`](https://github.com/martinvonz/jj) in place of Git for the last few months[^jj-review]. To [install it](https://martinvonz.github.io/jj/v0.12.0/install-and-setup/) you can either download the pre-build binaries, or build from source using `cargo`. When I first started using it there was a minor bug that was fixed on main but not the latest release, so I needed to build and install it myself instead of just downloading the binary.
+Another challenge in my quest to not have any programming languages installed directly on my computer is installing programs that need to be built from source. I've been using [`jj`](https://github.com/jj-vcs/jj) in place of Git for the last few months[^jj-review]. To [install it](https://jj-vcs.dev/v0.12.0/install-and-setup/) you can either download the pre-build binaries, or build from source using `cargo`. When I first started using it there was a minor bug that was fixed on main but not the latest release, so I needed to build and install it myself instead of just downloading the binary.
 
 [^jj-review]: Short review, it's good but has a long way to go. Global undo is excellent, and I like the "only edit commits that aren't in main yet" workflow.
 
@@ -15,7 +15,7 @@ To install `jj` and `scm-diff-editor` I make a `Containerfile` like this:
 FROM docker.io/library/rust:latest
 WORKDIR /src
 RUN apt install libssl-dev openssl pkg-config
-RUN cargo install --git https://github.com/martinvonz/jj.git --locked --bin jj jj-cli
+RUN cargo install --git https://github.com/jj-vcs/jj.git --locked --bin jj jj-cli
 RUN cargo install --git https://github.com/arxanas/git-branchless scm-record --features scm-diff-editor
 COPY install.sh .
 ENTRYPOINT /src/install.sh

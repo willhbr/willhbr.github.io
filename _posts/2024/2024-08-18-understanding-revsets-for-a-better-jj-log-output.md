@@ -3,7 +3,7 @@ title: "Understanding Revsets for a Better JJ Log Output"
 tags: tools jj
 ---
 
-In git you can do something like `HEAD~` to refer to the parent commit of `HEAD`. Mercurial has a similar feature [called revsets](https://repo.mercurial-scm.org/hg/help/revsets) which [JJ took inspiration from](https://martinvonz.github.io/jj/latest/revsets/) (including the name).
+In git you can do something like `HEAD~` to refer to the parent commit of `HEAD`. Mercurial has a similar feature [called revsets](https://repo.mercurial-scm.org/hg/help/revsets) which [JJ took inspiration from](https://jj-vcs.dev/latest/revsets/) (including the name).
 
 The revset language is a declarative query language—not unlike SQL—that lets you specify a set of revisions (a revset) that match certain criteria. It ends up looking more like set operations than SQL, but the idea is similar. In JJ you can use `@` to mean "the current commit", or `mine()` to mean "all the commits that I authored", or `trunk()` to mean "the base branch that code will be merged into".
 
@@ -28,7 +28,7 @@ What causes this huge output is the fact that the Crystal repo has 93 branches, 
 
 However what I want to show is just commits that _I've_ written that haven't been merged, and ignore all these other branches. To do that we need to understand some revsets.
 
-If you want to learn the revset language properly, you should read the [revset language documentation](https://martinvonz.github.io/jj/latest/revsets/), but I'm going to walk through how I settled on my default log output.
+If you want to learn the revset language properly, you should read the [revset language documentation](https://jj-vcs.dev/latest/revsets/), but I'm going to walk through how I settled on my default log output.
 
 ```toml
 [revsets]

@@ -12,7 +12,7 @@ You can download prebuilt JJ binaries for most distributions/architectures from 
 The API endpoint is:
 
 ```
-https://api.github.com/repos/martinvonz/jj/releases
+https://api.github.com/repos/jj-vcs/jj/releases
 ```
 
 The important part of the response looks like this:
@@ -21,7 +21,7 @@ The important part of the response looks like this:
 {
   "assets": [
     {
-      "url": "https://api.github.com/repos/martinvonz/jj/releases/assets/190411619",
+      "url": "https://api.github.com/repos/jj-vcs/jj/releases/assets/190411619",
       "id": 190411619,
       "node_id": "RA_kwDOEzi53M4LWXNj",
       "name": "jj-v0.21.0-aarch64-apple-darwin.tar.gz",
@@ -33,7 +33,7 @@ The important part of the response looks like this:
       "download_count": 42,
       "created_at": "2024-09-04T17:23:32Z",
       "updated_at": "2024-09-04T17:23:32Z",
-      "browser_download_url": "https://github.com/martinvonz/jj/releases/download/v0.21.0/jj-v0.21.0-aarch64-apple-darwin.tar.gz"
+      "browser_download_url": "https://github.com/jj-vcs/jj/releases/download/v0.21.0/jj-v0.21.0-aarch64-apple-darwin.tar.gz"
     },
     ...
   ],
