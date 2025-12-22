@@ -16,7 +16,7 @@ layout: page
 </div>
 
 <ul class="post-list">
-  {% for post in site.posts limit:site.paginate offset:1 %}
+  {%- for post in site.posts limit:site.paginate offset:1 -%}
     <li{% if post.draft %} style="font-style: italic"{% endif %}>
       <a href="{{ post.url }}">
         <span class="post-name">{{ post.title }}</span>
@@ -24,7 +24,7 @@ layout: page
         <span class="date">{{ post.date | date: site.date_format_short }}</span>
       </a>
     </li>
-  {% endfor %}
+  {%- endfor -%}
 </ul>
 
 <br>

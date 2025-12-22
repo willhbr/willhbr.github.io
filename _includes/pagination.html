@@ -1,44 +1,43 @@
 <div class="pagination">
-  {% if paginator %}
-    {% if paginator.total_pages > 1 %}
-      {% if paginator.previous_page %}
+  {%- if paginator -%}
+    {%- if paginator.total_pages > 1 -%}
+      {%- if paginator.previous_page -%}
         <a class="button" href="{{ paginator.previous_page_path }}">&laquo;</a>
-      {% else %}
+      {%- else -%}
         <a class="button" href="/">&laquo;</a>
-      {% endif %}
+      {%- endif -%}
       <a class="button" href="/">Home</a>
 
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
+      {%- for page in (1..paginator.total_pages) -%}
+        {%- if page == paginator.page -%}
           <a class="button current">{{ page }}</a>
-        {% elsif page == 1 %}
+        {%- elsif page == 1 -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page  }}</a>
-        {% else %}
+        {%- else -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor -%}
 
       {% if paginator.next_page %}
         <a class="button" href="{{ paginator.next_page_path | replace: '//', '/' }}">&raquo;</a>
       {% endif %}
-
     {% endif %}
   {% else %}
-    {% assign post_count = site.posts.size %}
-    {% assign page_count = post_count | divided_by: site.paginate %}
-    {% if post_count | modulo: site.paginate > 0 %}
+    {%- assign post_count = site.posts.size -%}
+    {%- assign page_count = post_count | divided_by: site.paginate -%}
+    {%- if post_count | modulo: site.paginate > 0 -%}
       {% assign page_count = page_count | plus: 1 %}
-    {% endif %}
+    {%- endif -%}
       <a class="button current" href="/">Home</a>
 
-      {% for page in (1..page_count) %}
-        {% if page == 1 %}
+      {%- for page in (1..page_count) -%}
+        {%- if page == 1 -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page }}</a>
-        {% else %}
+        {%- else -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
+        {%- endif -%}
+      {%- endfor -%}
       <a class="button" href="/posts">&raquo;</a>
-  {% endif %}
+  {%- endif -%}
   <br>
 </div>

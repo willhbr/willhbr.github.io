@@ -347,6 +347,13 @@ sup[role=doc-noteref]
     text-decoration: none
 
 .footnote-popover
+  border: none
+  max-width: $page-width
+  background: none
+
+.footnote-popover > div
+  margin: 1em
+  padding: 0 1em
   border: 2px solid $link-hover-colour
   border-radius: 0.5em
   background-color: $background-colour
@@ -355,8 +362,6 @@ sup[role=doc-noteref]
   a.reversefootnote
     display: none
 
-.footnote-popover > p
-  padding: 0 1em
 
 .post-footer
   margin-top: 3em

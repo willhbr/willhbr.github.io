@@ -6,13 +6,11 @@
 
     <div class="metadata">
       <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
-      {% assign tags = post.tags | sort %}
-      {% if tags.size > 0 %}
-        &bull;
-      {% endif %}
-      {% for tag in tags %}
+      {%- assign tags = post.tags | sort -%}
+      {%- if tags.size > 0 -%} &bull; {%- endif -%}
+      {%- for tag in tags -%}
         <a href="/tags#{{ tag }}">{{ tag }}</a>
-      {% endfor %}
+      {%- endfor -%}
       {% if jekyll.environment == "development" %}
         {% assign words = post.content | strip_html | number_of_words %}
         {% assign time = words | divided_by: 180 %}

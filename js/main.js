@@ -8,7 +8,9 @@ window.addEventListener('load', () => {
       let popover = document.createElement('div');
       popover.classList.add('footnote-popover');
       popover.popover = 'auto';
-      popover.innerHTML = ref.innerHTML;
+      let inner = document.createElement('div');
+      inner.innerHTML = ref.innerHTML;
+      popover.appendChild(inner);
       document.body.appendChild(popover);
       popover.showPopover();
       popover.addEventListener('toggle', e => {
