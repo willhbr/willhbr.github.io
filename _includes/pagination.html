@@ -8,8 +8,8 @@
       {%- endif -%}
       <a class="button" href="/">Home</a>
 
-      {%- for page in (1..paginator.total_pages) -%}
-        {%- if page == paginator.page -%}
+      {%- for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page -%}
           <a class="button current">{{ page }}</a>
         {%- elsif page == 1 -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page  }}</a>
@@ -30,8 +30,8 @@
     {%- endif -%}
       <a class="button current" href="/">Home</a>
 
-      {%- for page in (1..page_count) -%}
-        {%- if page == 1 -%}
+      {%- for page in (1..page_count) %}
+        {% if page == 1 -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page }}</a>
         {%- else -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
