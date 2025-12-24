@@ -175,7 +175,7 @@ Runnable r = new Runnable() {
 
 # JavaScript
 
-Somewhat appropriately, JavaScript's closures are pretty similar to Java. The traditional syntax looks like a normal function (without the name, like Python):
+Somewhat appropriately, JavaScript's closures are pretty similar to Java. The traditional syntax looks like a normal function (without the name):
 
 ```javascript
 let closure = function(input) {
