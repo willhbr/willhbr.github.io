@@ -15,7 +15,7 @@ It's weird that I hadn't noticed this while writing when I was running the site 
 
 So it works locally, but doesn't work on the live site.
 
-I run the site locally in a container and install all the dependencies through the [`github-pages`][gh-pages-gem], which should track the exact version of Jekyll and of all the available plugins, so my local version should be exactly the same as the live one.
+I run the site locally in a container and install all the dependencies through the [`github-pages`][gh-pages-gem] gem, which should track the exact version of Jekyll and of all the available plugins, so my local version should be exactly the same as the live one.
 
 [gh-pages-gem]: https://github.com/github/pages-gem
 
