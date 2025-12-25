@@ -19,7 +19,6 @@ end
 title = frontmatter["title"]
 date = frontmatter["date"] || Date.today
 slug = title.gsub(/\d+,\d+/) { |num| num.gsub(',', '') }
-slug = slug.downcase.gsub("'", '').gsub(/[\W]+/, '-').chomp('-')
 
 if slug.size > 35
   puts slug
@@ -27,6 +26,7 @@ if slug.size > 35
   re = STDIN.gets&.chomp
   slug = re unless re.empty?
 end
+slug = slug.downcase.gsub("'", '').gsub(/[\W]+/, '-').chomp('-')
 
 filename = "#{date.strftime('%F')}-#{slug}.md"
 
