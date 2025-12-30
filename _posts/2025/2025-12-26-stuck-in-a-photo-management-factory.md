@@ -4,7 +4,7 @@ image: /images/2025/izamal.webp
 tags: photography
 ---
 
-![Photo of the convent at Izamal, México](/images/2025/izamal.webp){:loading="lazy"}
+![Photo of the convent at Izamal, México](/images/2025/izamal.webp){:loading="lazy" style="aspect-ratio: auto 1200/521"}
 
 I feel obliged to include a photo, since this post is about photography.
 {:class="caption"}

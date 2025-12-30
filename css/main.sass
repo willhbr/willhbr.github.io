@@ -87,7 +87,7 @@ $code-keyword-dark: change-color($highlight-colour-dark, $hue: 220deg)
 header.site-header
   padding-top: 4em
   text-align: left
-  margin-bottom: 3em
+  // margin-bottom: 3em
   background: $highlight-colour
   margin: auto
   width: 100%
@@ -136,9 +136,15 @@ header .links
 
 // GENERAL NONSENSE
 
+// Hack for iOS 26 that doesn't support theme-color
+.background
+  background-color: $background-colour
+  width: 100%
+  min-height: 100dvh
+
 body
   color: $text-colour
-  background-color: $background-colour
+  background-color: $highlight-colour
   font:
     family: $body-font-family
     size: $paragraph-size
