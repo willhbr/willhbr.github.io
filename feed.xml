@@ -20,9 +20,9 @@
         <description>
           {%- capture content -%}{% include feed_post.html %}{%- endcapture -%}
           {%- if content contains "]]>" -%}
-            {{ content | xml_escape }}
+            {{ content | strip_highlighting | xml_escape }}
           {%- else -%}
-            <![CDATA[{{ content }}]]>
+            <![CDATA[{{ content | strip_highlighting }}]]>
           {%- endif -%}
         </description>
       </item>
