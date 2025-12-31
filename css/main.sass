@@ -185,22 +185,23 @@ hr
   background-color: $inline-text-pill-colour
   width: 20%
 
-.highlighter-rouge pre
-  padding: 2px 10px 5px 10px
-  overflow: scroll
-
 pre, code
   font-family: $code-font-family
-
-.highlighter-rouge pre, code.highlighter-rouge, .highlight
-  border-radius: 4px
   font-size: 0.9em
-  line-height: 1.5
+  border-radius: 4px
 
-code.highlighter-rouge
-  background: $inline-text-pill-colour
+code
   padding: 0 4px
   padding-bottom: 1px
+  background: $inline-text-pill-colour
+
+pre
+  background: $code-background
+  padding: 2px 10px 5px 10px
+  overflow: scroll
+  code
+    padding: 0
+    background: none
 
 footer
   font-size: $footer-size
@@ -382,10 +383,6 @@ sup[role=doc-noteref]
   mask-position: center
   background: $text-colour
   height: 3em
-
-.highlight, .highlight pre
-  color: $text-colour
-  background: $code-background
 
 img.half-right
   float: right
