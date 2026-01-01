@@ -14,6 +14,6 @@ end
 
 class Kramdown::Converter::WillhbrHtml < Kramdown::Converter::Html
   def convert_img(el, _indent)
-    "<img loading=\"lazy\"#{html_attributes(el.attr)} />"
+    "<img#{html_attributes({"loading" => "lazy"}.merge(el.attr))} />"
   end
 end
