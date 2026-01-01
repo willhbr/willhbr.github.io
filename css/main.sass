@@ -12,7 +12,7 @@ $body-side-margin: 0.5em
 $page-width: 41em
 $title-font-family: 'DIN', sans-serif-condensed, sans-serif
 $body-font-family: 'IBM Plex Sans', system-ui, sans-serif
-$code-font-family: "JetBrains Mono", "Fira Code", "Anonymous Pro", monospace
+$code-font-family: "JetBrains Mono", "Fira Code", monospace
 
 // main website theme colour
 $highlight-colour-light: {{ site.theme_colour.light }}
@@ -145,7 +145,6 @@ $code-keyword: var(--c-k)
 header.site-header
   padding-top: 4em
   text-align: left
-  // margin-bottom: 3em
   background: $highlight-colour
   margin: auto
   width: 100%
@@ -330,11 +329,6 @@ p
   font-variant-numeric: oldstyle-nums
   line-height: 1.5
 
-p.small-img
-  text-align: center
-  img
-    width: 50%
-
 .metadata, .metadata a, .metadata a:visited
   margin-top: 0.2em
   color: $metadata-colour
@@ -351,15 +345,6 @@ p.caption
   text-align: center
   font-style: italic
   font-size: $caption-size
-
-.post-nav
-  div
-    padding: 1em
-    place-self: center
-  display: grid
-  grid-auto-rows: 1fr
-  grid-template-columns: 1fr 1fr
-  text-wrap: balance
 
 ul.post-list
   text-wrap: balance

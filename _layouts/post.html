@@ -14,16 +14,28 @@ layout: page
     <a href="mailto:{{ site.email }}?subject={{ subject | uri_escape }}">email</a>.
   </p>
 
-  <div class="post-nav">
-    <div class="nav-left">
-      {% if page.previous.url %}
-        &larr;&nbsp;<a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
-      {% endif %}
-    </div>
-    <div class="nav-right">
-      {% if page.next.url %}
-        <a href="{{ page.next.url }}">{{ page.next.title }}</a>&nbsp;&rarr;
-      {% endif %}
-    </div>
-  </div>
+  <p class="metadata">
+    <a href="{{ post.url | absolute_url }}">Permalink</a>
+    &bull; {{ post.date | date: site.date_format }}
+  </p>
 </div>
+
+<ul class="post-list">
+  {% assign related = page | related_posts: site.posts, 7 %}
+  {%- for post in related -%}
+    <li{% if post.draft %} style="font-style: italic"{% endif %}>
+      <a href="{{ post.url }}">
+        <span class="post-name">{{ post.title }}</span>
+        <span class="dots"></span>
+        <span class="date">{{ post.date | date: site.date_format }}</span>
+      </a>
+    </li>
+  {%- endfor -%}
+  <li>
+    <a href="/archive#{{ post.url }}">
+      <span class="post-name">All posts</span>
+      <span class="dots"></span>
+      <span class="date">&rarr;</span>
+    </a>
+  </li>
+</ul>
