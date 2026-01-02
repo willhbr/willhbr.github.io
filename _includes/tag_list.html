@@ -1,0 +1,19 @@
+<p>
+  {% if page.url == "/archive/" %}
+    posts by year
+  {% else %}
+    <a href="/archive/">posts by year</a>
+  {% endif %} &bull;
+  {% if page.url == "/tags/" %}
+    posts by tag
+  {% else %}
+    <a href="/tags/">posts by tag</a>
+  {% endif %}
+  {%- for tag in site.data.tags %}
+     &bull; {% if tag[0] == page.tag %}
+      {{ tag[0] }}
+    {%- else -%}
+      <a href="/tags/{{ tag[0] }}/">{{ tag[0] }}</a>
+    {%- endif -%}
+  {% endfor %}
+</p>

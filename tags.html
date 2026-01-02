@@ -1,31 +1,31 @@
 ---
-title: Tags
+title: All Tags
 layout: page
 ---
 
-<h1>Tags</h1>
+<h1>All Tags</h1>
 
-<p>
-  Full list of posts by year in <a href="/archive">Archive</a>.
-</p>
+{% include tag_list.html %}
 
 {% assign tags = site.tags | sort %}
-{% for tag in tags %}
-  {% assign tag_name = tag[0] %}
-  {% assign subtitle = site.data.tags[tag_name] %}
-  <h2 id="{{ tag_name }}"><a href="#{{ tag_name }}">{{ tag_name }}</a></h2>
-  {% if subtitle %}
-    <i>{{ subtitle | markdownify }}</i>
-  {% endif %}
-  <ul class="post-list">
-    {% for post in tag[1] %}
-      <li{% if post.draft %} style="font-style: italic"{% endif %}>
-        <a href="{{ post.url }}">
-          <span class="post-name">{{ post.title }}</span>
-          <span class="dots"></span>
-          <span class="date">{{ post.date | date: site.date_format }}</span>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endfor %}
+<div class="tag-list">
+  {%- for tag in tags -%}
+    {%- assign tag_name = tag[0] -%}
+    {%- assign subtitle = site.data.tags[tag_name] -%}
+    <h2 id="{{ tag_name }}"><a href="/tags/{{ tag_name }}/">{{ tag_name }}</a></h2>
+    {% if subtitle %}
+      <i>{{ subtitle | markdownify }}</i>
+    {% endif %}
+    <ul class="post-list">
+      {% for post in tag[1] %}
+        <li{% if post.draft %} style="font-style: italic"{% endif %}>
+          <a href="{{ post.url }}">
+            <span class="post-name">{{ post.title }}</span>
+            <span class="dots"></span>
+            <span class="date">{{ post.date | date: site.date_format }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {%- endfor -%}
+</div>

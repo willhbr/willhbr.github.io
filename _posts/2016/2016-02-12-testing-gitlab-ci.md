@@ -1,5 +1,6 @@
 ---
 title: Testing GitLab CI
+tags: tools
 ---
 
 During my internship this summer I found myself pining for a continuous integration server. The project I was working on had a massive set of [Cucumber tests](https://github.com/cucumber/cucumber-rails). The only problem was that they took 40 minutes to run completely, which is a bit too much of a pain to actually run them regularly on a local machine. Last semester for my software engineering group project, we were given Jenkins servers to run our tests on - this enforced the habit of keeping the tests up to date and fixing anything that breaks them.

@@ -5,7 +5,7 @@
     </h1>
 
     <div class="metadata">
-      <a href="/archive#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
+      <a href="/archive/#{{ post.url }}">{{ post.date | date: site.date_format }}</a>
       {%- assign tags = post.tags | sort -%}
       {%- if tags.size > 0 %} &bull; {% endif -%}
       {%- for tag in tags %}

@@ -1,13 +1,17 @@
 ---
-title: All Posts
 layout: page
 ---
 
-<h1>All Posts</h1>
+<h1 class="tag">{{ page.tag }}</h1>
 
 {% include tag_list.html %}
 
-{% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% assign subtitle = site.data.tags[page.tag] %}
+{% if subtitle %}
+  <i>{{ subtitle | markdownify }}</i>
+{% endif %}
+
+{% assign posts_by_year = site.tags[page.tag] | group_by_exp:"post", "post.date | date: '%Y'"  %}
 {% for year_posts in posts_by_year %}
   <h2 id="{{ year_posts.name }}">{{ year_posts.name }}</h2>
   <ul class="post-list">
