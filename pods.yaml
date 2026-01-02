@@ -6,7 +6,7 @@ defaults:
 images:
   website:
     tag: willhbr.github.io:latest
-    from: Containerfile.local
+    from: Containerfile
 
 development:
   website:

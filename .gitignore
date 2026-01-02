@@ -5,5 +5,4 @@ _site
 .DS_Store
 .bundle
 .sass-cache/
-Gemfile.lock
 _drafts/

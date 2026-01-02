@@ -12,7 +12,8 @@ layout: page
 {% for year_posts in posts_by_year %}
   <h2 id="{{ year_posts.name }}">{{ year_posts.name }}</h2>
   <ul class="post-list">
-    {% for post in year_posts.items %}
+    {% assign posts = year_posts.items | sort: "date" | reverse %}
+    {% for post in posts %}
       <li id="{{ post.url }}"{% if post.draft %} style="font-style: italic"{% endif %}>
         <a href="{{ post.url }}">
           <span class="post-name">{{ post.title }}</span>
