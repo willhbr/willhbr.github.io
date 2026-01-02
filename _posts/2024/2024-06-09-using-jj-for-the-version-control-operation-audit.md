@@ -1,6 +1,6 @@
 ---
 title: "Using JJ for the Version Control Operation Audit"
-tags: tools jj
+tags: tools jujutsu
 ---
 
 So I [just wrote about](/2024/06/07/the-version-control-operation-audit/) the version control operations that I use day-to-day. My new favourite thing is [JJ](https://github.com/jj-vcs/jj)—a git-compatible version control system that I've also [written about before](/2024/04/01/its-not-me-its-git/)—so I thought I would explain how each of these operations are done with JJ.

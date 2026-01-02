@@ -1,6 +1,6 @@
 ---
 title: "Writing in Crystal, Rewriting in Rust"
-tags: projects languages crystal jj
+tags: projects languages crystal jujutsu
 ---
 
 I'm a serial tinkerer and project starter, which means I end up leaving a trail of half-finished (or half-started) projects everywhere I go. If it's not new projects, I'll drop in to some existing project and make some changes, then forget about them for months or sometimes years.

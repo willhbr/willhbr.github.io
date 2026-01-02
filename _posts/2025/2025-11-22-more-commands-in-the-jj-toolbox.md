@@ -1,6 +1,6 @@
 ---
 title: "More Commands in the JJ Toolbox"
-tags: jj tools
+tags: jujutsu tools
 ---
 
 It's been almost two years since I started using JJ regularly, and almost 18 months since I [wrote some tips on how to use it][jj-tips]. That post was really just the result of me reading the docs (which at the time were much sparser than they are now) and working out how to manage remotes properly.

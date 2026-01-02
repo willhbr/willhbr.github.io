@@ -8,6 +8,7 @@ layout: page
 {% include tag_list.html %}
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% assign posts_by_year = posts_by_year | sort: "name" | reverse %}
 {% for year_posts in posts_by_year %}
   <h2 id="{{ year_posts.name }}">{{ year_posts.name }}</h2>
   <ul class="post-list">
