@@ -4,12 +4,12 @@
     <div class="links">
       <ul>
         {%- if page.url != "/me/" -%}
-          <li><a href="/me">Me</a></li>
+          <li><a href="/me/">Me</a></li>
         {% endif %}
         {%- if page.url != "/" -%}
           <li><a href="/">Blog</a></li>
         {%- else -%}
-          <li><a href="/archive">Posts</a></li>
+          <li><a href="/archive/">Posts</a></li>
         {% endif %}
         <li><a href="{{ site.urls.photos }}">Photos</a></li>
         <li><a rel="me" target=_blank href="{{ site.urls.mastodon }}">Mastodon</a></li>

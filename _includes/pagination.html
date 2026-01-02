@@ -2,7 +2,7 @@
   {%- if paginator -%}
     {%- if paginator.total_pages > 1 -%}
       {%- if paginator.previous_page -%}
-        <a class="button" href="{{ paginator.previous_page_path }}">&laquo;</a>
+        <a class="button" href="{{ paginator.previous_page_path }}/">&laquo;</a>
       {%- else -%}
         <a class="button" href="/">&laquo;</a>
       {%- endif -%}
@@ -14,12 +14,12 @@
         {%- elsif page == 1 -%}
           <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page  }}</a>
         {%- else -%}
-          <a class="button" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+          <a class="button" href="{{ site.paginate_path | replace: ':num', page }}/">{{ page }}</a>
         {%- endif -%}
       {%- endfor -%}
 
       {% if paginator.next_page %}
-        <a class="button" href="{{ paginator.next_page_path | replace: '//', '/' }}">&raquo;</a>
+        <a class="button" href="{{ paginator.next_page_path | replace: '//', '/' }}/">&raquo;</a>
       {% endif %}
     {% endif %}
   {% else %}
@@ -34,10 +34,10 @@
       {% if page == 1 -%}
         <a class="button" href="{{ site.paginate_path | replace: ':num', '' }}">{{ page }}</a>
       {%- else -%}
-        <a class="button" href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+        <a class="button" href="{{ site.paginate_path | replace: ':num', page }}/">{{ page }}</a>
       {%- endif -%}
     {%- endfor -%}
-    <a class="button" href="/posts">&raquo;</a>
+    <a class="button" href="/posts/">&raquo;</a>
   {%- endif -%}
   <br>
 </div>

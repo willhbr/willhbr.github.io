@@ -9,7 +9,7 @@
       {%- assign tags = post.tags | sort -%}
       {%- if tags.size > 0 %} &bull; {% endif -%}
       {%- for tag in tags %}
-        <a href="/tags#{{ tag }}">{{ tag }}</a>
+        <a href="/tags/{{ tag }}/">{{ tag }}</a>
       {%- endfor -%}
       {% if jekyll.environment == "development" %}
         {% assign words = post.content | strip_html | number_of_words %}
