@@ -7,6 +7,7 @@ layout: page
 <p>As of {{ site.time | date: site.date_format }}, generated with Jekyll {{ jekyll.version }}.</p>
 
 {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'"  %}
+{% assign posts_by_year = posts_by_year | sort: "name" | reverse %}
 {% assign total_words = 0 %}
 
 {% for year_posts in posts_by_year %}

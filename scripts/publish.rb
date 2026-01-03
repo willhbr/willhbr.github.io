@@ -32,6 +32,8 @@ filename = "#{date.strftime('%F')}-#{slug}.md"
 
 dest = "./_posts/#{date.year}/#{filename}"
 
+FileUtils.mkdir_p "./_posts/#{date.year}"
+
 puts({
   slug: slug,
   date: date,

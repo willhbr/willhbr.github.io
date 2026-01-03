@@ -7,8 +7,11 @@ class Jekyll::Converters::Markdown::CustomKramdownConverter
   end
 
   def convert(content)
-    document = Kramdown::Document.new(content, input: 'GFM')
-    document.to_willhbr_html
+    Kramdown::Document.new(
+      content,
+      input: 'GFM',
+      footnote_backlink: '&uarr;'
+    ).to_willhbr_html
   end
 end
 
