@@ -105,7 +105,7 @@ Instead I've [written some logic in a filter][related_posts] that gives me a cer
 
 [related_posts]: https://github.com/willhbr/willhbr.github.io/blob/76efea5f89aba57914d8f34afc0e383c5df2bd23/_plugins/filters.rb#L17
 
-The obvious thing other thing to do would be to use third-party plugins or my own Ruby code to generate the RSS and JSON feeds. I've held off on this because while templating JSON or XML isn't the best idea, the templates are pretty good at this point and have been working without me fiddling with them for years. Maybe if I want to add something more complicated to the feeds, but for now I think they're fine as they are.
+The obvious other thing to do would be to use third-party plugins or my own Ruby code to generate the RSS and JSON feeds. I've held off on this because while templating JSON or XML isn't the best idea, the templates are pretty good at this point and have been working without me fiddling with them for years. Maybe if I want to add something more complicated to the feeds, but for now I think they're fine as they are.
 
 Another bit of work would be JavaScript-free footnotes. I've recently added a few lines of JS to make footnotes open in a popover instead of just jumping down to the bottom of the page, but it would be nice to do this with no JS at all. Now I've got complete control over the HTML generation, maybe there's a better option here.
 

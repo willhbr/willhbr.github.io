@@ -28,27 +28,6 @@ development:
       - --draft
       - --strict_front_matter
 
-containers:
-  mdl:
-    name: willhbr.github.io-mdl
-    image: :website
-    bind_mounts:
-      .: /src
-    interactive: true
-    autoremove: true
-    run_flags:
-      entrypoint:
-        - mdl
-        - --ignore-front-matter
-        - -r
-        # 7: unordered list indentation
-        # 13: Line length
-        # 14: Dollar signs in code blocks with no output
-        # 33: Inline HTML
-        # 26: Punctuation after headers
-        - '~MD007,~MD013,~MD014,~MD033,~MD026'
-        - _posts
-
   prod:
     name: willhbr.github.io-prod
     image: :website
