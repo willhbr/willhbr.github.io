@@ -5,7 +5,7 @@
 $paragraph-size: 16px
 $header-size: 2.5em
 $metadata-size: 1rem
-$title-size: 1.8em
+$title-size: 2.2em
 $footer-size: 0.9rem
 $caption-size: 0.9rem
 $body-side-margin: 0.5em
@@ -125,22 +125,16 @@ $code-keyword: var(--c-k)
   src: local("DIN"), url("/css/din.woff2") format("woff2")
 @font-face
   font-family: "IBM Plex Sans"
-  src: local("IBM Plex Sans"), url("/css/plex-sans.woff2") format("woff2")
+  src: local("IBM Plex Sans Regular"), url("/css/plex-sans.woff2") format("woff2")
 @font-face
   font-family: "IBM Plex Sans"
   font-style: italic
-  src: local("IBM Plex Sans"), url("/css/plex-sans-italic.woff2") format("woff2")
+  src: local("IBM Plex Sans Italic"), url("/css/plex-sans-italic.woff2") format("woff2")
 @font-face
   font-family: "JetBrains Mono"
   src: local("JetBrains Mono"), url("/css/jetbrains-mono.woff2") format("woff2")
 
 // HEADER
-
-.title
-  font-size: $header-size
-
-.title:hover
-  text-decoration: none
 
 header.site-header
   padding-top: 4em
@@ -152,6 +146,10 @@ header.site-header
   font-family: $title-font-family
   a, a:hover, a:visited
     color: $background-colour
+  .title
+    font-size: $header-size
+  .title:hover
+    text-decoration: none
 
 header .items
   padding: 1em
