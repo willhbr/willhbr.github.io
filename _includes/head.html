@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-{% capture title %}{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
+{% capture title %}{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}{% endcapture %}
 <title>{{ title }}</title>
 <link rel="stylesheet" href="/css/main.css">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="{{ site.theme_colour.light }}">

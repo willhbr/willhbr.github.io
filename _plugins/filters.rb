@@ -19,6 +19,8 @@ module CustomFilters
     return posts unless post['tags'] && all_posts
     related = all_posts.select do |p|
       post.url != p.url && (p['tags'] & post['tags']).any? && !posts.any? { |e| e.url == p.url }
+    end.sort_by do |p|
+      (p.date.to_i - post.date.to_i).abs
     end
 
     posts.concat related.first(limit - posts.size)

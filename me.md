@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'About - Will Richardson'
+title: 'About'
 image: /images/me.webp
 ---
 
@@ -14,7 +14,7 @@ Most of my favourite projects prompt questions like "what's even the point" or "
 
 Sometimes I work on normal projects, but they're not interesting enough to get on the about page. You can find a lot of them over on [Codeberg](https://codeberg.org/willhbr).
 
-I studied Software Engineering at the [University of Canterbury][canterbury], graduating in 2017. Since 2018 I have worked at [Google](https://google.com) Sydney, first as an [SRE](https://sre.google) in database infrastructure, and now on Maps for Android Automotive. This is personal website, if you want my employer's views on things, you'll have to find another website.
+I studied Software Engineering at the [University of Canterbury][canterbury], graduating in 2017. Since then I have worked at [Google](https://google.com) Sydney, first as an [SRE](https://sre.google) in database infrastructure, then Maps for Android Automotive, and now Photos. This is personal website, if you want my employer's views on things, you'll have to find another website.
 
 [canterbury]: https://www.canterbury.ac.nz
 
