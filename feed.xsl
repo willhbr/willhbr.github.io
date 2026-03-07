@@ -11,35 +11,37 @@
         <link rel="stylesheet" href="/css/main.css"/>
       </head>
       <body>
-        <header class="site-header">
-          <div class="items">
-            <a href="/" class="title">
-              {{ site.title }}
-            </a>
-          </div>
-        </header>
-        <div class="container">
-          <div class="post-body">
-            <p>You've found the RSS feed. Subscribe by copying the current URL into your feed reader of choice.
-            I use and recommend <a href="https://netnewswire.com/" target="_blank">NetNewsWire</a>.
-            I also generate a <a href="{{ site.feeds.json_url | absolute_url }}" target="_blank">JSON Feed</a> with the same content.</p>
+        <div class="background">
+          <header class="site-header">
+            <div class="items">
+              <a href="/" class="title">
+                {{ site.title }}
+              </a>
+            </div>
+          </header>
+          <div class="container">
+            <div class="post-body">
+              <p>You've found the RSS feed. Subscribe by copying the current URL into your feed reader of choice.
+              I use and recommend <a href="https://netnewswire.com/" target="_blank">NetNewsWire</a>.
+              I also generate a <a href="{{ site.feeds.json_url | absolute_url }}" target="_blank">JSON Feed</a> with the same content.</p>
+              <ul>
+                <li>RSS URL: <code>{{ site.feeds.rss_url | absolute_url}}</code></li>
+                <li>JSON Feed URL: <code>{{ site.feeds.json_url | absolute_url}}</code></li>
+              </ul>
+
+              <p>You can also read the <a href="{{ site.url }}">non-feed version of my website</a>.</p>
+            </div>
+
             <ul>
-              <li>RSS URL: <code>{{ site.feeds.rss_url | absolute_url}}</code></li>
-              <li>JSON Feed URL: <code>{{ site.feeds.json_url | absolute_url}}</code></li>
+              <xsl:apply-templates select="rss/channel/item" />
             </ul>
-
-            <p>You can also read the <a href="{{ site.url }}">non-feed version of my website</a>.</p>
           </div>
 
-          <ul>
-            <xsl:apply-templates select="rss/channel/item" />
-          </ul>
+          <footer>
+            <p>&#169; <a href="/me">Will Richardson</a> 2014-{{ site.time | date: '%Y' }}</p>
+            <p>All views and opinions expressed here are solely my own.</p>
+          </footer>
         </div>
-
-        <footer>
-          <p>&#169; <a href="/me">Will Richardson</a> 2014-{{ site.time | date: '%Y' }}</p>
-          <p>All views and opinions expressed here are solely my own.</p>
-        </footer>
       </body>
     </html>
   </xsl:template>
