@@ -65,9 +65,9 @@ The `toString` method that gets called depends on the type of the receiver objec
 
 This abstraction continues to work really well because if you've developed in Java (or any of the many many languages that share this behaviour) you quickly internalise the behaviour of the method resolution algorithm, and it's almost never surprising which bit of code ends up being executed. The compiler might need a runtime lookup to check, but you can use your big human brain and work it out with deduction while you write the code.
 
-So in Java (and basically every other object-oriented language) we have dynamic function dispatch as well as a dynamic return jump at the end of each function.
+So in Java (and basically every other object-oriented language) we have dynamic function dispatch as well as a dynamic return jump at the end of each function. We can pass an object to a function, and call a method on that object. Since the receiving function doesn't know the type of the object at compile time, any method calls on it will be completely dynamic:[^or-c]
 
-In C we don't have any dynamic lookup inside functions—every dynamic jump comes from an explicit conditional statement—but in Java and other higher-level languages we can pass an object to a function, and call a method on that object. Since the receiving function doesn't know the type of the object at compile time, any method calls on it will be completely dynamic:
+[^or-c]: The original version of this post incorrectly stated that C had no dynamic dispatch, but this is possible with function pointers, which can even be used to implement an object system.
 
 ```java
 String someMethod(Object object) {
