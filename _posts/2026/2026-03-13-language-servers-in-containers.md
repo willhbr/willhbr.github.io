@@ -36,7 +36,7 @@ $ podman run \
   docker.io/library/swift:latest
 ```
 
-The issue with this is that the editor and the LSP have to agree on the file paths.[^remapping] The editor will say "I'm opening `/home/will/Projects/some_file.swift`" and then since the container has the code in `/src` and has no idea what `/home/will/Projects` is, it'll just fail to do anything. Eventually I got this working by setting the `--entrypoint` to match the current directory path, but that's finicky.
+The issue with this is that the editor and the LSP have to agree on the file paths.[^remapping] The editor will say "I'm opening `/home/will/Projects/some_file.swift`" and then since the container has the code in `/src` and has no idea what `/home/will/Projects` is, it'll just fail to do anything. Eventually I got this working by setting the `--workdir` to match the current directory path, but that's finicky.
 
 [^remapping]: Some editors support config to do this remapping themselves, but Helix does not.
 
