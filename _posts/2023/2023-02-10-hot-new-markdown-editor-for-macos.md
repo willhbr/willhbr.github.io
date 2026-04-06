@@ -4,7 +4,7 @@ image: /images/2023/markedit.png
 tags: tools
 ---
 
-I just came across [MarkEdit](https://github.com/MarkEdit-app/MarkEdit)on [Mastodon](https://mastodon.social/@MarkEditApp/109837635866336116), and then instantly installed it. It's advertised as being "TextEdit, but for Markdown" and it totally delivers on that.
+I just came across [MarkEdit](https://github.com/MarkEdit-app/MarkEdit) on [Mastodon](https://mastodon.social/@MarkEditApp/109837635866336116), and then instantly installed it. It's advertised as being "TextEdit, but for Markdown" and it totally delivers on that.
 
 ![A screenshot of this post, written in MarkEdit](/images/2023/markedit.png)
 
