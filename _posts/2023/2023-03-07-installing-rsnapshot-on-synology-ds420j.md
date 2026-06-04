@@ -6,7 +6,7 @@ tags: projects homelab
 
 I've got a shiny new Synology DS420j, and I'm in the process of re-implementing the wheels of computer suffering that I call my backup system on it. Part of this is setting up `rsnapshot` to create point-in-time snapshots of my backups, so I can rewind back to an old version of my data.
 
-![A marketing image of a Synology DS420j NAS](/images/2023/ds420j.png){: style="max-width:400px"}
+![A marketing image of a Synology DS420j NAS](/images/2023/ds420j.png)
 
 There are plenty of instructions on how to setup rsnapshot using [Docker](https://www.docker.com) on the higher-end Synology models, but when you're shopping at the bottom of the barrel you don't have that option. We've got to install rsnapshot directly on the Synology - the most cursed Linux environment ever[^citation].
 
