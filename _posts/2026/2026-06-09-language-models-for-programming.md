@@ -118,7 +118,7 @@ match flags_difference {
 }
 ```
 
-Like with [null safety](#null-safety), the compiler ensures that the data we have access to in each branch is the data appropriate for that branch. If you wanted to do a similar thing in Java you could use an enum and store the data as an `Object`, casting it to the type you know it to be. Or each could case be a separate subclass, which is much more verbose.
+Like with [null safety](#null-safety), the compiler ensures that the data we have access to in each branch is the data appropriate for that branch. If you wanted to do a similar thing in Java you could use an enum and store the data as an `Object`, casting it to the type you know it to be. Or each case could be a separate subclass, which is much more verbose.
 
 # Receiver Blocks
 
@@ -177,4 +177,4 @@ Hopefully this wasn't just a walkthrough of a few languages that I'm a fan of. I
 
 The original inspiration for this post came from the idea of "imitation language features": ways that you can hack around the lack of a certain feature in your language of choice. My classic example would be promises, which are a way to work around a lack of `async`/`await` by using callbacks. Although `async`/`await` is itself a hack around [a lack of effects in the type system](/2026/03/02/async-inject-and-effects/).
 
-I thought that might end up a bit negative, so I've left it up to the reader to work out which languages are missing which features, and what affect that has on the code.
+I thought that might end up a bit negative, so I've left it up to the reader to work out which languages are missing which features, and what effect that has on the code.
