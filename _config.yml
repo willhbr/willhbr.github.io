@@ -58,7 +58,7 @@ include:
 exclude:
   - .jj
   - CNAME
-  - Containerfile.local
+  - Containerfile
   - Gemfile
   - Gemfile.lock
   - README.md

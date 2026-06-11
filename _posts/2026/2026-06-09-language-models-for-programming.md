@@ -46,7 +46,7 @@ struct Person {
 
 impl Person {
   fn rename(&mut self, new_name: String) {
-	  self.name = new_name;
+    self.name = new_name;
   }
 }
 ```

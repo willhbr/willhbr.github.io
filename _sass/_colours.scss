@@ -1,0 +1,91 @@
+@use "sass:color";
+@use "sass:string";
+
+// main website theme colour
+$highlight-colour-light: oklch(0.4095 0.2062 305.3);
+$highlight-colour-dark: oklch(0.7385 0.1644 302.58);
+
+// background colour for whole site
+$background-colour-light: oklch(0.9821 0 0);
+$background-colour-dark: oklch(0.2686 0 0);
+
+// text colour for body text
+$text-colour-light: oklch(0.3211 0 0);
+$text-colour-dark: oklch(0.9491 0 0);
+
+// background of inline code blocks and footnote links
+$inline-text-pill-colour-light: color.adjust($background-colour-light, $lightness: -10%);
+$inline-text-pill-colour-dark: color.adjust($background-colour-dark, $lightness: -7%);
+
+// colour for link a:hover
+$link-hover-colour-light: oklch(0.6461 0.1413 66.91);
+$link-hover-colour-dark: oklch(0.7629 0.1584 60.83);
+
+$link-visited-colour-light: color.adjust($highlight-colour-light, $lightness: -7%);
+$link-visited-colour-dark: color.adjust($highlight-colour-dark, $lightness: 7%);
+
+// colour for post metadata, and some other side-notes captions
+$metadata-colour-light: color.adjust($text-colour-light, $lightness: 20%);
+$metadata-colour-dark: color.adjust($text-colour-dark, $lightness: -30%);
+
+// text colour for footer, including links
+$footer-colour-light: color.adjust($text-colour-light, $lightness: 10%);
+$footer-colour-dark: color.adjust($text-colour-dark, $lightness: -10%);
+
+// Syntax highlighting
+$code-background-light: color.adjust($background-colour-light, $lightness: -10%);
+$code-background-dark: color.adjust($background-colour-dark, $lightness: -3%);
+
+$code-type-light: color.adjust($highlight-colour-light, $lightness: 5%);
+$code-type-dark: color.adjust($highlight-colour-dark, $lightness: 10%);
+
+$code-string-light: color.change($highlight-colour-light, $hue: 135deg);
+$code-string-dark: color.change($highlight-colour-dark, $hue: 135deg);
+
+$code-literal-light: color.change($highlight-colour-light, $hue: 13deg);
+$code-literal-dark: color.change($highlight-colour-dark, $hue: 13deg);
+
+$code-keyword-light: color.change($highlight-colour-light, $hue: 220deg);
+$code-keyword-dark: color.change($highlight-colour-dark, $hue: 220deg);
+
+@function to_rgb($oklch-color) {
+  @return "#" + string.slice(color.ie-hex-str(color.to-gamut($oklch-color, $space: srgb, $method: local-minde)), 4);
+}
+
+@mixin define-color($name, $oklch-color-light, $oklch-color-dark) {
+  // add fallback RGB hex for browsers that don't support oklch or light-dark.
+  // These browsers won't get dark mode
+  --#{$name}: #{to_rgb($oklch-color-light)};
+  --#{$name}: light-dark(#{$oklch-color-light}, #{$oklch-color-dark});
+}
+
+@mixin colours {
+  @include define-color("h", $highlight-colour-light, $highlight-colour-dark);
+  @include define-color("b", $background-colour-light, $background-colour-dark);
+  @include define-color("te", $text-colour-light, $text-colour-dark);
+  @include define-color("itp", $inline-text-pill-colour-light, $inline-text-pill-colour-dark);
+  @include define-color("lh", $link-hover-colour-light, $link-hover-colour-dark);
+  @include define-color("lv", $link-visited-colour-light, $link-visited-colour-dark);
+  @include define-color("m", $metadata-colour-light, $metadata-colour-dark);
+  @include define-color("f", $footer-colour-light, $footer-colour-dark);
+
+  @include define-color("cb", $code-background-light, $code-background-dark);
+  @include define-color("ct", $code-type-light, $code-type-dark);
+  @include define-color("cs", $code-string-light, $code-string-dark);
+  @include define-color("cl", $code-literal-light, $code-literal-dark);
+  @include define-color("ck", $code-keyword-light, $code-keyword-dark);
+}
+
+$highlight-colour: var(--h);
+$background-colour: var(--b);
+$text-colour: var(--te);
+$inline-text-pill-colour: var(--itp);
+$link-hover-colour: var(--lh);
+$link-visited-colour: var(--lv);
+$metadata-colour: var(--m);
+$footer-colour: var(--f);
+$code-background: var(--cb);
+$code-type: var(--ct);
+$code-string: var(--cs);
+$code-literal: var(--cl);
+$code-keyword: var(--ck);

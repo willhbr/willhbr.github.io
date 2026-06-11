@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="items">
-    <a href="/" class="title">{{ site.title }}</a>
-    <div class="links">
+    <h1><a href="/">{{ site.title }}</a></h1>
+    <nav>
       <ul>
         {%- if page.url != "/me/" -%}
           <li><a href="/me/">Me</a></li>
@@ -14,6 +14,6 @@
         <li><a href="{{ site.urls.photos }}">Photos</a></li>
         <li><a rel="me" target=_blank href="{{ site.urls.mastodon }}">Mastodon</a></li>
       </ul>
-    </div>
+    </nav>
   </div>
 </header>

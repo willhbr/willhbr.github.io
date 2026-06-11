@@ -8,18 +8,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title><xsl:value-of select="rss/channel/title"/></title>
-        <link rel="stylesheet" href="/css/main.css"/>
+        <link rel="stylesheet" href="/styles.css"/>
       </head>
       <body>
         <div class="background">
           <header class="site-header">
             <div class="items">
-              <a href="/" class="title">
-                {{ site.title }}
-              </a>
+              <h1><a href="/" class="title">{{ site.title }}</a></h1>
             </div>
           </header>
-          <div class="container">
+          <main>
             <div class="post-body">
               <p>You've found the RSS feed. Subscribe by copying the current URL into your feed reader of choice.
               I use and recommend <a href="https://netnewswire.com/" target="_blank">NetNewsWire</a>.
@@ -35,7 +33,7 @@
             <ul>
               <xsl:apply-templates select="rss/channel/item" />
             </ul>
-          </div>
+          </main>
 
           <footer>
             <p>&#169; <a href="/me">Will Richardson</a> 2014-{{ site.time | date: '%Y' }}</p>

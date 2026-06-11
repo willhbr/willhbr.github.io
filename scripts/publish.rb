@@ -12,6 +12,10 @@ if m
   raise "looks like you've got a dev server address in there: #{m}"
 end
 
+if contents.include? "\t"
+  raise "you've got a tab character, I don't think you want that"
+end
+
 if contents.match(/^!\[/) && frontmatter['image'].nil?
   raise "you've included an image but it's not in the frontmatter"
 end
