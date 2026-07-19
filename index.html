@@ -15,24 +15,26 @@ layout: page
   </p>
 </div>
 
-<ul class="post-list">
-  {%- for post in site.posts limit:site.paginate offset:1 -%}
-    <li{% if post.draft %} style="font-style: italic"{% endif %}>
-      <a href="{{ post.url }}">
-        <span class="post-name">{{ post.title }}</span>
+<nav>
+  <ul class="post-list">
+    {%- for post in site.posts limit:site.paginate offset:1 -%}
+      <li{% if post.draft %} style="font-style: italic"{% endif %}>
+        <a href="{{ post.url }}">
+          <span class="post-name">{{ post.title }}</span>
+          <span class="dots"></span>
+          <span class="date">{{ post.date | date: site.date_format_short }}</span>
+        </a>
+      </li>
+    {%- endfor -%}
+    <li>
+      <a href="/archive/#{{ post.url }}">
+        <span class="post-name">All posts</span>
         <span class="dots"></span>
-        <span class="date">{{ post.date | date: site.date_format_short }}</span>
+        <span class="date">&rarr;</span>
       </a>
     </li>
-  {%- endfor -%}
-  <li>
-    <a href="/archive/#{{ post.url }}">
-      <span class="post-name">All posts</span>
-      <span class="dots"></span>
-      <span class="date">&rarr;</span>
-    </a>
-  </li>
-</ul>
+  </ul>
+</nav>
 
 <br>
 

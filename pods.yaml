@@ -12,7 +12,7 @@ development:
   website:
     name: willhbr.github.io
     bind_mounts:
-      ~/Sync/Drafts: /src/_drafts
+      ~/Sync/Vault/Drafts: /src/_drafts
     image: :website
     ports:
       4000: 80
