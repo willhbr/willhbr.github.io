@@ -439,11 +439,13 @@ Up until this point the main party trick has been doing weird things with named 
 
 Calling `where` with an expression is not particularly ergonomic. Even if you made a macro to help define typed variables, like this:
 
+{% raw %}
 ```crystal
 macro field(name)
   VarExpr(NamedTuple({{ name.var }}: {{ name.type }}), {{ name.type }}).new
 end
 ```
+{% endraw %}
 
 Your `where` would still be repetitive:
 
