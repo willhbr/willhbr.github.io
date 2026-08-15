@@ -51,8 +51,8 @@ People
 
 The other ingredient that makes this whole escapade work is [named tuples](https://crystal-lang.org/api/latest/NamedTuple.html). They're unlike other types in Crystal in that the names of the fields are part of the type itself, which you can introspect with macros. We'll use lots of generics, and using a named tuple as the generic type allows us to encode the structure of a table as a type—since what are tables if not a collection of names and types?
 
-```crystal
 {% raw %}
+```crystal
 def inspect(var : T) forall T
   {% for name, type in T %}
     {% puts "#{name}: #{type}" %}
@@ -64,8 +64,8 @@ nt = {
   admin: true
 }
 inspect(nt)
-{% endraw %}
 ```
+{% endraw %}
 
 There's a lot going on here, but it's got the main tricks we need to do this whole thing. `inspect` is a macro method, where the body is generated from macro code once for each set of input types. We call it once with the variable `nt`, which has the type `NamedTuple(name: String, admin: Bool)`. In the actual `inspect` method we introduce a type variable `T` with the `forall T` suffix. This is more akin to the little `<T>` you'd find in `fn foo<T>(arg: T) { ... }`. The `forall` doesn't actually mean that it needs to work for any type `T`, you can just `raise` an exception in the macro code and fail for a particular type. It'll also only be attempted on types that are used to call the function.
 
@@ -100,8 +100,8 @@ end
 
 You could construct this manually, but we can be civilised and use a macro to build one based on the instance variables in a data object:
 
-```crystal
 {% raw %}
+```crystal
 module Table
   macro included
     {% verbatim do %}
@@ -126,8 +126,8 @@ class User
   def initialize(@name, @computer_count)
   end
 end
-{% endraw %}
 ```
+{% endraw %}
 
 We can then just do `User.query` and we've got an appropriate `Source` for that table. Calling `to_sql` on that `TableSource` object would simply give us `SELECT * FROM user`.
 
@@ -141,8 +141,8 @@ All the operations will be defined as methods on the `Source(T)` module, and the
 
 Anyway, the most basic version of `select` looks like this:
 
-```crystal
 {% raw %}
+```crystal
 module Source(T)
   def select(**kwargs : K) forall K
     # the macro system is dynamically typed, so the type here doesn't matter
@@ -162,8 +162,8 @@ module Source(T)
     )).new(kwargs)
   end
 end
-{% endraw %}
 
+{% endraw %}
 class Select(F, T)
   include Source(T)
 
@@ -227,8 +227,8 @@ Just like our `Source` module, we can define extra methods on `ExprWithVar` to b
 
 I didn't go too far with this, but someone with more time could add all the necessary boilerplate. Here's the basic structure of a `>` operator that can either operate on two expressions, or a constant value.
 
-```crystal
 {% raw %}
+```crystal
 def >(other : R) forall R
   {% if R < Expr %}
     {% if R.type_vars[1] != T
@@ -256,8 +256,8 @@ def >(other : R) forall R
     BiExpr(P, Bool, T, R).new(self, ConstExpr(R).new(other), ">")
   {% end %}
 end
-{% endraw %}
 ```
+{% endraw %}
 
 What's a bit of a hack is that we have to keep the type variables in the same place across different types, so that we can pull out the field names and return type correctly. I've made it so the names are always first, and the type is always second.
 
@@ -275,8 +275,8 @@ Going back to our `select` method, the extra type parameter `K` will be a `Named
 
 Simple, right?
 
-```crystal
 {% raw %}
+```crystal
 def select(**kwargs : K) forall K
   {% begin %}
     {% source_fields = {} of String => String
@@ -323,21 +323,21 @@ def select(**kwargs : K) forall K
     })
   {% end %}
 end
-{% endraw %}
 ```
+{% endraw %}
 
 The first part of this method is doing the type-checking by introspecting on the variables in any expressions and making sure the types of those variables match the types in the source table:
 
-```crystal
 {% raw %}
+```crystal
 {% dest_fields[name] = type.type_vars[1] %}
 {% for input_var, input_type in type.type_vars[0] %}
   {% if source_fields[input_var].nil? || source_fields[input_var] != input_type
        raise "type mismatch: #{input_var}: #{input_type} != #{source_fields[input_var]}"
      end %}
 {% end %}
-{% endraw %}
 ```
+{% endraw %}
 
 The last bit is just building the right generic arguments for the `Select` so it has the right input, output, and transformation types.
 
@@ -356,8 +356,8 @@ Select(
 
 Once we've got expressions, `WHERE` statements are actually really easy. The simplest case is just passing a single `Expr` to `where`:
 
-```crystal
 {% raw %}
+```crystal
 def where(expr : R) forall R
   {% unless R < Expr(Bool)
        raise "#{R} is not a boolean expression"
@@ -375,8 +375,8 @@ def where(expr : R) forall R
   {% end %}
   WhereExpr(T).new(self, expr)
 end
-{% endraw %}
 ```
+{% endraw %}
 
 You don't need to build up any complicated types, because the expression has to return a boolean, and the structure of the table doesn't change. `WhereExpr` just needs to build the SQL:
 
@@ -400,8 +400,8 @@ end
 
 I also added a special-case where you can use keyword arguments as intended to do simple equality checks on multiple fields, allowing for `.where(name: "Will")`.
 
-```crystal
 {% raw %}
+```crystal
 module Source(T)
   def where(**kwargs)
     WhereEq(T, typeof(kwargs)).new(self, kwargs)
@@ -428,8 +428,8 @@ class WhereEq(T, Q)
     end
   end
 end
-{% endraw %}
 ```
+{% endraw %}
 
 `Q` will have a subset of the fields in `T`, and I should probably check that the types match up here, but I didn't. Oh well.
 
@@ -455,8 +455,8 @@ users.where(
 
 You have to repeat the type of `computer_count`, which just isn't good enough. Thankfully there's a solution:
 
-```crystal
 {% raw %}
+```crystal
 module Source(T)
   def where(&)
     {% begin %}
@@ -483,8 +483,8 @@ class WhereBlock(T)
     @data[:{{ call.name }}]
   end
 end
-{% endraw %}
 ```
+{% endraw %}
 
 It's surprisingly simple, but it took a little bit of work to get there. `WhereBlock` is simply a wrapper that provides `method_missing` delegation to the fields in a `NamedTuple`, returning an appropriate `VarExpr` with the right type. This simplifies the call down to:
 
@@ -498,8 +498,8 @@ Interestingly I wasn't able to access `T` in `method_missing` or in a `finished`
 
 The other syntactic sugar I added was a `fields` macro to make calling `select` easier:
 
-```crystal
 {% raw %}
+```crystal
 macro fields(*args, **kwargs)
   {
     {% for arg in args %}
@@ -510,8 +510,8 @@ macro fields(*args, **kwargs)
     {% end %}
   }
 end
-{% endraw %}
 ```
+{% endraw %}
 
 The call site is still a bit noisy, but you can remove some type annotations:
 
@@ -522,8 +522,8 @@ users.select(
 
 To be honest I could probably extend this macro to wrap the value of the named arguments in a block, and then use the same `WhereBlock` trick with `method_missing`. Hang on a second, that seems doable…
 
-```crystal
 {% raw %}
+```crystal
 module Source(T)
   def select(&)
     {% begin %}
@@ -550,8 +550,8 @@ class SelectBlock(T)
     @data[:{{ call.name }}]
   end
 end
-{% endraw %}
 ```
+{% endraw %}
 
 This works basically the same way as using a block for `where`. The `SelectBlock` class implementation is actually identical, so they could be shared. The block passed to `select` just needs to return a `NamedTuple`, and it can access the existing fields as variables with the same `method_missing` trick. The call site looks like this:
 
