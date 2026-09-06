@@ -18,6 +18,7 @@ development:
       4000: 80
     autoremove: true
     labels:
+      caddy.port: 80
       endash.links:
         - name: Website
           port: 80
