@@ -236,11 +236,20 @@ img {
 }
 
 hr {
-  border: none;
-  height: 0.3em;
-  border-radius: 0.2em;
-  background-color: colours.$inline-text-pill-colour;
-  width: 20%;
+  mask: url("/images/hr.svg");
+  height: 1.5em;
+}
+
+#signature {
+  mask: url("/images/signature.svg");
+  height: 3em;
+}
+
+#signature, hr {
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background: colours.$text-colour;
 }
 
 .button {
@@ -362,15 +371,6 @@ footer {
   margin-top: 3em;
   width: 100%;
   text-align: center;
-}
-
-#signature {
-  mask: url("/images/signature.svg");
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center;
-  background: colours.$text-colour;
-  height: 3em;
 }
 
 // Code blocks

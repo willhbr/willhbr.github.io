@@ -3,6 +3,12 @@ require 'yaml'
 require 'date'
 require 'fileutils'
 
+def get_images
+  `jj diff --name-only`.split("\n").select do |path|
+    %w(webp jpeg jpg png gif).any? { |e| path.end_with? ".#{e}" }
+  end
+end
+
 path = ARGV[0]
 contents = File.read(path)
 frontmatter = YAML.load(contents, permitted_classes: [Date])
@@ -45,5 +51,18 @@ puts({
   destination: dest
 }.to_yaml)
 
+images = get_images
+unless images.empty?
+  puts "images:"
+  puts images.join("\n")
+  print "strip and scale images? [y/N] "
+
+  if STDIN.gets.chomp == 'y'
+    images.each do |img|
+      size = (1400 * 1400)
+      system 'convert', img, '-strip', '-resize', "#{size}@", img
+    end
+  end
+end
 
 FileUtils.mv(path, dest)
