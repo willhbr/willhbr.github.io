@@ -1,9 +1,16 @@
 <footer>
-  <p>&copy; <a href="/me/">Will Richardson</a> 2014–{{ site.time | date: '%Y' }}</p>
-  <p>All views and opinions expressed here are solely my own.</p>
-  <p>
-    <a class="button" href="/archive/">Archive</a> /
-    <a class="button" target=_blank href="{{ site.feeds.rss_url }}">RSS</a> /
-    <a class="button" target=_blank href="{{ site.feeds.json_url }}">JSON Feed</a>
-  </p>
+  <div>
+    <p>&copy; <a href="/me/">Will Richardson</a> 2014–{{ site.time | date: '%Y' }}</p>
+    <p>
+      Made from hand-typed bytes in Sydney, Australia.
+      All views and opinions expressed here are solely my own.
+      This website comes with absolutely no warranty, express or implied.
+    </p>
+    <p class="links">
+      <a href="/archive/">Archive</a> /
+      <a target=_blank href="{{ site.feeds.rss_url }}">RSS</a> /
+      <a target=_blank href="{{ site.feeds.json_url }}">JSON Feed</a>
+    </p>
+  </div>
+  <div id="map"></div>
 </footer>

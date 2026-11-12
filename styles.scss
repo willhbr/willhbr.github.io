@@ -6,7 +6,6 @@
 $paragraph-size: 16px;
 $header-size: 2.2em;
 $metadata-size: 1rem;
-$footer-size: 0.9rem;
 $caption-size: 0.9rem;
 $body-side-margin: 0.5em;
 $page-width: 41em;
@@ -37,11 +36,12 @@ html {
 }
 
 body {
-  color: colours.$text-colour;
+  color: colours.$background-colour;
   background-color: colours.$highlight-colour;
   font-family: $font-family;
   font-size: $paragraph-size;
   margin: 0;
+  padding: 0.3em;
 
   @media print {
     background: white;
@@ -49,6 +49,7 @@ body {
 }
 
 main {
+  color: colours.$text-colour;
   margin: auto;
   padding: 0 $body-side-margin;
   max-width: $page-width;
@@ -57,8 +58,10 @@ main {
 // Hack for iOS 26 that doesn't support theme-color
 .background {
   background-color: colours.$background-colour;
+  padding-top: 0.1em;
+  padding-bottom: 1em;
+  border-radius: $body-side-margin;
   width: 100%;
-  min-height: 100dvh;
 }
 
 p {
@@ -97,7 +100,18 @@ h1.tag, .tag-list h2 {
   text-transform: capitalize;
 }
 
-a {
+body a, body a:visited {
+  color: colours.$background-colour;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+main a {
   color: colours.$highlight-colour;
   cursor: pointer;
 
@@ -121,12 +135,8 @@ header.site-header {
   color: colours.$background-colour;
   font-weight: bold;
 
-  a, a:hover, a:visited {
-    color: colours.$background-colour;
-    text-decoration: none;
-  }
-
   h1 {
+    a:hover { text-decoration: none; }
     font-weight: 700;
     font-size: $header-size;
   }
@@ -254,8 +264,6 @@ hr {
 
 .button {
   padding: 6px 8px;
-  font-size: $footer-size;
-  background: transparent;
   color: colours.$highlight-colour;
   text-transform: uppercase;
   text-decoration: none;
@@ -357,15 +365,28 @@ sup:has(.footnote) {
 
 // Footer
 footer {
-  font-size: $footer-size;
   padding: 0.5em;
-  text-align: center;
+  display: flex;
+  max-width: $page-width;
+  margin: auto;
+  align-items: flex-end;
 
-  &, a {
-    color: colours.$footer-colour;
-    text-decoration: none;
+  .links {
+    font-weight: 560;
+    text-transform: uppercase;
   }
 }
+
+#map {
+  mask: url("/images/map.svg");
+  height: 8em;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: right;
+  background: colours.$background-colour;
+  width: 100%;
+}
+
 
 .post-footer {
   margin-top: 3em;

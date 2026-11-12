@@ -35,7 +35,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /images/opengraph.png
+      image: /images/opengraph.webp
       type: website
       noindex: false
   - scope:

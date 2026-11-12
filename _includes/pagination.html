@@ -2,9 +2,9 @@
   {%- if paginator -%}
     {%- if paginator.total_pages > 1 -%}
       {%- if paginator.previous_page -%}
-        <a class="button" href="{{ paginator.previous_page_path }}/">&laquo;</a>
+        <a class="button" href="{{ paginator.previous_page_path }}/">&larr;</a>
       {%- else -%}
-        <a class="button" href="/">&laquo;</a>
+        <a class="button" href="/">&larr;</a>
       {%- endif -%}
       <a class="button" href="/">Home</a>
 
@@ -19,7 +19,7 @@
       {%- endfor -%}
 
       {% if paginator.next_page %}
-        <a class="button" href="{{ paginator.next_page_path | replace: '//', '/' }}/">&raquo;</a>
+        <a class="button" href="{{ paginator.next_page_path | replace: '//', '/' }}/">&rarr;</a>
       {% endif %}
     {% endif %}
   {% else %}
@@ -37,7 +37,7 @@
         <a class="button" href="{{ site.paginate_path | replace: ':num', page }}/">{{ page }}</a>
       {%- endif -%}
     {%- endfor -%}
-    <a class="button" href="/posts/">&raquo;</a>
+    <a class="button" href="/posts/">&rarr;</a>
   {%- endif -%}
   <br>
 </nav>

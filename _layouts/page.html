@@ -4,13 +4,13 @@
     {% include head.html %}
   </head>
   <body>
+    {% include header.html %}
     <div class="background">
-      {% include header.html %}
       <main>
         {{ content }}
       </main>
-      {% include footer.html %}
     </div>
+    {% include footer.html %}
     <script src="/js/main.js" async></script>
   </body>
 </html>
