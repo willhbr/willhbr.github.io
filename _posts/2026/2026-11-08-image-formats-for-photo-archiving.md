@@ -1,7 +1,6 @@
 ---
-title: Image Formats for Photo Archiving
-tags:
-  - photography
+title: "Image Formats for Photo Archiving"
+tags: photography
 image: /images/2026/ground-arw-vs-jpeg.webp
 ---
 Did you know that the "raw" in "[raw photo](https://en.wikipedia.org/wiki/Raw_image_format)" isn't an acronym? It's just "raw" as in "unprocessed". So when someone writes it as "RAW", they are being incorrect?
