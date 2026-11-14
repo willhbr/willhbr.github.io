@@ -199,7 +199,7 @@ article {
   .post-body {
     margin-top: 1em;
     p { margin-top: 0; }
-    a:hover { text-decoration: underline; }
+    a { text-decoration: underline; }
     ul li:has(code) { line-height: 1.3em; }
 
     img, svg {
