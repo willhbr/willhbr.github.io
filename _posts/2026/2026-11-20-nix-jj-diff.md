@@ -1,6 +1,6 @@
 ---
 title: "Comparing Nix Derivations in a JJ Repo"
-tags: homelab
+tags: homelab jujutsu
 ---
 
 So far with NixOS I've been making changes to my `configuration.nix` and then running `nixos-rebuild switch` and seeing what happens. This has worked out so far, but I've just swapped my home server over to NixOS, which means breaking it could have consequences.
