@@ -370,6 +370,7 @@ footer {
   max-width: $page-width;
   margin: auto;
   align-items: flex-end;
+  text-wrap: pretty;
 
   .links {
     font-weight: 560;

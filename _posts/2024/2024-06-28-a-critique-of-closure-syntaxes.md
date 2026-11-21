@@ -159,7 +159,7 @@ Function<String, Integer> getLength = (String input) -> input.length;
 
 The biggest difficultly when using lambdas in Java is the fact that you need to understand how they're implemented, and remember the built-in "functional interfaces" that back them.
 
-For the uninitiated, Java lambdas are just syntactic sugar around anonymous implementations of interfaces with single methods. The most common is `Runnable`—an interface with a single `run()` method that takes no arguments and returns no result. Another common one is `Supplier<T>` which takes no arguments but returns an object of type `T`. You've then got `Consumer<T>`, which does the opposite, `Function<T, R>` which does both, and `BiFunction<S, T, R` because variadic generics are too complicated. So basically:
+For the uninitiated, Java lambdas are just syntactic sugar around anonymous implementations of interfaces with single methods. The most common is `Runnable`—an interface with a single `run()` method that takes no arguments and returns no result. Another common one is `Supplier<T>` which takes no arguments but returns an object of type `T`. You've then got `Consumer<T>`, which does the opposite, `Function<T, R>` which does both, and `BiFunction<S, T, R>` because variadic generics are too complicated. So basically:
 
 ```java
 // This lambda
